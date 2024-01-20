@@ -141,7 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#tasks-json"><span class="nav-number">1.</span> <span class="nav-text">tasks.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#launch-json"><span class="nav-number">2.</span> <span class="nav-text">launch.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#settings-json"><span class="nav-number">3.</span> <span class="nav-text">settings.json</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#tasks.json"><span class="nav-number">1.</span> <span class="nav-text">tasks.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#launch.json"><span class="nav-number">2.</span> <span class="nav-text">launch.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#settings.json"><span class="nav-number">3.</span> <span class="nav-text">settings.json</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -257,24 +257,35 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="tasks-json"><a href="#tasks-json" class="headerlink" title="tasks.json"></a>tasks.json</h1><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/tasks">https://code.visualstudio.com/docs/editor/tasks</a></p>
+    <div class="post-body" itemprop="articleBody"><h1 id="tasks.json">tasks.json</h1>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/tasks">https://code.visualstudio.com/docs/editor/tasks</a></p>
 <p>一个常用的应用场景是用MinGW来编译C++程序。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></p>
 <p>官方文档中给出了快捷生成配置模板的方式，让VS Code帮你写好一个。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></p>
 <p>任务中，至少要有一个标注为<code>build</code>种类的任务。具体做法，就是像上面文件那样，设置<code>group</code>属性。这样，配置完任务后，如果要运行任务，则在菜单栏“终端”选择“运行任务”，选择特定的任务。或者直接选择“运行生成任务”，就是直接运行<code>build</code>种类的任务。</p>
 <p>对于需要先后执行多个任务的场景，一般的做法是，如果执行任务A之前需要先执行任务B，那么在任务A里设置<code>dependsOn</code>属性，其值为数组，数组中的元素就是依赖的任务名字，即相应的<code>label</code>值。如果依赖的任务本身还有其要依赖的任务，那么类似地去填写那个任务的<code>dependsOn</code>属性，以此类推即可。</p>
-<h1 id="launch-json"><a href="#launch-json" class="headerlink" title="launch.json"></a>launch.json</h1><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/debugging">https://code.visualstudio.com/docs/editor/debugging</a></p>
+<h1 id="launch.json">launch.json</h1>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/editor/debugging">https://code.visualstudio.com/docs/editor/debugging</a></p>
 <p>在<code>launch.json</code>文件的右下角，有“添加配置”按钮，可以根据需要来选择配置。</p>
-<p>以C++程序调试为例，点击右下角“添加配置”按钮，选择C&#x2F;C++: (gdb) 启动，就会添加一个配置。</p>
+<p>以C++程序调试为例，点击右下角“添加配置”按钮，选择C/C++: (gdb)
+启动，就会添加一个配置。</p>
 <p>需要修改的参数大致如下。</p>
 <p><code>program</code>表示要调试的程序，其值为程序的绝对路径。这里一般是改为<code>$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe</code>。</p>
 <p><code>miDebuggerPath</code>修改为自己gdb.exe的绝对路径，比如我的是<code>D:\\mingw64\\bin\\gdb.exe</code>。</p>
 <p>此外，一般需要添加<code>preLaunchTask</code>属性，用于在执行任务之后再进行调试，其值即为tasks.json中相应的任务名称。比如，这里的例子中，就是<code>C/C++: g++.exe 生成活动文件</code>。</p>
-<h1 id="settings-json"><a href="#settings-json" class="headerlink" title="settings.json"></a>settings.json</h1><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
+<h1 id="settings.json">settings.json</h1>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
 <p>如上所说，包括两种设置，一种是用户设置，一种是工作区设置。前者是全局的，后者只针对当前工作区。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
-<p>这里说了，<code>settings.json</code>里的设置，和VS Code里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
+<p>这里说了，<code>settings.json</code>里的设置，和VS
+Code里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
 
     </div>
 

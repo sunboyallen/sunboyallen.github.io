@@ -256,16 +256,20 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>众所周知，在VS Code很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于C&#x2F;C++同样如此。</p>
-<p>以下是官方文档中，关于在VS Code用clang-format来格式化C++的内容，不多说。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+    <div class="post-body" itemprop="articleBody"><p>众所周知，在VS
+Code很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于C/C++同样如此。</p>
+<p>以下是官方文档中，关于在VS
+Code用clang-format来格式化C++的内容，不多说。</p>
+<p><a
+target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
 <p>以下是LLVM官网相关资料。</p>
-<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
 <p>常用的配置选项。</p>
-<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
 <p>个人的习惯是，使用以LLVM的风格为基础。</p>
 <figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-
 <p>第2行是把缩进改为4格（LLVM默认是2格），如果不需要，那么只要写第1行就可以。如果把缩进改为4格，那么类的访问修饰符偏移也得改，就是第3行的内容，改为-4或者0，根据自己需要。</p>
 
     </div>

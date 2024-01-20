@@ -1,30 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo主题NexT配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于GitHub仓库克隆和npm安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于Hexo搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题Scheme，一共有四种主题可选。主题可以设置为深色模式Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像avatar相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在markdown文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块CodeBlock的设置，比如是否有复制按钮copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown的行内公式要求，两侧的$符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>配置完可以在博客文章下方开启评论区。一般是用Gitalk就行。关于Gitalk和Gitment的异同之处，网上有讲，这里不多说了。反正这里是用Gitalk搞的。</p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子Busuanzi即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-position</span>: center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为1即不透明。</p>
+<p>图片放在source文件夹里的images文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>在VS Code给C++配置OpenCV</title>
     <url>/cpp-opencv/</url>
-    <content><![CDATA[<h1 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h1><p>目前没能解决的问题是，没法静态编译，编译选项还是没法直接使用<code>-static</code>，会冲突。生成的exe需要各种动态库，只能在本地本机运行。并且尽管附带了OpenCV的那些dll文件，但在其他电脑上可能没法直接运行。</p>
-<h1 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h1><p>要安装CMake。在VS Code要有插件CMake Tools。</p>
-<h1 id="下载和编译OpenCV"><a href="#下载和编译OpenCV" class="headerlink" title="下载和编译OpenCV"></a>下载和编译OpenCV</h1><p><a href="https://opencv.org/releases/">https://opencv.org/releases/</a></p>
-<p>一般下载的是OpenCV 4，3和4还是有些不一样的。4的具体哪个版本就看要求，一般最新的即可。以下用4.7.0作为示例，选择Sources，下载得到一个zip。</p>
+    <content><![CDATA[<h1 id="遗留问题">遗留问题</h1>
+<p>目前没能解决的问题是，没法静态编译，编译选项还是没法直接使用<code>-static</code>，会冲突。生成的exe需要各种动态库，只能在本地本机运行。并且尽管附带了OpenCV的那些dll文件，但在其他电脑上可能没法直接运行。</p>
+<h1 id="前置准备">前置准备</h1>
+<p>要安装CMake。在VS Code要有插件CMake Tools。</p>
+<h1 id="下载和编译opencv">下载和编译OpenCV</h1>
+<p><a
+href="https://opencv.org/releases/">https://opencv.org/releases/</a></p>
+<p>一般下载的是OpenCV
+4，3和4还是有些不一样的。4的具体哪个版本就看要求，一般最新的即可。以下用4.7.0作为示例，选择Sources，下载得到一个zip。</p>
 <p>建议在D盘目录下，新建一个文件夹，名字一般叫opencv。在里面解压。此外，在opencv文件夹里，新建build文件夹。</p>
 <p>这样，在opencv文件夹里就有两个文件夹，build和opencv-4.7.0，注意到opencv-4.7.0里面有CMakeLists.txt文件。</p>
-<p>接着打开CMake gui，在source code选择上述opencv-4.7.0文件夹的路径。在Where to build the binaries选择上述build文件夹的路径。接着开始Configure。完后，可以看到各种选项，很多是红色的。</p>
+<p>接着打开CMake gui，在source
+code选择上述opencv-4.7.0文件夹的路径。在Where to build the
+binaries选择上述build文件夹的路径。接着开始Configure。完后，可以看到各种选项，很多是红色的。</p>
 <p>接着有两种方式，都能用。第一种是常规操作，不修改任何勾选，接着点击Configure，完后，就没有选项是红色的了。再点击Generate。第二种是勾选BUILD_opencv_world选项，在Search可以搜，后面操作相同。</p>
 <p>这两种方式的区别是，前者生成的动态库文件是多个的，之后添加编译选项也可能有些繁琐，需要把这些动态库都标注好。后者则主要生成一个动态库文件：<code>libopencv_world470.dll</code>，之后添加的编译选项就只需添加这一个，比较方便，不足之处是，这个毕竟是前者的整合，文件就会显得有些大。一般如果只是图方便的话，可以使用第二种。</p>
 <p>接着打开命令行窗口，跳转到build文件夹的目录。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> D:\opencv\build</span><br></pre></td></tr></table></figure>
-
 <p>接着就可以<code>make</code>了，一般需要十几到几十分钟。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mingw32-make -j8</span><br></pre></td></tr></table></figure>
-
 <p>这里写成<code>mingw32-make</code>，当然如果之前把mingw64的bin里的这个exe又拷贝了一份，名字改为了make，那么直接<code>make</code>也是可以的。后面的<code>-j8</code>是设置多线程，可以使得编译速度稍快些，具体数字根据自己电脑CPU等情况而定。</p>
 <p>接着输入以下命令。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mingw32-make install</span><br></pre></td></tr></table></figure>
-
 <p>完成后，可以在build文件夹里看到install文件夹。</p>
 <p>之后，添加系统环境变量，添加<code>D:\opencv\build\install\x64\mingw\bin</code>进去。</p>
-<h1 id="在VS-Code的配置"><a href="#在VS-Code的配置" class="headerlink" title="在VS Code的配置"></a>在VS Code的配置</h1><p>在<code>.vscode</code>文件夹里，要修改<code>tasks.json</code>和<code>c_cpp_properties.json</code>文件。</p>
+<h1 id="在vs-code的配置">在VS Code的配置</h1>
+<p>在<code>.vscode</code>文件夹里，要修改<code>tasks.json</code>和<code>c_cpp_properties.json</code>文件。</p>
 <p>修改<code>tasks.json</code>，在<code>args</code>数组中，先添加这几个值：<code>-I</code>，<code>D:\\opencv\\build\\install\\include</code>，<code>-L</code>，<code>D:\\opencv\\build\\install\\x64\\mingw\\lib</code>。</p>
 <p>接着添加几个动态库编译选项，比如<code>-lopencv_core470</code>之类的，可以参照在上面lib文件夹里的名字进行添加。如果用第二种方法，那么只要写<code>-lopencv_world470</code>即可。</p>
 <p>修改<code>c_cpp_properties.json</code>，在<code>includePath</code>数组中，添加这个值：<code>D:\\opencv\\build\\install\\include</code>，以便在代码中能识别。</p>
@@ -32,54 +106,158 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Hexo搭建博客踩坑记录</title>
+    <url>/hexo-build/</url>
+    <content><![CDATA[<h1 id="概述">概述</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<p>里面说到了前置准备的内容。此外，需要注意的是，要将自己的SSH
+key添加到自己的GitHub账户中，之后的仓库推送等操作，要用到仓库的SSH地址，便于免密验证。</p>
+<p>在自己GitHub中要有一个public仓库，名字为：你的Github用户名.github.io，用于部署。可以先看这部分内容：<a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a>，但是先看最开头的部分就好。</p>
+<p>建议使用VS Code，方便查看文件目录，修改文件。</p>
+<p>安装时，指定的文件夹，是作为自己博客的目录。文件夹的名字没有特别的要求，比如命名为BLOG之类的。以下就默认这个文件夹名为BLOG。</p>
+<h1 id="建站">建站</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
+<h1 id="配置">配置</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<p>其实我觉得这部分内容不需要这么早就放在这里，可以放在“自定义”里再说。但是官方文档没那么搞，我也不是很懂。特别是后面的“自定义”要说到主题的配置，也是与这个相关的，结果非得那么早来讲。。</p>
+<p>这里可以设置自己网站的标题、语言等内容。</p>
+<h1 id="命令">命令</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
+<p>注意，每次部署网站或者启动服务器之前，要先清除缓存文件和已经生成的静态文件，也就是<code>clean</code>命令。然后再生成静态文件，也就是<code>generate</code>命令，或者写作<code>g</code>。最后再部署或者启动服务器。</p>
+<h1 id="部署">部署</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p>
+<p><a
+href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></p>
+<p>主要看里面的“一键部署”部分。</p>
+<p>要先进行Git用户名和邮箱的配置。以下是本地配置，如果之前做过全局配置，就可以不用了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config user.name Allen-Sunboy</span><br><span class="line">git config user.email yangnan_sunboy@163.com</span><br></pre></td></tr></table></figure>
+<p>注意，其中的配置部分，不建议使用https地址，而是用ssh地址。比如这样子。</p>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:Allen-Sunboy/Allen-Sunboy.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+<h1 id="仓库备份">仓库备份</h1>
+<p>官方文档没怎么说到仓库备份的内容。这里就具体说一下。之前官方文档说了，每次部署上去之后，这个仓库存储的并不是网站根目录文件夹，而是<code>.deploy_git</code>文件夹，这个文件夹是动态生成的，每次部署时的内容都不一样。那么，要备份自己的仓库的内容，就要在GitHub再新建一个仓库，再用Git进行配置与同步。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;2023.5.22&quot;</span></span><br><span class="line">git remote add origin git@github.com:Allen-Sunboy/BLOG.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<p>上述配置命令成功之后，以后每次要备份，就是常规操作了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;2023.5.22&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h1 id="写作">写作</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></p>
+<p>这里，如果指定<code>layout</code>参数为<code>page</code>，就可以在导航栏添加自己的页面，比如about之类的。具体到不同的主题，可能还需要进行其他的设置。</p>
+<h1 id="front-matter">Front-matter</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/front-matter">https://hexo.io/zh-cn/docs/front-matter</a></p>
+<h1 id="资源管理">资源管理</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
+<p>按照里面的设置，就可以有更方便的在markdown嵌入图片的方式。</p>
+<h1 id="自定义">自定义</h1>
+<h2 id="永久链接">永久链接</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/permalinks">https://hexo.io/zh-cn/docs/permalinks</a></p>
+<p>如果不修改，默认的每篇文章的链接是带日期的，这样并不是很好。一般使用<code>/:title/</code>，这样就只有标题了。</p>
+<h2 id="主题">主题</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/themes">https://hexo.io/zh-cn/docs/themes</a></p>
+<p>我的评价是，这篇的内容，对于新人没什么用，对于熟练者又大概是用不上，反正他们早就会使用甚至自己制作主题了。</p>
+<p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>有许多不错的主题可用，这里只是官方推荐的主题。但实际上很多大佬自己开发设计了不错的主题，可以自行搜索。如果是初次使用Hexo，非常建议使用NexT主题，体验极好。不过到了后面，可能会改为使用更适合自己品味的主题。</p>
+<p>设置主题的方式是，修改根目录<code>_config.yml</code>的<code>theme</code>的值，为相应主题的名字。</p>
+<p>大多数主题的传统安装方法是：将主题相应的GitHub仓库clone到<code>themes</code>文件夹中。每个主题都有自己的配置文件<code>_config.yml</code>，位于自己主题的文件夹中。</p>
+<p>但是，注意到，自Hexo
+5.0.0起，增加了个特性，可以设置独立的<code>_config.[theme].yml</code>文件，放于站点根目录下，也就是与<code>_config.yml</code>同级的位置。这里的<code>[theme]</code>就是相应的主题的名字，比如NexT主题的配置文件就是<code>_config.next.yml</code>。换句话说，每个主题的配置现在可以在网站根目录下独立设置了。主要看“代替主题配置文件”的部分。（所以我还是不知道“配置”这一部分为什么他官方文档要放到那么前面的位置。。。）</p>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<p>这样的好处在于，你可以在本地安装多个主题，能够很方便地保存各个主题的配置，并且很方便地切换，只要修改<code>_config.yml</code>的<code>theme</code>的值即可。</p>
+<p>另一个好处就是，可以方便如今很多主题支持的另一种安装方式：通过npm安装。这样，主题就会安装在<code>node_modules</code>目录下。如果不使用上述特性，那么你要在<code>node_modules</code>目录下的相应主题插件文件夹的<code>_config.yml</code>修改，翻找很麻烦。而使用了<code>_config.[theme].yml</code>特性，可以很方便地进行主题的配置。只要将相应主题的配置文件复制到网站根目录下，文件名修改为上述格式即可。</p>
+<p>另外，经过测试，对于使用npm安装的主题，如果不使用<code>_config.[theme].yml</code>特性，似乎远程部署会失败。在许多主题的教程中，也确实更推荐这种操作方法，这大概是一种发展的趋势。</p>
+<p>无论是GitHub仓库clone还是npm安装，每个主题本身是会有版本更新的，相应的<code>_config.yml</code>也会更新，这样，如果之前在里面自己修改了配置，那么更新后可能会覆盖。目前的解决办法有：自己fork那个主题的仓库到自己的GitHub，或者是使用<code>_config.[theme].yml</code>来存，然后更新时手动进行合并。</p>
+<h2 id="代码高亮">代码高亮</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/syntax-highlight">https://hexo.io/zh-cn/docs/syntax-highlight</a></p>
+<h2 id="插件">插件</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/plugins">https://hexo.io/zh-cn/docs/plugins</a></p>
+<p>但我的评价是，官方文档的这部分对于新人基本没什么用。</p>
+<p><a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
+<p>官方提供的插件列表是这个，然而同样是P用没有，显示的并不完全，并且另外一种更常用的搜索方式是在npm官网搜索。</p>
+<p><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
+<p>我这里就简单介绍一些常用的插件。</p>
+<h3 id="hexo-generator-searchdb">hexo-generator-searchdb</h3>
+<p><a
+href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.com/package/hexo-generator-searchdb</a></p>
+<p>用于给网页添加搜索功能。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+<p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>第一篇</title>
     <url>/first/</url>
     <content><![CDATA[<p>搭建博客的时间是2023年5月20日，也是一个特殊的日子。希望自己一切顺利。</p>
 <p>未来可能会写一些别的内容。</p>
-<p>以下是 $\LaTeX$ 公式测试。</p>
-<p>$$<br>\begin{align*}<br>p &amp;&#x3D; \frac{h}{\lambda} \<br>\varepsilon &amp;&#x3D; h \nu<br>\end{align*}<br>$$</p>
+<p>以下是 <span class="math inline">\(\LaTeX\)</span> 公式测试。</p>
+<p><span class="math display">\[
+\begin{align*}
+p &amp;= \frac{h}{\lambda} \\
+\varepsilon &amp;= h \nu
+\end{align*}
+\]</span></p>
 <p>丶冖凸冖丿</p>
 ]]></content>
   </entry>
   <entry>
     <title>关于PowerShell 7</title>
     <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下PowerShell和Windows PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版Windows PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="Pipeline"><a href="#Pipeline" class="headerlink" title="Pipeline"></a>Pipeline</h1><p><a href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下PowerShell和Windows
+PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版Windows
+PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS
+Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
 <p>管道Pipeline，用于处理多个命令之间的关系。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p><a href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器ColorPicker"><a href="#颜色选择器ColorPicker" class="headerlink" title="颜色选择器ColorPicker"></a>颜色选择器ColorPicker</h1><p><a href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺Screen-ruler"><a href="#屏幕标尺Screen-ruler" class="headerlink" title="屏幕标尺Screen ruler"></a>屏幕标尺Screen ruler</h1><p><a href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="Mouse-公用事业"><a href="#Mouse-公用事业" class="headerlink" title="Mouse 公用事业"></a>Mouse 公用事业</h1><p>微软官方文档的什么B机翻。。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell
+7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
     <title>用Python的tldextract模块解析url，真是个好东西</title>
     <url>/python-tldextract/</url>
-    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
-<p>如官方文档所说，用tldextract能够精确地获取到url的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public suffix）<code>suffix</code>，也就是eTLD（effective TLD，有效顶级域）。</p>
-<p><a href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
-<p><a href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
-<p>上面是官方的TLD（顶级域，一般也叫顶级域名）列表。除了理解TLD的一些基本分类之外，重要的是理解eTLD即public suffix的概念。</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
+<p>如官方文档所说，用tldextract能够精确地获取到url的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
+suffix）<code>suffix</code>，也就是eTLD（effective
+TLD，有效顶级域）。</p>
+<p><a
+href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
+<p><a
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+<p>上面是官方的TLD（顶级域，一般也叫顶级域名）列表。除了理解TLD的一些基本分类之外，重要的是理解eTLD即public
+suffix的概念。</p>
+<p><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
 <p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
 <p>tldextract所用到的public suffix列表，就是官方的这个。</p>
-<p><a href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
-<h1 id="网址排序"><a href="#网址排序" class="headerlink" title="网址排序"></a>网址排序</h1><p>有了tldextract，我就可以方便地对网址进行排序了。</p>
+<p><a
+href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
+<h1 id="网址排序">网址排序</h1>
+<p>有了tldextract，我就可以方便地对网址进行排序了。</p>
 <p>我认为网址排序是一个值得讨论的事情。对url的排序，首先，显然不是纯粹根据url字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住TLD之类的。</p>
 <p>如果<code>domain</code>相同，那么比较<code>subdomain</code>，这里需要处理的是，没有<code>subdomain</code>的，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。如果<code>subdomain</code>相同，那么最后再比较<code>suffix</code>。</p>
 <p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
@@ -87,187 +265,88 @@
 <p>我认为不应当在浏览器的收藏夹里放这么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢。以前我就是在Edge浏览器收藏几百个网址的，Edge的同步功能做得倒是很不错。但是我收藏那么多网址确实没啥用。。。不如直接放进文本文件里，有需要再在文件中搜索就是了，同步也方便，丢GitHub里就够了。</p>
 <p>使用tldextract，我就可以对<code>urls.md</code>的网址进行排序。</p>
 <figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;urls.md&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    lines = f.readlines()</span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">        line = lines[i].strip()</span><br><span class="line">        <span class="keyword">if</span> line <span class="keyword">and</span> <span class="keyword">not</span> line.startswith(<span class="string">&#x27;#&#x27;</span>) <span class="keyword">and</span> <span class="keyword">not</span> line.startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">            <span class="comment"># 如果urls[i]的下一行是注释，那么将注释写在urls[i]的后面</span></span><br><span class="line">            <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span>:</span><br><span class="line">                next_line = lines[i + <span class="number">1</span>]</span><br><span class="line">                <span class="keyword">if</span> next_line.startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    line = line + <span class="string">&#x27; &#x27;</span> + next_line.strip()</span><br><span class="line"></span><br><span class="line">            urls.append(line)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url: <span class="built_in">str</span></span>):</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    <span class="comment"># 以www开头的或没有subdomain的URL排在其他的之前</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> tld_info.subdomain <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, subdomain_key, tld_info.suffix)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;urls.md&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">    previous_first_letter = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">        tld_info = tld_extract(urls[i])</span><br><span class="line">        current_first_letter = tld_info.domain[<span class="number">0</span>] <span class="keyword">if</span> tld_info.domain <span class="keyword">else</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">            f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">            tld_info1 = tld_extract(urls[i-<span class="number">1</span>])</span><br><span class="line">            tld_info2 = tld_extract(urls[i])</span><br><span class="line">            <span class="keyword">if</span> tld_info1.domain != tld_info2.domain <span class="keyword">and</span> tld_info1.domain[<span class="number">0</span>] == tld_info2.domain[<span class="number">0</span>]:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 如果urls[i]包括网址和注释，以空格隔开，注释以&lt;!开头，那么将注释写在下一行</span></span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;&lt;!&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">            f.write(urls[i].split(<span class="string">&#x27; &lt;!&#x27;</span>)[<span class="number">0</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(<span class="string">&#x27;&lt;!&#x27;</span> + urls[i].split(<span class="string">&#x27; &lt;!&#x27;</span>)[<span class="number">1</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            f.write(urls[i] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        previous_first_letter = current_first_letter</span><br></pre></td></tr></table></figure>
-
-<p>最后再说点吐槽。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了eTLD，找到了phblic suffix的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
+<p>最后再说点吐槽。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了eTLD，找到了phblic
+suffix的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo搭建博客踩坑记录</title>
-    <url>/hexo-build/</url>
-    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<p>里面说到了前置准备的内容。此外，需要注意的是，要将自己的SSH key添加到自己的GitHub账户中，之后的仓库推送等操作，要用到仓库的SSH地址，便于免密验证。</p>
-<p>在自己GitHub中要有一个public仓库，名字为：你的Github用户名.github.io，用于部署。可以先看这部分内容：<a href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a>，但是先看最开头的部分就好。</p>
-<p>建议使用VS Code，方便查看文件目录，修改文件。</p>
-<p>安装时，指定的文件夹，是作为自己博客的目录。文件夹的名字没有特别的要求，比如命名为BLOG之类的。以下就默认这个文件夹名为BLOG。</p>
-<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p><a href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p><a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
-<p>其实我觉得这部分内容不需要这么早就放在这里，可以放在“自定义”里再说。但是官方文档没那么搞，我也不是很懂。特别是后面的“自定义”要说到主题的配置，也是与这个相关的，结果非得那么早来讲。。</p>
-<p>这里可以设置自己网站的标题、语言等内容。</p>
-<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><p><a href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
-<p>注意，每次部署网站或者启动服务器之前，要先清除缓存文件和已经生成的静态文件，也就是<code>clean</code>命令。然后再生成静态文件，也就是<code>generate</code>命令，或者写作<code>g</code>。最后再部署或者启动服务器。</p>
-<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p><a href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p>
-<p><a href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></p>
-<p>主要看里面的“一键部署”部分。</p>
-<p>要先进行Git用户名和邮箱的配置。以下是本地配置，如果之前做过全局配置，就可以不用了。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config user.name Allen-Sunboy</span><br><span class="line">git config user.email yangnan_sunboy@163.com</span><br></pre></td></tr></table></figure>
-
-<p>注意，其中的配置部分，不建议使用https地址，而是用ssh地址。比如这样子。</p>
-<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:Allen-Sunboy/Allen-Sunboy.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="仓库备份"><a href="#仓库备份" class="headerlink" title="仓库备份"></a>仓库备份</h1><p>官方文档没怎么说到仓库备份的内容。这里就具体说一下。之前官方文档说了，每次部署上去之后，这个仓库存储的并不是网站根目录文件夹，而是<code>.deploy_git</code>文件夹，这个文件夹是动态生成的，每次部署时的内容都不一样。那么，要备份自己的仓库的内容，就要在GitHub再新建一个仓库，再用Git进行配置与同步。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;2023.5.22&quot;</span></span><br><span class="line">git remote add origin git@github.com:Allen-Sunboy/BLOG.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<p>上述配置命令成功之后，以后每次要备份，就是常规操作了。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;2023.5.22&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><p><a href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></p>
-<p>这里，如果指定<code>layout</code>参数为<code>page</code>，就可以在导航栏添加自己的页面，比如about之类的。具体到不同的主题，可能还需要进行其他的设置。</p>
-<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><p><a href="https://hexo.io/zh-cn/docs/front-matter">https://hexo.io/zh-cn/docs/front-matter</a></p>
-<h1 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h1><p><a href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
-<p>按照里面的设置，就可以有更方便的在markdown嵌入图片的方式。</p>
-<h1 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h1><h2 id="永久链接"><a href="#永久链接" class="headerlink" title="永久链接"></a>永久链接</h2><p><a href="https://hexo.io/zh-cn/docs/permalinks">https://hexo.io/zh-cn/docs/permalinks</a></p>
-<p>如果不修改，默认的每篇文章的链接是带日期的，这样并不是很好。一般使用<code>/:title/</code>，这样就只有标题了。</p>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p><a href="https://hexo.io/zh-cn/docs/themes">https://hexo.io/zh-cn/docs/themes</a></p>
-<p>我的评价是，这篇的内容，对于新人没什么用，对于熟练者又大概是用不上，反正他们早就会使用甚至自己制作主题了。</p>
-<p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p>有许多不错的主题可用，这里只是官方推荐的主题。但实际上很多大佬自己开发设计了不错的主题，可以自行搜索。如果是初次使用Hexo，非常建议使用NexT主题，体验极好。不过到了后面，可能会改为使用更适合自己品味的主题。</p>
-<p>设置主题的方式是，修改根目录<code>_config.yml</code>的<code>theme</code>的值，为相应主题的名字。</p>
-<p>大多数主题的传统安装方法是：将主题相应的GitHub仓库clone到<code>themes</code>文件夹中。每个主题都有自己的配置文件<code>_config.yml</code>，位于自己主题的文件夹中。</p>
-<p>但是，注意到，自Hexo 5.0.0起，增加了个特性，可以设置独立的<code>_config.[theme].yml</code>文件，放于站点根目录下，也就是与<code>_config.yml</code>同级的位置。这里的<code>[theme]</code>就是相应的主题的名字，比如NexT主题的配置文件就是<code>_config.next.yml</code>。换句话说，每个主题的配置现在可以在网站根目录下独立设置了。主要看“代替主题配置文件”的部分。（所以我还是不知道“配置”这一部分为什么他官方文档要放到那么前面的位置。。。）</p>
-<p><a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
-<p>这样的好处在于，你可以在本地安装多个主题，能够很方便地保存各个主题的配置，并且很方便地切换，只要修改<code>_config.yml</code>的<code>theme</code>的值即可。</p>
-<p>另一个好处就是，可以方便如今很多主题支持的另一种安装方式：通过npm安装。这样，主题就会安装在<code>node_modules</code>目录下。如果不使用上述特性，那么你要在<code>node_modules</code>目录下的相应主题插件文件夹的<code>_config.yml</code>修改，翻找很麻烦。而使用了<code>_config.[theme].yml</code>特性，可以很方便地进行主题的配置。只要将相应主题的配置文件复制到网站根目录下，文件名修改为上述格式即可。</p>
-<p>另外，经过测试，对于使用npm安装的主题，如果不使用<code>_config.[theme].yml</code>特性，似乎远程部署会失败。在许多主题的教程中，也确实更推荐这种操作方法，这大概是一种发展的趋势。</p>
-<p>无论是GitHub仓库clone还是npm安装，每个主题本身是会有版本更新的，相应的<code>_config.yml</code>也会更新，这样，如果之前在里面自己修改了配置，那么更新后可能会覆盖。目前的解决办法有：自己fork那个主题的仓库到自己的GitHub，或者是使用<code>_config.[theme].yml</code>来存，然后更新时手动进行合并。</p>
-<h2 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h2><p><a href="https://hexo.io/zh-cn/docs/syntax-highlight">https://hexo.io/zh-cn/docs/syntax-highlight</a></p>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p><a href="https://hexo.io/zh-cn/docs/plugins">https://hexo.io/zh-cn/docs/plugins</a></p>
-<p>但我的评价是，官方文档的这部分对于新人基本没什么用。</p>
-<p><a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
-<p>官方提供的插件列表是这个，然而同样是P用没有，显示的并不完全，并且另外一种更常用的搜索方式是在npm官网搜索。</p>
-<p><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
-<p>我这里就简单介绍一些常用的插件。</p>
-<h3 id="hexo-generator-searchdb"><a href="#hexo-generator-searchdb" class="headerlink" title="hexo-generator-searchdb"></a>hexo-generator-searchdb</h3><p><a href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.com/package/hexo-generator-searchdb</a></p>
-<p>用于给网页添加搜索功能。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
-
-<p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hexo主题NexT配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p><a href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><p><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于GitHub仓库克隆和npm安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于Hexo搭建。那里有具体说明。</p>
-<h1 id="Theme-Settings"><a href="#Theme-Settings" class="headerlink" title="Theme Settings"></a>Theme Settings</h1><p><a href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题Scheme，一共有四种主题可选。主题可以设置为深色模式Dark Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="Sidebar"><a href="#Sidebar" class="headerlink" title="Sidebar"></a>Sidebar</h2><p><a href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像avatar相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="Posts"><a href="#Posts" class="headerlink" title="Posts"></a>Posts</h2><p><a href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在markdown文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous</h2><p><a href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块CodeBlock的设置，比如是否有复制按钮copy_button，等等。</p>
-<h1 id="Third-Party-Plugins"><a href="#Third-Party-Plugins" class="headerlink" title="Third Party Plugins"></a>Third Party Plugins</h1><p><a href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="Math-Equations"><a href="#Math-Equations" class="headerlink" title="Math Equations"></a>Math Equations</h2><p><a href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 $\LaTeX$ 公式渲染。注意，markdown的行内公式要求，两侧的$符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<h2 id="Comment-Systems"><a href="#Comment-Systems" class="headerlink" title="Comment Systems"></a>Comment Systems</h2><p><a href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>配置完可以在博客文章下方开启评论区。一般是用Gitalk就行。关于Gitalk和Gitment的异同之处，网上有讲，这里不多说了。反正这里是用Gitalk搞的。</p>
-<h2 id="Statistics-and-Analytics"><a href="#Statistics-and-Analytics" class="headerlink" title="Statistics and Analytics"></a>Statistics and Analytics</h2><p><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子Busuanzi即可。</p>
-<h2 id="Search-Services"><a href="#Search-Services" class="headerlink" title="Search Services"></a>Search Services</h2><p><a href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="Advanced-Settings"><a href="#Advanced-Settings" class="headerlink" title="Advanced Settings"></a>Advanced Settings</h1><p><a href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="Custom-Files"><a href="#Custom-Files" class="headerlink" title="Custom Files"></a>Custom Files</h2><p><a href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-position</span>: center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>相当于设置css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为1即不透明。</p>
-<p>图片放在source文件夹里的images文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于TLD</title>
-    <url>/tld/</url>
-    <content><![CDATA[<h1 id="ICANN"><a href="#ICANN" class="headerlink" title="ICANN"></a>ICANN</h1><p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
-<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
-<p>上面这个是ICANN wiki，可以查各个TLD的信息。</p>
-<h1 id="ccTLD"><a href="#ccTLD" class="headerlink" title="ccTLD"></a>ccTLD</h1><p><a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
-<p>这个是ISO 3166标准。</p>
-<h1 id="IANA"><a href="#IANA" class="headerlink" title="IANA"></a>IANA</h1><p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
-<p><a href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
-<p>可以查看root zone，查看根域名。</p>
-<h1 id="ngTLD"><a href="#ngTLD" class="headerlink" title="ngTLD"></a>ngTLD</h1><p><a href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
-<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
-<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
-<p>上面的是各nTLD的数据信息。没事的话可以查查，有些很有意思的域名。</p>
-<h1 id="xyz"><a href="#xyz" class="headerlink" title="xyz"></a>xyz</h1><p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
-<p>看看xyz的官网（笑）。</p>
-<p>实际上xyz除了xyz这个域名之外，他们还搞了别的域名，不多说。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>VMware Ubuntu使用代理</title>
-    <url>/vmware-ubuntu-proxy/</url>
-    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>此处感谢舍友<a href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
-<h1 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h1><p>打开VMware Workstation Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
-<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
-<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
-<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
+    <title>PowerToys介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器colorpicker">颜色选择器ColorPicker</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺screen-ruler">屏幕标尺Screen ruler</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么B机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
     <title>使用SSH进行远程操作</title>
     <url>/ssh/</url>
-    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://www.ssh.com/academy">https://www.ssh.com/academy</a></p>
-<p><a href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview</a></p>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://www.ssh.com/academy">https://www.ssh.com/academy</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview</a></p>
 <p>能够在Windows使用SSH，主要是现在Win10以及以上已经添加了OpenSSH，从而可以在命令行里直接使用。</p>
-<p>在自己VS Code上，安装Remote - SSH插件。当然，还可以直接安装Remote Development这个插件，一共有4个扩展包，除了前面说的Remote - SSH之外，还有WSL，Remote - Tunnels等工具。</p>
-<h1 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h1><p><a href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a></p>
+<p>在自己VS Code上，安装Remote - SSH插件。当然，还可以直接安装Remote
+Development这个插件，一共有4个扩展包，除了前面说的Remote -
+SSH之外，还有WSL，Remote - Tunnels等工具。</p>
+<h1 id="远程连接">远程连接</h1>
+<p><a
+href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh user@hostname</span><br></pre></td></tr></table></figure>
-
-<h1 id="SSH-密钥"><a href="#SSH-密钥" class="headerlink" title="SSH 密钥"></a>SSH 密钥</h1><p><a href="https://www.ssh.com/academy/ssh-keys">https://www.ssh.com/academy/ssh-keys</a></p>
-<p>从2021年8月13日开始，GitHub不再支持使用账户密码凭证，只能是口令token或者SSH Key的方式。</p>
-<p><a href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a></p>
-<p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh</a></p>
-<p><a href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement</a></p>
+<h1 id="ssh-密钥">SSH 密钥</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh-keys">https://www.ssh.com/academy/ssh-keys</a></p>
+<p>从2021年8月13日开始，GitHub不再支持使用账户密码凭证，只能是口令token或者SSH
+Key的方式。</p>
+<p><a
+href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a></p>
+<p><a
+href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement</a></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>其中，<code>-t</code>用于指定密钥的类型。如果不写，默认为rsa。rsa主要是兼容性好，用的最多，不过ed25519具有更安全等特点，也是目前官方更推荐的类型。<code>-C</code>用于添加注释，如果是一般的远程服务器可以不写注释，但如果是用于Git，需要写邮箱。</p>
-<p>密钥文件名格式与密钥类型有关，比如如果是rsa类型的，那么文件名为<code>id_rsa</code>，公钥为<code>id_rsa.pub</code>。如果是 ed25519，那么文件名为<code>id_ed25519</code>，等等。</p>
+<p>密钥文件名格式与密钥类型有关，比如如果是rsa类型的，那么文件名为<code>id_rsa</code>，公钥为<code>id_rsa.pub</code>。如果是
+ed25519，那么文件名为<code>id_ed25519</code>，等等。</p>
 <p>密钥锁码默认为空，这样即可实现无密码登录。如果不需要另外设置，则直接默认即可，也就是不输入而回车。</p>
 <p>然后，可以将SSH密钥添加到远程了。对于一般的远程服务器，以ubuntu为例，需要在远程用户目录，即<code>~</code>目录下，在<code>.ssh</code>文件夹里，新建<code>authorized_keys</code>文件，内容即为公钥的内容。</p>
-<p>然后，在SSH配置文件里，添加远程服务器的信息。SSH配置文件的位置在<code>~/.ssh/config</code>，也可以在VS Code“远程资源管理器”直接打开。添加内容大致如下。如果之前就是在VS Code进行远程登录的，可能已经为你写好了。比如这样子。</p>
+<p>然后，在SSH配置文件里，添加远程服务器的信息。SSH配置文件的位置在<code>~/.ssh/config</code>，也可以在VS
+Code“远程资源管理器”直接打开。添加内容大致如下。如果之前就是在VS
+Code进行远程登录的，可能已经为你写好了。比如这样子。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host 49.232.253.230</span><br><span class="line">    HostName 49.232.253.230</span><br><span class="line">    User ubuntu</span><br><span class="line">    IdentityFile C:\Users\Allen_Sunboy\.ssh\id_rsa</span><br></pre></td></tr></table></figure>
-
 <p>对于Git代码管理平台，在设置里可以直接添加公钥。而配置文件可以不用添加相关信息，除非是之后要说的，管理多个不同邮箱账户的情形。</p>
 <p>可以用以下命令，查看是否添加成功。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T user@hostname</span><br></pre></td></tr></table></figure>
-
 <p>如果成功，会输出提示信息。</p>
 <p>对于代码托管平台，比如GitHub的就是<code>git@github.com</code>。输出大致如下。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hi Allen-Sunboy! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
-
-<h1 id="SSH-配置文件"><a href="#SSH-配置文件" class="headerlink" title="SSH 配置文件"></a>SSH 配置文件</h1><p><a href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/config</a></p>
+<h1 id="ssh-配置文件">SSH 配置文件</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/config</a></p>
 <p>通过 SSH 配置文件，可以方便地管理 SSH 远程，管理多个密钥的使用。</p>
 <p>首先要明确，什么情况下才需要用到多个密钥。显然，将密钥添加到自己在代码平台的账户后，这个账户的所有仓库的远程推送均只需要用到这个密钥即可。此外，如果在不同的代码管理平台的账户用的是同一个邮箱，比如如果自己在GitHub和Gitee的账户的邮箱都是这个，那么同样可以共用一个SSH密钥即可。</p>
-<p>真正需要用到多个密钥的，一般就是仓库所在地址的账户邮箱不同。以GitHub为例，同一个SSH密钥不能添加到多个GitHub账户，这也是显然的，不同的GitHub账户的邮箱肯定不同。比如我在GitHub有两个账户，分别用不同的邮箱注册的，一个是当前的这个号，即<a href="https://github.com/Allen-Sunboy">Allen-Sunboy</a>，另一个是<a href="https://github.com/jihaitangguo">jihaitangguo</a>，作为小号使用，两个号在本地都分别有这些账户下的仓库，比如博客仓库，或者说，我在本地有不同的仓库分别推送到这些不同的账号。那么，我就会面临如何在本地管理多个SSH密钥的问题。</p>
+<p>真正需要用到多个密钥的，一般就是仓库所在地址的账户邮箱不同。以GitHub为例，同一个SSH密钥不能添加到多个GitHub账户，这也是显然的，不同的GitHub账户的邮箱肯定不同。比如我在GitHub有两个账户，分别用不同的邮箱注册的，一个是当前的这个号，即<a
+href="https://github.com/Allen-Sunboy">Allen-Sunboy</a>，另一个是<a
+href="https://github.com/jihaitangguo">jihaitangguo</a>，作为小号使用，两个号在本地都分别有这些账户下的仓库，比如博客仓库，或者说，我在本地有不同的仓库分别推送到这些不同的账号。那么，我就会面临如何在本地管理多个SSH密钥的问题。</p>
 <p>首先是分别生成这两个SSH密钥。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;yangnan_sunboy@163.com&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;jihaitangguo@163.com&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>如果不去修改密钥文件名，那么新生成的SSH密钥会覆盖掉旧的。可以在生成密钥的过程进行配置，也可直接修改文件名即可。公钥和私钥的名字都得修改，保持一致。建议将常用的保持默认，将另一个进行修改即可。比如我把另一个的文件名修改为了<code>id_rsa_jihaitangguo</code>。</p>
 <p>然后，将这两个密钥分别添加到所在的GitHub账户。</p>
 <p>在SSH配置文件中，添加内容如下。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User Allen-Sunboy</span><br><span class="line">    IdentityFile C:\Users\Allen_Sunboy\.ssh\id_rsa</span><br><span class="line"></span><br><span class="line">Host jihaitangguo.github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User jihaitangguo</span><br><span class="line">    IdentityFile C:\Users\Allen_Sunboy\.ssh\id_rsa_jihaitangguo</span><br></pre></td></tr></table></figure>
-
 <p>这里，<code>Host</code>的名字可以自定，但是考虑到之后使用SSH操作的时候的方便，一般把常用的仍命名为<code>github.com</code>，把另一个的进行一些修改。这样的好处是，留有一个仍然保持常用的，以后在其他可能要用到SSH地址的<code>git</code>命令时，不至于出问题。</p>
 <p>比如，上述配置之后，我这个号的博客的GitHub仓库的SSH地址，仍然不变。比如：<code>git@github.com:Allen-Sunboy/Allen-Sunboy.github.io.git</code></p>
 <p>而小号jihaitangguo的则变为了：<code>git@jihaitangguo.github.com:jihaitangguo/jihaitangguo.github.io.git</code></p>
@@ -276,82 +355,156 @@
 ]]></content>
   </entry>
   <entry>
-    <title>VS Code没有默认开启Auto Guess Encoding，是它的一个大错误</title>
-    <url>/vscode-encode/</url>
-    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为UTF-8，或者说一般要设置为UTF-8，这样才不会乱，当面对各种语言的时候。VS Code当然也是如此，对于文本文件的默认打开和保存方式都是UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
-<p>然而在Visual Studio编写的代码文件，默认是GBK或者说GB2312来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于masm32编程，涉及中文字符串的时候，还真得只能用GB2312编码，没法用UTF-8编码。</p>
-<p>很多时候我需要用VS Code打开Visual Studio项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以UTF-8打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用UTF-8打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
-<p>后来上网查才发现VS Code可以在设置里勾选Auto Guess Encoding选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+    <title>关于TLD</title>
+    <url>/tld/</url>
+    <content><![CDATA[<h1 id="icann">ICANN</h1>
+<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
+<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
+<p>上面这个是ICANN wiki，可以查各个TLD的信息。</p>
+<h1 id="cctld">ccTLD</h1>
+<p><a
+href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
+<p>这个是ISO 3166标准。</p>
+<h1 id="iana">IANA</h1>
+<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
+<p><a
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+<p>可以查看root zone，查看根域名。</p>
+<h1 id="ngtld">ngTLD</h1>
+<p><a
+href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
+<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
+<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
+<p>上面的是各nTLD的数据信息。没事的话可以查查，有些很有意思的域名。</p>
+<h1 id="xyz">xyz</h1>
+<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
+<p>看看xyz的官网（笑）。</p>
+<p>实际上xyz除了xyz这个域名之外，他们还搞了别的域名，不多说。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VMware Ubuntu使用代理</title>
+    <url>/vmware-ubuntu-proxy/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>此处感谢舍友<a
+href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
+<h1 id="操作方法">操作方法</h1>
+<p>打开VMware Workstation
+Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
+<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
+<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
+<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
 ]]></content>
   </entry>
   <entry>
     <title>使用VS Code内置的ClangFormat格式化C/C++代码</title>
     <url>/vscode-clang-format/</url>
-    <content><![CDATA[<p>众所周知，在VS Code很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于C&#x2F;C++同样如此。</p>
-<p>以下是官方文档中，关于在VS Code用clang-format来格式化C++的内容，不多说。</p>
-<p><a href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+    <content><![CDATA[<p>众所周知，在VS
+Code很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于C/C++同样如此。</p>
+<p>以下是官方文档中，关于在VS
+Code用clang-format来格式化C++的内容，不多说。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
 <p>以下是LLVM官网相关资料。</p>
-<p><a href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
 <p>常用的配置选项。</p>
-<p><a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
 <p>个人的习惯是，使用以LLVM的风格为基础。</p>
 <figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-
 <p>第2行是把缩进改为4格（LLVM默认是2格），如果不需要，那么只要写第1行就可以。如果把缩进改为4格，那么类的访问修饰符偏移也得改，就是第3行的内容，改为-4或者0，根据自己需要。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code没有默认开启Auto Guess Encoding，是它的一个大错误</title>
+    <url>/vscode-encode/</url>
+    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为UTF-8，或者说一般要设置为UTF-8，这样才不会乱，当面对各种语言的时候。VS
+Code当然也是如此，对于文本文件的默认打开和保存方式都是UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在Visual
+Studio编写的代码文件，默认是GBK或者说GB2312来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于masm32编程，涉及中文字符串的时候，还真得只能用GB2312编码，没法用UTF-8编码。</p>
+<p>很多时候我需要用VS Code打开Visual
+Studio项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code
+都是默认以UTF-8打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用UTF-8打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
+<p>后来上网查才发现VS Code可以在设置里勾选Auto Guess
+Encoding选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
 ]]></content>
   </entry>
   <entry>
     <title>VS Code的配置文件</title>
     <url>/vscode-json/</url>
-    <content><![CDATA[<h1 id="tasks-json"><a href="#tasks-json" class="headerlink" title="tasks.json"></a>tasks.json</h1><p><a href="https://code.visualstudio.com/docs/editor/tasks">https://code.visualstudio.com/docs/editor/tasks</a></p>
+    <content><![CDATA[<h1 id="tasks.json">tasks.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/editor/tasks">https://code.visualstudio.com/docs/editor/tasks</a></p>
 <p>一个常用的应用场景是用MinGW来编译C++程序。</p>
-<p><a href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></p>
 <p>官方文档中给出了快捷生成配置模板的方式，让VS Code帮你写好一个。</p>
-<p><a href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></p>
+<p><a
+href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></p>
 <p>任务中，至少要有一个标注为<code>build</code>种类的任务。具体做法，就是像上面文件那样，设置<code>group</code>属性。这样，配置完任务后，如果要运行任务，则在菜单栏“终端”选择“运行任务”，选择特定的任务。或者直接选择“运行生成任务”，就是直接运行<code>build</code>种类的任务。</p>
 <p>对于需要先后执行多个任务的场景，一般的做法是，如果执行任务A之前需要先执行任务B，那么在任务A里设置<code>dependsOn</code>属性，其值为数组，数组中的元素就是依赖的任务名字，即相应的<code>label</code>值。如果依赖的任务本身还有其要依赖的任务，那么类似地去填写那个任务的<code>dependsOn</code>属性，以此类推即可。</p>
-<h1 id="launch-json"><a href="#launch-json" class="headerlink" title="launch.json"></a>launch.json</h1><p><a href="https://code.visualstudio.com/docs/editor/debugging">https://code.visualstudio.com/docs/editor/debugging</a></p>
+<h1 id="launch.json">launch.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/editor/debugging">https://code.visualstudio.com/docs/editor/debugging</a></p>
 <p>在<code>launch.json</code>文件的右下角，有“添加配置”按钮，可以根据需要来选择配置。</p>
-<p>以C++程序调试为例，点击右下角“添加配置”按钮，选择C&#x2F;C++: (gdb) 启动，就会添加一个配置。</p>
+<p>以C++程序调试为例，点击右下角“添加配置”按钮，选择C/C++: (gdb)
+启动，就会添加一个配置。</p>
 <p>需要修改的参数大致如下。</p>
 <p><code>program</code>表示要调试的程序，其值为程序的绝对路径。这里一般是改为<code>$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe</code>。</p>
 <p><code>miDebuggerPath</code>修改为自己gdb.exe的绝对路径，比如我的是<code>D:\\mingw64\\bin\\gdb.exe</code>。</p>
 <p>此外，一般需要添加<code>preLaunchTask</code>属性，用于在执行任务之后再进行调试，其值即为tasks.json中相应的任务名称。比如，这里的例子中，就是<code>C/C++: g++.exe 生成活动文件</code>。</p>
-<h1 id="settings-json"><a href="#settings-json" class="headerlink" title="settings.json"></a>settings.json</h1><p><a href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
+<h1 id="settings.json">settings.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
 <p>如上所说，包括两种设置，一种是用户设置，一种是工作区设置。前者是全局的，后者只针对当前工作区。</p>
-<p><a href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
-<p>这里说了，<code>settings.json</code>里的设置，和VS Code里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
+<p><a
+href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
+<p>这里说了，<code>settings.json</code>里的设置，和VS
+Code里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于微软Windows系统字体及误区</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>先给出微软官方的相关资料。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
+<p>Windows系统自带的字体介绍基本都在这里面了。</p>
+<h1 id="误区">误区</h1>
+<p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在Windows最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫SimSun，SimHei。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
+<p>楷体是KaiTi，仿宋是FangSong，等等，这些也都是中易公司的。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
+<p>可以看看知乎的这些问题。</p>
+<p><a
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
+<p><a
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>使用winget upgrade/update时需要注意的问题</title>
     <url>/winget-upgrade/</url>
     <content><![CDATA[<p>关于WinGet，如果不清楚的可以看看微软官方的介绍。</p>
-<p><a href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
 <p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
 <p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些bug的。</p>
 <p>winget他这个升级的原理是，从官方源里面下载最新的安装包（一般是msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek uninstaller来卸载。。。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek
+uninstaller来卸载。。。</p>
 <p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在C盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个GB的事情，大不了给C盘扩容。安装在C盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于微软Windows系统字体及误区</title>
-    <url>/windows-font/</url>
-    <content><![CDATA[<h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>先给出微软官方的相关资料。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
-<p>Windows系统自带的字体介绍基本都在这里面了。</p>
-<h1 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h1><p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在Windows最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫SimSun，SimHei。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
-<p><a href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
-<p>楷体是KaiTi，仿宋是FangSong，等等，这些也都是中易公司的。</p>
-<p><a href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
-<p><a href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
-<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
-<p>可以看看知乎的这些问题。</p>
-<p><a href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
-<p><a href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
 </search>
