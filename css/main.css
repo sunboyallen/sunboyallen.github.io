@@ -2552,6 +2552,9 @@ ul.breadcrumb li:last-child {
     color: #eee;
   }
 }
+.utterances {
+  max-width: unset;
+}
 .search-active {
   overflow: hidden;
 }
@@ -3004,10 +3007,6 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
-}
-.giscus {
-  max-width: unset;
-  box-sizing: border-box;
 }
 body {
   background-image: url("https://pic.imgdb.cn/item/65add45a871b83018acc65c7.jpg");
