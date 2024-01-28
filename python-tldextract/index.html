@@ -19,12 +19,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"allen-sunboy.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="应当早点发现tldextract的。。使用这个库能精确获取网址的public suffix，即eTLD。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Python的tldextract库来解析url，真是个好东西">
-<meta property="og:url" content="http://example.com/python-tldextract/index.html">
+<meta property="og:url" content="https://allen-sunboy.github.io/python-tldextract/index.html">
 <meta property="og:site_name" content="玄晖Allen">
 <meta property="og:description" content="应当早点发现tldextract的。。使用这个库能精确获取网址的public suffix，即eTLD。">
 <meta property="og:locale" content="zh_CN">
@@ -34,11 +34,11 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/python-tldextract/">
+<link rel="canonical" href="https://allen-sunboy.github.io/python-tldextract/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/python-tldextract/","path":"python-tldextract/","title":"用Python的tldextract库来解析url，真是个好东西"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://allen-sunboy.github.io/python-tldextract/","path":"python-tldextract/","title":"用Python的tldextract库来解析url，真是个好东西"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>用Python的tldextract库来解析url，真是个好东西 | 玄晖Allen</title>
@@ -201,7 +201,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/python-tldextract/">
+    <link itemprop="mainEntityOfPage" href="https://allen-sunboy.github.io/python-tldextract/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -264,7 +264,7 @@ target="_blank" rel="noopener" href="https://pypi.org/project/tldextract/">https
 suffix）<code>suffix</code>，也就是eTLD（effective
 TLD，有效顶级域）。</p>
 <p>相比于我们一般认识的TLD（顶级域），我认为更重要和更有用的是eTLD的概念。有兴趣可以看看我<a
-target="_blank" rel="noopener" href="https://allen-sunboy.github.io/tld">另一篇文章</a>。</p>
+href="https://allen-sunboy.github.io/tld">另一篇文章</a>。</p>
 <h1 id="网址排序">网址排序</h1>
 <p>有了tldextract，我就可以方便地对网址进行排序了。</p>
 <p>我认为网址排序是一个值得讨论的事情。对url的排序，首先，显然不是纯粹根据url字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住TLD之类的。</p>
@@ -335,7 +335,12 @@ suffix的列表，甚至还想着自己通过读取这个列表来实现一个�
 
 
 
-    <div class="comments gitalk-container"></div>
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
 </div>
   </main>
 
@@ -410,10 +415,33 @@ suffix的列表，甚至还想着自己通过读取这个列表来实现一个�
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"Allen-Sunboy/BLOG_COMMENTS","repo_id":"R_kgDOKp7BSw","category":"Announcements","category_id":"DIC_kwDOKp7BS84CcvuV","mapping":"pathname","reactions_enabled":1,"emit_metadata":1,"theme":"preferred_color_scheme","lang":"zh-CN","crossorigin":"anonymous","input_position":"bottom","loading":"lazy"}</script>
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Allen-Sunboy","repo":"BLOG_COMMENTS","client_id":"82ffcece7fee18f931a9","client_secret":"3359cb29fa75f12b7aaa3ab63e221f24cfc4146c","admin_user":"Allen-Sunboy","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"724e4fb1adde6db06c56ec2d022b124d"}</script>
-<script src="/js/third-party/comments/gitalk.js"></script>
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
 
 </body>
 </html>

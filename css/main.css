@@ -2552,19 +2552,6 @@ ul.breadcrumb li:last-child {
     color: #eee;
   }
 }
-.gt-header a,
-.gt-comments a,
-.gt-popup a {
-  border-bottom: 0;
-}
-.gt-container .gt-popup .gt-action.is--active::before {
-  top: 0.7em;
-}
-@media (prefers-color-scheme: dark) {
-  .gt-container .gt-header-textarea {
-    background-color: var(--card-bg-color) !important;
-  }
-}
 .search-active {
   overflow: hidden;
 }
@@ -3017,6 +3004,10 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+.giscus {
+  max-width: unset;
+  box-sizing: border-box;
 }
 body {
   background-image: url("https://pic.imgdb.cn/item/65add45a871b83018acc65c7.jpg");
