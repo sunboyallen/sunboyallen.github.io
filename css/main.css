@@ -3005,10 +3005,6 @@ header.header {
     padding: 10px 12px;
   }
 }
-.giscus {
-  max-width: unset;
-  box-sizing: border-box;
-}
 body {
   background-image: url("https://pic.imgdb.cn/item/65add45a871b83018acc65c7.jpg");
   background-repeat: no-repeat;
