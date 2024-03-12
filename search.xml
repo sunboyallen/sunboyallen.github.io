@@ -16,87 +16,6 @@ p &amp;= \frac{h}{\lambda} \\
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo主题NexT配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于GitHub仓库克隆和npm安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于Hexo搭建。那里有具体说明。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题Scheme，一共有四种主题可选。主题可以设置为深色模式Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像avatar相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在markdown文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块CodeBlock的设置，比如是否有复制按钮copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown的行内公式要求，两侧的$符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于GitHub的issues，我试了其中的一些，比较推荐Utterances。</p>
-<p>而Gitalk在使用的安全性和配置的便利性来说不如Utterances，而且Utterances还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的issues，如果issues有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<p>除了这些之外，还有Giscus，他则是基于GitHub的discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
-<p><a
-href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
-<p><a
-href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
-<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子Busuanzi即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-position</span>: center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为1即不透明。</p>
-<p>图片放在source文件夹里的images文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo搭建博客踩坑记录</title>
     <url>/hexo-build/</url>
     <content><![CDATA[<h1 id="概述">概述</h1>
@@ -184,6 +103,87 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
+    <title>Hexo主题NexT配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于GitHub仓库克隆和npm安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于Hexo搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题Scheme，一共有四种主题可选。主题可以设置为深色模式Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像avatar相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在markdown文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块CodeBlock的设置，比如是否有复制按钮copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown的行内公式要求，两侧的$符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于GitHub的issues，我试了其中的一些，比较推荐Utterances。</p>
+<p>而Gitalk在使用的安全性和配置的便利性来说不如Utterances，而且Utterances还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的issues，如果issues有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>除了这些之外，还有Giscus，他则是基于GitHub的discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
+<p><a
+href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
+<p><a
+href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
+<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子Busuanzi即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-position</span>: center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为1即不透明。</p>
+<p>图片放在source文件夹里的images文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于PowerShell 7</title>
     <url>/powershell/</url>
     <content><![CDATA[<h1 id="简介">简介</h1>
@@ -226,30 +226,6 @@ href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://
 <p><a
 href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
 <p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>用Python的tldextract库来解析url，真是个好东西</title>
-    <url>/python-tldextract/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p><a
-href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
-<p>如官方文档所说，用tldextract能够精确地获取到url的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
-suffix）<code>suffix</code>，也就是eTLD（effective
-TLD，有效顶级域）。</p>
-<p>相比于我们一般认识的TLD（顶级域），我认为更重要和更有用的是eTLD的概念。有兴趣可以看看我<a
-href="https://allen-sunboy.github.io/tld">另一篇文章</a>。</p>
-<h1 id="网址排序">网址排序</h1>
-<p>有了tldextract，我就可以方便地对网址进行排序了。</p>
-<p>我认为网址排序是一个值得讨论的事情。对url的排序，首先，显然不是纯粹根据url字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住TLD之类的。</p>
-<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
-<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
-<p>我习惯在文本文件里存网址，我用逐行存储的方式，存了一些网址在<code>urls.md</code>里，在我GitHub的用户名仓库中，有兴趣的可以查看。</p>
-<p>我认为不应当在浏览器的收藏夹里放这么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢。以前我就是在Edge浏览器收藏几百个网址的，Edge的同步功能做得倒是很不错。但是我收藏那么多网址确实没啥用。。。不如直接放进文本文件里，有需要再在文件中搜索就是了，同步也方便，丢GitHub里就够了。</p>
-<p>使用tldextract，我就可以对<code>urls.md</code>的网址进行排序。由于tldextract本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
-<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sorts URLs in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    urls_sort(<span class="string">&#x27;urls.md&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>最后再说点吐槽。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了eTLD，找到了phblic
-suffix的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
 ]]></content>
   </entry>
   <entry>
@@ -316,6 +292,30 @@ href="https://github.com/jihaitangguo">jihaitangguo</a>，作为小号使用，�
 ]]></content>
   </entry>
   <entry>
+    <title>用Python的tldextract库来解析url，真是个好东西</title>
+    <url>/python-tldextract/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
+<p>如官方文档所说，用tldextract能够精确地获取到url的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
+suffix）<code>suffix</code>，也就是eTLD（effective
+TLD，有效顶级域）。</p>
+<p>相比于我们一般认识的TLD（顶级域），我认为更重要和更有用的是eTLD的概念。有兴趣可以看看我<a
+href="/tld.html">另一篇文章</a>。</p>
+<h1 id="网址排序">网址排序</h1>
+<p>有了tldextract，我就可以方便地对网址进行排序了。</p>
+<p>我认为网址排序是一个值得讨论的事情。对url的排序，首先，显然不是纯粹根据url字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住TLD之类的。</p>
+<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
+<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
+<p>我习惯在文本文件里存网址，我用逐行存储的方式，存了一些网址在<code>urls.md</code>里，在我GitHub的用户名仓库中，有兴趣的可以查看。</p>
+<p>我认为不应当在浏览器的收藏夹里放这么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢。以前我就是在Edge浏览器收藏几百个网址的，Edge的同步功能做得倒是很不错。但是我收藏那么多网址确实没啥用。。。不如直接放进文本文件里，有需要再在文件中搜索就是了，同步也方便，丢GitHub里就够了。</p>
+<p>使用tldextract，我就可以对<code>urls.md</code>的网址进行排序。由于tldextract本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
+<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sorts URLs in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    urls_sort(<span class="string">&#x27;urls.md&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>最后再说点吐槽。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了eTLD，找到了phblic
+suffix的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于TLD</title>
     <url>/tld/</url>
     <content><![CDATA[<h1 id="icann">ICANN</h1>
@@ -365,6 +365,12 @@ Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选�
 <p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
 <p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
 <p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>vs-gflags</title>
+    <url>/vs-gflags/</url>
+    <content><![CDATA[
 ]]></content>
   </entry>
   <entry>
@@ -422,6 +428,13 @@ href="https://eigen.tuxfamily.org/">https://eigen.tuxfamily.org/</a></p>
 href="https://gitlab.com/libeigen/eigen">https://gitlab.com/libeigen/eigen</a></p>
 <p>在release里下载，解压完根目录就是。</p>
 <p>同样的这个CMake之后也没有lib，直接用include就行了。</p>
+<h2 id="gflags">gflags</h2>
+<p><a
+href="https://gflags.github.io/gflags/">https://gflags.github.io/gflags/</a></p>
+<p><a
+href="https://github.com/gflags/gflags">https://github.com/gflags/gflags</a></p>
+<p>直接克隆，根目录就是。但是这个库配置过程有些个曲折，我专门写一篇来讲，可以看<a
+href="vs-gflags.html">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
