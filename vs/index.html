@@ -29,7 +29,7 @@
 <meta property="og:description" content="给个暴论，特别是那种要用第三方外部库的，非Visual Studio不可，另外搭配CMake食用更好。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-11T16:03:27.000Z">
-<meta property="article:modified_time" content="2024-03-12T15:58:41.601Z">
+<meta property="article:modified_time" content="2024-03-12T16:21:31.765Z">
 <meta property="article:author" content="玄晖allen">
 <meta name="twitter:card" content="summary">
 
@@ -141,7 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vs-code%E7%9A%84%E4%B8%8D%E8%B6%B3"><span class="nav-number">1.</span> <span class="nav-text">VS Code的不足</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cmake"><span class="nav-number">2.</span> <span class="nav-text">CMake</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#visual-studio"><span class="nav-number">3.</span> <span class="nav-text">Visual Studio</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#opencv"><span class="nav-number">3.1.</span> <span class="nav-text">OpenCV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lz4"><span class="nav-number">3.2.</span> <span class="nav-text">LZ4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zlib"><span class="nav-number">3.3.</span> <span class="nav-text">zlib</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nlohmann-json-for-modern-c"><span class="nav-number">3.4.</span> <span class="nav-text">nlohmann JSON for Modern C++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tinyxml2"><span class="nav-number">3.5.</span> <span class="nav-text">TinyXML2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eigen"><span class="nav-number">3.6.</span> <span class="nav-text">Eigen</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gflags"><span class="nav-number">3.7.</span> <span class="nav-text">gflags</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4"><span class="nav-number">1.</span> <span class="nav-text">写在开头</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cmake"><span class="nav-number">2.</span> <span class="nav-text">CMake</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#visual-studio"><span class="nav-number">3.</span> <span class="nav-text">Visual Studio</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#opencv"><span class="nav-number">3.1.</span> <span class="nav-text">OpenCV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lz4"><span class="nav-number">3.2.</span> <span class="nav-text">LZ4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zlib"><span class="nav-number">3.3.</span> <span class="nav-text">zlib</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nlohmann-json-for-modern-c"><span class="nav-number">3.4.</span> <span class="nav-text">nlohmann JSON for Modern C++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tinyxml2"><span class="nav-number">3.5.</span> <span class="nav-text">TinyXML2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eigen"><span class="nav-number">3.6.</span> <span class="nav-text">Eigen</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gflags"><span class="nav-number">3.7.</span> <span class="nav-text">gflags</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -226,9 +226,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2024-03-12 00:03:27 / 修改时间：23:58:41" itemprop="dateCreated datePublished" datetime="2024-03-12T00:03:27+08:00">2024-03-12</time>
+      <time title="创建时间：2024-03-12 00:03:27" itemprop="dateCreated datePublished" datetime="2024-03-12T00:03:27+08:00">2024-03-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-03-13 00:21:31" itemprop="dateModified" datetime="2024-03-13T00:21:31+08:00">2024-03-13</time>
     </span>
 
   
@@ -248,25 +254,40 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="vs-code的不足">VS Code的不足</h1>
-<p>我之前曾写过一篇博客关于“如何在VS
-Code给C++添加OpenCV库”，以及遗留的问题，主要是依然没做到静态编译，也就是exe没法单独跑，得加各种dll文件。以前一直嫌弃VS笨重，然而当我最终还是在VS上配置并且实现了静态编译之后，我就把那篇博客删掉了，没必要了。</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="写在开头">写在开头</h1>
+<p>我之前在博客曾写过一篇文章，关于“如何在VS
+Code给C++添加OpenCV库”，以及遗留的问题，主要是依然没做到静态编译，也就是exe没法单独跑，得加各种dll文件。以前一直嫌弃VS笨重，然而当我最终还是在VS上配置并且实现了静态编译之后，我就把那篇文章删掉了，没必要了。</p>
 <p>像这种项目级别的C++开发，特别是要用第三方库的，不用Visual
 Studio是没意义的。如果你只是想在<strong>自己</strong>的电脑上简单玩玩OpenCV，随便搞搞图片，那其实VS
-Code也够用。CMake先编译，配完加环境变量，跑还是能跑的，无非是如果exe单独跑的话还得加各种杂七杂八的dll动态库文件。但如果是项目级的，这样显然是不够的，如果需要exe能单独跑呢，之前那样搞，放到别人家电脑里，指不定对方还缺少什么dll呢，这也暴露了VS
+Code也够用：CMake先编译，配完加环境变量，跑还是能跑的，无非是如果exe单独跑的话还得加各种杂七杂八的dll动态库文件。但如果是项目级的，这样显然是不够的，如果需要exe能单独跑呢，之前那样搞，放到别人家电脑里，指不定对方还缺少什么dll呢，这也暴露了VS
 Code在面对C++第三方库的时候一直难以解决的静态编译问题。或许有些第三方库在VS
 Code的环境下有些奇技淫巧（没有贬低的意思），但显然不是通用的方法。</p>
 <h1 id="cmake">CMake</h1>
 <p>好就好在现在的第三方库的编译基本都有提供CMake的方式。使用cmake-gui，将<code>CMakelists.txt</code>文件所在的文件夹作为source
-code，当然直接把这个txt拖进去更方便。关键是Configure的时候要搭配Visual
-Studio，选择编译器时，选择自己电脑相应的VS的版本，生成之后点击Open
-Project，就会自动打开VS，然后在里面install生成了。这里的建议是，以管理员身份运行VS，否则可能生成失败。所以可以关闭VS然后重新打开。</p>
-<p>当然这里有些第三方库会好心地给你提供<strong>直接</strong>在Visual
-Studio打开进行编译生成的方式，不过我依然不建议用这种方式，还是按照之前的，通用的方式。我试过了，之后在Visual
-Studio用于编译自己写的C++代码的时候会出问题。包括他们提供好的现成的编译好的带有lib库之类的，也不一定好用，还是自行在VS里生成比较好。</p>
+code，当然直接把这个txt拖进去更方便。然后Configure，Generate，Open
+Project，生成，一路下来。</p>
+<p>我把需要注意的点罗列在下面。</p>
+<ul>
+<li>build的目录往往需要自己选择使用目录下的<code>build</code>文件夹。</li>
+<li>Configure选择编译器的时候，选择Visual
+Studio提供的编译器，选自己电脑相应的版本。</li>
+<li>编译选项的勾选，对于有静态编译的需求的，记得勾选<code>static</code>相关选项，或者是不勾选<code>shared</code>相关选项。对于项目级的开发，需要把项目push到远程git的，慎重选择“整合包”选项，虽说有些第三方库比如opencv勾选后生成的lib文件会少一些，但意味着文件大小变得更大了，git不一定能支持，比如100MB以上的时候。这里综合考虑实际需求和使用的方便程度。</li>
+<li>在Visual
+Studio里生成的时候，注意选择好上面的Release/Debug，x86/x64，并且与后面自己的项目的选择相一致。</li>
+</ul>
+<p>再补充一下，有些第三方库会好心地给你提供<strong>直接</strong>在Visual
+Studio打开进行编译生成的入口，也就是现成的sln文件，不过我依然不建议用这种方式，还是按照之前的，自己CMake一次。我试过了，之后在Visual
+Studio用于编译自己写的C++代码的时候，会出问题。包括他们提供现成的编译好的带有lib库之类的，也不一定好用。</p>
 <h1 id="visual-studio">Visual Studio</h1>
-<p>之后的操作就很常规了，项目属性一通配置，网上一找一大把，我看基本够用了，不多说。我只是自己补充一些。比如，项目级开发我是比较推荐把第三方库直接<strong>拷贝一份</strong>在项目目录里的，项目属性引入外部库，链接之类的，也直接用相对路径，比如<code>$(ProjectDir)lib</code>之类的写法，这样跨端开发能省去很多重复的操作。</p>
-<p>我自己试过了不少第三方库了，清一色基本是通用的操作流程：CMake编译，VS生成，VS项目配置。我简单列出一些。</p>
+<p>之后的操作就很常规了，项目属性一通配置，网上一找一大把，我看基本够用了，我就不多说，只是自己补充一些。</p>
+<ul>
+<li>项目级的开发，我是比较推荐把第三方库直接<strong>拷贝一份</strong>在项目目录里的。这样，项目属性引入外部库，附加依赖项之类的，也直接用相对路径，比如<code>$(ProjectDir)lib</code>之类的写法，这样跨端开发能省去很多重复的操作。</li>
+<li>注意C/C++ -&gt; 代码生成 -&gt;
+运行库，选择相匹配的<code>/MT</code>，<code>/MTd</code>，<code>/MD</code>，<code>/MDd</code>，根据实际需求，静态动态，是Debug还是Release决定。</li>
+</ul>
+<p>这样一来，一个通用的，傻瓜式的流程就非常明确了，几乎适用于要用到任何第三方库的C++项目：</p>
+<p>获取源代码 -&gt; CMake编译 -&gt; VS生成 -&gt; VS项目配置</p>
+<p>我自己试过了不少第三方库了，清一色基本是这个流程。有些库甚至不需要自己CMake生成，直接是头文件引用，那么配置就更方便了。我简单列出一些。</p>
 <h2 id="opencv">OpenCV</h2>
 <p><a target="_blank" rel="noopener" href="https://opencv.org/">https://opencv.org/</a></p>
 <p><a
@@ -287,7 +308,7 @@ target="_blank" rel="noopener" href="https://github.com/madler/zlib">https://git
 <p><a target="_blank" rel="noopener" href="https://json.nlohmann.me/">https://json.nlohmann.me/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/nlohmann/json">https://github.com/nlohmann/json</a></p>
-<p>这个算是广义的第三方库，毕竟他主要还是基于C++标准库里的数据结构。虽说clone下来里面也有CMake，不过这里倒不是必须的，或者说不用，主要是用里面的<code>include</code>或者<code>single_include</code>文件夹（后者里面就一个<code>nlohmann/json.hpp</code>），添加到项目目录里就行了，不需要添加链接。</p>
+<p>克隆下来，主要是用里面的<code>include</code>或者<code>single_include</code>文件夹（后者里面就一个<code>nlohmann/json.hpp</code>），添加到项目目录里就行了，不需要去CMake之类。</p>
 <h2 id="tinyxml2">TinyXML2</h2>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/leethomason/tinyxml2">https://github.com/leethomason/tinyxml2</a></p>
@@ -342,8 +363,8 @@ href="/vs-gflags">这篇</a>。</p>
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/vs-gflags/" rel="next" title="vs-gflags">
-                  vs-gflags <i class="fa fa-angle-right"></i>
+                <a href="/vs-gflags/" rel="next" title="在Visual Studio中使用gflags库">
+                  在Visual Studio中使用gflags库 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
