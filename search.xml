@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>沃玛warma在hack.chat的聊天室（迫真）</title>
-    <url>/hackchat-warma/</url>
-    <content><![CDATA[<p>简单来说就是这个：<a
-href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
-<p>我记得是在2020年疫情的时候看沃玛以前的视频时看到的，应该是沃玛最早在微博里发的，然后就有不少人进这个聊天室。</p>
-<p>按这位沃玛粉丝的<a
-href="https://www.bilibili.com/video/BV14m411X7MG">这个视频</a>来说，是2019年3月8日发的微博。现在沃玛微博设置为仅可见一年内的微博，原微博内容大概是没法找到了。</p>
-<p>我是在视频里看到沃玛说的这段经历的。不过我现在是找不到是哪个视频了，大概是那种看有趣网站的，但又不是<a
-href="https://www.bilibili.com/video/BV1P4411N7z2/">这个视频</a>，应该是类似的，但好像确实找不到了。如果以后有机会，我再找找吧。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>第一篇</title>
     <url>/first/</url>
     <content><![CDATA[<p>搭建博客的时间是2023年5月20日，也是一个特殊的日子。希望自己一切顺利。</p>
@@ -49,6 +37,18 @@ href="https://segmentfault.com/a/1190000012689376">如何清空一个 Git
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/main main</span><br></pre></td></tr></table></figure>
 <p>之前那篇以及ChatGPT的回答都没有具体说这最后的操作，当然无伤大雅，之后如果在分支进行拉取操作，Git
 Bash会有相应的提示的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>沃玛warma在hack.chat的聊天室（迫真）</title>
+    <url>/hackchat-warma/</url>
+    <content><![CDATA[<p>简单来说就是这个：<a
+href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
+<p>我记得是在2020年疫情的时候看沃玛以前的视频时看到的，应该是沃玛最早在微博里发的，然后就有不少人进这个聊天室。</p>
+<p>按这位沃玛粉丝的<a
+href="https://www.bilibili.com/video/BV14m411X7MG">这个视频</a>来说，是2019年3月8日发的微博。现在沃玛微博设置为仅可见一年内的微博，原微博内容大概是没法找到了。</p>
+<p>我是在视频里看到沃玛说的这段经历的。不过我现在是找不到是哪个视频了，大概是那种看有趣网站的，但又不是<a
+href="https://www.bilibili.com/video/BV1P4411N7z2/">这个视频</a>，应该是类似的，但好像确实找不到了。如果以后有机会，我再找找吧。</p>
 ]]></content>
   </entry>
   <entry>
@@ -139,83 +139,6 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
-    <title>書いた人（kaitahito）老师的语源资料</title>
-    <url>/kaitahito-gogen/</url>
-    <content><![CDATA[<p>直接把主页放这：<a
-href="http://kaitahito.world.coocan.jp/">http://kaitahito.world.coocan.jp/</a>，跟上一次类似，同样是在网上查找一些词的语源资料时看到的。</p>
-<p>在<a
-href="https://ameblo.jp/gogen3000/">ameblo</a>发文章。并且是恐怖的日更。从2018年11月开始到现在，每天一篇，几乎不曾间断。恐怖如斯，大佬就是大佬，这下捡到宝了（笑）</p>
-<p>在ameblo已经是恐怖的日更，而在人家主页的内容更多，可以说内容很广泛了，除了日语，还有汉语，中国史，英语相关。在主页可以点进去看<a
-href="http://kaitahito.world.coocan.jp/ongogen.html">音语源</a>，相当于语源词典，挺多词可以查。</p>
-<p>当然了日本语语源这种东西各家有各家的说法和解释，总之就是综合考虑和判断就是了。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>香取大志（ヒロシ）老师的语源考</title>
-    <url>/hiroshi-gogen/</url>
-    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
-<script src="/kanbun.js"></script>
-<div
-style="display: flex; justify-content: center; align-items: center;">
-<div id="sample" class="kanbun okurigana-sinking">
-<p>我思フ故ニ我在リ。</p>
-</div>
-</div>
-<script>convertKanbunDiv(document.getElementById("sample"));</script>
-<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客ameblo的<a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
-<p>目前一共38篇，上次更新是2021年了。老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是hiroshiness，ヒロシネス。在博客<a
-href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥CPE和CELTA证书。</p>
-<p>老师说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下PowerShell和Windows
-PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版Windows
-PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS
-Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p>管道Pipeline，用于处理多个命令之间的关系。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell
-7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器colorpicker">颜色选择器ColorPicker</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺screen-ruler">屏幕标尺Screen ruler</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么B机翻。。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hexo主题NexT配置</title>
     <url>/hexo-next/</url>
     <content><![CDATA[<h1 id="官方文档">官方文档</h1>
@@ -296,6 +219,84 @@ href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://the
 <figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">    <span class="attribute">background-position</span>: center;</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>相当于设置css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为1即不透明。</p>
 <p>图片放在source文件夹里的images文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>香取大志（ヒロシ）老师的语源考</title>
+    <url>/hiroshi-gogen/</url>
+    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
+<script src="/kanbun.js"></script>
+<div
+style="display: flex; justify-content: center; align-items: center;">
+<div id="sample" class="kanbun okurigana-sinking">
+<p>我思フ故ニ我在リ。</p>
+</div>
+</div>
+<script>convertKanbunDiv(document.getElementById("sample"));</script>
+<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客ameblo的<a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
+<p>目前一共38篇，上次更新是2021年了。老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是hiroshiness，ヒロシネス。在博客<a
+href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥CPE和CELTA证书。</p>
+<p>老师说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>書いた人（kaitahito）老师的语源资料</title>
+    <url>/kaitahito-gogen/</url>
+    <content><![CDATA[<p>直接把主页放这：<a
+href="http://kaitahito.world.coocan.jp/">http://kaitahito.world.coocan.jp/</a>，跟上一次类似，同样是在网上查找一些词的语源资料时看到的。</p>
+<p>在<a
+href="https://ameblo.jp/gogen3000/">ameblo</a>发文章。并且是恐怖的日更。从2018年11月开始到现在，每天一篇，几乎不曾间断。恐怖如斯，大佬就是大佬，这下捡到宝了（笑）</p>
+<p>在ameblo已经是恐怖的日更，而在人家主页的内容更多，可以说内容很广泛了，除了日语，还有汉语，中国史，英语相关。</p>
+<p>在主页可以点进去看<a
+href="http://kaitahito.world.coocan.jp/ongogen.html">音语源</a>，相当于语源词典，挺多词可以查。</p>
+<p>当然了日本语语源这种东西各家有各家的说法和解释，总之就是综合考虑和判断就是了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下PowerShell和Windows
+PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版Windows
+PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS
+Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p>管道Pipeline，用于处理多个命令之间的关系。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell
+7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PowerToys介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器colorpicker">颜色选择器ColorPicker</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺screen-ruler">屏幕标尺Screen ruler</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么B机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -383,37 +384,6 @@ href="https://linux.die.net/man/5/ssh_config">这个资料</a>。</p>
 <p>而小号jihaitangguo的则变为了：<code>git@github-jihaitangguo.com:jihaitangguo/jihaitangguo.github.io.git</code></p>
 <p>同样可以用以下命令进行测试，看看是否配置成功。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line">ssh -T git@github-jihaitangguo.com</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>在Visual Studio中使用gflags库</title>
-    <url>/vs-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己Visual Studio项目中成功配置过的一些第三方库，可以看<a
-href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了GPT，需要在gflags里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新CMake编译生成，VS里install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了GPT，需要自己在项目属性里，链接器
--&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的cpp代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">	google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">	std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>VMware Ubuntu使用代理</title>
-    <url>/vmware-ubuntu-proxy/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>此处感谢舍友<a
-href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
-<h1 id="操作方法">操作方法</h1>
-<p>打开VMware Workstation
-Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
-<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
-<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
-<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
 ]]></content>
   </entry>
   <entry>
@@ -555,6 +525,37 @@ href="/vs-gflags">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
+    <title>在Visual Studio中使用gflags库</title>
+    <url>/vs-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己Visual Studio项目中成功配置过的一些第三方库，可以看<a
+href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了GPT，需要在gflags里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新CMake编译生成，VS里install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了GPT，需要自己在项目属性里，链接器
+-&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的cpp代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">	google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">	std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>VMware Ubuntu使用代理</title>
+    <url>/vmware-ubuntu-proxy/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>此处感谢舍友<a
+href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
+<h1 id="操作方法">操作方法</h1>
+<p>打开VMware Workstation
+Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
+<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
+<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
+<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>VS Code没有默认开启Auto Guess Encoding，是它的一个大错误</title>
     <url>/vscode-encode/</url>
     <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为UTF-8，或者说一般要设置为UTF-8，这样才不会乱，当面对各种语言的时候。VS
@@ -630,6 +631,17 @@ href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19
 ]]></content>
   </entry>
   <entry>
+    <title>查看自己Windows电脑的产品密钥（备忘）</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答：<a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行cmd。不过好像正常使用PowerShell运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>使用winget upgrade/update时需要注意的问题</title>
     <url>/winget-upgrade/</url>
     <content><![CDATA[<p>关于WinGet，如果不清楚的可以看看微软官方的介绍。</p>
@@ -643,17 +655,6 @@ href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">
 <p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek
 uninstaller来卸载。。。</p>
 <p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在C盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个GB的事情，大不了给C盘扩容。安装在C盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>查看自己Windows电脑的产品密钥（备忘）</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答：<a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行cmd。不过好像正常使用PowerShell运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
