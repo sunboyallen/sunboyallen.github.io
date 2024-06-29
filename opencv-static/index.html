@@ -21,23 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sunboyallen.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="玄晖allen">
-<meta property="og:url" content="https://sunboyallen.github.io/archives/2024/01/index.html">
+    <meta name="description" content="省流：闲来无事（大嘘），fork了OpenCV官方的仓库，打包了编译好的各种类型的静态库放在了release里，供有需要的下载使用。 https:&#x2F;&#x2F;github.com&#x2F;sunboyallen&#x2F;opencv&#x2F;releases 还是那句话，使用Python显然是更方便的选择，或者使用Linux写C++。用C++调用OpenCV，并且还是在Windows里，简直buff叠满了（笑）。 虽说现在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编译了些OpenCV的静态库用于Visual Studio的C++项目使用">
+<meta property="og:url" content="https://sunboyallen.github.io/opencv-static/index.html">
 <meta property="og:site_name" content="玄晖allen">
+<meta property="og:description" content="省流：闲来无事（大嘘），fork了OpenCV官方的仓库，打包了编译好的各种类型的静态库放在了release里，供有需要的下载使用。 https:&#x2F;&#x2F;github.com&#x2F;sunboyallen&#x2F;opencv&#x2F;releases 还是那句话，使用Python显然是更方便的选择，或者使用Linux写C++。用C++调用OpenCV，并且还是在Windows里，简直buff叠满了（笑）。 虽说现在">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-29T14:07:10.000Z">
+<meta property="article:modified_time" content="2024-06-29T14:32:32.759Z">
 <meta property="article:author" content="玄晖allen">
+<meta property="article:tag" content="如题，虽然现在这种需求应该不会很多了吧（笑）">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://sunboyallen.github.io/archives/2024/01/">
+<link rel="canonical" href="https://sunboyallen.github.io/opencv-static/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2024/01/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/opencv-static/","path":"opencv-static/","title":"编译了些OpenCV的静态库用于Visual Studio的C++项目使用"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | 玄晖allen</title>
+<title>编译了些OpenCV的静态库用于Visual Studio的C++项目使用 | 玄晖allen</title>
   
 
 
@@ -70,7 +75,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">玄晖allen</h1>
+      <p class="site-title">玄晖allen</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -185,90 +190,131 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 22 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunboyallen.github.io/opencv-static/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="玄晖allen">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="玄晖allen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="编译了些OpenCV的静态库用于Visual Studio的C++项目使用 | 玄晖allen">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          编译了些OpenCV的静态库用于Visual Studio的C++项目使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="创建时间：2024-06-29 22:07:10 / 修改时间：22:32:32" itemprop="dateCreated datePublished" datetime="2024-06-29T22:07:10+08:00">2024-06-29</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>省流：闲来无事（大嘘），fork了OpenCV官方的仓库，打包了编译好的各种类型的静态库放在了release里，供有需要的下载使用。</p>
+<p><a
+target="_blank" rel="noopener" href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
+<p>还是那句话，使用Python显然是更方便的选择，或者使用Linux写C++。用C++调用OpenCV，并且还是在Windows里，简直buff叠满了（笑）。</p>
+<p>虽说现在OpenCV官方是有提供用于Visual
+Studio的C++的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是Visual
+Studio
+2022，VC17，而官方提供的只有VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在Windows上使用Visual
+Studio写C++调用OpenCV库实现静态编译。正好尽量充分利用GitHub提供的发布项目的功能，所以在自己电脑的Visual
+Studio
+2022和CMake编译了静态库。只要也使用Win10，VS2022，那么应该是通用的。</p>
+<p>VS
+2022可选Debug和Release，然后OpenCV提供了是否打包成world的选项，勾选了那么静态库就主要只有一个大的lib文件，引用静态库就只需要添加那一个就行。所以这样至少就有4种组合，我都进行了编译，在release页可以根据项目需要，点击下载相应的zip文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
+<p>现在的版本是4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-01-08T13:38:58+08:00"
-              content="2024-01-08">
-          01-08
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://space.bilibili.com/24507963">
+            <span class="icon">
+              <i class="fab fa-bilibili"></i>
+            </span>
+
+            <span class="label">Bilibili</span>
+          </a>
       </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/winget-upgrade/" itemprop="url">
-          <span itemprop="name">使用winget upgrade/update时需要注意的问题</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-01-06T09:58:56+08:00"
-              content="2024-01-06">
-          01-06
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/windows-font/" itemprop="url">
-          <span itemprop="name">关于微软Windows系统字体及误区</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-01-01T11:58:57+08:00"
-              content="2024-01-01">
-          01-01
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/vscode-clang-format/" itemprop="url">
-          <span itemprop="name">使用VS Code内置的ClangFormat格式化C/C++代码</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/tags/%E5%A6%82%E9%A2%98%EF%BC%8C%E8%99%BD%E7%84%B6%E7%8E%B0%E5%9C%A8%E8%BF%99%E7%A7%8D%E9%9C%80%E6%B1%82%E5%BA%94%E8%AF%A5%E4%B8%8D%E4%BC%9A%E5%BE%88%E5%A4%9A%E4%BA%86%E5%90%A7%EF%BC%88%E7%AC%91%EF%BC%89/" rel="tag"># 如题，虽然现在这种需求应该不会很多了吧（笑）</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/kaitahito-gogen/" rel="prev" title="書いた人（kaitahito）的语源资料">
+                  <i class="fa fa-angle-left"></i> 書いた人（kaitahito）的语源资料
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
 </div>
   </main>
 
