@@ -222,23 +222,27 @@ href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://the
 ]]></content>
   </entry>
   <entry>
-    <title>香取大志（ヒロシ）的语源考</title>
-    <url>/hiroshiness/</url>
-    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
-<script src="/kanbun.js"></script>
-<div
-style="display: flex; justify-content: center; align-items: center;">
-<div id="sample" class="kanbun okurigana-sinking">
-<p>我思フ故ニ我在リ。</p>
-</div>
-</div>
-<script>convertKanbunDiv(document.getElementById("sample"));</script>
-<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客ameblo的<a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
-<p>目前一共38篇，上次更新语源考还是2021年了，而上一篇博客是2023年11月。老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是hiroshiness，ヒロシネス。在博客<a
-href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥CPE和CELTA证书。</p>
-<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
+    <title>关于PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下PowerShell和Windows
+PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版Windows
+PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS
+Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p>管道Pipeline，用于处理多个命令之间的关系。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell
+7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -261,6 +265,26 @@ Studio
 <p>当然如果要自己通过源代码编译也是ok的，自己去官网仓库克隆下来自己用CMake编译，在Visual
 Studio生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
 <p>现在的版本是4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>香取大志（ヒロシ）的语源考</title>
+    <url>/hiroshiness/</url>
+    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
+<script src="/kanbun.js"></script>
+<div
+style="display: flex; justify-content: center; align-items: center;">
+<div id="sample" class="kanbun okurigana-sinking">
+<p>我思フ故ニ我在リ。</p>
+</div>
+</div>
+<script>convertKanbunDiv(document.getElementById("sample"));</script>
+<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客ameblo的<a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
+<p>目前一共38篇，上次更新语源考还是2021年了，而上一篇博客是2023年11月。老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是hiroshiness，ヒロシネス。在博客<a
+href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥CPE和CELTA证书。</p>
+<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
 ]]></content>
   </entry>
   <entry>
@@ -301,30 +325,6 @@ href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://
 <p><a
 href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
 <p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下PowerShell和Windows
-PowerShell，前者一般指新版，即PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版Windows
-PowerShell还在，而开始菜单栏会出现一个新的PowerShell，相当于两者可以并行使用。之后，在VS
-Code打开的PowerShell终端，就会默认为这个新版PowerShell而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p>管道Pipeline，用于处理多个命令之间的关系。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell
-7实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -416,6 +416,20 @@ href="https://linux.die.net/man/5/ssh_config">这个资料</a>。</p>
 ]]></content>
   </entry>
   <entry>
+    <title>VMware Ubuntu使用代理</title>
+    <url>/vmware-ubuntu-proxy/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>此处感谢舍友<a
+href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
+<h1 id="操作方法">操作方法</h1>
+<p>打开VMware Workstation
+Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
+<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
+<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
+<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于TLD</title>
     <url>/tld/</url>
     <content><![CDATA[<h1 id="icann">ICANN</h1>
@@ -451,46 +465,6 @@ href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
 <p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
 <p>看看xyz的官网（笑）。</p>
 <p>实际上xyz除了xyz这个域名之外，他们还搞了别的域名，不多说。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在ameblo的语言学相关资料。这次的大佬是<a
-href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
-<p>然而通过bing搜索找了半天，除了在ameblo的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在ameblo的内容。。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>VMware Ubuntu使用代理</title>
-    <url>/vmware-ubuntu-proxy/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>此处感谢舍友<a
-href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
-<h1 id="操作方法">操作方法</h1>
-<p>打开VMware Workstation
-Pro，在自己的Ubuntu虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是NAT模式。</p>
-<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的IPv4地址。</p>
-<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks主机”一栏输入刚刚的IPv4地址，而后面输入的是自己所用的梯子的节点的端口。</p>
-<p>上述操作之后就ok了，需要注意的是，主机连接的WiFi变化时，IPv4地址会变，也就得改。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>在Visual Studio中使用gflags库</title>
-    <url>/vs-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己Visual Studio项目中成功配置过的一些第三方库，可以看<a
-href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了GPT，需要在gflags里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新CMake编译生成，VS里install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了GPT，需要自己在项目属性里，链接器
--&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的cpp代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -572,6 +546,46 @@ href="/vs-gflags">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在ameblo的语言学相关资料。这次的大佬是<a
+href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
+<p>然而通过bing搜索找了半天，除了在ameblo的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在ameblo的内容。。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在Visual Studio中使用gflags库</title>
+    <url>/vs-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己Visual Studio项目中成功配置过的一些第三方库，可以看<a
+href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了GPT，需要在gflags里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新CMake编译生成，VS里install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了GPT，需要自己在项目属性里，链接器
+-&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的cpp代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code没有默认开启Auto Guess Encoding，是它的一个大错误</title>
+    <url>/vscode-encode/</url>
+    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为UTF-8，或者说一般要设置为UTF-8，这样才不会乱，当面对各种语言的时候。VS
+Code当然也是如此，对于文本文件的默认打开和保存方式都是UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在Visual
+Studio编写的代码文件，默认是GBK或者说GB2312来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于masm32编程，涉及中文字符串的时候，还真得只能用GB2312编码，没法用UTF-8编码。</p>
+<p>很多时候我需要用VS Code打开Visual
+Studio项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code
+都是默认以UTF-8打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用UTF-8打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
+<p>后来上网查才发现VS Code可以在设置里勾选Auto Guess
+Encoding选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>使用VS Code内置的ClangFormat格式化C/C++代码</title>
     <url>/vscode-clang-format/</url>
     <content><![CDATA[<p>众所周知，在VS
@@ -592,17 +606,30 @@ href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.ll
 ]]></content>
   </entry>
   <entry>
-    <title>VS Code没有默认开启Auto Guess Encoding，是它的一个大错误</title>
-    <url>/vscode-encode/</url>
-    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为UTF-8，或者说一般要设置为UTF-8，这样才不会乱，当面对各种语言的时候。VS
-Code当然也是如此，对于文本文件的默认打开和保存方式都是UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
-<p>然而在Visual
-Studio编写的代码文件，默认是GBK或者说GB2312来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于masm32编程，涉及中文字符串的时候，还真得只能用GB2312编码，没法用UTF-8编码。</p>
-<p>很多时候我需要用VS Code打开Visual
-Studio项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code
-都是默认以UTF-8打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用UTF-8打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
-<p>后来上网查才发现VS Code可以在设置里勾选Auto Guess
-Encoding选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+    <title>使用winget upgrade/update时需要注意的问题</title>
+    <url>/winget-upgrade/</url>
+    <content><![CDATA[<p>关于WinGet，如果不清楚的可以看看微软官方的介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些bug的。</p>
+<p>winget他这个升级的原理是，从官方源里面下载最新的安装包（一般是msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek
+uninstaller来卸载。。。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在C盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个GB的事情，大不了给C盘扩容。安装在C盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>查看自己Windows电脑的产品密钥（备忘）</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答：<a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行cmd。不过好像正常使用PowerShell运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -664,33 +691,6 @@ href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://l
 href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
 <p><a
 href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>查看自己Windows电脑的产品密钥（备忘）</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答：<a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行cmd。不过好像正常使用PowerShell运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>使用winget upgrade/update时需要注意的问题</title>
-    <url>/winget-upgrade/</url>
-    <content><![CDATA[<p>关于WinGet，如果不清楚的可以看看微软官方的介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
-<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
-<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些bug的。</p>
-<p>winget他这个升级的原理是，从官方源里面下载最新的安装包（一般是msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek
-uninstaller来卸载。。。</p>
-<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在C盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个GB的事情，大不了给C盘扩容。安装在C盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
 ]]></content>
   </entry>
 </search>
