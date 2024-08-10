@@ -23,13 +23,13 @@
 
     <meta name="description" content="如题。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows上使用Visual Studio进行C++项目开发，调用第三方库">
+<meta property="og:title" content="Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库">
 <meta property="og:url" content="https://sunboyallen.github.io/visualstudio/index.html">
 <meta property="og:site_name" content="sunboyallen">
 <meta property="og:description" content="如题。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-11T16:03:27.000Z">
-<meta property="article:modified_time" content="2024-07-29T15:29:35.894Z">
+<meta property="article:modified_time" content="2024-08-10T09:16:26.814Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary">
 
@@ -38,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/visualstudio/","path":"visualstudio/","title":"Windows上使用Visual Studio进行C++项目开发，调用第三方库"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/visualstudio/","path":"visualstudio/","title":"Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Windows上使用Visual Studio进行C++项目开发，调用第三方库 | sunboyallen</title>
+<title>Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库 | sunboyallen</title>
   
 
 
@@ -210,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Windows上使用Visual Studio进行C++项目开发，调用第三方库 | sunboyallen">
+      <meta itemprop="name" content="Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库 | sunboyallen">
       <meta itemprop="description" content="如题。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Windows上使用Visual Studio进行C++项目开发，调用第三方库
+          Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库
         </h1>
 
         <div class="post-meta-container">
@@ -233,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-07-29 23:29:35" itemprop="dateModified" datetime="2024-07-29T23:29:35+08:00">2024-07-29</time>
+      <time title="修改时间：2024-08-10 17:16:26" itemprop="dateModified" datetime="2024-08-10T17:16:26+08:00">2024-08-10</time>
     </span>
 
   
@@ -254,71 +254,99 @@
     
     
     <div class="post-body" itemprop="articleBody"><h1 id="写在开头">写在开头</h1>
-<p>我之前在博客曾写过一篇文章，关于如何在Windows系统使用VS
-Code写C++代码调用OpenCV库。也包括以及遗留的问题，主要是依然没做到静态编译，也就是编译生成的exe没法单独跑，得加各种dll文件。以前一直嫌弃VS笨重，然而当我最终还是在VS上编译了OpenCV库，调用并且确实实现了静态编译之后，我就把那篇文章删掉了，没必要了。</p>
-<p>能看到群友大佬调侃说，现在的高级语言，如果包管理比C++还差，都不好意思叫作高级语言。关于这方面的事情，有很多历史原因，你乎也有很多内容，不赘述。主要想说，像这种在Windows上的项目级别的C++开发，特别是要用第三方库的，还得是Visual
+<p>我之前在博客曾写过一篇文章，关于如何在 Windows 系统使用 VS Code 写
+C++ 代码调用 OpenCV
+库。也包括以及遗留的问题，主要是依然没做到静态编译，也就是编译生成的 exe
+没法单独跑，得加各种 dll 文件。以前一直嫌弃 VS 笨重，然而当我最终还是在
+VS 上编译了 OpenCV
+库，调用并且确实实现了静态编译之后，我就把那篇文章删掉了，没必要了。</p>
+<p>能看到群友大佬调侃说，现在的高级语言，如果包管理比 C++
+还差，都不好意思叫作高级语言。关于这方面的事情，有很多历史原因，你乎也有很多内容，不赘述。主要想说，像这种在
+Windows 上的项目级别的 C++ 开发，特别是要用第三方库的，还得是 Visual
 Studio。</p>
-<p>说起来，要使用OpenCV，使用Python显然是更好的选择。再不济，在Linux上搞也还行。如果是自己在Windows上使用C++调用，那其实VS
-Code也够用：CMake先编译，配完加环境变量，跑还是能跑的，无非是如果exe单独跑的话还得加各种杂七杂八的dll动态库文件。</p>
-<p>但如果是项目级的，这样显然是不够的，如果需要exe能单独跑呢？关键是如果只是缺少OpenCV相关的dll还好，你不静态编译，指不定别人电脑还缺少什么别的dll，这也体现出了Windows上的VS
-Code在面对C++包管理（第三方库）的时候难以解决的静态编译问题。</p>
+<p>说起来，要使用 OpenCV，使用 Python 显然是更好的选择。再不济，在 Linux
+上搞也还行。如果是自己在 Windows 上使用 C++ 调用，那其实 VS Code
+也够用：CMake 先编译，配完加环境变量，跑还是能跑的，无非是如果 exe
+单独跑的话还得加各种杂七杂八的 dll 动态库文件。</p>
+<p>但如果是项目级的，这样显然是不够的，如果需要 exe
+能单独跑呢？关键是如果只是缺少 OpenCV 相关的 dll
+还好，你不静态编译，指不定别人电脑还缺少什么别的 dll，这也体现出了
+Windows 上的 VS Code 在面对 C++
+包管理（第三方库）的时候难以解决的静态编译问题。</p>
 <h1 id="cmake">CMake</h1>
-<p>好就好在现在的第三方库的编译基本都有提供CMake的方式。使用cmake-gui，将<code>CMakelists.txt</code>文件所在的文件夹作为source
-code，当然直接把这个txt拖进去更方便。然后Configure，Generate，Open
+<p>好就好在现在的第三方库的编译基本都有提供 CMake 的方式。使用
+cmake-gui，将<code>CMakelists.txt</code>文件所在的文件夹作为 source
+code，当然直接把这个 txt 拖进去更方便。然后 Configure，Generate，Open
 Project，生成，一路下来。</p>
 <p>我把需要注意的点简单写一些。</p>
 <ul>
-<li>build的目录往往需要自己选择使用目录下的<code>build</code>文件夹。</li>
-<li>Configure选择编译器的时候，选择Visual
-Studio提供的编译器，选自己电脑相应的版本。</li>
+<li>build
+的目录往往需要自己选择使用目录下的<code>build</code>文件夹。</li>
+<li>Configure 选择编译器的时候，选择 Visual Studio
+提供的编译器，选自己电脑相应的版本。</li>
 <li>编译选项的勾选，对于有静态编译的需求的，记得勾选<code>static</code>相关选项，或者是取消勾选<code>shared</code>相关选项。</li>
-<li>在Visual
-Studio里生成的时候，注意选择好上面的Release/Debug，x86/x64，并且与后面自己的项目的选择相一致。</li>
+<li>在 Visual Studio 里生成的时候，注意选择好上面的
+Release/Debug，x86/x64，并且与后面自己的项目的选择相一致。</li>
 </ul>
 <h1 id="visual-studio">Visual Studio</h1>
 <p>之后的操作就很常规了，项目属性一通配置，网上一找一大把，我看基本够用了，我就不多说，只是自己补充一些。</p>
 <ul>
 <li>项目级的开发，我是比较推荐把第三方库直接<strong>拷贝一份</strong>在项目目录里的。这样，项目属性引入外部库，附加依赖项之类的，也直接用相对路径，比如<code>$(ProjectDir)lib</code>之类的写法，这样跨端开发能省去很多重复的操作。</li>
-<li>注意C/C++ -&gt; 代码生成 -&gt;
-运行库，选择相匹配的<code>/MT</code>，<code>/MTd</code>，<code>/MD</code>，<code>/MDd</code>，根据实际需求，静态动态，是Debug还是Release决定。</li>
+<li>注意 C/C++ -&gt; 代码生成 -&gt;
+运行库，选择相匹配的<code>/MT</code>，<code>/MTd</code>，<code>/MD</code>，<code>/MDd</code>，根据实际需求，静态动态，是
+Debug 还是 Release 决定。</li>
 </ul>
-<p>这样一来，一个通用的，傻瓜式的流程就非常明确了，几乎适用于要用到任何第三方库的C++项目：</p>
-<p>获取源代码 -&gt; CMake编译 -&gt; VS生成 -&gt; VS项目配置</p>
-<p>我自己试过了不少第三方库了，清一色基本是这个流程。有些库甚至不需要再去CMake生成静态库之类，直接是头文件引用，那么配置就更方便了。</p>
+<p>这样一来，一个通用的，傻瓜式的流程就非常明确了，几乎适用于要用到任何第三方库的
+C++ 项目：</p>
+<p>获取源代码 -&gt; CMake 编译 -&gt; VS 生成 -&gt; VS 项目配置</p>
+<p>我自己试过了不少第三方库了，清一色基本是这个流程。有些库甚至不需要再去
+CMake 生成静态库之类，直接是头文件引用，那么配置就更方便了。</p>
 <h2 id="opencv">OpenCV</h2>
 <p><a target="_blank" rel="noopener" href="https://opencv.org/">https://opencv.org/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/opencv/opencv">https://github.com/opencv/opencv</a></p>
-<p>现在opencv他提供的exe，是获取到源代码，头文件，库文件（包括静态库动态库），库文件默认是整合到一起的，相当于自己cmake的时候勾选了<code>BUILD_OPENCV_WORLD</code>，主要就是一个<code>opencv_world</code>的dll或者lib文件，不过好像依然不太行，还是不如自己下载源代码自己编译，可选择的选项也自由一些。</p>
+<p>现在 opencv 他提供的
+exe，是获取到源代码，头文件，库文件（包括静态库动态库），库文件默认是整合到一起的，相当于自己
+cmake
+的时候勾选了<code>BUILD_OPENCV_WORLD</code>，主要就是一个<code>opencv_world</code>的
+dll 或者 lib
+文件，不过好像依然不太行，还是不如自己下载源代码自己编译，可选择的选项也自由一些。</p>
 <p>网上配置的教程比较多了，主要是<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/bby1987/article/details/108859363">这篇教程</a>，详细说了Configure时候如果遇到下载超时的处理。手动下载，放到指定目录，有的还要MD5校验，加上MD5值。</p>
+target="_blank" rel="noopener" href="https://blog.csdn.net/bby1987/article/details/108859363">这篇教程</a>，详细说了
+Configure 时候如果遇到下载超时的处理。手动下载，放到指定目录，有的还要
+MD5 校验，加上 MD5 值。</p>
 <h2 id="lz4">LZ4</h2>
 <p><a target="_blank" rel="noopener" href="https://lz4.org/">https://lz4.org/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/lz4/lz4">https://github.com/lz4/lz4</a></p>
-<p>直接clone过来，在<code>build/cmake</code>里。</p>
+<p>直接 clone 过来，在<code>build/cmake</code>里。</p>
 <h2 id="zlib">zlib</h2>
 <p><a target="_blank" rel="noopener" href="https://zlib.net/">https://zlib.net/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/madler/zlib">https://github.com/madler/zlib</a></p>
-<p>可以官网点击下载zip，根目录就是了。</p>
+<p>可以官网点击下载 zip，根目录就是了。</p>
 <h2 id="nlohmann-json-for-modern-c">nlohmann JSON for Modern C++</h2>
 <p><a target="_blank" rel="noopener" href="https://json.nlohmann.me/">https://json.nlohmann.me/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/nlohmann/json">https://github.com/nlohmann/json</a></p>
-<p>克隆下来，主要是用里面的<code>include</code>或者<code>single_include</code>文件夹（后者里面就一个<code>nlohmann/json.hpp</code>），添加到项目目录里就行了，不需要去CMake之类。</p>
+<p>克隆下来，主要是用里面的<code>include</code>或者<code>single_include</code>文件夹（后者里面就一个<code>nlohmann/json.hpp</code>），添加到项目目录里就行了，不需要去
+CMake 之类。</p>
 <h2 id="tinyxml2">TinyXML2</h2>
 <p><a
 target="_blank" rel="noopener" href="https://github.com/leethomason/tinyxml2">https://github.com/leethomason/tinyxml2</a></p>
-<p>克隆下来，根目录就是了。这个好像没有特定的静态编译选项，生成完直接用lib应该就行，项目配置时，代码生成，运行库选择带dll的相应的，最终效果也是exe能单独跑。</p>
-<p>虽说也是基于C++标准库，不过我看网上的教程，如果不CMake，需要自己拷贝里面五六个文件到自己项目里，如果CMake了，最终在<code>include</code>里面就一个<code>tinyxml2.h</code>，再加上<code>lib</code>，个人感觉更方便。</p>
+<p>克隆下来，根目录就是了。这个好像没有特定的静态编译选项，生成完直接用
+lib 应该就行，项目配置时，代码生成，运行库选择带 dll
+的相应的，最终效果也是 exe 能单独跑。</p>
+<p>虽说也是基于 C++ 标准库，不过我看网上的教程，如果不
+CMake，需要自己拷贝里面五六个文件到自己项目里，如果 CMake
+了，最终在<code>include</code>里面就一个<code>tinyxml2.h</code>，再加上<code>lib</code>，个人感觉更方便。</p>
 <h2 id="eigen">Eigen</h2>
 <p><a
 target="_blank" rel="noopener" href="https://eigen.tuxfamily.org/">https://eigen.tuxfamily.org/</a></p>
 <p><a
 target="_blank" rel="noopener" href="https://gitlab.com/libeigen/eigen">https://gitlab.com/libeigen/eigen</a></p>
-<p>在release里下载，解压完根目录就是。</p>
-<p>同样的这个CMake之后也没有lib，直接用include就行了。</p>
+<p>在 releases 里下载，解压完根目录就是。</p>
+<p>同样的这个 CMake 之后也没有 lib，直接用 include 就行了。</p>
 <h2 id="gflags">gflags</h2>
 <p><a
 target="_blank" rel="noopener" href="https://gflags.github.io/gflags/">https://gflags.github.io/gflags/</a></p>
@@ -361,8 +389,8 @@ href="/visualstudio-gflags">这篇</a>。</p>
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/visualstudio-gflags/" rel="next" title="在Visual Studio中使用gflags库">
-                  在Visual Studio中使用gflags库 <i class="fa fa-angle-right"></i>
+                <a href="/visualstudio-gflags/" rel="next" title="在 Visual Studio 中使用 gflags 库">
+                  在 Visual Studio 中使用 gflags 库 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
