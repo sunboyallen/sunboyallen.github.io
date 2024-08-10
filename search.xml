@@ -16,106 +16,6 @@ p &amp;= \frac{h}{\lambda} \\
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于 GitHub 仓库克隆和 npm
-安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
-搭建。那里有具体说明。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar
-相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
-markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc，直接去<a
-href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。</p>
-<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
-Utterances
-还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
-discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
-<p><a
-href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
-<p><a
-href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
-<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置
-css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
-1 即不透明。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Git 清除某分支的所有 commits 记录</title>
     <url>/git-clear-commits/</url>
     <content><![CDATA[<p>首先贴出<a href="https://segmentfault.com/u/shiweidu">shiweidu</a>在
@@ -264,6 +164,183 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于 GitHub 仓库克隆和 npm
+安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
+搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar
+相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
+markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc，直接去<a
+href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。</p>
+<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
+Utterances
+还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
+discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
+<p><a
+href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
+<p><a
+href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
+<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置
+css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
+1 即不透明。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
+    <url>/opencv-static/</url>
+    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
+官方的仓库，打包了编译好的各种类型的静态库放在了 releases
+里，供有需要的下载使用。</p>
+<p><a
+href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
+<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
+C++。</p>
+<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
+的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
+Studio 2022，VC17，而官方提供的只有
+VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
+C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
+提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
+编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
+<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
+的选项，勾选了那么静态库就主要只有一个大的 lib
+文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
+种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
+zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
+<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
+CMake 编译，在 Visual Studio
+生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
+<p>现在的版本是
+4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PowerToys 介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么 B 机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>香取大志（ヒロシ）的语源考</title>
     <url>/hiroshiness/</url>
     <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
@@ -297,57 +374,6 @@ href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
 href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
 href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
 <p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys 介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么 B 机翻。。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
-    <url>/opencv-static/</url>
-    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
-官方的仓库，打包了编译好的各种类型的静态库放在了 releases
-里，供有需要的下载使用。</p>
-<p><a
-href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
-<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
-C++。</p>
-<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
-的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
-Studio 2022，VC17，而官方提供的只有
-VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
-<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
-C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
-提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
-编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
-<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
-的选项，勾选了那么静态库就主要只有一个大的 lib
-文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
-种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
-zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
-<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
-CMake 编译，在 Visual Studio
-生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
-<p>现在的版本是
-4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
 ]]></content>
   </entry>
   <entry>
@@ -385,32 +411,6 @@ Edge 浏览器收藏过几百个网址，虽说 Edge
 或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
 url，我认为还不如收藏搜索关键词 keyword。</p>
 <figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sort keywords in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    keywords_sort(<span class="string">&#x27;keywords.txt&#x27;</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于 PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
-PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版 Windows PowerShell
-还在，而开始菜单栏会出现一个新的
-PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
-终端，就会默认为这个新版 PowerShell
-而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
-实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -496,6 +496,21 @@ href="https://linux.die.net/man/5/ssh_config">这个资料</a>。</p>
 ]]></content>
   </entry>
   <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在 ameblo
+的语言学相关资料。这次的大佬是<a
+href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
+url 我也姑且只能使用人家在 ameblo 的博客 id
+名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
+<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
+的内容。。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于 TLD</title>
     <url>/tld/</url>
     <content><![CDATA[<h1 id="icann">ICANN</h1>
@@ -532,25 +547,6 @@ href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
 <p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
 <p>看看 xyz 的官网（笑）。</p>
 <p>实际上 xyz 除了 xyz 这个域名之外，他们还搞了别的域名，不多说。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>在 Visual Studio 中使用 gflags 库</title>
-    <url>/visualstudio-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己 Visual Studio
-项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了 GPT，需要在 gflags
-里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新 CMake 编译生成，VS 里
-install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
-GPT，需要自己在项目属性里，链接器 -&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的 cpp 代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -660,22 +656,22 @@ href="/visualstudio-gflags">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>VMware Ubuntu 使用代理</title>
-    <url>/vmware-ubuntu-proxy/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>此处感谢舍友<a
-href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
-<h1 id="操作方法">操作方法</h1>
-<p>打开 VMware Workstation Pro，在自己的 Ubuntu
-虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是
-NAT 模式。</p>
-<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的 IPv4
-地址。</p>
-<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks
-主机”一栏输入刚刚的 IPv4
-地址，而后面输入的是自己所用的梯子的节点的端口。</p>
-<p>上述操作之后就 ok 了，需要注意的是，主机连接的 WiFi 变化时，IPv4
-地址会变，也就得改。</p>
+    <title>在 Visual Studio 中使用 gflags 库</title>
+    <url>/visualstudio-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己 Visual Studio
+项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了 GPT，需要在 gflags
+里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新 CMake 编译生成，VS 里
+install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
+GPT，需要自己在项目属性里，链接器 -&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的 cpp 代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -700,18 +696,22 @@ UTF-8
 ]]></content>
   </entry>
   <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在 ameblo
-的语言学相关资料。这次的大佬是<a
-href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
-url 我也姑且只能使用人家在 ameblo 的博客 id
-名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
-<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
-的内容。。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+    <title>VMware Ubuntu 使用代理</title>
+    <url>/vmware-ubuntu-proxy/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>此处感谢舍友<a
+href="https://github.com/ma-b21">ma-b21</a>的文章。</p>
+<h1 id="操作方法">操作方法</h1>
+<p>打开 VMware Workstation Pro，在自己的 Ubuntu
+虚拟机窗口（此时还未开启虚拟机），选择“编辑虚拟机设置”，点击“网络适配器”，确认自己的网络链接是
+NAT 模式。</p>
+<p>在本机的命令行终端输入<code>ipconfig</code>，找到自己无线网的 IPv4
+地址。</p>
+<p>开启虚拟机，在“设置”-“网络”中，将网络代理设置为“手动”，在“Socks
+主机”一栏输入刚刚的 IPv4
+地址，而后面输入的是自己所用的梯子的节点的端口。</p>
+<p>上述操作之后就 ok 了，需要注意的是，主机连接的 WiFi 变化时，IPv4
+地址会变，也就得改。</p>
 ]]></content>
   </entry>
   <entry>
@@ -736,6 +736,36 @@ href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.ll
 格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
 格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
 0，根据自己需要。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于微软 Windows 系统字体及误区</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>先给出微软官方的相关资料。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
+<p>Windows 系统自带的字体介绍基本都在这里面了。</p>
+<h1 id="误区">误区</h1>
+<p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在
+Windows
+最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫
+SimSun，SimHei。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
+<p>楷体是 KaiTi，仿宋是 FangSong，等等，这些也都是中易公司的。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
+<p>可以看看知乎的这些问题。</p>
+<p><a
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
+<p><a
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -787,36 +817,6 @@ PowerShell 运行命令就行。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
 <p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于微软 Windows 系统字体及误区</title>
-    <url>/windows-font/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>先给出微软官方的相关资料。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
-<p>Windows 系统自带的字体介绍基本都在这里面了。</p>
-<h1 id="误区">误区</h1>
-<p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在
-Windows
-最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫
-SimSun，SimHei。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
-<p>楷体是 KaiTi，仿宋是 FangSong，等等，这些也都是中易公司的。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
-<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
-<p>可以看看知乎的这些问题。</p>
-<p><a
-href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
-<p><a
-href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
   <entry>
