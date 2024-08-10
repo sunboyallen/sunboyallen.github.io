@@ -8,47 +8,11 @@
 <p>未来可能会写一些别的内容。</p>
 <p>以下是 <span class="math inline">\(\LaTeX\)</span> 公式测试。</p>
 <p><span class="math display">\[
-\begin{align*}
+\begin{aligned}
 p &amp;= \frac{h}{\lambda} \\
-\varepsilon &amp;= h \nu
-\end{align*}
+\varepsilon &amp;= h \nu \\
+\end{aligned}
 \]</span></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「書いた人」的语源资料</title>
-    <url>/kaitahito/</url>
-    <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
-<p>跟上一次类似，同样是在网上查找一些词的语源资料时看到的。在<a
-href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>香取大志（ヒロシ）的语源考</title>
-    <url>/hiroshiness/</url>
-    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
-<script src="/kanbun.js"></script>
-<div
-style="display: flex; justify-content: center; align-items: center;">
-<div id="sample" class="kanbun okurigana-sinking">
-<p>我思フ故ニ我在リ。</p>
-</div>
-</div>
-<script>convertKanbunDiv(document.getElementById("sample"));</script>
-<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
-<p>目前一共 38 篇，上次更新语源考还是 2021 年了，而上一篇博客是 2023 年
-11 月。老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是
-hiroshiness，ヒロシネス。在博客<a
-href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥 CPE 和
-CELTA 证书。</p>
-<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
 ]]></content>
   </entry>
   <entry>
@@ -300,29 +264,60 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
-    <title>关于 PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
+    <title>香取大志（ヒロシ）的语源考</title>
+    <url>/hiroshiness/</url>
+    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
+<script src="/kanbun.js"></script>
+<div
+style="display: flex; justify-content: center; align-items: center;">
+<div id="sample" class="kanbun okurigana-sinking">
+<p>我思フ故ニ我在リ。</p>
+</div>
+</div>
+<script>convertKanbunDiv(document.getElementById("sample"));</script>
+<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
+<p>目前一共 38 篇，上次更新语源考还是 2021 年了，而上一篇博客是 2023 年
+11 月。老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是
+hiroshiness，ヒロシネス。在博客<a
+href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥 CPE 和
+CELTA 证书。</p>
+<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「書いた人」的语源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p>跟上一次类似，同样是在网上查找一些词的语源资料时看到的。在<a
+href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PowerToys 介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
-PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版 Windows PowerShell
-还在，而开始菜单栏会出现一个新的
-PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
-终端，就会默认为这个新版 PowerShell
-而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么 B 机翻。。</p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
-实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -353,27 +348,6 @@ CMake 编译，在 Visual Studio
 生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
 <p>现在的版本是
 4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys 介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么 B 机翻。。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -411,6 +385,32 @@ Edge 浏览器收藏过几百个网址，虽说 Edge
 或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
 url，我认为还不如收藏搜索关键词 keyword。</p>
 <figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sort keywords in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    keywords_sort(<span class="string">&#x27;keywords.txt&#x27;</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -535,6 +535,25 @@ href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
 ]]></content>
   </entry>
   <entry>
+    <title>在 Visual Studio 中使用 gflags 库</title>
+    <url>/visualstudio-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己 Visual Studio
+项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了 GPT，需要在 gflags
+里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新 CMake 编译生成，VS 里
+install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
+GPT，需要自己在项目属性里，链接器 -&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的 cpp 代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库</title>
     <url>/visualstudio/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -641,40 +660,6 @@ href="/visualstudio-gflags">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>在 Visual Studio 中使用 gflags 库</title>
-    <url>/visualstudio-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己 Visual Studio
-项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了 GPT，需要在 gflags
-里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新 CMake 编译生成，VS 里
-install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
-GPT，需要自己在项目属性里，链接器 -&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的 cpp 代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在 ameblo
-的语言学相关资料。这次的大佬是<a
-href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
-url 我也姑且只能使用人家在 ameblo 的博客 id
-名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
-<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
-的内容。。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>VMware Ubuntu 使用代理</title>
     <url>/vmware-ubuntu-proxy/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -691,6 +676,42 @@ NAT 模式。</p>
 地址，而后面输入的是自己所用的梯子的节点的端口。</p>
 <p>上述操作之后就 ok 了，需要注意的是，主机连接的 WiFi 变化时，IPv4
 地址会变，也就得改。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 没有默认开启 Auto Guess Encoding，是它的一个大错误</title>
+    <url>/vscode-encode/</url>
+    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为
+UTF-8，或者说一般要设置为 UTF-8，这样才不会乱，当面对各种语言的时候。VS
+Code 当然也是如此，对于文本文件的默认打开和保存方式都是
+UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
+来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于 masm32
+编程，涉及中文字符串的时候，还真得只能用 GB2312 编码，没法用 UTF-8
+编码。</p>
+<p>很多时候我需要用 VS Code 打开 Visual Studio
+项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
+UTF-8
+打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
+UTF-8
+打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
+<p>后来上网查才发现 VS Code 可以在设置里勾选 Auto Guess Encoding
+选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在 ameblo
+的语言学相关资料。这次的大佬是<a
+href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
+url 我也姑且只能使用人家在 ameblo 的博客 id
+名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
+<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
+的内容。。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
 ]]></content>
   </entry>
   <entry>
@@ -757,47 +778,15 @@ href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visua
 ]]></content>
   </entry>
   <entry>
-    <title>使用 winget upgrade/update 时需要注意的问题</title>
-    <url>/winget-upgrade/</url>
-    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
-<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
-<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
-bug 的。</p>
-<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
-msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在 D
-盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
-Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
-uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
-<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
-盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
-GB 的事情，大不了给 C 盘扩容。安装在 C
-盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>VS Code 没有默认开启 Auto Guess Encoding，是它的一个大错误</title>
-    <url>/vscode-encode/</url>
-    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为
-UTF-8，或者说一般要设置为 UTF-8，这样才不会乱，当面对各种语言的时候。VS
-Code 当然也是如此，对于文本文件的默认打开和保存方式都是
-UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
-<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
-来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于 masm32
-编程，涉及中文字符串的时候，还真得只能用 GB2312 编码，没法用 UTF-8
-编码。</p>
-<p>很多时候我需要用 VS Code 打开 Visual Studio
-项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
-UTF-8
-打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
-UTF-8
-打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
-<p>后来上网查才发现 VS Code 可以在设置里勾选 Auto Guess Encoding
-选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答：<a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -831,15 +820,26 @@ href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19
 ]]></content>
   </entry>
   <entry>
-    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答：<a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+    <title>使用 winget upgrade/update 时需要注意的问题</title>
+    <url>/winget-upgrade/</url>
+    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
+bug 的。</p>
+<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
+msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在 D
+盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
+Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
+uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
+盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
+GB 的事情，大不了给 C 盘扩容。安装在 C
+盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
 ]]></content>
   </entry>
 </search>
