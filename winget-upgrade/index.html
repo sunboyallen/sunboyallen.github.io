@@ -23,13 +23,13 @@
 
     <meta name="description" content="如题。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用winget upgrade&#x2F;update时需要注意的问题">
+<meta property="og:title" content="使用 winget upgrade&#x2F;update 时需要注意的问题">
 <meta property="og:url" content="https://sunboyallen.github.io/winget-upgrade/index.html">
 <meta property="og:site_name" content="sunboyallen">
 <meta property="og:description" content="如题。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-08T05:38:58.000Z">
-<meta property="article:modified_time" content="2024-06-23T17:27:28.000Z">
+<meta property="article:modified_time" content="2024-08-10T09:19:45.174Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary">
 
@@ -38,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/winget-upgrade/","path":"winget-upgrade/","title":"使用winget upgrade/update时需要注意的问题"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/winget-upgrade/","path":"winget-upgrade/","title":"使用 winget upgrade/update 时需要注意的问题"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>使用winget upgrade/update时需要注意的问题 | sunboyallen</title>
+<title>使用 winget upgrade/update 时需要注意的问题 | sunboyallen</title>
   
 
 
@@ -209,12 +209,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="使用winget upgrade/update时需要注意的问题 | sunboyallen">
+      <meta itemprop="name" content="使用 winget upgrade/update 时需要注意的问题 | sunboyallen">
       <meta itemprop="description" content="如题。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          使用winget upgrade/update时需要注意的问题
+          使用 winget upgrade/update 时需要注意的问题
         </h1>
 
         <div class="post-meta-container">
@@ -232,7 +232,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-24 01:27:28" itemprop="dateModified" datetime="2024-06-24T01:27:28+08:00">2024-06-24</time>
+      <time title="修改时间：2024-08-10 17:19:45" itemprop="dateModified" datetime="2024-08-10T17:19:45+08:00">2024-08-10</time>
     </span>
 
   
@@ -252,17 +252,24 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>关于WinGet，如果不清楚的可以看看微软官方的介绍。</p>
+    <div class="post-body" itemprop="articleBody"><p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
 <p><a
 target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
 <p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
 <p><a
 target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
-<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些bug的。</p>
-<p>winget他这个升级的原理是，从官方源里面下载最新的安装包（一般是msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在D盘，用这个来更新的话，可能会给你安装到C盘，即他自己的默认路径去。比如Zotero就是如此，升级之后发现他升级安装到C盘去了，原先D盘那份的uninstall又运行不了，最后还得用geek
-uninstaller来卸载。。。</p>
-<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在C盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个GB的事情，大不了给C盘扩容。安装在C盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
+bug 的。</p>
+<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
+msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在 D
+盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
+Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
+uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
+盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
+GB 的事情，大不了给 C 盘扩容。安装在 C
+盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
 
     </div>
 
@@ -293,8 +300,8 @@ uninstaller来卸载。。。</p>
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/windows-font/" rel="prev" title="关于微软Windows系统字体及误区">
-                  <i class="fa fa-angle-left"></i> 关于微软Windows系统字体及误区
+                <a href="/windows-font/" rel="prev" title="关于微软 Windows 系统字体及误区">
+                  <i class="fa fa-angle-left"></i> 关于微软 Windows 系统字体及误区
                 </a>
             </div>
             <div class="post-nav-item">
