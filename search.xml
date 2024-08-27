@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
-    <url>/hackchat-warma/</url>
-    <content><![CDATA[<p>简单来说就是这个：<a
-href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
-<p>是沃玛在 2019 年 3 月 8 日发的<a
-href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
-<p>我自己是在 2020
-年疫情的时候，刷沃玛以前的视频的时候，看到的这个视频，然后知道的。</p>
+    <title>第一篇</title>
+    <url>/first/</url>
+    <content><![CDATA[<p>搭建博客的时间是 2023 年 5 月 20
+日，也是一个特殊的日子。希望自己一切顺利。</p>
+<p>未来可能会写一些别的内容。</p>
+<p>以下是 <span class="math inline">\(\LaTeX\)</span> 公式测试。</p>
+<p><span class="math display">\[
+\begin{aligned}
+p &amp;= \frac{h}{\lambda} \\
+\varepsilon &amp;= h \nu \\
+\end{aligned}
+\]</span></p>
 ]]></content>
   </entry>
   <entry>
@@ -43,134 +47,6 @@ main 分支。</p>
 <p>之前那篇以及 ChatGPT
 的回答都没有具体说这最后的操作，当然无伤大雅，之后如果在分支进行拉取操作，Git
 Bash 会有相应的提示的。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>第一篇</title>
-    <url>/first/</url>
-    <content><![CDATA[<p>搭建博客的时间是 2023 年 5 月 20
-日，也是一个特殊的日子。希望自己一切顺利。</p>
-<p>未来可能会写一些别的内容。</p>
-<p>以下是 <span class="math inline">\(\LaTeX\)</span> 公式测试。</p>
-<p><span class="math display">\[
-\begin{aligned}
-p &amp;= \frac{h}{\lambda} \\
-\varepsilon &amp;= h \nu \\
-\end{aligned}
-\]</span></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于 GitHub 仓库克隆和 npm
-安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
-搭建。那里有具体说明。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar
-相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
-markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc，直接去<a
-href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。</p>
-<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
-Utterances
-还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
-discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
-<p><a
-href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
-<p><a
-href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
-<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置
-css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
-1 即不透明。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「書いた人」的语源资料</title>
-    <url>/kaitahito/</url>
-    <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
-<p>跟上一次类似，同样是在网上查找一些词的语源资料时看到的。在<a
-href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
 ]]></content>
   </entry>
   <entry>
@@ -277,35 +153,118 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
-    <title>关于「嚏」和「嚔」</title>
-    <url>/kusame/</url>
-    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
-<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
-的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
-<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
-<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体，前者作为许容字体。词典等资料也一般是选择后者。</p>
-<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
-<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
-<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
-<p>之前说了，日语词典一般是使用后者。在 weblio
-古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
-<p>在 weblio
-デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
+    <url>/hackchat-warma/</url>
+    <content><![CDATA[<p>简单来说就是这个：<a
+href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
+<p>是沃玛在 2019 年 3 月 8 日发的<a
+href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于 GitHub 仓库克隆和 npm
+安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
+搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar
+相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
+markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc，直接去<a
+href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。</p>
+<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
+Utterances
+还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
+discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
+<p><a
+href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
+<p><a
+href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
+<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置
+css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
+1 即不透明。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
 ]]></content>
   </entry>
   <entry>
     <title>香取大志（ヒロシ）的语源考</title>
     <url>/hiroshiness/</url>
-    <content><![CDATA[<link href="/kanbun.css" rel="stylesheet" />
-<script src="/kanbun.js"></script>
-<div
-style="display: flex; justify-content: center; align-items: center;">
-<div id="sample" class="kanbun okurigana-sinking">
-<p>我思フ故ニ我在リ。</p>
-</div>
-</div>
-<script>convertKanbunDiv(document.getElementById("sample"));</script>
-<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
+    <content><![CDATA[<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
 href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
 <p>目前一共 38 篇，上次更新语源考还是 2021 年了，而上一篇博客是 2023 年
 11 月。老师在<a
@@ -314,6 +273,19 @@ hiroshiness，ヒロシネス。在博客<a
 href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥 CPE 和
 CELTA 证书。</p>
 <p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「書いた人」的语源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p>在网上查找一些词的语源资料时看到的。在<a
+href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
 ]]></content>
   </entry>
   <entry>
@@ -347,6 +319,23 @@ CMake 编译，在 Visual Studio
 ]]></content>
   </entry>
   <entry>
+    <title>关于「嚏」和「嚔」</title>
+    <url>/kusame/</url>
+    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
+<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
+的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
+<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
+<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体，前者作为许容字体。词典等资料也一般是选择后者。</p>
+<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
+<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
+<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
+<p>之前说了，日语词典一般是使用后者。在 weblio
+古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
+<p>在 weblio
+デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于 PowerShell 7</title>
     <url>/powershell/</url>
     <content><![CDATA[<h1 id="简介">简介</h1>
@@ -370,6 +359,27 @@ href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.c
 href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
 <p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
 实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>PowerToys 介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么 B 机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -407,27 +417,6 @@ Edge 浏览器收藏过几百个网址，虽说 Edge
 或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
 url，我认为还不如收藏搜索关键词 keyword。</p>
 <figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sort keywords in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    keywords_sort(<span class="string">&#x27;keywords.txt&#x27;</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys 介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么 B 机翻。。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -513,6 +502,20 @@ href="https://linux.die.net/man/5/ssh_config">这个资料</a>。</p>
 ]]></content>
   </entry>
   <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p>又是在搜索资料时，找到了在 ameblo 的语言学相关资料。这次的大佬是<a
+href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
+url 我也姑且只能使用人家在 ameblo 的博客 id
+名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
+<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
+的内容。。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于 TLD</title>
     <url>/tld/</url>
     <content><![CDATA[<h1 id="icann">ICANN</h1>
@@ -549,40 +552,6 @@ href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
 <p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
 <p>看看 xyz 的官网（笑）。</p>
 <p>实际上 xyz 除了 xyz 这个域名之外，他们还搞了别的域名，不多说。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p>是的，我又又又是在搜索资料时，找到了在 ameblo
-的语言学相关资料。这次的大佬是<a
-href="https://ameblo.jp/ufjtmb26/">気まぐれな梟</a>。</p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位大佬的其他相关信息，资料，个人主页之类的了。。导致这篇文章的
-url 我也姑且只能使用人家在 ameblo 的博客 id
-名，ufjtmb26。名字倒是能写成罗马字，但是对于搜索毫无帮助。。两个词都是比较普遍的词，没什么特殊的地方。。</p>
-<p>倒是有其他地方的文章引用了这位大佬的内容，然而依然只是引用了在 ameblo
-的内容。。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>在 Visual Studio 中使用 gflags 库</title>
-    <url>/visualstudio-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己 Visual Studio
-项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了 GPT，需要在 gflags
-里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新 CMake 编译生成，VS 里
-install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
-GPT，需要自己在项目属性里，链接器 -&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的 cpp 代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -730,6 +699,25 @@ href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.
 <p>はなひる【嚔ひる】：鼻(はな)嚔(ひ)る。关于「嚔」和「嚏」，之前有写文章说明相应的情况，不多说。</p>
 <p>かがみる【鑑みる】：《大辞泉》标注了是「鏡(かがみ)」的动词化。从语源来看，かがみ【鏡／鑑／鑒】一般认为是来自「影(かげ)見(み)」，绕了一圈，其实还是可以看成是复合动词。</p>
 <p>かんがみる【鑑みる／鑒みる】：上一个词的音变化。需要补充的是，有的词典为了区分这两个词，将上一个词，也就是かがみる的汉字表记写成【鑑る】。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 Visual Studio 中使用 gflags 库</title>
+    <url>/visualstudio-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己 Visual Studio
+项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了 GPT，需要在 gflags
+里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新 CMake 编译生成，VS 里
+install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
+GPT，需要自己在项目属性里，链接器 -&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的 cpp 代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -882,36 +870,6 @@ href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.ll
 ]]></content>
   </entry>
   <entry>
-    <title>关于微软 Windows 系统字体及误区</title>
-    <url>/windows-font/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>先给出微软官方的相关资料。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
-<p>Windows 系统自带的字体介绍基本都在这里面了。</p>
-<h1 id="误区">误区</h1>
-<p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在
-Windows
-最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫
-SimSun，SimHei。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
-<p>楷体是 KaiTi，仿宋是 FangSong，等等，这些也都是中易公司的。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
-<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
-<p>可以看看知乎的这些问题。</p>
-<p><a
-href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
-<p><a
-href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>VS Code 没有默认开启 Auto Guess Encoding，是它的一个大错误</title>
     <url>/vscode-encode/</url>
     <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为
@@ -969,6 +927,36 @@ href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visua
 href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
 <p>这里说了，<code>settings.json</code>里的设置，和 VS Code
 里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于微软 Windows 系统字体及误区</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>先给出微软官方的相关资料。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
+<p>Windows 系统自带的字体介绍基本都在这里面了。</p>
+<h1 id="误区">误区</h1>
+<p>估计是为了便于用户使用和选择，微软将一些字体名字在显示上做了修改简化。比如，在
+Windows
+最常见到和使用的宋体，黑体，等等，其实全名是中易宋体，中易黑体，分别叫
+SimSun，SimHei。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
+<p>楷体是 KaiTi，仿宋是 FangSong，等等，这些也都是中易公司的。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>某种程度上，这样确实便于电脑使用者快速选择所需字体，但这也影响了我们很多人的认知，以为宋体（或者说明朝体），黑体（或者说哥特体）等等，就只是电脑里那个选项的字体。实际上，所谓的宋体，黑体，是指这类字体风格，不是指具体某个公司制作的字体。</p>
+<p>可以看看知乎的这些问题。</p>
+<p><a
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
+<p><a
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
   <entry>
