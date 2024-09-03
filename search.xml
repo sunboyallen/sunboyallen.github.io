@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git 清除某分支的所有 commits 记录</title>
-    <url>/git-clear-commits/</url>
-    <content><![CDATA[<p>首先贴出<a href="https://segmentfault.com/u/shiweidu">shiweidu</a>在
-2018 年于 segmentfault 上写的这篇：<a
-href="https://segmentfault.com/a/1190000012689376">如何清空一个 Git
-分支的所有 Commits</a>。</p>
-<p>是的，以前也有人遇到这种场景，也写过内容了。不过我一开始用 bing
-搜，没找到想要的内容，可能是我搜的关键词没写好，于是问了
-ChatGPT，也得到了类似的回答和操作。</p>
-<p>可能有这样的想法，想将自己某仓库的某分支的以前所有 commit
-提交记录给清除掉，只保留当前这版内容作为第一版提交。虽说这样的场景并不是那么多见，相对特殊，但也可能确实存在，大概是为了去除什么黑历史之类的吧（笑）。</p>
-<p>如果按通常的思维的话，可能会陷入误区。虽说 Git 是支持 commit
-的回滚，有相应的命令操作，通过定位到某次提交的编号，回滚到该次提交的状态，但这种方式是把内容什么的也回滚到当时的版本，不符合这次的场景需求。另一个想法就是，要删除提交记录，就把仓库什么的删了，重新建一个。虽说不是不行，但有些实际条件不允许，删掉仓库重来多少有点可惜，有点麻烦。</p>
-<p>于是我问了
-ChatGPT，他给了个我感觉很巧妙的方案，他换了个思考的角度。既然是要清除该分支所有的提交记录，相当于是第一版。那我
-checkout
-一个新的分支，把原来的分支删了，再把新分支的名字改为原来的分支名字，不就达到了等价的效果吗。于是有了下面的回答内容。假设我们操作的是
-main 分支。</p>
-<p>检出新的孤立分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout --orphan new_branch</span><br></pre></td></tr></table></figure>
-<p>提交文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span></span><br></pre></td></tr></table></figure>
-<p>删除旧的分支，重命名新的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch -D main</span><br><span class="line">git branch -m main</span><br></pre></td></tr></table></figure>
-<p>强制推送到远程仓库。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push -f origin main</span><br></pre></td></tr></table></figure>
-<p>设置本地分支跟踪远程分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/main main</span><br></pre></td></tr></table></figure>
-<p>之前那篇以及 ChatGPT
-的回答都没有具体说这最后的操作，当然无伤大雅，之后如果在分支进行拉取操作，Git
-Bash 会有相应的提示的。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
-    <url>/hackchat-warma/</url>
-    <content><![CDATA[<p>简单来说就是这个：<a
-href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
-<p>是沃玛在 2019 年 3 月 8 日发的<a
-href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>第一篇</title>
     <url>/first/</url>
     <content><![CDATA[<p>搭建博客的时间是 2023 年 5 月 20
@@ -59,147 +16,12 @@ p &amp;= \frac{h}{\lambda} \\
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于 GitHub 仓库克隆和 npm
-安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
-搭建。那里有具体说明。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar
-相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
-markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc，直接去<a
-href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。</p>
-<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
-Utterances
-还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
-discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
-<p><a
-href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
-<p><a
-href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
-<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置
-css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
-1 即不透明。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>香取大志（ヒロシ）的语源考</title>
-    <url>/hiroshiness/</url>
-    <content><![CDATA[<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
-<p>目前一共 38 篇，上次更新语源考还是 2021 年了，而上一篇博客是 2023 年
-11 月。老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是
-hiroshiness，ヒロシネス。在博客<a
-href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥 CPE 和
-CELTA 证书。</p>
-<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于「嚏」和「嚔」</title>
-    <url>/kusame/</url>
-    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
-<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
-的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
-<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
-<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体，前者作为许容字体。词典等资料也一般是选择后者。</p>
-<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
-<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
-<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
-<p>之前说了，日语词典一般是使用后者。在 weblio
-古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
-<p>在 weblio
-デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「書いた人」的语源资料</title>
-    <url>/kaitahito/</url>
-    <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
-<p>在网上查找一些词的语源资料时看到的。在<a
-href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
+    <url>/hackchat-warma/</url>
+    <content><![CDATA[<p>简单来说就是这个：<a
+href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
+<p>是沃玛在 2019 年 3 月 8 日发的<a
+href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
 ]]></content>
   </entry>
   <entry>
@@ -306,54 +128,207 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 ]]></content>
   </entry>
   <entry>
-    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
-    <url>/opencv-static/</url>
-    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
-官方的仓库，打包了编译好的各种类型的静态库放在了 releases
-里，供有需要的下载使用。</p>
-<p><a
-href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
-<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
-C++。</p>
-<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
-的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
-Studio 2022，VC17，而官方提供的只有
-VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
-<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
-C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
-提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
-编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
-<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
-的选项，勾选了那么静态库就主要只有一个大的 lib
-文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
-种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
-zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
-<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
-CMake 编译，在 Visual Studio
-生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
-<p>现在的版本是
-4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
+    <title>「書いた人」的语源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p>在网上查找一些词的语源资料时看到的。在<a
+href="https://ameblo.jp/gogen3000/">ameblo</a>有发文章。</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。看了这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>PowerToys 介绍</title>
-    <url>/powertoys/</url>
+    <title>Git 清除某分支的所有 commits 记录</title>
+    <url>/git-clear-commits/</url>
+    <content><![CDATA[<p>首先贴出<a href="https://segmentfault.com/u/shiweidu">shiweidu</a>在
+2018 年于 segmentfault 上写的这篇：<a
+href="https://segmentfault.com/a/1190000012689376">如何清空一个 Git
+分支的所有 Commits</a>。</p>
+<p>是的，以前也有人遇到这种场景，也写过内容了。不过我一开始用 bing
+搜，没找到想要的内容，可能是我搜的关键词没写好，于是问了
+ChatGPT，也得到了类似的回答和操作。</p>
+<p>可能有这样的想法，想将自己某仓库的某分支的以前所有 commit
+提交记录给清除掉，只保留当前这版内容作为第一版提交。虽说这样的场景并不是那么多见，相对特殊，但也可能确实存在，大概是为了去除什么黑历史之类的吧（笑）。</p>
+<p>如果按通常的思维的话，可能会陷入误区。虽说 Git 是支持 commit
+的回滚，有相应的命令操作，通过定位到某次提交的编号，回滚到该次提交的状态，但这种方式是把内容什么的也回滚到当时的版本，不符合这次的场景需求。另一个想法就是，要删除提交记录，就把仓库什么的删了，重新建一个。虽说不是不行，但有些实际条件不允许，删掉仓库重来多少有点可惜，有点麻烦。</p>
+<p>于是我问了
+ChatGPT，他给了个我感觉很巧妙的方案，他换了个思考的角度。既然是要清除该分支所有的提交记录，相当于是第一版。那我
+checkout
+一个新的分支，把原来的分支删了，再把新分支的名字改为原来的分支名字，不就达到了等价的效果吗。于是有了下面的回答内容。假设我们操作的是
+main 分支。</p>
+<p>检出新的孤立分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout --orphan new_branch</span><br></pre></td></tr></table></figure>
+<p>提交文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span></span><br></pre></td></tr></table></figure>
+<p>删除旧的分支，重命名新的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch -D main</span><br><span class="line">git branch -m main</span><br></pre></td></tr></table></figure>
+<p>强制推送到远程仓库。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push -f origin main</span><br></pre></td></tr></table></figure>
+<p>设置本地分支跟踪远程分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/main main</span><br></pre></td></tr></table></figure>
+<p>之前那篇以及 ChatGPT
+的回答都没有具体说这最后的操作，当然无伤大雅，之后如果在分支进行拉取操作，Git
+Bash 会有相应的提示的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于「嚏」和「嚔」</title>
+    <url>/kusame/</url>
+    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
+<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
+的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
+<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
+<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体，前者作为许容字体。词典等资料也一般是选择后者。</p>
+<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
+<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
+<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
+<p>之前说了，日语词典一般是使用后者。在 weblio
+古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
+<p>在 weblio
+デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>香取大志（ヒロシ）的语源考</title>
+    <url>/hiroshiness/</url>
+    <content><![CDATA[<p>在查找一些词的语源时，偶然看到了ヒロシ老师在博客 ameblo 的<a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">语源考</a>。</p>
+<p>目前一共 38 篇，上次更新语源考还是 2021 年了，而上一篇博客是 2023 年
+11 月。老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。香取大志（香取ヒロシ），是位艺人，艺名是
+hiroshiness，ヒロシネス。在博客<a
+href="https://ameblo.jp/eigo-garage">ameblo</a>的简介说，有剑桥 CPE 和
+CELTA 证书。</p>
+<p>人家说是说自己的观点和推测，但考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
     <content><![CDATA[<h1 id="官方文档">官方文档</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么 B 机翻。。</p>
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于 GitHub 仓库克隆和 npm
+安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
+搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar
+相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
+markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc，直接去<a
+href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。</p>
+<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
+Utterances
+还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
+discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
+<p><a
+href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
+<p><a
+href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
+<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置
+css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
+1 即不透明。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
 ]]></content>
   </entry>
   <entry>
@@ -394,29 +369,54 @@ url，我认为还不如收藏搜索关键词 keyword。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>关于 PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
+    <title>PowerToys 介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
-PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版 Windows PowerShell
-还在，而开始菜单栏会出现一个新的
-PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
-终端，就会默认为这个新版 PowerShell
-而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p>管道 Pipeline，用于处理多个命令之间的关系。</p>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么 B 机翻。。</p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
-实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
+    <url>/opencv-static/</url>
+    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
+官方的仓库，打包了编译好的各种类型的静态库放在了 releases
+里，供有需要的下载使用。</p>
+<p><a
+href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
+<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
+C++。</p>
+<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
+的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
+Studio 2022，VC17，而官方提供的只有
+VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
+C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
+提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
+编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
+<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
+的选项，勾选了那么静态库就主要只有一个大的 lib
+文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
+种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
+zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
+<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
+CMake 编译，在 Visual Studio
+生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
+<p>现在的版本是
+4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
 ]]></content>
   </entry>
   <entry>
@@ -571,6 +571,25 @@ NAT 模式。</p>
 地址，而后面输入的是自己所用的梯子的节点的端口。</p>
 <p>上述操作之后就 ok 了，需要注意的是，主机连接的 WiFi 变化时，IPv4
 地址会变，也就得改。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 Visual Studio 中使用 gflags 库</title>
+    <url>/visualstudio-gflags/</url>
+    <content><![CDATA[<p>关于我目前在自己 Visual Studio
+项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
+<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
+<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
+<p>问了 GPT，需要在 gflags
+里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
+<p>然后重新 CMake 编译生成，VS 里
+install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
+GPT，需要自己在项目属性里，链接器 -&gt;
+输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
+<p>简单地附上一个测试用的 cpp 代码，我是看<a
+href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -807,46 +826,6 @@ href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.
 ]]></content>
   </entry>
   <entry>
-    <title>在 Visual Studio 中使用 gflags 库</title>
-    <url>/visualstudio-gflags/</url>
-    <content><![CDATA[<p>关于我目前在自己 Visual Studio
-项目中成功配置过的一些第三方库，可以看<a href="/vs">这篇</a>。</p>
-<p>同样是傻瓜式的操作流程，但是这里有些需要自己手动修改的地方。</p>
-<p>如果按照通常的做法，即使在自己的项目属性里修改了，静态动态，调试还是运行，都配置一致了，编译依然可能报错，提示说<code>LNK2038 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MT_StaticRelease”(main.obj 中)</code>，所谓静态动态不匹配的问题。</p>
-<p>问了 GPT，需要在 gflags
-里那个<code>CMakeLists.txt</code>里，添加如下几行（直接在文件最后添加即可）：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(MSVC)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_RELEASE <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_RELEASE&#125; /MT&quot;</span>)</span><br><span class="line">  <span class="keyword">set</span>(CMAKE_CXX_FLAGS_DEBUG <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS_DEBUG&#125; /MTd&quot;</span>)</span><br><span class="line"><span class="keyword">endif</span>()</span><br></pre></td></tr></table></figure>
-<p>然后重新 CMake 编译生成，VS 里
-install。然后这样一来，可能就好了，或者是剩下一两个报错，提示说<code>LNK2001 无法解析的外部符号 __imp_PathMatchSpecA</code>，再次问了
-GPT，需要自己在项目属性里，链接器 -&gt;
-输入，附加依赖项，添加一个<code>Shlwapi.lib</code>文件。这样总算是能生成了。</p>
-<p>简单地附上一个测试用的 cpp 代码，我是看<a
-href="https://blog.csdn.net/Liut2016/article/details/81034267">这篇文章</a>给出的。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gflags/gflags.h&gt;</span></span></span><br><span class="line"><span class="built_in">DEFINE_string</span>(var, <span class="string">&quot;&quot;</span>, <span class="string">&quot;input var&quot;</span>);</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> ** argv)</span> </span>&#123;</span><br><span class="line">    google::<span class="built_in">ParseCommandLineFlags</span>(&amp;argc, &amp;argv, <span class="literal">true</span>);</span><br><span class="line">    std::cout &lt;&lt; FLAGS_var &lt;&lt; std::endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>VS Code 没有默认开启 Auto Guess Encoding，是它的一个大错误</title>
-    <url>/vscode-encode/</url>
-    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为
-UTF-8，或者说一般要设置为 UTF-8，这样才不会乱，当面对各种语言的时候。VS
-Code 当然也是如此，对于文本文件的默认打开和保存方式都是
-UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
-<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
-来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于 masm32
-编程，涉及中文字符串的时候，还真得只能用 GB2312 编码，没法用 UTF-8
-编码。</p>
-<p>很多时候我需要用 VS Code 打开 Visual Studio
-项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
-UTF-8
-打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
-UTF-8
-打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
-<p>后来上网查才发现 VS Code 可以在设置里勾选 Auto Guess Encoding
-选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Windows 上使用 Visual Studio 进行 C++ 项目开发，调用第三方库</title>
     <url>/visualstudio/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -953,65 +932,6 @@ href="/visualstudio-gflags">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
-    <url>/vscode-clang-format/</url>
-    <content><![CDATA[<p>众所周知，在 VS Code
-很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于
-C/C++同样如此。</p>
-<p>以下是官方文档中，关于在 VS Code 用 clang-format 来格式化 C++
-的内容，不多说。</p>
-<p><a
-href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
-<p>以下是 LLVM 官网相关资料。</p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
-<p>常用的配置选项。</p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
-<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
-<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
-格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
-格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
-0，根据自己需要。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>使用 winget upgrade/update 时需要注意的问题</title>
-    <url>/winget-upgrade/</url>
-    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
-<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
-<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
-bug 的。</p>
-<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
-msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在 D
-盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
-Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
-uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
-<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
-盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
-GB 的事情，大不了给 C 盘扩容。安装在 C
-盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答：<a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>关于微软 Windows 系统字体及误区</title>
     <url>/windows-font/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -1039,6 +959,86 @@ href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://l
 href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
 <p><a
 href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答：<a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
+    <url>/vscode-clang-format/</url>
+    <content><![CDATA[<p>众所周知，在 VS Code
+很方便进行代码格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。基本什么语言都能搞。对于
+C/C++同样如此。</p>
+<p>以下是官方文档中，关于在 VS Code 用 clang-format 来格式化 C++
+的内容，不多说。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+<p>以下是 LLVM 官网相关资料。</p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
+格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
+格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
+0，根据自己需要。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 没有默认开启 Auto Guess Encoding，是它的一个大错误</title>
+    <url>/vscode-encode/</url>
+    <content><![CDATA[<p>这篇是用来发发牢骚的。众所周知，现在的文本文件的编码一般是设置为
+UTF-8，或者说一般要设置为 UTF-8，这样才不会乱，当面对各种语言的时候。VS
+Code 当然也是如此，对于文本文件的默认打开和保存方式都是
+UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
+来编码中文字符，需要自己在设置中修改保存方式之类的。并且对于 masm32
+编程，涉及中文字符串的时候，还真得只能用 GB2312 编码，没法用 UTF-8
+编码。</p>
+<p>很多时候我需要用 VS Code 打开 Visual Studio
+项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
+UTF-8
+打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
+UTF-8
+打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，属实没绷住。</p>
+<p>后来上网查才发现 VS Code 可以在设置里勾选 Auto Guess Encoding
+选项，但是默认是不会给你勾选的。我的评价是，这是他的一个设计错误。当然，专业的事情还是得让专业的人来评价，我就不多说了，聊且发点牢骚得了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用 winget upgrade/update 时需要注意的问题</title>
+    <url>/winget-upgrade/</url>
+    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
+bug 的。</p>
+<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
+msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在 D
+盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
+Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
+uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
+盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
+GB 的事情，大不了给 C 盘扩容。安装在 C
+盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
 ]]></content>
   </entry>
   <entry>
