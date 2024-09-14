@@ -35,106 +35,6 @@ Bash 会有相应的提示的。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<p>关于 GitHub 仓库克隆和 npm
-安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
-搭建。那里有具体说明。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar
-相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
-markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc，直接去<a
-href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。</p>
-<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
-Utterances
-还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
-discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
-<p><a
-href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
-<p><a
-href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
-<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置
-css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
-1 即不透明。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>第一篇</title>
     <url>/first/</url>
     <content><![CDATA[<p>搭建博客的时间是 2023 年 5 月 20
@@ -147,6 +47,15 @@ p &amp;= \frac{h}{\lambda} \\
 \varepsilon &amp;= h \nu \\
 \end{aligned}
 \]</span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
+    <url>/hackchat-warma/</url>
+    <content><![CDATA[<p>简单来说就是这个：<a
+href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
+<p>是沃玛在 2019 年 3 月 8 日发的<a
+href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
 ]]></content>
   </entry>
   <entry>
@@ -264,17 +173,103 @@ href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/ei
 ]]></content>
   </entry>
   <entry>
-    <title>「書いた人」的词源资料</title>
-    <url>/kaitahito/</url>
-    <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
 <p><a
-href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
-<p>又看了你乎的这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改（目前看来应该是不会了）。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<p>关于 GitHub 仓库克隆和 npm
+安装，这两种安装方式的情况和具体实践，可以看我另一篇博客，关于 Hexo
+搭建。那里有具体说明。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar
+相关的内容。除了选择头像图片之外，还可以设置是否显示为圆形<code>rounded</code>，是否可旋转<code>rotated</code>，也就是光标移动到头像上时，头像是否会跟着旋转。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容，或者在
+markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式要求，两侧的<code>$</code>符号要紧挨着中间的公式内容，不能有空格，而要与外面的文字之间有空格。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc，直接去<a
+href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。</p>
+<p>而 Gitalk 在使用的安全性和配置的便利性来说不如 Utterances，而且
+Utterances
+还有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<p>除了这些之外，还有 Giscus，他则是基于 GitHub 的
+discussions，优点是能够对评论进行回复，缺点则是没有邮件通知，只是在一开始创建讨论的时候有通知，后面的就不行。但还是把相关资料贴在下面。</p>
+<p><a
+href="https://theme-next.js.org/plugins/">https://theme-next.js.org/plugins/</a></p>
+<p><a
+href="https://github.com/next-theme/hexo-next-giscus">https://github.com/next-theme/hexo-next-giscus</a></p>
+<p><a href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置
+css。第一个是设置背景图。第二个是设置文章区块的透明度，数值越低越透明，最高为
+1 即不透明。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
 ]]></content>
   </entry>
   <entry>
@@ -285,45 +280,6 @@ href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/
 <p>S blog，えすぶろ。</p>
 <p>试过了，在 amebla 搜索「S
 blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
-    <url>/hackchat-warma/</url>
-    <content><![CDATA[<p>简单来说就是这个：<a
-href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
-<p>是沃玛在 2019 年 3 月 8 日发的<a
-href="https://www.bilibili.com/video/av45636526/">视频</a>，她发了微博，然后就有不少人进这个聊天室。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
-    <url>/opencv-static/</url>
-    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
-官方的仓库，打包了编译好的各种类型的静态库放在了 releases
-里，供有需要的下载使用。</p>
-<p><a
-href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
-<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
-C++。</p>
-<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
-的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
-Studio 2022，VC17，而官方提供的只有
-VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
-<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
-C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
-提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
-编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
-<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
-的选项，勾选了那么静态库就主要只有一个大的 lib
-文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
-种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
-zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
-<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
-CMake 编译，在 Visual Studio
-生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
-<p>现在的版本是
-4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
 ]]></content>
   </entry>
   <entry>
@@ -370,6 +326,57 @@ href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.c
 ]]></content>
   </entry>
   <entry>
+    <title>PowerToys 介绍</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<h1 id="mouse-公用事业">Mouse 公用事业</h1>
+<p>微软官方文档的什么 B 机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>编译了些 OpenCV 的 C++ 静态库，放在了 GitHub releases，用于 Visual Studio 项目使用</title>
+    <url>/opencv-static/</url>
+    <content><![CDATA[<p>省流：闲来无事（大嘘），fork 了 OpenCV
+官方的仓库，打包了编译好的各种类型的静态库放在了 releases
+里，供有需要的下载使用。</p>
+<p><a
+href="https://github.com/sunboyallen/opencv/releases">https://github.com/sunboyallen/opencv/releases</a></p>
+<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
+C++。</p>
+<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
+的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
+Studio 2022，VC17，而官方提供的只有
+VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
+C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
+提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
+编译了静态库。只要也使用 Win10，VS2022，那么应该是通用的。</p>
+<p>VS 2022 可选 Debug 和 Release，然后 OpenCV 提供了是否打包成 world
+的选项，勾选了那么静态库就主要只有一个大的 lib
+文件，引用静态库就只需要添加那一个就行。所以这样至少就有 4
+种组合，我都进行了编译，在 release 页可以根据项目需要，点击下载相应的
+zip 文件。下载完应该是自带了头文件和静态库的，根据需要添加引用即可。</p>
+<p>当然如果要自己通过源代码编译也是 ok 的，自己去官网仓库克隆下来自己用
+CMake 编译，在 Visual Studio
+生成。但主要还是消耗时间，而且库比较大，占空间。总之还是看自己需要吧，毕竟有这种需要的应该不多了。</p>
+<p>现在的版本是
+4.10，想来之后如果有新的版本，估计到时候如果有空的话也会随之再编译若干份新的，然后发布。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>用 Python 的 tldextract 库来解析 url，真是个好东西</title>
     <url>/python-tldextract/</url>
     <content><![CDATA[<h1 id="简介">简介</h1>
@@ -404,27 +411,6 @@ Edge 浏览器收藏过几百个网址，虽说 Edge
 或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
 url，我认为还不如收藏搜索关键词 keyword。</p>
 <figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;Sort keywords in a text file.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    keywords_sort(<span class="string">&#x27;keywords.txt&#x27;</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>PowerToys 介绍</title>
-    <url>/powertoys/</url>
-    <content><![CDATA[<h1 id="官方文档">官方文档</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
-<h1 id="颜色选择器-colorpicker">颜色选择器 ColorPicker</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
-<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
-<h1 id="屏幕标尺-screen-ruler">屏幕标尺 Screen ruler</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
-<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
-<h1 id="mouse-公用事业">Mouse 公用事业</h1>
-<p>微软官方文档的什么 B 机翻。。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
-<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
 ]]></content>
   </entry>
   <entry>
@@ -546,18 +532,6 @@ href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
 <p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
 <p>看看 xyz 的官网（笑）。</p>
 <p>实际上 xyz 除了 xyz 这个域名之外，他们还搞了别的域名，不多说。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
-<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
-有的。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
 ]]></content>
   </entry>
   <entry>
@@ -734,8 +708,8 @@ href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里
 </tbody>
 </table>
 <h1 id="术语规范">术语规范</h1>
-<p>一些需要规范使用的术语，这里主要以是否能在《大辞泉》中作为词条，或者是
-wiki 中是否作为词条，为参考标准。</p>
+<p>一些需要规范使用的术语，这里主要参考标准是是否在《大辞泉》中作为词条，次要标准是是否在
+wiki 中作为词条，其实不够严谨但大概够用。</p>
 <p>古典日语：日语 wiki
 中，“古典日本語”重定向到“中古日本語”，另有“上代日本語”等词条。一般等同于“文語”。“现代日语”同理，一般等同于“口語”。</p>
 <p>古典文法：《大辞泉》虽然没有单列成词条，但作为“文語文法”的义项标注为了同义词。网络资料中仍按前者居多。</p>
@@ -793,6 +767,43 @@ href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.
 <p>はなひる【嚔ひる】：鼻(はな)嚔(ひ)る。关于「嚔」和「嚏」，之前有写文章说明相应的情况，不多说。</p>
 <p>かがみる【鑑みる】：《大辞泉》标注了是「鏡(かがみ)」的动词化。从词源来看，かがみ【鏡／鑑／鑒】一般认为是来自「影(かげ)見(み)」，绕了一圈，其实还是可以看成是复合动词。</p>
 <p>かんがみる【鑑みる／鑒みる】：上一个词的音变化。需要补充的是，有的词典为了区分这两个词，将上一个词，也就是かがみる的汉字表记写成【鑑る】。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>现代日语，口语文法中，特殊的一段动词整理</title>
+    <url>/verb-special-ichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>写在最前面，是碳酸氢镭大佬的<a
+href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，给了我相当多的帮助和启发。再次再次感谢大佬！</p>
+<p>我必须要驳斥网上各种所谓“特殊的五段动词”的说法。令人痛心的是，国内有众多的营销号不顾语法事实，犯着基本的逻辑错误，“倒反天罡”，硬生生地整理了所谓“特殊”的五段动词（或者所谓一类动词，比如《标日》的叫法）。什么
+26 个，33 个，34 个，各种牛鬼蛇神都蹦出来了。。。</p>
+<p>当然了，从观察来看，十几年来基本是这种情况，我大概也改变不了什么，我也用不着去费那些心思。营销号自然是不会在意这些的，他们写了那么多条文章，当然不会在意这单单一条里的错误。</p>
+<p>而对于一部分还在坚持使用或者坚信所谓特殊的五段动词的初学者，我更不会刻意纠正或者吐槽什么，主要还是营销号的锅。对于一般学习者而言，无非是哪种方便记忆就用哪种。我就简单贴出来我需要说清楚的内容，有兴趣的就使用就行。反正有之前写的几篇作为基础，这篇要具体说的不需要很多。</p>
+<p>也怪不得一般学习者，国内使用“学校文法”的表述的教材就不多，《标日》也只是在前言里提及和对比。这些教材教动词，以所谓“ます形”，连用形为主体，不能太指望他们能基于ます形能对动词的分类和定义有多么明确。像《标日》对于所谓一类、二类、三类动词的分类和定义，相对来说就不算那么明确，勉勉强强吧（初级，第
+14 课，语法解释
+1）。然而，《标日》都认为需要特别记忆的也是二类动词，而不是网上各种所谓特殊的一类动词。</p>
+<h1 id="前置知识">前置知识</h1>
+<p>那么首先就要求，需要明确地知道对于那几种动词的定义和分类。如果还不清楚关于五段动词，一段动词等等的定义，或者不清楚关于“活用”的概念的话，还是先去了解为好。本质上，学校文法对于动词的分类就是根据活用的不同来分类的。</p>
+<p>并且这里我也解释一下前面说的“不顾语法事实，犯着基本的逻辑错误”是指什么。我想表达的意思是，如果那些营销号接触的是正确的关于那几种动词的分类和定义的话（即使使用的是国内大多数教材用的三类动词的分法也行，只要定义明确），他们是怎么由：“一段动词的<strong>词尾</strong>是イ段假名或エ段假名加上「る」”，然后就推导出：“<strong>动词结尾</strong>是イ段假名或エ段假名加上「る」的动词都是一段动词”的？（当然了，营销号之所以是营销号本就是有原因的，笑笑就是。）</p>
+<p>并且注意我的用词。前面说的是<strong>词尾</strong>（日语叫「語尾」，「活用語尾」），顾名思义。</p>
+<p>说了要看活用啊，活用。并且，动词的汉字表记不是白给的，送假名不是白写的。另外，古典文法（文语文法）的内容，也可以简单看看。我之前那几篇文章，对于相关内容并无赘述，网上资料比较多了。当然，可以直接看之前大佬的那篇回答。</p>
+<h1 id="省流">省流</h1>
+<p>简单来说，标题说的“特殊”的一段动词，指的是一段动词中，整个动词的基本形仅由一个イ段假名或エ段假名（分别属于上一段活用和下一段活用）加上「る」构成的那些动词。</p>
+<p><strong>即使没有关于古典文法（文语文法）的基础</strong>，如果手头有词典，熟练使用
+weblio
+等网站工具的话，想想也知道这些特殊的一段动词极其容易通过枚举就能自己整理出来。如果只是想知道有哪些，那么自己去查去整理就行，或者看之前说的那位大佬的回答（虽然人家少写了几个，但是常用的人家都列出来了，人家讲的很清楚）。</p>
+<p>粗糙地从文语文法来说的话，将口语中，特殊的一段动词分成上一段和下一段来讲各自的直接来源：</p>
+<p>特殊的上一段动词，直接来源，是文语文法中，上一段活用的动词。具体见<a
+href="/verb-kamiichidan">这篇</a>。</p>
+<p>特殊的下一段动词，直接来源，是文语文法中，下二段活用的特殊动词。具体见<a
+href="/verb-special-nidan">这篇</a>。</p>
+<p>如果还想省流，在上面两篇文章中，直接跳到各自的“其他表格”部分，各自的第一个表格就是。</p>
+<h1 id="ける蹴る">ける【蹴る】</h1>
+<p>虽然跟本文无直接关系，但单独拿出来说，放在这里。显然是称不上所谓特殊的五段动词了，但有其他方面的特殊。</p>
+<p>这个词在口语中是五段。在文语文法中，是唯一一个下一段活用的动词。江户后期逐渐四段化。</p>
+<p>而再往古了说，这个词本来是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（如果没显示出来符号，那个是小ゑ，U+1B151）。</p>
+<p>具体见《大辞泉》等资料。</p>
+<p>主体内容结束了。结果大半的篇幅在吐槽。</p>
 ]]></content>
   </entry>
   <entry>
@@ -856,6 +867,7 @@ weblio 枚举查找。</p>
 </table>
 <p>虽然《大辞泉》和《学研全訳古語辞典》没有明说，不过容易理解的是，ふ【経】和ふ【綜】应该是具有同源关系。如果看成一个词的话，那说是
 5 个特殊的动词也行。</p>
+<h1 id="其他表格">其他表格</h1>
 <p>上面这些词在口语中的表现如下。这些构成了口语中，所有特殊的下一段动词。</p>
 <table>
 <thead>
@@ -907,38 +919,6 @@ href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里
 文語の下二段動詞「出(い)づ」の連体形「いづる」が終止形としても用いられるようになり、それがさらに「づる」に変化し、この「づる」が下一段化してできた形。</p>
 <p>《学研全訳古語辞典》づ【出】：</p>
 <p>「い（出）づ」の「い」が脱落したもの。上代語。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>现代日语，口语文法中，特殊的一段动词整理</title>
-    <url>/verb-special-ichidan/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>写在最前面，是碳酸氢镭大佬的<a
-href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，给了我相当多的帮助和启发。再次再次感谢大佬！</p>
-<p>我必须要驳斥网上各种所谓“特殊的五段动词”的说法。令人痛心的是，国内有众多的营销号不顾语法事实，犯着基本的逻辑错误，“倒反天罡”，硬生生地整理了所谓“特殊”的五段动词（或者所谓一类动词，比如《标日》的叫法）。什么
-26 个，33 个，34 个，各种牛鬼蛇神都蹦出来了。。。</p>
-<p>当然了，从观察来看，十几年来基本是这种情况，我大概也改变不了什么，我也用不着去费那些心思。营销号自然是不会在意这些的，他们写了那么多条文章，当然不会在意这单单一条里的错误。</p>
-<p>而对于一部分还在坚持使用或者坚信所谓特殊的五段动词的初学者，我更不会刻意纠正或者吐槽什么，主要还是营销号的锅。对于一般学习者而言，无非是哪种方便记忆就用哪种。我就简单贴出来我需要说清楚的内容，有兴趣的就使用就行。反正有之前写的几篇作为基础，这篇要具体说的不需要很多。</p>
-<p>也怪不得一般学习者，国内使用“学校文法”的表述的教材就不多，《标日》也只是在前言里提及和对比。这些教材教动词，以所谓“ます形”，连用形为主体，不能太指望他们能基于ます形能对动词的分类和定义有多么明确。像《标日》对于所谓一类、二类、三类动词的分类和定义，相对来说就不算那么明确，勉勉强强吧（初级，第
-14 课，语法解释
-1）。然而，《标日》都认为需要特别记忆的也是二类动词，而不是网上各种所谓特殊的一类动词。</p>
-<h1 id="前置知识">前置知识</h1>
-<p>那么首先就要求，需要明确地知道对于那几种动词的定义和分类。如果还不清楚关于五段动词，一段动词等等的定义，或者不清楚关于“活用”的概念的话，还是先去了解为好。本质上，学校文法对于动词的分类就是根据活用的不同来分类的。</p>
-<p>并且这里我也解释一下前面说的“不顾语法事实，犯着基本的逻辑错误”是指什么。我想表达的意思是，如果那些营销号接触的是正确的关于那几种动词的分类和定义的话（即使使用的是国内大多数教材用的三类动词的分法也行，只要定义明确），他们是怎么由：“一段动词的<strong>词尾</strong>是イ段假名或エ段假名加上「る」”，然后就推导出：“<strong>动词结尾</strong>是イ段假名或エ段假名加上「る」的动词都是一段动词”的？（当然了，营销号之所以是营销号本就是有原因的，笑笑就是。）</p>
-<p>并且注意我的用词。前面说的是<strong>词尾</strong>（日语叫「語尾」，「活用語尾」），顾名思义。</p>
-<p>说了要看活用啊，活用。并且，动词的汉字表记不是白给的，送假名不是白写的。另外，古典文法（文语文法）的内容，也可以简单看看。我之前那几篇文章，对于相关内容并无赘述，网上资料比较多了。当然，可以直接看之前大佬的那篇回答。</p>
-<h1 id="省流">省流</h1>
-<p>简单来说，标题说的“特殊”的一段动词，指的是一段动词中，整个动词的基本形仅由一个イ段假名或エ段假名（分别属于上一段活用和下一段活用）加上「る」构成的那些动词。</p>
-<p><strong>即使没有关于古典文法（文语文法）的基础</strong>，如果手头有词典，熟练使用
-weblio
-等网站工具的话，想想也知道这些特殊的一段动词极其容易通过枚举就能自己整理出来。如果只是想知道有哪些，那么自己去查去整理就行，或者看之前说的那位大佬的回答（虽然人家少写了几个，但是常用的人家都列出来了，人家讲的很清楚）。</p>
-<p>粗糙地从文语文法来说的话，将特殊的一段动词分成上一段和下一段来讲，更方便些。</p>
-<p>特殊的上一段动词，直接来源，是文语文法中，上一段活用的动词。具体见<a
-href="/verb-kamiichidan">这篇</a>。</p>
-<p>特殊的下一段动词，直接来源，是文语文法中，下二段活用的特殊动词。具体见<a
-href="/verb-special-nidan">这篇</a>。</p>
-<p>这里只需要单独说明ける【蹴る】这个词就行了。这个词是文语文法中唯一一个下一段活用的动词，到了后面变成了四段，现在口语是五段。但其实，这个词更原本是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（如果没显示出来符号，那个是小型假名ゑ）。具体见《大辞泉》或者其他更专业的资料。</p>
-<p>前面两篇的列举还是比较明确了，并且自己也很方便查。所以我这篇的主体内容结束了。对，就这样。笑死，结果大半的篇幅在吐槽。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1171,41 +1151,6 @@ href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visua
 ]]></content>
   </entry>
   <entry>
-    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答：<a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>使用 winget upgrade/update 时需要注意的问题</title>
-    <url>/winget-upgrade/</url>
-    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
-<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
-<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
-bug 的。</p>
-<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
-msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
-<p>比如有的软件你当初安装的时候，设置安装路径在 D
-盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
-Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
-uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
-<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
-盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
-GB 的事情，大不了给 C 盘扩容。安装在 C
-盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>关于微软 Windows 系统字体及误区</title>
     <url>/windows-font/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -1233,6 +1178,67 @@ href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://l
 href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
 <p><a
 href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
+<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
+有的。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「書いた人」的词源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p><a
+href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
+<p>又看了你乎的这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用 winget upgrade/update 时需要注意的问题</title>
+    <url>/winget-upgrade/</url>
+    <content><![CDATA[<p>关于 WinGet，如果不清楚的可以看看微软官方的介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p>其中的<code>upgrade</code>命令，用于升级更新应用程序。下面是具体介绍。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
+bug 的。</p>
+<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
+msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>比如有的软件你当初安装的时候，设置安装路径在 D
+盘，用这个来更新的话，可能会给你安装到 C 盘，即他自己的默认路径去。比如
+Zotero 就是如此，升级之后发现他升级安装到 C 盘去了，原先 D 盘那份的
+uninstall 又运行不了，最后还得用 geek uninstaller 来卸载。。。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
+盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
+GB 的事情，大不了给 C 盘扩容。安装在 C
+盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>查看自己 Windows 电脑的产品密钥（备忘）</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答：<a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
