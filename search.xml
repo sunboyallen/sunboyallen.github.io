@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>德田的文化日记博客</title>
+    <url>/bhjang3/</url>
+    <content><![CDATA[<p><a
+href="https://blog.naver.com/bhjang3">https://blog.naver.com/bhjang3</a></p>
+<p>德 田 의 문 화 일 기.</p>
+<p>德田의 문화 일기</p>
+<p>德田의 文化 日記</p>
+<p>德田的文化日记</p>
+<p>内容很多，里面也有关于词源的资料。</p>
+<p><a
+href="https://blog.naver.com/bhjang3/221387962887">https://blog.naver.com/bhjang3/221387962887</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>沃玛 warma 在 hack.chat 的聊天室（迫真）</title>
+    <url>/hackchat-warma/</url>
+    <content><![CDATA[<p>简单来说就是这个。</p>
+<p><a
+href="https://hack.chat/?kt1j8rpc">https://hack.chat/?kt1j8rpc</a></p>
+<p>沃玛在 2019 年 3 月 8 日发的视频。</p>
+<p><a
+href="https://www.bilibili.com/video/av45636526/">https://www.bilibili.com/video/av45636526/</a></p>
+<p>视频里也说了，沃玛是将聊天室链接分享到了微博，当天就有不少网友点进去聊天。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>希望自己一切顺利。</p>
+<p>未来可能会写一些别的内容。</p>
+<p>以下是 <span class="math inline">\(\LaTeX\)</span> 公式测试。</p>
+<p><span class="math display">\[
+\begin{aligned}
+p &amp;= \frac{h}{\lambda} \\
+\varepsilon &amp;= h \nu \\
+\end{aligned}
+\]</span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改。目前看来大概是不会了。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar 相关的内容。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容。对于
+NexT，也可以在 markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式的建议书写习惯是，<code>$</code>包裹的公式要紧挨着公式内容，<code>$</code>与周围的其他内容留有空格隔开。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。另外，电脑本地也要安装
+pandoc，直接去<a
+href="https://pandoc.org/">官网</a>安装。安装完最好重启电脑（不重启好像也行，反正要退出命令行重进）。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。Utterances
+有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置 css。第一个是设置背景图。第二个是设置首页每篇 post block
+块的不透明度。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 GitHub Pages 搭建 Hexo 博客</title>
+    <url>/hexo/</url>
+    <content><![CDATA[<h1 id="概述">概述</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<p>另外，建议在后续关于 GitHub 仓库操作时，使用 ssh
+地址，以免连接超时。</p>
+<p>在自己 GitHub 中要有一个 public
+仓库，名字为<code>你的 GitHub 用户名.github.io</code>，用于部署。可以先看这部分内容：<a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a>，但是先看最开头的部分就好。</p>
+<p>建议使用 VS Code，方便操作。</p>
+<h1 id="建站">建站</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
+<h1 id="配置">配置</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<h1 id="命令">命令</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
+<p>好习惯是每次<code>generate</code>之前都先<code>clean</code>一下。</p>
+<h1 id="部署">部署</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p>
+<p><a
+href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></p>
+<p>还是那句话，这里 GitHub 仓库地址建议使用 ssh 地址。</p>
+<h1 id="仓库备份">仓库备份</h1>
+<p>直接将当前博客目录作为 Git
+本地备份仓库地址。<code>.gitignore</code>都帮你写好了。在 GitHub
+新建相应的博客仓库。</p>
+<h1 id="写作">写作</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></p>
+<p>这里，如果指定<code>layout</code>参数为<code>page</code>，就可以在导航栏添加自己的页面，比如
+about 之类的。具体到不同的主题，可能还需要进行其他的设置。</p>
+<h1 id="front-matter">Front-matter</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/front-matter">https://hexo.io/zh-cn/docs/front-matter</a></p>
+<h1 id="资源管理">资源管理</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
+<p>按照里面的设置，就可以有更方便的在 markdown 嵌入图片的方式。</p>
+<h1 id="自定义">自定义</h1>
+<h2 id="永久链接">永久链接</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/permalinks">https://hexo.io/zh-cn/docs/permalinks</a></p>
+<p>如果不修改，默认的每篇文章的链接是带日期的。我自己一般使用<code>/:title/</code>，这样链接简洁。</p>
+<h2 id="主题">主题</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/themes">https://hexo.io/zh-cn/docs/themes</a></p>
+<p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>有许多不错的主题可用，这里只是官方推荐的主题。但实际上很多大佬自己开发设计了不错的主题，可以自行搜索。如果是初次使用
+Hexo，非常建议使用 NexT
+主题。到了后面可以自己使用更适合自己品味的主题。</p>
+<p>设置主题的方式是，修改根目录<code>_config.yml</code>的<code>theme</code>的值，为相应主题的名字。</p>
+<p>大多数主题的传统安装方法是：将主题相应的 GitHub 仓库 clone
+到<code>themes</code>文件夹中。每个主题都有自己的配置文件<code>_config.yml</code>，位于自己主题的文件夹中。</p>
+<p>但是，注意到，自 Hexo 5.0.0
+起，增加了个特性，可以设置独立的<code>_config.[theme].yml</code>文件，放于站点根目录下，也就是与<code>_config.yml</code>同级的位置。这里的<code>[theme]</code>就是相应的主题的名字，比如
+NexT
+主题的配置文件就是<code>_config.next.yml</code>。换句话说，每个主题的配置现在可以在网站根目录下独立设置了。主要看“代替主题配置文件”的部分。</p>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<p>这样的好处在于，你可以在本地安装多个主题，能够很方便地保存各个主题的配置，并且很方便地切换，只要修改<code>_config.yml</code>的<code>theme</code>的值即可。</p>
+<p>另一个好处就是，可以方便如今很多主题支持的另一种安装方式：通过 npm
+安装。这样，主题就会安装在<code>node_modules</code>目录下。如果不使用上述特性，那么你要在<code>node_modules</code>目录下的相应主题插件文件夹的<code>_config.yml</code>修改，翻找很麻烦，并且如果
+npm
+更新主题的话，配置内容会被覆盖。而使用了<code>_config.[theme].yml</code>特性，可以很方便地进行主题的配置。只要将相应主题的配置文件复制到网站根目录下，文件名修改为上述格式即可。</p>
+<h2 id="代码高亮">代码高亮</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/syntax-highlight">https://hexo.io/zh-cn/docs/syntax-highlight</a></p>
+<h2 id="插件">插件</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/plugins">https://hexo.io/zh-cn/docs/plugins</a></p>
+<p><a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
+<p>官方提供的插件列表是这个，然而同样是没啥用，显示的并不完全，并且另外一种更常用的搜索方式是在
+npm 官网搜索。</p>
+<p><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
+<p>我这里就简单介绍一些常用的插件。</p>
+<h3 id="hexo-generator-searchdb">hexo-generator-searchdb</h3>
+<p><a
+href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.com/package/hexo-generator-searchdb</a></p>
+<p>用于给网页添加搜索功能。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+<p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「香取ヒロシ」的词源资料</title>
+    <url>/hiroshi/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/eigo-garage/theme-10100760487.html</a></p>
+<p>語源考</p>
+<p>Come on by！ 英語ガレージ！　☆☆☆</p>
+<p>香取ヒロシ（香取大志）</p>
+<p>老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。在 ameblo
+的简介说，有剑桥 CPE 和 CELTA 证书。</p>
+<p>老师说是说博客的内容主要是自己的观点和推测，不过考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 InfluxDB</title>
+    <url>/influxdb/</url>
+    <content><![CDATA[<p>主要是关于在 Linux Ubuntu 使用 InfluxDB v2
+的备忘，特别是公共服务器的场景。当然自己 WSL 使用也是同理。</p>
+<p><a
+href="https://www.influxdata.com/">https://www.influxdata.com/</a></p>
+<p><a
+href="https://docs.influxdata.com/">https://docs.influxdata.com/</a></p>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/">https://docs.influxdata.com/influxdb/v2/</a></p>
+<h1 id="install-influxdb">Install InfluxDB</h1>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/install/">https://docs.influxdata.com/influxdb/v2/install/</a></p>
+<p>Install InfluxDB as a service with systemd</p>
+<p>具体命令见上面的官方文档。</p>
+<p>相关的命令，根据需要，自行加上<code>sudo</code>。</p>
+<p>APT 是全局性的包管理器，一般所有用户共享系统安装的软件包。对于
+influxdb
+同样如此，安装后，各个用户都能使用，只是各自有各自的配置文件，不会干扰。具体在后面会说。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt list --installed | grep influx</span><br></pre></td></tr></table></figure>
+<p>就日常使用感受来说，官方文档说的第 2 种安装方式较少用。</p>
+<p>查看服务状态。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb status</span><br></pre></td></tr></table></figure>
+<p>如果要具体查看端口状态。端口号默认是<code>8086</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> lsof -i :8086</span><br></pre></td></tr></table></figure>
+<p>如有需要。虽然个人感觉一般用不到。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">kill</span> -9 &lt;PID&gt;</span><br></pre></td></tr></table></figure>
+<p>启动服务。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb start</span><br></pre></td></tr></table></figure>
+<p>停止服务。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br></pre></td></tr></table></figure>
+<p>influx
+安装后，默认是开机自启的，即使之前使用了<code>stop</code>，重启服务器或者
+WSL 之类的之后会自己启动。如果想关闭自启动，可以使用这个。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">disable</span> influxdb</span><br></pre></td></tr></table></figure>
+<h1 id="get-started-with-influxdb">Get started with InfluxDB</h1>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/get-started/">https://docs.influxdata.com/influxdb/v2/get-started/</a></p>
+<p>UI 和 CLI 都是很方便的，建议都使用。</p>
+<p><code>http://localhost:8086/</code></p>
+<p>在 influxdb 运行的情况下。</p>
+<p>对于服务器也是可以的，如果只在用一个服务器，那么上面的地址就直接可以的，或者使用服务器的
+IP 地址。</p>
+<h2 id="set-up-influxdb">Set up InfluxDB</h2>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/get-started/setup/">https://docs.influxdata.com/influxdb/v2/get-started/setup/</a></p>
+<p>这里个人建议通过 CLI 命令行来设置。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<p>按照提示，设置自己的
+username，password，organization，bucket，等等内容。</p>
+<p>名字不要紧，后续都可以再修改的。</p>
+<h1 id="develop-with-the-influxdb-api">Develop with the InfluxDB
+API</h1>
+<h2 id="python-client-library">Python client library</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install influxdb-client</span><br></pre></td></tr></table></figure>
+<p>还是很方便的。另外 java 也有相关库可以用。并且这些默认是使用 v2
+版本。</p>
+<h1 id="administer-influxdb">Administer InfluxDB</h1>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/admin/">https://docs.influxdata.com/influxdb/v2/admin/</a></p>
+<p>具体对于 organization，bucket，user，token
+等的管理。包括创建，查看，更新，删除，等内容。官方文档的这一节是按照具体需求场景来分的章节的，另外也可以参考后文
+reference 部分。</p>
+<p>个人建议是使用 CLI 来管理，UI
+当然也行，主要看自己的使用习惯和方便程度。另外，对于这些，能直接修改就修改，能更新就更新，尽量少用删除相关的命令。</p>
+<h2 id="manage-api-tokens">Manage API tokens</h2>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/admin/tokens/">https://docs.influxdata.com/influxdb/v2/admin/tokens/</a></p>
+<p>请善待自己的
+token，好好利用，在配置文件里好好保管。这样就不用专门去记住自己的用户名，组织，等内容，即使忘记密码也可以重新设置。</p>
+<p>这里只需要指出对于 token 的更新的操作，这里指的是对于 token 的
+description 的更新，在 UI 上更新。不是说更新 token 的内容。</p>
+<p>另外，假如自己真的不小心在 UI 或者 CLI 将自己唯一的 token 给删除
+delete 了，那么就需要重新 setup 走一遍。先停止运行 influxdb
+服务，删除数据文件，删除配置信息，然后重新运行 influxdb 服务。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">rm</span> -rf /var/lib/influxdb</span><br><span class="line"><span class="built_in">rm</span> -r ~/.influxdbv2/*</span><br><span class="line"><span class="built_in">sudo</span> service influxdb start</span><br><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<h1 id="influxdb-reference">InfluxDB reference</h1>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/">https://docs.influxdata.com/influxdb/v2/reference/</a></p>
+<h2 id="influxdb-internals">InfluxDB internals</h2>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/internals/">https://docs.influxdata.com/influxdb/v2/reference/internals/</a></p>
+<h3 id="influxdb-storage-engine">InfluxDB storage engine</h3>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/internals/storage-engine/">https://docs.influxdata.com/influxdb/v2/reference/internals/storage-engine/</a></p>
+<p>数据文件存储相关。</p>
+<h3 id="influxdb-file-system-layout">InfluxDB file system layout</h3>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/">https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/</a></p>
+<p>Configs path</p>
+<p><code>~/.influxdbv2/configs</code></p>
+<p>在什么用户模式下<code>setup</code>的，配置文件就在什么用户目录下，这样就各自独立。特别地，在
+root
+模式下<code>setup</code>的，配置文件就在<code>/root/.influxdbv2/configs</code>。</p>
+<p>语法是
+toml，默认的配置内容大致是这样的。从内容也可以看出，配置文件的一个很重要的作用就是保管自己的
+token。</p>
+<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="section">[default]</span></span><br><span class="line">  <span class="attr">url</span> = <span class="string">&quot;http://localhost:8086&quot;</span></span><br><span class="line">  <span class="attr">token</span> = <span class="string">&quot;&lt;your-token&gt;&quot;</span></span><br><span class="line">  <span class="attr">org</span> = <span class="string">&quot;&lt;your-org&gt;&quot;</span></span><br><span class="line">  <span class="attr">active</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>这里的<code>org</code>是可选的，可以不写这一行，或者直接留空。当然，如果自己有多个
+org，那么可以在这里指定默认的。</p>
+<p>如果默认只有一个，那么建议写上比较方便，这样比如<code>influx bucket list</code>的时候，不需要再去指定
+org。只是如果自己后面要修改 org
+的名字或者其他内容的时候，还得记得另外再修改这个配置里的内容。</p>
+<p>文档里面说 Installed as a package 方式的 Configs path
+是<code>/var/lib/influxdb/configs</code>，不过一般不会这么安装，用处不大。</p>
+<p>位于<code>/etc/influxdb/config.toml</code>的配置文件，是 influxd
+configuration file，用于服务器的配置。</p>
+<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="attr">bolt-path</span> = <span class="string">&quot;/var/lib/influxdb/influxd.bolt&quot;</span></span><br><span class="line"><span class="attr">engine-path</span> = <span class="string">&quot;/var/lib/influxdb/engine&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Engine path</p>
+<p><code>/var/lib/influxdb/engine/</code></p>
+<p>TSM directories and files layout</p>
+<p><code>/var/lib/influxdb/engine/data/</code></p>
+<p>数据文件主要就是存这个地方。使用<code>du</code>命令查看总的大小。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh /var/lib/influxdb/</span><br><span class="line"><span class="built_in">du</span> -sh /var/lib/influxdb/engine/data/</span><br><span class="line"><span class="built_in">du</span> -sk /var/lib/influxdb/engine/data/</span><br></pre></td></tr></table></figure>
+<p>WAL directories and files layout</p>
+<p><code>/var/lib/influxdb/engine/wal/</code></p>
+<h2 id="command-line-tools">Command line tools</h2>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/">https://docs.influxdata.com/influxdb/v2/reference/cli/</a></p>
+<p>其中<code>influxd</code>命令主要是服务器的配置，对于用户来说，一般较少用。</p>
+<h3 id="influx---influxdb-command-line-interface">influx - InfluxDB
+command line interface</h3>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/</a></p>
+<h4 id="influx-setup">influx setup</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<h4 id="influx-auth">influx auth</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/</a></p>
+<p>用于对授权，token 的管理。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx auth list [flags]</span><br></pre></td></tr></table></figure>
+<h4 id="influx-config">influx config</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/</a></p>
+<p>这里也说了，默认是将配置写在<code>~/.influxdbv2/configs</code>。</p>
+<p>influx config set</p>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/set/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/set/</a></p>
+<p>这里<code>set</code>和<code>update</code>同义。</p>
+<p>相关命令行的效果相当于直接修改该文件。</p>
+<p>用户的 token
+也是放在此处，放这之后就不需要单独保存记忆，平时使用命令行也不需要每次都带上<code>--token</code>参数。</p>
+<h4 id="influx-user">influx user</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx user list</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx user password</span><br></pre></td></tr></table></figure>
+<p>用于修改用户的密码，或者说更新密码，重置密码。只要配置文件有 token
+或者手动带上 token
+参数。无需记住原先的密码。也常用于忘记密码的场景。</p>
+<h4 id="influx-org">influx org</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx org list</span><br></pre></td></tr></table></figure>
+<h4 id="influx-bucket">influx bucket</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx bucket list</span><br></pre></td></tr></table></figure>
+<h4 id="influx-delete">influx delete</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/</a></p>
+<p>主要用于删除指定 bucket 的指定时间段的数据。</p>
+<h4 id="influx-v1">influx v1</h4>
+<p><a
+href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">influx v1 shell</span><br></pre></td></tr></table></figure>
+<p>可以用于使用 shell 模式。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语用于构成形容动词的词干的接尾词整理</title>
+    <url>/japanese-adjectival-noun-suffix/</url>
+    <content><![CDATA[<p>依然是在 weblio
+搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
+<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
+weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
+<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
+<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
+<p>げ【気】</p>
+<p>てき【的】</p>
+<p>ら【等】</p>
+<p>たげ</p>
+<p>か</p>
+<p>はか</p>
+<p>やか</p>
+<p>らか</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语形容词型活用的所有接尾词整理</title>
+    <url>/japanese-adjective-suffix/</url>
+    <content><![CDATA[<p>之前整理了关于动词型活用的所有接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了（笑）。</p>
+<p>依然是在 weblio
+全文检索，这次搜索的是<code>接尾］《形容詞型活用</code>，或者<code>接尾《形容詞型活用</code>之类的，差不多。</p>
+<p>还是那句话，由于精力所限，以下仅仅是列举，具体的含义，来源，用例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
+<p>不过这里列举的这些，不全都是用于【构成】形容词，有的就是用于表示某种意思，比如っこない用于动词连用形之后，表示【…はずがない】【…わけがない】这类意思。</p>
+<p>里面有的接尾词，本身就是由多个接尾词构成的，比如がたない【難ない】就是由接尾词がたい【難い】的词干，加另一个接尾词ない组成的。当然了，含义和用法与がたい【難い】相同，接尾词ない用于强调这种性质，状态。具体内容依然是查词典。</p>
+<p>がたい【難い】</p>
+<p>がたない【難ない】</p>
+<p>がましい</p>
+<p>がわしい〔がはしい〕</p>
+<p>くさい【臭い】</p>
+<p>こい</p>
+<p>しい</p>
+<p>たい</p>
+<p>たらしい</p>
+<p>っこない</p>
+<p>っぽい</p>
+<p>づらい【辛い】</p>
+<p>ない</p>
+<p>にくい【難い／悪い】</p>
+<p>ぼったい</p>
+<p>めかしい</p>
+<p>らしい</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语文语上一段活用的所有动词整理</title>
+    <url>/japanese-verb-kamiichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>本篇所有内容都是通过网上查阅词典等各类资料整理所得。令人痛心的是，即使是这样简单且基础的操作，网上查找资料的过程中，几乎很难看到一篇内容，能完整列出，古典文法中，上一段活用的所有基本的动词，且内容无误。像是日语
+wikipedia，我之前看的时候倒是比较全，只是缺了ひる【簸る】，我进行了修改编辑，把这个补充了上去。</p>
+<p>我主要是在 weblio
+枚举查阅词条进行整理，以及查阅其他文献，补充或者纠正原有那些文章的内容。无论如何，仍然对所有这些资料提供者表示感谢。</p>
+<p>最初的动机是在你乎看到碳酸氢镭大佬的<a
+href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，以此为启发并产生了思路，整理了这篇内容。感谢大佬！</p>
+<p>本篇主要是整理和备忘。默认读者了解学习了日语的基本概念，语法，包括口语文法，文语文法（古典文法）的基本知识。这些内容是在网上很方便找到资料的，本篇就不赘述了。我最多会列出关于术语规范的内容，方便查阅。</p>
+<h1 id="省流">省流</h1>
+<p>13 个基本的动词，如下。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>カ行</td>
+<td>きる【着る】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>にる【似る】にる【煮る】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>ひる【嚔る】ひる【干る／乾る】ひる【簸る】</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>みる【見る】みる【廻る／回る】</td>
+</tr>
+<tr>
+<td>ヤ行</td>
+<td>いる【射る】いる【沃る】いる【鋳る】</td>
+</tr>
+<tr>
+<td>ワ行</td>
+<td>ゐる【率る／将る】ゐる【居る】</td>
+</tr>
+</tbody>
+</table>
+<p>相比于网上曾经见到的，说是 12
+个动词的说法，多了みる【廻る／回る】，其用例不多，具体见后。</p>
+<p>这里不包括复合动词，这里说的复合动词，也包括了かがみる【鑑みる】，及其音变化：かんがみる【鑑みる／鑒みる】，等等。从词源角度，也可以看成是复合动词，具体同样见后。</p>
+<p>表里ハ行的前 2 个动词，原本在上代是上二段活用的，结果上一段化了。</p>
+<h1 id="其他表格">其他表格</h1>
+<p>这些基本的动词的口语形，具体如下。这些构成了口语中，所有特殊的上一段动词。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>いる【射る】いる【鋳る】いる【居る】</td>
+</tr>
+<tr>
+<td>カ行</td>
+<td>きる【着る】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>にる【似る】にる【煮る】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>ひる【干る／乾る】</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>みる【見る】</td>
+</tr>
+</tbody>
+</table>
+<p>8
+个基本的动词。内容参考大辞泉。相比前面那个表，有些动词没了，意思是说，他们一般不用于口语中。但是他们的一些复合动词却仍用于口语。</p>
+<p>看了下「時雨の町」的<a
+href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里面把这
+8 个动词都列出来了，泪目。</p>
+<p>关于复合动词的情况，具体解释见后。下面表格列举的，主要是那些汉字表记通常写成一个汉字加送假名的复合动词。已经尽可能查找资料，但不能保证是否完全。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+<th>分析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハ行</td>
+<td>はなひる【嚔ひる】【嚔る】</td>
+<td>鼻(はな)嚔(ひ)る</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>おもひみる【思ひ見る／惟る】</td>
+<td>思(おも)ひ見(み)る</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>おもんみる【惟る】</td>
+<td>前者の音変化</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>かがみる【鑑みる】</td>
+<td>影(かげ)見(み)る</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>かんがみる【鑑みる／鑒みる】</td>
+<td>前者の音変化</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>かへりみる【顧みる】</td>
+<td>返(かへ)り見(み)る</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>かへりみる【省みる】</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>こころみる【試みる】</td>
+<td>心(こころ)見(み)る</td>
+</tr>
+<tr>
+<td>ワ行</td>
+<td>ひきゐる【率ゐる】</td>
+<td>引(ひ)き居(ゐ)る</td>
+</tr>
+<tr>
+<td>ワ行</td>
+<td>もちゐる【用ゐる】</td>
+<td>持(も)ち居(ゐ)る</td>
+</tr>
+</tbody>
+</table>
+<p>上表里大部分的词，都可以在《大辞泉》查找到相应的词源分析。某些需要补充的，具体见后。</p>
+<p>同样列出上面这些词在现代日语中的表现。</p>
+<table>
+<colgroup>
+<col style="width: 2%" />
+<col style="width: 97%" />
+</colgroup>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>ひきいる【率いる】もちいる【用いる】</td>
+</tr>
+<tr>
+<td>マ行</td>
+<td>おもいみる【思い見る／惟る】おもんみる【惟る】かえりみる【顧みる】かえりみる【省みる】かがみる【鑑みる】かんがみる【鑑みる／鑒みる】こころみる【試みる】</td>
+</tr>
+</tbody>
+</table>
+<h1 id="术语规范">术语规范</h1>
+<p>一些需要规范使用的术语，这里主要参考标准是是否在《大辞泉》中作为词条，次要标准是是否在
+wiki 中作为词条，其实不够严谨但大概够用。</p>
+<p>古典日语：日语 wiki
+中，“古典日本語”重定向到“中古日本語”，另有“上代日本語”等词条。一般等同于“文語”。“现代日语”同理，一般等同于“口語”。</p>
+<p>古典文法：《大辞泉》虽然没有单列成词条，但作为“文語文法”的义项标注为了同义词。网络资料中仍按前者居多。</p>
+<p>口语形：口語形。</p>
+<p>文语形：文語形。</p>
+<p>复合动词：複合動詞。</p>
+<p>接头词：接頭語，接頭辞。</p>
+<p>词源：語源。</p>
+<p>词干：語幹。</p>
+<p>词根：語根。</p>
+<p>词尾：語尾。</p>
+<h1 id="网上资料的情况">网上资料的情况</h1>
+<p>网上主要流传的是 12
+个基本的动词的说法，可能主要是在《学研全訳古語辞典》的枚举搜索结果，一共确实
+12 个，而《大辞泉》等词典还能多找到一个：みる【廻る／回る】。</p>
+<p>即便如此，能找到的资料中，能完整列出所谓 12
+个基本的动词的，基本只有这篇。</p>
+<p><a
+href="https://zhuanlan.zhihu.com/p/104493983">https://zhuanlan.zhihu.com/p/104493983</a></p>
+<p>从内容上看，大概是作者自己敲 word
+文档做表格搞的，辛苦了。不过，另外还列了若干个复合动词，但是并不全，而且其中有的词写错了。</p>
+<p>其他的介绍古典文法的日语网页资料如下。</p>
+<p><a
+href="https://www.kotenbunpou.com/%E7%94%A8%E8%A8%80/%E5%8B%95%E8%A9%9E-5-%E4%B8%8A%E4%B8%80%E6%AE%B5%E6%B4%BB%E7%94%A8/">https://www.kotenbunpou.com/%E7%94%A8%E8%A8%80/%E5%8B%95%E8%A9%9E-5-%E4%B8%8A%E4%B8%80%E6%AE%B5%E6%B4%BB%E7%94%A8/</a></p>
+<p>这里列了 9 个基本的动词。</p>
+<p><a
+href="https://honda-n2.com/kobun-doushi-kamiichidan">https://honda-n2.com/kobun-doushi-kamiichidan</a></p>
+<p>这篇列了 10 个基本的动词。</p>
+<p><a
+href="https://shindohaiku.com/doushi-kaisetsu-1/">https://shindohaiku.com/doushi-kaisetsu-1/</a></p>
+<p>这篇列了 9 个。虽然写是写 10 条，但有 2
+条汉字表记：【干る】【乾る】，其实指的是同一个动词：ひる，这篇给他写成 2
+条了。总的来说，这 9 个跟之前那篇一致。</p>
+<p><a
+href="https://manab-juku.me/japanese/kamiichi-katsuyo/">https://manab-juku.me/japanese/kamiichi-katsuyo/</a></p>
+<p>这篇列了 10 个，跟之前那篇 10 个的相比，多了 1 个，少了 1
+个（恼）。</p>
+<p>还是那句话，对于基本的动词，明明是词典枚举搜索就能完全列举的事情，上面这些大部分资料为什么列都不列全？如果要说常用不常用，有没有可能文语本来就不常用，都文语了哪里还有多少常不常用的区分必要（恼）。</p>
+<h1 id="みる廻る">みる【廻る】</h1>
+<p>前面老是在说这个多出来的动词。正如前面所说，《学研全訳古語辞典》没收。可以感受到，这个词的用例大概确实不多。《大辞泉》给的例句是在《古事記》。</p>
+<p>うちみる島の崎々、かきみる磯の崎落ちず</p>
+<p>打ち廻る 島の崎々 掻き廻る 磯の崎落ちず</p>
+<p>宇知微流 斯麻能佐岐耶岐 加岐微流 伊蘇能佐岐淤知受</p>
+<p><a
+href="https://kojiki.kokugakuin.ac.jp/kojiki/%e5%85%ab%e5%8d%83%e7%9f%9b%e7%a5%9e%e2%91%a3/">https://kojiki.kokugakuin.ac.jp/kojiki/%e5%85%ab%e5%8d%83%e7%9f%9b%e7%a5%9e%e2%91%a3/</a></p>
+<p><a
+href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05</a></p>
+<p>《大辞泉》也给了うちみる【打ち廻る】这个复合动词，例句同。另有相同读音的另一个复合动词，うちみる【打（ち）見る】。</p>
+<h1 id="复合动词">复合动词</h1>
+<p>关于复合动词的情形，难以一一列举。构成复合动词的前面那部分的，可以是动词的连用形，或者是形容词的词干，或者是名词，等等。只要构词合理，符合条件的可能有数十个。此处就不赘述了。</p>
+<p>此外，一些复合动词，如果单从他常用的汉字表记来看，或许不容易意识到这其实是个复合动词，一般就是一个汉字加上送假名。</p>
+<p>而且，对于这些复合动词的汉字表记，不同词典的推荐写法可能也是有所区别的。主要分歧点在于，词尾的那个イ段假名，是否适合写成送假名。对于这种复合动词，本篇主要使用《大辞泉》里的表记。</p>
+<p>就目前而言，能见到的所有不在上面 13
+个基本的动词的范围内的其他上一段活用的动词，都可以认为是复合动词，或者是另一个复合动词的音变化，都可以通过相应的构词法来理解。在网络上最方便的查找方法依然是《大辞泉》。</p>
+<p>之前的表格里，列举的也仅仅是那些汉字表记只使用了一个汉字，可能不容易看出是复合动词的动词，而且不能保证是否完全。</p>
+<p>以下是对于其中某些复合动词的额外补充。</p>
+<p>はなひる【嚔ひる】：鼻(はな)嚔(ひ)る。关于「嚔」和「嚏」，之前有写文章说明相应的情况，不多说。</p>
+<p>かがみる【鑑みる】：《大辞泉》标注了是「鏡(かがみ)」的动词化。从词源来看，かがみ【鏡／鑑／鑒】一般认为是来自「影(かげ)見(み)」，绕了一圈，其实还是可以看成是复合动词。</p>
+<p>かんがみる【鑑みる／鑒みる】：上一个词的音变化。需要补充的是，有的词典为了区分这两个词，将上一个词，也就是かがみる的汉字表记写成【鑑る】。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语ラ行上一段活用（文语ラ行上二段活用）的动词整理</title>
+    <url>/japanese-verb-r-kamiichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>主要是词不多，简单整理。同样是在 weblio
+全局搜索。搜<code>ラ上一</code>以及<code>ラ上二</code>。最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。</p>
+<h1 id="文语ラ行上二段活用">文语ラ行上二段活用</h1>
+<p>先给出文语文法中的ラ行上二段活用的动词列表。此处不包括复合动词（虽然算上复合动词之后的数量依然很少）。此处只是简单列举，具体内容还是自行查看词典。</p>
+<p>おる【下る／降る】</p>
+<p>こる【懲る】</p>
+<p>ふる【旧る】</p>
+<p>ゆる【許る／聴る】</p>
+<p>おそる【恐る／怖る／畏る／懼る】</p>
+<p>这里，比较“诡异”或者说有意思的是おそる，此处给出《学研全訳古語辞典》的注解。</p>
+<p>上代は上二段活用。中古も、活用の基本は上二段活用。下二段活用が生じるのは中古初期であるが、中世になるとほぼ下二段活用に統一された。四段活用と見られる例が中古から見えるが、昔の用法をまねた誤った使い方だったらしい。</p>
+<p>再给出《大辞泉》的注解。</p>
+<p>[補説]
+古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれかはっきりしない例が多いが、上二段活用のほうが多く現れる。</p>
+<p>下面是能查到的复合动词的列表。</p>
+<p>あもる【天降る】</p>
+<p>かけおる【駆（け）降る／駈け降る】</p>
+<p>とびおる【飛（び）降る／飛（び）下る】</p>
+<p>まひおる【舞（ひ）降る】</p>
+<p>みこる【見懲る】</p>
+<p>うちふる【打ち古る】</p>
+<p>ききふる【聞き旧る／聞き古る】</p>
+<p>ことふる【事旧る／言旧る】</p>
+<p>とこふる【床旧る】</p>
+<p>なきふる【鳴き旧る】</p>
+<p>みみふる【耳旧る】</p>
+<p>ものふる【物古る／物旧る】</p>
+<p>おぢおそる【怖ぢ恐る】</p>
+<p>可以看到，在复合动词中，ふる也会表记为【古る】。</p>
+<p>其中，おぢおそる【怖ぢ恐る】是在《学研全訳古語辞典》中查到的，在《大辞泉》没有该词条。weblio
+的《日本語活用形辞書》倒是收录了おじおそり【怖ぢ恐り】标注为了前者的连用形。</p>
+<p>这里，あもる【天降る】是あまおる的音变化。</p>
+<h1 id="口语ラ行上一段活用">口语ラ行上一段活用</h1>
+<p>下面再给出口语文法中的ラ行上一段活用的动词列表。</p>
+<p>おりる【下りる／降りる】</p>
+<p>かりる【借りる】</p>
+<p>こりる【懲りる】</p>
+<p>たりる【足りる】</p>
+<p>可以看到，多了かりる【借りる】和たりる【足りる】，这两个是四段活用的「借る」和「足る」的上一段化。同样给出《大辞泉》的内容。</p>
+<p>《動詞「か（借）る」（四段）の上一段化》</p>
+<p>[補説]
+上一段活用の「借りる」が用いられるのは近世後期の江戸語から。今日、共通語では「借りる」であるが、関西では五段活用の「借る」が用いられる。</p>
+<p>[補説]
+四段活用の「足る」から転じ、近世から江戸で用いられるようになったもの。</p>
+<p>也是给出复合动词的列表。</p>
+<p>かけおりる【駆（け）降りる／駈け降りる】</p>
+<p>とびおりる【飛（び）降りる／飛（び）下りる】</p>
+<p>まいおりる【舞（い）降りる】</p>
+<p>あきたりる【飽（き）足りる】</p>
+<p>みちたりる【満（ち）足りる】</p>
+<p>ことたりる【事足りる】</p>
+<p>ものたりる【物足りる】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语特殊的一段动词整理</title>
+    <url>/japanese-verb-special-ichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>写在最前面，是碳酸氢镭大佬的<a
+href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，给了我相当多的帮助和启发。再次再次感谢大佬！</p>
+<p>比较可惜的是，国内很多营销号不顾语法事实，犯着基本的逻辑错误，“倒反天罡”，硬生生地整理了所谓“特殊”的五段动词（或者叫“一类动词”也行，比如《标日》是这么写）。什么
+26 个，33 个，34
+个，各种牛鬼蛇神都蹦出来了。。。当然了，从观察来看，十几年来基本是这种情况，营销号自然是不会在意这些的。</p>
+<p>而对于一部分还在坚持使用或者坚信所谓“特殊”的五段动词的初学者，我也不会刻意纠正或者吐槽什么，主要还是营销号的锅。而且国内使用“学校文法”的教材就不多，《标日》也只是在前言里提及和对比。这些教材教动词，以“ます形”（连用形后接ます）为主。像《标日》对于所谓一类、二类、三类动词的分类和定义，相对来说就不算那么明确，感觉勉勉强强（初级，第
+14 课，语法解释
+1）。然而，《标日》都认为需要特别记忆的也是二类动词，而不是网上各种所谓特殊的一类动词。</p>
+<h1 id="前置知识">前置知识</h1>
+<p>那么首先就要求，需要明确地知道对于那几种动词的定义和分类。如果还不清楚关于五段动词，一段动词等等的定义，或者不清楚关于“活用”的概念的话，还是先去了解为好。本质上，学校文法对于动词的分类就是根据活用的不同来分类的。</p>
+<p>并且这里我也解释一下前面说的“不顾语法事实，犯着基本的逻辑错误”是指什么。我想表达的意思是，如果那些营销号接触的是正确的关于那几种动词的分类和定义的话（即使使用的是国内大多数教材用的三类动词的分法也行，只要定义明确），他们是怎么由：“一段动词的<strong>词尾</strong>是イ段假名或エ段假名加上「る」”，然后就推导出：“<strong>动词结尾</strong>是イ段假名或エ段假名加上「る」的动词都是一段动词”的？（当然了，营销号之所以是营销号本就是有原因的，笑笑就是。）</p>
+<p>并且注意我的用词。前面说的是<strong>词尾</strong>（日语叫「語尾」，「活用語尾」），顾名思义。</p>
+<p>说了要看活用啊，活用。并且，动词的汉字表记不是白给的，送假名不是白写的。另外，古典文法（文语文法）的内容，也可以简单看看。我之前那几篇文章，对于相关内容并无赘述，网上资料比较多了。当然，可以直接看之前大佬的那篇回答。</p>
+<h1 id="省流">省流</h1>
+<p>简单来说，标题说的“特殊”的一段动词，指的是一段动词中，整个动词的基本形仅由一个イ段假名或エ段假名加上「る」构成的那些动词。按词典对于“词尾”的定义，某种意义上认为，这些词整个就是词尾，没有词干。或者认为，这些词不分词尾和词干，也行。</p>
+<p><strong>即使没有关于古典文法（文语文法）的基础</strong>，如果手头有词典，熟练使用
+weblio
+等网站工具的话，想想也知道这些特殊的一段动词极其容易通过枚举就能自己整理出来。如果只是想知道有哪些，那么自己去查去整理就行，或者看之前说的那位大佬的回答（虽然人家少写了几个，但是常用的人家都列出来了，人家讲的很清楚）。</p>
+<p>将口语里特殊的一段动词分成上一段和下一段，各有其直接来源。由于之前我写了下面两篇文章作为铺垫，本篇的正文部分内容不会很多。</p>
+<p>特殊的上一段动词，直接来源，是文语文法中，上一段活用的动词。具体见<a
+href="/japanese-verb-kamiichidan">这篇</a>。</p>
+<p>特殊的下一段动词，直接来源，是文语文法中，下二段活用的特殊动词。具体见<a
+href="/japanese-verb-special-nidan">这篇</a>。</p>
+<p>如果还想省流，在上面两篇文章中，直接跳到各自的“其他表格”部分，各自的第一个表格就是，加起来一共十来个，不还是比营销号所谓二三十多个方便（笑）。</p>
+<h1 id="ける蹴る">ける【蹴る】</h1>
+<p>虽然和本篇无直接关系，但单独拿出来说，放在这里。显然是称不上所谓特殊的五段动词了，但有其他方面的特殊。</p>
+<p>这个词在口语中是五段。在文语文法中，是唯一一个下一段活用的动词。江户后期逐渐四段化。</p>
+<p>而再往古了说，这个词本来是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（中间那个字符如果没显示出来，那个是小的ゑ，U+1B151）。</p>
+<p>具体见《大辞泉》等资料。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语文语上二段活用，下二段活用的特殊动词整理</title>
+    <url>/japanese-verb-special-nidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>本篇可以认为是延续之前关于文语文法（古典文法）的上一段活用的动词整理的那篇内容。本篇整理之后，口语（现代日语）的所有所谓特殊的一段动词的所有来源就都整理清楚了。再次感谢碳酸氢镭大佬！</p>
+<p>标题中说的“特殊”，指的是整个动词的基本形（终止形）就是由一个ウ段假名构成，这样整个词既是词干又是词尾。和之前类似，同样主要在
+weblio 枚举查找。</p>
+<h1 id="省流">省流</h1>
+<p>上二段活用，一共查到只有 3 个特殊的动词，如下。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハ行</td>
+<td>ふ【干／乾】ふ【嚔】</td>
+</tr>
+<tr>
+<td>ワ行</td>
+<td>う【居／坐】</td>
+</tr>
+</tbody>
+</table>
+<p>而且还都是上代语，这几个到了中古就上一段化了。所以可以在我之前那篇文章中再次看到这几个词。具体自查或者见后面的补充。</p>
+<p>下二段活用，一共查到共有 6 个特殊的动词，如下。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>う【得】</td>
+</tr>
+<tr>
+<td>カ行</td>
+<td>く【消】</td>
+</tr>
+<tr>
+<td>ダ行</td>
+<td>づ【出】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>ぬ【寝】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>ふ【経】ふ【綜】</td>
+</tr>
+</tbody>
+</table>
+<p>虽然《大辞泉》和《学研全訳古語辞典》没有明说，不过容易理解的是，ふ【経】和ふ【綜】应该是具有同源关系。如果看成一个词的话，那说是
+5 个特殊的动词也行。</p>
+<h1 id="其他表格">其他表格</h1>
+<p>上面这些词的口语形，具体如下。这些构成了口语中，所有特殊的下一段动词。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>える【得る】</td>
+</tr>
+<tr>
+<td>ダ行</td>
+<td>でる【出る】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>ねる【寝る／寐る】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>へる【経る／歴る】へる【綜る】</td>
+</tr>
+</tbody>
+</table>
+<p>关于く【消】，口语きえる【消える】的文语形是きゆ【消ゆ】。具体情况见文后补充。</p>
+<p>5 个基本的动词，或者后面 2 个动词看成一个词，那就是 4
+个基本的动词。</p>
+<p>同样看了下「時雨の町」的<a
+href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里面把这
+4 个动词都列出来了，泪目。</p>
+<h1 id="补充">补充</h1>
+<p>《大辞泉》ふ【干／乾】：</p>
+<p>[補説]
+上代では、未然形・連用形に乙類の仮名が用いられているので、上二段活用であったと考えられる。平安時代以降は上一段化する。</p>
+<p>《大辞泉》ひる【嚔る】：</p>
+<p>《上代の上二段活用動詞「ふ」の上一段化》</p>
+<p>《大辞泉》う【居／坐】：</p>
+<p>《動詞「ゐ（居）る」（上一）の古形で終止形だけが残存するが、上二段活用と考えられる》</p>
+<p>《大辞泉》く【消】：</p>
+<p>[補説]
+「消ゆ」に先行する上代語とされるが、活用形は大半が連用形である。終止形の例とされる「四〇二四」を「来らし」とする説もあり、また、未然・連用形の「け」は「消ゆ」の未然・連用形「きえ」の音変化とする説もある。</p>
+<p>《学研全訳古語辞典》く【消】：</p>
+<p>上代に用いられたが、連体形・已然形・命令形の確かな用例は見当たらない。</p>
+<p>《大辞泉》でる【出る】：</p>
+<p>[補説]
+文語の下二段動詞「出(い)づ」の連体形「いづる」が終止形としても用いられるようになり、それがさらに「づる」に変化し、この「づる」が下一段化してできた形。</p>
+<p>《学研全訳古語辞典》づ【出】：</p>
+<p>「い（出）づ」の「い」が脱落したもの。上代語。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语动词型活用的所有接尾词整理</title>
+    <url>/japanese-verb-suffix/</url>
+    <content><![CDATA[<p>关于接尾词【接尾語】【接尾辞】的定义，此处不赘述，请自行查阅资料。</p>
+<p>注意，本篇说的内容，不是广义的复合动词【複合動詞】的后面那部分。</p>
+<p>我还是简单举个例子。比如动词あきめく【秋めく】中的めく，就是个动词五段型活用的结尾词，表示变成那种状态或者表现出类似的样子。具体内容还是查词典。</p>
+<p>通过在 weblio
+全文检索，在《大辞泉》共查到二十多个。具体来说，搜索<code>接尾《動詞 型活用</code>得到的内容比较精确。如果搜索<code>接尾］《動詞 型活用</code>，反而会多搜到一些形容词型活用的接尾词。</p>
+<p>由于精力所限，以下仅仅是列举，并没有具体给出含义、来源、词例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
+<p>かす</p>
+<p>がる</p>
+<p>ぐむ</p>
+<p>こかす【転かす／倒かす】</p>
+<p>こける</p>
+<p>ごつ</p>
+<p>さす【止す】</p>
+<p>じみる【染みる】</p>
+<p>だつ</p>
+<p>ちぎる【千切る】</p>
+<p>つく</p>
+<p>づく【付く】</p>
+<p>づける【付ける／附ける】</p>
+<p>なう〔なふ〕</p>
+<p>ばむ</p>
+<p>ばる【張る】</p>
+<p>びる</p>
+<p>ふ</p>
+<p>ぶる【振る】</p>
+<p>めかす</p>
+<p>めく</p>
+<p>やく</p>
+<p>やぐ</p>
+<p>わう〔はふ〕</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「書いた人」的词源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p><a
+href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
+<p>日本語の語源</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
+<p>又看了你乎的这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「S blog えすぶろ」的语言学博客</title>
+    <url>/kedume/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/theme-10017494509.html</a></p>
+<p>やまとことば・語源</p>
+<p>S blog 　－えすぶろ－</p>
+<p>试过了，在 amebla 搜索「S
+blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于「嚏」和「嚔」</title>
+    <url>/kusame/</url>
+    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
+<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
+的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
+<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
+<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为许容字体【許容字体】。词典等资料也一般是选择后者。</p>
+<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
+<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
+<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
+<p>之前说了，日语词典一般是使用后者。在 weblio
+古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
+<p>在 weblio
+デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>NAVER 词典中，词源出现的部分历史文献名缩写整理</title>
+    <url>/naver-literature-abbr/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>主要是自己在查词过程中的整理，看到一个就查一个。可能没什么精力更新。</p>
+<p>这东西理论上应该是有相关的标准和清单的，指不定 NAVER
+的帮助文档里就有给出，不过目前还没在网上查到完整的列表。如有相关资料，欢迎告知。</p>
+<p>在 NAVER
+查词的时候，一些词会给出词源。比如나무这个词条，下面的词源写的是这样的。</p>
+<p>＜나모＜용가＞</p>
+<p>后面的<code>＜용가＞</code>表示前面的<code>나모</code>最早出现的古籍文献名的缩写。</p>
+<p>如果有韩国国立国语院的《표준국어대사전》，即《标准国语大辞典》，他的编纂指南里应该是可以查到“国语历史文献资料的缩略语列表”的。</p>
+<p>《표준국어대사전》 편찬 지침</p>
+<p>《標準國語大辭典》 編纂 指針</p>
+<p><a
+href="https://www.hanmalgeul.org/328">https://www.hanmalgeul.org/328</a></p>
+<p>국어사 문헌 자료 출전 약호 목록</p>
+<p>國語史 文獻 資料 出典 略號 目錄</p>
+<p>总体来说，他这个标准是把文献名都缩写为了 2 个谚文，即 2
+个汉字，如有具体分册或者分版，则后面再加上 1 个谚文，即 1 个汉字。</p>
+<p>一些缩写容易搜到他是哪个文献名的缩写。一种方法是在 wiktionary
+同样搜索该词，比如上面的나무，他的词源部分会给出具体文献名。</p>
+<p>＜ 나모 《龍飛御天歌(용비어천가)》(1447)。</p>
+<p>而一些比较难搜到。主要是我自己对于那边的国语学的文献资料了解很少，没有太多那种“直觉”能意识到可能是什么文献名的缩写。而且这东西我始终没有在网上找到完整的列表。</p>
+<p>自己在查询过程中，看到了有人在韩国国立国语院的在线 Q&amp;A
+上的提问。</p>
+<p>온라인가나다</p>
+<p>online 가나다</p>
+<p><a
+href="https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216">https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216</a></p>
+<p>下面这个提问是关于유합，동신효，동신열，这三个文献名缩写的，已经作了解答。不过现在好像没了，他
+Q&amp;A 好像只保存最近的 40000 条提问，这条看起来已经过期了。</p>
+<p><a
+href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088">https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088</a></p>
+<p>在查阅过程中遇到的其他参考资料如下。</p>
+<p>韩国学综合DB</p>
+<p><a
+href="https://mkstudy.airitilibrary.cn/">https://mkstudy.airitilibrary.cn/</a></p>
+<p>里面的韩国历代文集DB</p>
+<p><a
+href="https://mkstudy.airitilibrary.cn/mksdb/e/korean-anthology/p/">https://mkstudy.airitilibrary.cn/mksdb/e/korean-anthology/p/</a></p>
+<p>어듸메</p>
+<p><a
+href="https://akorn.bab2min.pe.kr/">https://akorn.bab2min.pe.kr/</a></p>
+<p>디지털장서각</p>
+<p>digital 藏書閣</p>
+<p><a href="https://jsg.aks.ac.kr/">https://jsg.aks.ac.kr/</a></p>
+<p>里面关于소언的情况介绍。</p>
+<p><a
+href="https://jsg.aks.ac.kr/dir/view?catePath=%EC%A3%BC%EC%A0%9C%EB%B6%84%EB%A5%98%2F%E5%AD%90%E9%83%A8&amp;dataId=LIB_166942">https://jsg.aks.ac.kr/dir/view?catePath=%EC%A3%BC%EC%A0%9C%EB%B6%84%EB%A5%98%2F%E5%AD%90%E9%83%A8&amp;dataId=LIB_166942</a></p>
+<h1 id="列表">列表</h1>
+<p>目前的整理如下。标注“待考”的表示自己还不太确定，虽然是有该文献名，但是不确定是不是他的缩写。</p>
+<p>용가：용비어천가(龍飛御天歌)</p>
+<p>석상：석보상절(釋譜詳節)</p>
+<p>월석：월인석상(月印釋譜)</p>
+<p>훈해：훈민정음운해(訓民正音韻解)</p>
+<p>훈몽：훈몽자회(訓蒙字會)</p>
+<p>번노：번역노걸대(飜譯老乞大)</p>
+<p>유합：유합(類合)</p>
+<p>월곡：월곡집(月谷集)</p>
+<p>능엄：능엄경언해(楞嚴經諺解)</p>
+<p>원각：원각경언해(圓覺經諺解)</p>
+<p>두시：두시언해(杜詩諺解)</p>
+<p>두시-초：두시언해 초간본(杜詩諺解 初刊本)</p>
+<p>구방：구방심재명(求放心齋銘) 待考</p>
+<p>소언：소언(小言) 待考</p>
+<p>동신：동국신속삼강행실도(東國新續三綱行實圖)</p>
+<p>동신충：동국신속삼강행실도 충신 편(東國新續三綱行實圖 忠臣編)</p>
+<p>동신효：동국신속삼강행실도 효자 편(東國新續三綱行實圖 孝子編)</p>
+<p>동신열：동국신속삼강행실도 열녀 편(東國新續三綱行實圖 烈女編)</p>
+<p>언두：언해두창집요(諺解痘瘡集要)</p>
+<p>법화：법화경언해(法華經諺解)</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语文语ヤ行上二段活用的动词整理</title>
+    <url>/japanese-verb-y-kaminidan/</url>
+    <content><![CDATA[<p>之前是整理了关于文语ラ行上二段活用的动词。文语ヤ行上二段活用的动词也很少，也就顺便简单整理。同样是在
+weblio 全局搜索，搜<code>ヤ上二</code>。</p>
+<p>看了一下 wikipedia 的日语页面目前是列举了 4
+个。从编辑记录来看，以前应该是只写了 3
+个，こゆ【臥ゆ】是后来补的，像中文页面在我当时看的时候就依然只是那 3
+个，我后面把这个也补上了。至于こゆ【凍ゆ】情况比较特殊，我就不考虑写上去。</p>
+<p>先给出动词列表，具体内容还是自行查看词典。</p>
+<p>おゆ【老ゆ】</p>
+<p>くゆ【悔ゆ】</p>
+<p>こゆ【凍ゆ】</p>
+<p>こゆ【臥ゆ】</p>
+<p>むくゆ【報ゆ／酬ゆ】</p>
+<p>此外，还有几个是文语上一段活用的上二段化，单独列出。</p>
+<p>ひきゆ【率ゆ】</p>
+<p>もちゆ【用ゆ】</p>
+<p>这几个分别是「ひき（率）いる」和「もち（用）いる」的上二段化。关于文语上一段活用的动词，我之前也写过内容，这里的这几个实际上还是复合动词，不赘述。</p>
+<p>这里也把《大辞泉》的内容给出。</p>
+<p>《「もち（用）いる」が中世以降ヤ行に転じて用いられた語。終止形は「用ゆる」となる例が多い》</p>
+<p>上面这几个动词的口语形，具体如下。</p>
+<p>おいる【老いる】</p>
+<p>くいる【悔いる】</p>
+<p>むくいる【報いる／酬いる】</p>
+<p>关于こゆ【凍ゆ】的情况。口语こごえる【凍える】的文语形是こごゆ【凍ゆ】，是ヤ行下二段活用。《大辞泉》中，こゆ【凍ゆ】词条的解释就是こごえる。こゆ应该算是变体。</p>
+<p>下面给出复合动词的列表。</p>
+<p>としおゆ【年老ゆ】</p>
+<p>なまおゆ【生老ゆ】</p>
+<p>としおゆ【年老ゆ】有口语形，としおいる【年老いる】。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>用于 Visual Studio 2022 的 OpenCV C++ 静态库</title>
+    <url>/opencv-static/</url>
+    <content><![CDATA[<p>编译生成了 OpenCV 的多种类型的静态库，放在了 GitHub 仓库 releases
+页。</p>
+<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
+C++。</p>
+<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
+的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
+Studio 2022，VC17，而官方提供的只有
+VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
+C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
+提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
+编译生成了静态库。只要也使用 Win10，VS 2022，那么应该是通用的。</p>
+<p>不推荐使用最新版本，可以使用更早一些的版本。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerToys</title>
+    <url>/powertoys/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/">https://learn.microsoft.com/zh-cn/windows/powertoys/</a></p>
+<p>颜色选择器 ColorPicker</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker">https://learn.microsoft.com/zh-cn/windows/powertoys/color-picker</a></p>
+<p>用于捕获屏幕特定像素点的颜色数据。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>。</p>
+<p>屏幕标尺 Screen ruler</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler">https://learn.microsoft.com/zh-cn/windows/powertoys/screen-ruler</a></p>
+<p>可以根据图像边缘检测快速测量屏幕上的像素尺寸。激活的快捷方式是<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>。</p>
+<p>Mouse 公用事业</p>
+<p>微软官方文档的什么幽默机翻。。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities">https://learn.microsoft.com/zh-cn/windows/powertoys/mouse-utilities</a></p>
+<p>其实就是增强鼠标和光标功能。我常用的是聚焦光标，激活的快捷方式也是已经给我们设置好的。连按两次<kbd>Ctrl</kbd>键，就会激活聚焦光标的位置。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用【屎婆屎婆/💩👵💩👵】作为しばしば的【当て字】（迫真）</title>
+    <url>/shibashiba/</url>
+    <content><![CDATA[<p>省流：戏言。屎女是 IDS
+老梗了，版权归“前屎女bot”所有，归叶典网、字统网及相关群所有，侵删。</p>
+<p>【屡】拆成【屎女】，し和ば又能对应【屎】和【婆】的音读。（笑）</p>
+<p>关于新字体的问题。【屡/屢】字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为容许字体【許容字体】。《大辞泉》相关词条则使用前者。</p>
+<p>下面是 ruby 示例。</p>
+<p><ruby>💩<rt>し</rt>👵<rt>ば</rt>💩<rt>し</rt>👵<rt>ば</rt></ruby></p>
+<p><ruby>屎<rt>し</rt>婆<rt>ば</rt>屎<rt>し</rt>婆<rt>ば</rt></ruby></p>
+<p><ruby>屎<rt>し</rt>女<rt>ば</rt>屎<rt>し</rt>女<rt>ば</rt></ruby></p>
+<p><ruby>屡<rt>しば</rt>屡<rt>しば</rt></ruby></p>
+<p><ruby>屡<rt>しばしば</rt></ruby></p>
+<p><ruby>屢<rt>しば</rt>屢<rt>しば</rt></ruby></p>
+<p><ruby>屢<rt>しばしば</rt></ruby></p>
+<p>参考 html 写法。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩👵💩👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎婆屎婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎女屎女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>纯为娱乐。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用 Python tldextract 解析 url 并且用于排序</title>
+    <url>/python-tldextract/</url>
+    <content><![CDATA[<p><a
+href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
+<p>用 tldextract 能够精确地获取到 url
+的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
+suffix）<code>suffix</code>，也就是 eTLD（effective
+TLD，有效顶级域）。</p>
+<p>相比于我们一般认识的 TLD（顶级域），我认为更重要和更有用的是 eTLD
+的概念。关于 TLD，自己也写了篇，里面简单放了一些网址资料。</p>
+<p>有了
+tldextract，我就可以方便地对网址进行排序了。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了
+eTLD，找到了 phblic suffix
+的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
+<p>我认为网址排序是一个值得讨论的事情。对 url
+的排序，首先，显然不是纯粹根据 url
+字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住
+TLD 之类的。</p>
+<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
+<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
+<p>使用 tldextract，就可以对网址进行排序。由于 tldextract
+本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
+<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>说点杂七杂八的。我认为不应当在浏览器的收藏夹里放那么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢？那些常用的网址，你几乎天天访问，记也该记住了。那些不怎么用到的网址，收藏了又有什么用呢？以前我在
+Edge 浏览器收藏过几百个网址，虽说 Edge
+的同步功能做得很不错，但是现在看来，以前我收藏那么多网址确实没啥用。。。</p>
+<p>另外，我认为应当转变一下思路。一方面，现代的搜索引擎比如 Bing，Google
+等等，基本都能做到通过搜索网站的 domain
+或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
+url，我认为还不如收藏搜索关键词 keyword。</p>
+<figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 SSH</title>
+    <url>/ssh/</url>
+    <content><![CDATA[<p><a
+href="https://www.ssh.com/academy">https://www.ssh.com/academy</a></p>
+<h1 id="what-is-ssh-secure-shell">What is SSH (Secure Shell)?</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh">https://www.ssh.com/academy/ssh</a></p>
+<h1 id="what-is-openssh">What is OpenSSH?</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh/openssh">https://www.ssh.com/academy/ssh/openssh</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview</a></p>
+<p>在 VS Code 上，安装 Remote - SSH 插件。当然，这里建议直接安装 Remote
+Development 插件包。</p>
+<p><a
+href="https://code.visualstudio.com/docs/remote/remote-overview">https://code.visualstudio.com/docs/remote/remote-overview</a></p>
+<p><a
+href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh user@example.com</span><br></pre></td></tr></table></figure>
+<p>虽然这里的<code>user@</code>不是必须的，但一般第一次访问服务器时，还是得写的，访问后，一般会在
+SSH
+配置文件中记录下来，之后访问服务器时，就不用写了。他会使用配置文件中记的用户名。</p>
+<h1 id="basic-overview-of-ssh-keys">Basic overview of SSH Keys</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh-keys">https://www.ssh.com/academy/ssh-keys</a></p>
+<p><a
+href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a></p>
+<p><a
+href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement</a></p>
+<h1 id="how-to-use-ssh-keygen-to-generate-a-new-ssh-key">How to Use
+ssh-keygen to Generate a New SSH Key?</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh/keygen">https://www.ssh.com/academy/ssh/keygen</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p><code>-t</code>用于指定密钥的类型。默认为 rsa。不过 ed25519
+具有更安全等特点，也是目前 GitHub 更推荐的类型。</p>
+<p><code>-C</code>是可选项，用于添加注释。一般写自己的邮箱。通常还是建议写的，特别是多人使用同一服务器的场景。如果是在
+GitHub 添加 SSH 密钥，那么就得写自己的账号邮箱。</p>
+<p>密钥的密码不是必需的。</p>
+<p>可以生成多个密钥，具体配置方法在下面。默认情况下，使用的是默认名字的密钥文件，文件名和密钥类型有关。</p>
+<p><code>~/.ssh/id_ed25519</code></p>
+<p><code>~/.ssh/id_rsa</code></p>
+<h1 id="authorized-key-in-ssh">Authorized Key in SSH</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh/authorized-key">https://www.ssh.com/academy/ssh/authorized-key</a></p>
+<p>用于公钥认证。</p>
+<p><code>~/.ssh/authorized_keys</code></p>
+<p>比如在远程服务器，在上述文件中，添加一行自己的公钥。可以有多行，常见于多人使用该服务器的场景。</p>
+<h1 id="ssh-config-file-for-openssh-client">SSH config file for OpenSSH
+client</h1>
+<p><a
+href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/config</a></p>
+<p>SSH 配置文件。</p>
+<p><code>~/.ssh/config</code></p>
+<p>SSH 配置文件可以在 VS Code 的远程资源管理器，直接打开。</p>
+<p>一种场景是，自己有多个 GitHub 账号，需要用到多个 SSH 密钥。</p>
+<p>以下是操作示例。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;sunboyallen@163.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;jihaitangguo@163.com&quot;</span><br></pre></td></tr></table></figure>
+<p>如果不去修改密钥文件名，那么新生成的 SSH
+密钥会覆盖掉旧的。可以在生成密钥的过程进行配置，也可直接修改文件名。公钥和私钥的名字都得修改，保持一致。建议将常用的保持默认，将另一个进行修改即可。</p>
+<p>然后，将这两个密钥分别添加到所在的 GitHub 账户。</p>
+<p>以下是配置文件的写法示例。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github-jihaitangguo.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_ed25519_jihaitangguo</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -T git@github-jihaitangguo.com</span><br></pre></td></tr></table></figure>
+<p>上面的<code>User</code>项不是必需的，有些教程还会让你写成相应的用户名，虽然能用，但是是不太合适的。</p>
+<p>网上的一些教程中，会要求另一个用户，也就是默认用户，也要写入类似上面的配置，即使是使用默认配置，不过实际上不是必须的。默认用户会使用默认公钥等配置。也就是说，下面这个验证测试也是能过的。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>而如果想要<code>ssh -T github.com</code>这种写法也能测试通过的话，那就加上下面的这种简略的配置。虽然个人认为没有太大的必要。道理相当于指定了默认用户为<code>git</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 TLD</title>
+    <url>/tld/</url>
+    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
+<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
+<p>ICANN wiki，可以查各个 TLD 的信息。</p>
+<p><a
+href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
+<p>ISO 3166 标准。</p>
+<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
+<p><a
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+<p><a
+href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
+<p>可以查看 root zone，查看根域名。</p>
+<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
+<p><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
+<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
+<p><a
+href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
+<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
+<p><a
+href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
+<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
+<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
+<p>上面的是各 nTLD
+的数据信息。没事的话可以查查，有些很有意思的域名。</p>
+<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
+<p>看看 xyz 的官网（笑）。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
+<p>気まぐれな梟</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
+<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
+有的。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
+    <url>/vscode-clang-format/</url>
+    <content><![CDATA[<p>众所周知，在 VS Code
+很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
+C/C++ 同样如此。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
+格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
+格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
+0，根据自己需要。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 设置复制文本时不带格式样式不带语法高亮</title>
+    <url>/vscode-copy-formatting/</url>
+    <content><![CDATA[<p>省流，VS Code
+是默认设置复制文本时带上格式，样式，语法高亮的。如需取消勾选，将设置中<code>Editor: Copy With Syntax Highlighting</code>，该项取消勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>复制</code>，<code>语法高亮</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"editor.copyWithSyntaxHighlighting": false</code>。</p>
+<p>个人感觉，他这个设置项的命名不是那么完美，但大概已经是尽量好的一种写法了。实际上，即使对于<code>txt</code>这种不带语法高亮的文件格式，他默认复制文本然后粘贴到其他地方，如果保留源格式粘贴，依然是会保留背景色，字体等内容的。而取消勾选之后，包括这些在内的所有的样式都相应去掉了。个人认为他这个设置项的命名应该带有<code>样式</code>或者<code>格式</code>，<code>format</code>之类的字眼。可惜加了这些词的话，配置项的名字又太长。而如果只写格式样式不写语法高亮的话，这个项又没那么有辨识度。感觉还是有些为难，没法做到那么完美，VS
+Code 大概已经尽力了。</p>
+<p>要我自己选的话，我是比较希望 VS Code
+能够默认复制不带格式的。以我个人的观点，对于常编程，善于使用、喜欢和管理各种纯文本文件的用户来说，大概是不太喜欢或者很少需要使用这种复制带格式的情况吧，特别是平时如果非特殊要求，大概很少会做那种，要求把代码带格式带语法高亮复制到微软
+Word 等富文本文件的事情，之类的。一般如果要在文档中插入代码，基本是在
+markdown 加代码块，或者是 latex
+加代码，写伪代码。渲染啊排版啊什么的没特殊要求，基本交给默认的渲染引擎去处理。如果
+VS Code
+真要为编程用户着想，是否考虑应该默认【关闭】这个选项，即，默认复制不带格式样式，比较合适一些。</p>
+<p>不过我猜测，VS Code
+这么设置的考量可能是，一方面初学者或者轻度使用者带格式复制粘贴的需求不见得很少，另一方面除了在【复制端】控制不带格式复制，实际上也可以在【粘贴端】控制将文本不带格式粘贴。</p>
+<p>不带格式粘贴的通用的快捷键是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>，适用于各种文本编辑器。较新版本的微软
+Office 比如 Word 也可以使用该快捷方式，从而在粘贴时，不带格式粘贴。</p>
+<p>另据资料，早期在微软
+Office，上述快捷键好像是用于格式刷，与<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>配合使用，用于格式的复制粘贴。大概是因为这一点与常规的文本编辑器的功能不一致而常被吐槽，后来微软
+Word
+才把格式刷的快捷键改为<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>和<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>V</kbd>，这样把<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>留给（或者说是还给）了不带格式粘贴。从效果上看，这个改动还是很好的，不过还能看到一些不明真相和原因的用户在微软社区有提问和抱怨。嘛，这个倒也无可厚非。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 设置打开文件时自动猜测字符集编码</title>
+    <url>/vscode-guess-encoding/</url>
+    <content><![CDATA[<p>省流，VS Code
+是默认设置打开文件时不自动猜测字符集编码的，他一般默认按 UTF-8
+编码来打开文本文件。如需勾选，将设置中<code>Files: Auto Guess Encoding</code>，该项勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>字符集</code>，<code>编码</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"files.autoGuessEncoding": true</code>。</p>
+<p>主要想发发牢骚，个人认为他 VS Code
+没默认打开该选项是一个错误。众所周知，现在的文本文件的编码一般是设置为
+UTF-8，或者说一般要设置为 UTF-8，这样才合适而且通用。VS Code
+当然也是如此，对于文本文件的默认打开和保存方式都是
+UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
+来编码中文字符。当然了这个可以在设置里修改，或者是安装相关插件后，同样方便在编辑器的右下角修改。然而对于
+masm32 编程，涉及中文字符串的时候，好像还真得只能用 GB2312 编码，没法用
+UTF-8 编码。</p>
+<p>很多时候我需要用 VS Code 打开 Visual Studio
+项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
+UTF-8
+打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
+UTF-8
+打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，而且还不方便撤回。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 常用到的 json 配置文件</title>
+    <url>/vscode-json/</url>
+    <content><![CDATA[<h1 id="tasks.json">tasks.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/editor/tasks">https://code.visualstudio.com/docs/editor/tasks</a></p>
+<p>一个常用的应用场景是 C++ 编译运行。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></p>
+<p>官方文档中给出了快捷生成配置模板的方式，让 VS Code 帮你写好一个。</p>
+<p><a
+href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></p>
+<h1 id="launch.json">launch.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/editor/debugging">https://code.visualstudio.com/docs/editor/debugging</a></p>
+<p>在<code>launch.json</code>文件的右下角，有“添加配置”按钮，可以根据需要来选择配置。</p>
+<p>以 C++ 调试为例，点击右下角“添加配置”按钮，选择 C/C++: (gdb)
+启动，就会添加一个配置。</p>
+<p>需要修改的参数大致如下。</p>
+<p><code>program</code>表示要调试的程序，其值为程序的绝对路径。这里一般是改为<code>$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe</code>。</p>
+<p><code>miDebuggerPath</code>修改为自己<code>gdb.exe</code>的绝对路径。</p>
+<h1 id="settings.json">settings.json</h1>
+<p><a
+href="https://code.visualstudio.com/docs/getstarted/settings">https://code.visualstudio.com/docs/getstarted/settings</a></p>
+<p>如上所说，包括两种设置，一种是用户设置，一种是工作区设置。前者是全局的，后者只针对当前工作区。<code>settings.json</code>里的设置，和
+VS Code
+里的设置选项是一一对应的。默认的设置不会在<code>settings.json</code>里体现，只有修改了默认设置的值，才会在<code>settings.json</code>里显示出。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>查看自己 Windows 电脑的产品密钥</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答。</p>
+<p><a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于微软 Windows 系统字体</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>在知乎上的相关问题。</p>
+<p><a
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
+<p><a
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用 winget upgrade/update 时需要注意的问题</title>
+    <url>/winget-upgrade/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-CN/windows/package-manager/winget/">https://learn.microsoft.com/zh-CN/windows/package-manager/winget/</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade">https://learn.microsoft.com/zh-cn/windows/package-manager/winget/upgrade</a></p>
+<p>就使用体验来说，使用<code>winget upgrade</code>来查看可更新的软件列表的话，还是很方便的，但是直接用来升级某特定软件的话，还是会有些
+bug 的。</p>
+<p>winget 他这个升级的原理是，从官方源里面下载最新的安装包（一般是
+msi），然后安装到电脑上。有的更新会仍然安装在原先的位置，而如果之前修改过安装位置的话，可能会安装到默认位置。</p>
+<p>当然，现在我的观点是，软件安装的路径就不要自己去改了，默认安装在 C
+盘的什么地方就什么地方，没什么必要去修改，一般也不会占用多少空间，几个
+GB 的事情，大不了给 C 盘扩容。安装在 C
+盘主要是软件需要各种系统调用，如果安装在其他盘，可能会出现各种原先没有的问题。</p>
+]]></content>
+  </entry>
+</search>

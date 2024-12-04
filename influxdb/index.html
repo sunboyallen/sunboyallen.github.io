@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"sunboyallen.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="如题，作为备忘。主要按官方文档的架构，自己做一些补充。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于 InfluxDB">
+<meta property="og:url" content="https://sunboyallen.github.io/influxdb/index.html">
+<meta property="og:site_name" content="sunboyallen">
+<meta property="og:description" content="如题，作为备忘。主要按官方文档的架构，自己做一些补充。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-16T11:56:44.000Z">
+<meta property="article:modified_time" content="2024-12-04T16:45:00.042Z">
+<meta property="article:author" content="sunboyallen">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://sunboyallen.github.io/influxdb/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://sunboyallen.github.io/influxdb/","path":"influxdb/","title":"关于 InfluxDB"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>关于 InfluxDB | sunboyallen</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">sunboyallen</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#install-influxdb"><span class="nav-number">1.</span> <span class="nav-text">Install InfluxDB</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#get-started-with-influxdb"><span class="nav-number">2.</span> <span class="nav-text">Get started with InfluxDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#set-up-influxdb"><span class="nav-number">2.1.</span> <span class="nav-text">Set up InfluxDB</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#develop-with-the-influxdb-api"><span class="nav-number">3.</span> <span class="nav-text">Develop with the InfluxDB
+API</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#python-client-library"><span class="nav-number">3.1.</span> <span class="nav-text">Python client library</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#administer-influxdb"><span class="nav-number">4.</span> <span class="nav-text">Administer InfluxDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#manage-api-tokens"><span class="nav-number">4.1.</span> <span class="nav-text">Manage API tokens</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#influxdb-reference"><span class="nav-number">5.</span> <span class="nav-text">InfluxDB reference</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#influxdb-internals"><span class="nav-number">5.1.</span> <span class="nav-text">InfluxDB internals</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#influxdb-storage-engine"><span class="nav-number">5.1.1.</span> <span class="nav-text">InfluxDB storage engine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#influxdb-file-system-layout"><span class="nav-number">5.1.2.</span> <span class="nav-text">InfluxDB file system layout</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#command-line-tools"><span class="nav-number">5.2.</span> <span class="nav-text">Command line tools</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#influx---influxdb-command-line-interface"><span class="nav-number">5.2.1.</span> <span class="nav-text">influx - InfluxDB
+command line interface</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-setup"><span class="nav-number">5.2.1.1.</span> <span class="nav-text">influx setup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-auth"><span class="nav-number">5.2.1.2.</span> <span class="nav-text">influx auth</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-config"><span class="nav-number">5.2.1.3.</span> <span class="nav-text">influx config</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-user"><span class="nav-number">5.2.1.4.</span> <span class="nav-text">influx user</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-org"><span class="nav-number">5.2.1.5.</span> <span class="nav-text">influx org</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-bucket"><span class="nav-number">5.2.1.6.</span> <span class="nav-text">influx bucket</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-delete"><span class="nav-number">5.2.1.7.</span> <span class="nav-text">influx delete</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#influx-v1"><span class="nav-number">5.2.1.8.</span> <span class="nav-text">influx v1</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sunboyallen"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">sunboyallen</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sunboyallen" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sunboyallen" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sunboyallen@163.com" title="E-Mail → mailto:sunboyallen@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/24507963" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;24507963" rel="noopener me" target="_blank"><i class="fab fa-bilibili fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunboyallen.github.io/influxdb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="sunboyallen">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sunboyallen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="关于 InfluxDB | sunboyallen">
+      <meta itemprop="description" content="如题，作为备忘。主要按官方文档的架构，自己做一些补充。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于 InfluxDB
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-11-16 19:56:44" itemprop="dateCreated datePublished" datetime="2024-11-16T19:56:44+08:00">2024-11-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-12-05 00:45:00" itemprop="dateModified" datetime="2024-12-05T00:45:00+08:00">2024-12-05</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">如题，作为备忘。主要按官方文档的架构，自己做一些补充。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>主要是关于在 Linux Ubuntu 使用 InfluxDB v2
+的备忘，特别是公共服务器的场景。当然自己 WSL 使用也是同理。</p>
+<p><a
+target="_blank" rel="noopener" href="https://www.influxdata.com/">https://www.influxdata.com/</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/">https://docs.influxdata.com/</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/">https://docs.influxdata.com/influxdb/v2/</a></p>
+<h1 id="install-influxdb">Install InfluxDB</h1>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/install/">https://docs.influxdata.com/influxdb/v2/install/</a></p>
+<p>Install InfluxDB as a service with systemd</p>
+<p>具体命令见上面的官方文档。</p>
+<p>相关的命令，根据需要，自行加上<code>sudo</code>。</p>
+<p>APT 是全局性的包管理器，一般所有用户共享系统安装的软件包。对于
+influxdb
+同样如此，安装后，各个用户都能使用，只是各自有各自的配置文件，不会干扰。具体在后面会说。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt list --installed | grep influx</span><br></pre></td></tr></table></figure>
+<p>就日常使用感受来说，官方文档说的第 2 种安装方式较少用。</p>
+<p>查看服务状态。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb status</span><br></pre></td></tr></table></figure>
+<p>如果要具体查看端口状态。端口号默认是<code>8086</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> lsof -i :8086</span><br></pre></td></tr></table></figure>
+<p>如有需要。虽然个人感觉一般用不到。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">kill</span> -9 &lt;PID&gt;</span><br></pre></td></tr></table></figure>
+<p>启动服务。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb start</span><br></pre></td></tr></table></figure>
+<p>停止服务。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br></pre></td></tr></table></figure>
+<p>influx
+安装后，默认是开机自启的，即使之前使用了<code>stop</code>，重启服务器或者
+WSL 之类的之后会自己启动。如果想关闭自启动，可以使用这个。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">disable</span> influxdb</span><br></pre></td></tr></table></figure>
+<h1 id="get-started-with-influxdb">Get started with InfluxDB</h1>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/get-started/">https://docs.influxdata.com/influxdb/v2/get-started/</a></p>
+<p>UI 和 CLI 都是很方便的，建议都使用。</p>
+<p><code>http://localhost:8086/</code></p>
+<p>在 influxdb 运行的情况下。</p>
+<p>对于服务器也是可以的，如果只在用一个服务器，那么上面的地址就直接可以的，或者使用服务器的
+IP 地址。</p>
+<h2 id="set-up-influxdb">Set up InfluxDB</h2>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/get-started/setup/">https://docs.influxdata.com/influxdb/v2/get-started/setup/</a></p>
+<p>这里个人建议通过 CLI 命令行来设置。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<p>按照提示，设置自己的
+username，password，organization，bucket，等等内容。</p>
+<p>名字不要紧，后续都可以再修改的。</p>
+<h1 id="develop-with-the-influxdb-api">Develop with the InfluxDB
+API</h1>
+<h2 id="python-client-library">Python client library</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install influxdb-client</span><br></pre></td></tr></table></figure>
+<p>还是很方便的。另外 java 也有相关库可以用。并且这些默认是使用 v2
+版本。</p>
+<h1 id="administer-influxdb">Administer InfluxDB</h1>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/">https://docs.influxdata.com/influxdb/v2/admin/</a></p>
+<p>具体对于 organization，bucket，user，token
+等的管理。包括创建，查看，更新，删除，等内容。官方文档的这一节是按照具体需求场景来分的章节的，另外也可以参考后文
+reference 部分。</p>
+<p>个人建议是使用 CLI 来管理，UI
+当然也行，主要看自己的使用习惯和方便程度。另外，对于这些，能直接修改就修改，能更新就更新，尽量少用删除相关的命令。</p>
+<h2 id="manage-api-tokens">Manage API tokens</h2>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/tokens/">https://docs.influxdata.com/influxdb/v2/admin/tokens/</a></p>
+<p>请善待自己的
+token，好好利用，在配置文件里好好保管。这样就不用专门去记住自己的用户名，组织，等内容，即使忘记密码也可以重新设置。</p>
+<p>这里只需要指出对于 token 的更新的操作，这里指的是对于 token 的
+description 的更新，在 UI 上更新。不是说更新 token 的内容。</p>
+<p>另外，假如自己真的不小心在 UI 或者 CLI 将自己唯一的 token 给删除
+delete 了，那么就需要重新 setup 走一遍。先停止运行 influxdb
+服务，删除数据文件，删除配置信息，然后重新运行 influxdb 服务。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">rm</span> -rf /var/lib/influxdb</span><br><span class="line"><span class="built_in">rm</span> -r ~/.influxdbv2/*</span><br><span class="line"><span class="built_in">sudo</span> service influxdb start</span><br><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<h1 id="influxdb-reference">InfluxDB reference</h1>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/">https://docs.influxdata.com/influxdb/v2/reference/</a></p>
+<h2 id="influxdb-internals">InfluxDB internals</h2>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/internals/">https://docs.influxdata.com/influxdb/v2/reference/internals/</a></p>
+<h3 id="influxdb-storage-engine">InfluxDB storage engine</h3>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/internals/storage-engine/">https://docs.influxdata.com/influxdb/v2/reference/internals/storage-engine/</a></p>
+<p>数据文件存储相关。</p>
+<h3 id="influxdb-file-system-layout">InfluxDB file system layout</h3>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/">https://docs.influxdata.com/influxdb/v2/reference/internals/file-system-layout/</a></p>
+<p>Configs path</p>
+<p><code>~/.influxdbv2/configs</code></p>
+<p>在什么用户模式下<code>setup</code>的，配置文件就在什么用户目录下，这样就各自独立。特别地，在
+root
+模式下<code>setup</code>的，配置文件就在<code>/root/.influxdbv2/configs</code>。</p>
+<p>语法是
+toml，默认的配置内容大致是这样的。从内容也可以看出，配置文件的一个很重要的作用就是保管自己的
+token。</p>
+<figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[default]</span></span><br><span class="line">  <span class="attr">url</span> = <span class="string">&quot;http://localhost:8086&quot;</span></span><br><span class="line">  <span class="attr">token</span> = <span class="string">&quot;&lt;your-token&gt;&quot;</span></span><br><span class="line">  <span class="attr">org</span> = <span class="string">&quot;&lt;your-org&gt;&quot;</span></span><br><span class="line">  <span class="attr">active</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>这里的<code>org</code>是可选的，可以不写这一行，或者直接留空。当然，如果自己有多个
+org，那么可以在这里指定默认的。</p>
+<p>如果默认只有一个，那么建议写上比较方便，这样比如<code>influx bucket list</code>的时候，不需要再去指定
+org。只是如果自己后面要修改 org
+的名字或者其他内容的时候，还得记得另外再修改这个配置里的内容。</p>
+<p>文档里面说 Installed as a package 方式的 Configs path
+是<code>/var/lib/influxdb/configs</code>，不过一般不会这么安装，用处不大。</p>
+<p>位于<code>/etc/influxdb/config.toml</code>的配置文件，是 influxd
+configuration file，用于服务器的配置。</p>
+<figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">bolt-path</span> = <span class="string">&quot;/var/lib/influxdb/influxd.bolt&quot;</span></span><br><span class="line"><span class="attr">engine-path</span> = <span class="string">&quot;/var/lib/influxdb/engine&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Engine path</p>
+<p><code>/var/lib/influxdb/engine/</code></p>
+<p>TSM directories and files layout</p>
+<p><code>/var/lib/influxdb/engine/data/</code></p>
+<p>数据文件主要就是存这个地方。使用<code>du</code>命令查看总的大小。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh /var/lib/influxdb/</span><br><span class="line"><span class="built_in">du</span> -sh /var/lib/influxdb/engine/data/</span><br><span class="line"><span class="built_in">du</span> -sk /var/lib/influxdb/engine/data/</span><br></pre></td></tr></table></figure>
+<p>WAL directories and files layout</p>
+<p><code>/var/lib/influxdb/engine/wal/</code></p>
+<h2 id="command-line-tools">Command line tools</h2>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/">https://docs.influxdata.com/influxdb/v2/reference/cli/</a></p>
+<p>其中<code>influxd</code>命令主要是服务器的配置，对于用户来说，一般较少用。</p>
+<h3 id="influx---influxdb-command-line-interface">influx - InfluxDB
+command line interface</h3>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/</a></p>
+<h4 id="influx-setup">influx setup</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<h4 id="influx-auth">influx auth</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/</a></p>
+<p>用于对授权，token 的管理。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx auth list [flags]</span><br></pre></td></tr></table></figure>
+<h4 id="influx-config">influx config</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/</a></p>
+<p>这里也说了，默认是将配置写在<code>~/.influxdbv2/configs</code>。</p>
+<p>influx config set</p>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/set/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/set/</a></p>
+<p>这里<code>set</code>和<code>update</code>同义。</p>
+<p>相关命令行的效果相当于直接修改该文件。</p>
+<p>用户的 token
+也是放在此处，放这之后就不需要单独保存记忆，平时使用命令行也不需要每次都带上<code>--token</code>参数。</p>
+<h4 id="influx-user">influx user</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx user list</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx user password</span><br></pre></td></tr></table></figure>
+<p>用于修改用户的密码，或者说更新密码，重置密码。只要配置文件有 token
+或者手动带上 token
+参数。无需记住原先的密码。也常用于忘记密码的场景。</p>
+<h4 id="influx-org">influx org</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx org list</span><br></pre></td></tr></table></figure>
+<h4 id="influx-bucket">influx bucket</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx bucket list</span><br></pre></td></tr></table></figure>
+<h4 id="influx-delete">influx delete</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/</a></p>
+<p>主要用于删除指定 bucket 的指定时间段的数据。</p>
+<h4 id="influx-v1">influx v1</h4>
+<p><a
+target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx v1 shell</span><br></pre></td></tr></table></figure>
+<p>可以用于使用 shell 模式。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://space.bilibili.com/24507963">
+            <span class="icon">
+              <i class="fab fa-bilibili"></i>
+            </span>
+
+            <span class="label">Bilibili</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/vscode-copy-formatting/" rel="prev" title="VS Code 设置复制文本时不带格式样式不带语法高亮">
+                  <i class="fa fa-angle-left"></i> VS Code 设置复制文本时不带格式样式不带语法高亮
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">sunboyallen</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"sunboyallen/blog-comment","issue_term":"pathname","theme":"preferred-color-scheme"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+</body>
+</html>
