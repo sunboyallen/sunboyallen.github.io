@@ -127,20 +127,6 @@ href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://the
 ]]></content>
   </entry>
   <entry>
-    <title>「香取ヒロシ」的词源资料</title>
-    <url>/hiroshi/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/eigo-garage/theme-10100760487.html</a></p>
-<p>語源考</p>
-<p>Come on by！ 英語ガレージ！　☆☆☆</p>
-<p>香取ヒロシ（香取大志）</p>
-<p>老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。在 ameblo
-的简介说，有剑桥 CPE 和 CELTA 证书。</p>
-<p>老师说是说博客的内容主要是自己的观点和推测，不过考证所用的资料很多，个人感觉还是很有参考价值。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>在 GitHub Pages 搭建 Hexo 博客</title>
     <url>/hexo/</url>
     <content><![CDATA[<h1 id="概述">概述</h1>
@@ -228,6 +214,39 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
 <figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
 <p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「香取ヒロシ」的词源资料</title>
+    <url>/hiroshi/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/eigo-garage/theme-10100760487.html</a></p>
+<p>語源考</p>
+<p>Come on by！ 英語ガレージ！　☆☆☆</p>
+<p>香取ヒロシ（香取大志）</p>
+<p>老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。在 ameblo
+的简介说，有剑桥 CPE 和 CELTA 证书。</p>
+<p>老师说是说博客的内容主要是自己的观点和推测，不过考证所用的资料很多，个人感觉还是很有参考价值。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语用于构成形容动词的词干的接尾词整理</title>
+    <url>/japanese-adjectival-noun-suffix/</url>
+    <content><![CDATA[<p>依然是在 weblio
+搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
+<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
+weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
+<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
+<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
+<p>げ【気】</p>
+<p>てき【的】</p>
+<p>ら【等】</p>
+<p>たげ</p>
+<p>か</p>
+<p>はか</p>
+<p>やか</p>
+<p>らか</p>
 ]]></content>
   </entry>
   <entry>
@@ -403,31 +422,61 @@ href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://
 ]]></content>
   </entry>
   <entry>
-    <title>日语形容词型活用的所有接尾词整理</title>
-    <url>/japanese-adjective-suffix/</url>
-    <content><![CDATA[<p>之前整理了关于动词型活用的所有接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了（笑）。</p>
-<p>依然是在 weblio
-全文检索，这次搜索的是<code>接尾］《形容詞型活用</code>，或者<code>接尾《形容詞型活用</code>之类的，差不多。</p>
-<p>还是那句话，由于精力所限，以下仅仅是列举，具体的含义，来源，用例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
-<p>不过这里列举的这些，不全都是用于【构成】形容词，有的就是用于表示某种意思，比如っこない用于动词连用形之后，表示【…はずがない】【…わけがない】这类意思。</p>
-<p>里面有的接尾词，本身就是由多个接尾词构成的，比如がたない【難ない】就是由接尾词がたい【難い】的词干，加另一个接尾词ない组成的。当然了，含义和用法与がたい【難い】相同，接尾词ない用于强调这种性质，状态。具体内容依然是查词典。</p>
-<p>がたい【難い】</p>
-<p>がたない【難ない】</p>
-<p>がましい</p>
-<p>がわしい〔がはしい〕</p>
-<p>くさい【臭い】</p>
-<p>こい</p>
-<p>しい</p>
-<p>たい</p>
-<p>たらしい</p>
-<p>っこない</p>
-<p>っぽい</p>
-<p>づらい【辛い】</p>
-<p>ない</p>
-<p>にくい【難い／悪い】</p>
-<p>ぼったい</p>
-<p>めかしい</p>
-<p>らしい</p>
+    <title>日语ラ行上一段活用（文语ラ行上二段活用）的动词整理</title>
+    <url>/japanese-verb-r-kamiichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>主要是词不多，简单整理。同样是在 weblio
+全局搜索。搜<code>ラ上一</code>以及<code>ラ上二</code>。最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。</p>
+<h1 id="文语ラ行上二段活用">文语ラ行上二段活用</h1>
+<p>先给出文语文法中的ラ行上二段活用的动词列表。此处不包括复合动词（虽然算上复合动词之后的数量依然很少）。此处只是简单列举，具体内容还是自行查看词典。</p>
+<p>おる【下る／降る】</p>
+<p>こる【懲る】</p>
+<p>ふる【旧る】</p>
+<p>ゆる【許る／聴る】</p>
+<p>おそる【恐る／怖る／畏る／懼る】</p>
+<p>这里，比较“诡异”或者说有意思的是おそる，此处给出《学研全訳古語辞典》的注解。</p>
+<p>上代は上二段活用。中古も、活用の基本は上二段活用。下二段活用が生じるのは中古初期であるが、中世になるとほぼ下二段活用に統一された。四段活用と見られる例が中古から見えるが、昔の用法をまねた誤った使い方だったらしい。</p>
+<p>再给出《大辞泉》的注解。</p>
+<p>[補説]
+古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれかはっきりしない例が多いが、上二段活用のほうが多く現れる。</p>
+<p>下面是能查到的复合动词的列表。</p>
+<p>あもる【天降る】</p>
+<p>かけおる【駆（け）降る／駈け降る】</p>
+<p>とびおる【飛（び）降る／飛（び）下る】</p>
+<p>まひおる【舞（ひ）降る】</p>
+<p>みこる【見懲る】</p>
+<p>うちふる【打ち古る】</p>
+<p>ききふる【聞き旧る／聞き古る】</p>
+<p>ことふる【事旧る／言旧る】</p>
+<p>とこふる【床旧る】</p>
+<p>なきふる【鳴き旧る】</p>
+<p>みみふる【耳旧る】</p>
+<p>ものふる【物古る／物旧る】</p>
+<p>おぢおそる【怖ぢ恐る】</p>
+<p>可以看到，在复合动词中，ふる也会表记为【古る】。</p>
+<p>其中，おぢおそる【怖ぢ恐る】是在《学研全訳古語辞典》中查到的，在《大辞泉》没有该词条。weblio
+的《日本語活用形辞書》倒是收录了おじおそり【怖ぢ恐り】标注为了前者的连用形。</p>
+<p>这里，あもる【天降る】是あまおる的音变化。</p>
+<h1 id="口语ラ行上一段活用">口语ラ行上一段活用</h1>
+<p>下面再给出口语文法中的ラ行上一段活用的动词列表。</p>
+<p>おりる【下りる／降りる】</p>
+<p>かりる【借りる】</p>
+<p>こりる【懲りる】</p>
+<p>たりる【足りる】</p>
+<p>可以看到，多了かりる【借りる】和たりる【足りる】，这两个是四段活用的「借る」和「足る」的上一段化。同样给出《大辞泉》的内容。</p>
+<p>《動詞「か（借）る」（四段）の上一段化》</p>
+<p>[補説]
+上一段活用の「借りる」が用いられるのは近世後期の江戸語から。今日、共通語では「借りる」であるが、関西では五段活用の「借る」が用いられる。</p>
+<p>[補説]
+四段活用の「足る」から転じ、近世から江戸で用いられるようになったもの。</p>
+<p>也是给出复合动词的列表。</p>
+<p>かけおりる【駆（け）降りる／駈け降りる】</p>
+<p>とびおりる【飛（び）降りる／飛（び）下りる】</p>
+<p>まいおりる【舞（い）降りる】</p>
+<p>あきたりる【飽（き）足りる】</p>
+<p>みちたりる【満（ち）足りる】</p>
+<p>ことたりる【事足りる】</p>
+<p>ものたりる【物足りる】</p>
 ]]></content>
   </entry>
   <entry>
@@ -669,61 +718,31 @@ href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.
 ]]></content>
   </entry>
   <entry>
-    <title>日语ラ行上一段活用（文语ラ行上二段活用）的动词整理</title>
-    <url>/japanese-verb-r-kamiichidan/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>主要是词不多，简单整理。同样是在 weblio
-全局搜索。搜<code>ラ上一</code>以及<code>ラ上二</code>。最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。</p>
-<h1 id="文语ラ行上二段活用">文语ラ行上二段活用</h1>
-<p>先给出文语文法中的ラ行上二段活用的动词列表。此处不包括复合动词（虽然算上复合动词之后的数量依然很少）。此处只是简单列举，具体内容还是自行查看词典。</p>
-<p>おる【下る／降る】</p>
-<p>こる【懲る】</p>
-<p>ふる【旧る】</p>
-<p>ゆる【許る／聴る】</p>
-<p>おそる【恐る／怖る／畏る／懼る】</p>
-<p>这里，比较“诡异”或者说有意思的是おそる，此处给出《学研全訳古語辞典》的注解。</p>
-<p>上代は上二段活用。中古も、活用の基本は上二段活用。下二段活用が生じるのは中古初期であるが、中世になるとほぼ下二段活用に統一された。四段活用と見られる例が中古から見えるが、昔の用法をまねた誤った使い方だったらしい。</p>
-<p>再给出《大辞泉》的注解。</p>
-<p>[補説]
-古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれかはっきりしない例が多いが、上二段活用のほうが多く現れる。</p>
-<p>下面是能查到的复合动词的列表。</p>
-<p>あもる【天降る】</p>
-<p>かけおる【駆（け）降る／駈け降る】</p>
-<p>とびおる【飛（び）降る／飛（び）下る】</p>
-<p>まひおる【舞（ひ）降る】</p>
-<p>みこる【見懲る】</p>
-<p>うちふる【打ち古る】</p>
-<p>ききふる【聞き旧る／聞き古る】</p>
-<p>ことふる【事旧る／言旧る】</p>
-<p>とこふる【床旧る】</p>
-<p>なきふる【鳴き旧る】</p>
-<p>みみふる【耳旧る】</p>
-<p>ものふる【物古る／物旧る】</p>
-<p>おぢおそる【怖ぢ恐る】</p>
-<p>可以看到，在复合动词中，ふる也会表记为【古る】。</p>
-<p>其中，おぢおそる【怖ぢ恐る】是在《学研全訳古語辞典》中查到的，在《大辞泉》没有该词条。weblio
-的《日本語活用形辞書》倒是收录了おじおそり【怖ぢ恐り】标注为了前者的连用形。</p>
-<p>这里，あもる【天降る】是あまおる的音变化。</p>
-<h1 id="口语ラ行上一段活用">口语ラ行上一段活用</h1>
-<p>下面再给出口语文法中的ラ行上一段活用的动词列表。</p>
-<p>おりる【下りる／降りる】</p>
-<p>かりる【借りる】</p>
-<p>こりる【懲りる】</p>
-<p>たりる【足りる】</p>
-<p>可以看到，多了かりる【借りる】和たりる【足りる】，这两个是四段活用的「借る」和「足る」的上一段化。同样给出《大辞泉》的内容。</p>
-<p>《動詞「か（借）る」（四段）の上一段化》</p>
-<p>[補説]
-上一段活用の「借りる」が用いられるのは近世後期の江戸語から。今日、共通語では「借りる」であるが、関西では五段活用の「借る」が用いられる。</p>
-<p>[補説]
-四段活用の「足る」から転じ、近世から江戸で用いられるようになったもの。</p>
-<p>也是给出复合动词的列表。</p>
-<p>かけおりる【駆（け）降りる／駈け降りる】</p>
-<p>とびおりる【飛（び）降りる／飛（び）下りる】</p>
-<p>まいおりる【舞（い）降りる】</p>
-<p>あきたりる【飽（き）足りる】</p>
-<p>みちたりる【満（ち）足りる】</p>
-<p>ことたりる【事足りる】</p>
-<p>ものたりる【物足りる】</p>
+    <title>日语形容词型活用的所有接尾词整理</title>
+    <url>/japanese-adjective-suffix/</url>
+    <content><![CDATA[<p>之前整理了关于动词型活用的所有接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了（笑）。</p>
+<p>依然是在 weblio
+全文检索，这次搜索的是<code>接尾］《形容詞型活用</code>，或者<code>接尾《形容詞型活用</code>之类的，差不多。</p>
+<p>还是那句话，由于精力所限，以下仅仅是列举，具体的含义，来源，用例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
+<p>不过这里列举的这些，不全都是用于【构成】形容词，有的就是用于表示某种意思，比如っこない用于动词连用形之后，表示【…はずがない】【…わけがない】这类意思。</p>
+<p>里面有的接尾词，本身就是由多个接尾词构成的，比如がたない【難ない】就是由接尾词がたい【難い】的词干，加另一个接尾词ない组成的。当然了，含义和用法与がたい【難い】相同，接尾词ない用于强调这种性质，状态。具体内容依然是查词典。</p>
+<p>がたい【難い】</p>
+<p>がたない【難ない】</p>
+<p>がましい</p>
+<p>がわしい〔がはしい〕</p>
+<p>くさい【臭い】</p>
+<p>こい</p>
+<p>しい</p>
+<p>たい</p>
+<p>たらしい</p>
+<p>っこない</p>
+<p>っぽい</p>
+<p>づらい【辛い】</p>
+<p>ない</p>
+<p>にくい【難い／悪い】</p>
+<p>ぼったい</p>
+<p>めかしい</p>
+<p>らしい</p>
 ]]></content>
   </entry>
   <entry>
@@ -759,25 +778,6 @@ href="/japanese-verb-special-nidan">这篇</a>。</p>
 <p>这个词在口语中是五段。在文语文法中，是唯一一个下一段活用的动词。江户后期逐渐四段化。</p>
 <p>而再往古了说，这个词本来是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（中间那个字符如果没显示出来，那个是小的ゑ，U+1B151）。</p>
 <p>具体见《大辞泉》等资料。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>日语用于构成形容动词的词干的接尾词整理</title>
-    <url>/japanese-adjectival-noun-suffix/</url>
-    <content><![CDATA[<p>依然是在 weblio
-搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
-<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
-weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
-<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
-<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
-<p>げ【気】</p>
-<p>てき【的】</p>
-<p>ら【等】</p>
-<p>たげ</p>
-<p>か</p>
-<p>はか</p>
-<p>やか</p>
-<p>らか</p>
 ]]></content>
   </entry>
   <entry>
@@ -1098,28 +1098,57 @@ C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
 ]]></content>
   </entry>
   <entry>
-    <title>关于 PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
-PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版 Windows PowerShell
-还在，而开始菜单栏会出现一个新的
-PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
-终端，就会默认为这个新版 PowerShell
-而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
-实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+    <title>使用 Python tldextract 解析 url 并且用于排序</title>
+    <url>/python-tldextract/</url>
+    <content><![CDATA[<p><a
+href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
+<p>用 tldextract 能够精确地获取到 url
+的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
+suffix）<code>suffix</code>，也就是 eTLD（effective
+TLD，有效顶级域）。</p>
+<p>相比于我们一般认识的 TLD（顶级域），我认为更重要和更有用的是 eTLD
+的概念。关于 TLD，自己也写了篇，里面简单放了一些网址资料。</p>
+<p>有了
+tldextract，我就可以方便地对网址进行排序了。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了
+eTLD，找到了 phblic suffix
+的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
+<p>我认为网址排序是一个值得讨论的事情。对 url
+的排序，首先，显然不是纯粹根据 url
+字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住
+TLD 之类的。</p>
+<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
+<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
+<p>使用 tldextract，就可以对网址进行排序。由于 tldextract
+本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
+<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>说点杂七杂八的。我认为不应当在浏览器的收藏夹里放那么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢？那些常用的网址，你几乎天天访问，记也该记住了。那些不怎么用到的网址，收藏了又有什么用呢？以前我在
+Edge 浏览器收藏过几百个网址，虽说 Edge
+的同步功能做得很不错，但是现在看来，以前我收藏那么多网址确实没啥用。。。</p>
+<p>另外，我认为应当转变一下思路。一方面，现代的搜索引擎比如 Bing，Google
+等等，基本都能做到通过搜索网站的 domain
+或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
+url，我认为还不如收藏搜索关键词 keyword。</p>
+<figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>使用【屎婆屎婆/💩👵💩👵】作为しばしば的【当て字】（迫真）</title>
+    <url>/shibashiba/</url>
+    <content><![CDATA[<p>省流：戏言。屎女是 IDS
+老梗了，版权归“前屎女bot”所有，归叶典网、字统网及相关群所有，侵删。</p>
+<p>【屡】拆成【屎女】，し和ば又能对应【屎】和【婆】的音读。（笑）</p>
+<p>关于新字体的问题。【屡/屢】字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为容许字体【許容字体】。《大辞泉》相关词条则使用前者。</p>
+<p>下面是 ruby 示例。</p>
+<p><ruby>💩<rt>し</rt>👵<rt>ば</rt>💩<rt>し</rt>👵<rt>ば</rt></ruby></p>
+<p><ruby>屎<rt>し</rt>婆<rt>ば</rt>屎<rt>し</rt>婆<rt>ば</rt></ruby></p>
+<p><ruby>屎<rt>し</rt>女<rt>ば</rt>屎<rt>し</rt>女<rt>ば</rt></ruby></p>
+<p><ruby>屡<rt>しば</rt>屡<rt>しば</rt></ruby></p>
+<p><ruby>屡<rt>しばしば</rt></ruby></p>
+<p><ruby>屢<rt>しば</rt>屢<rt>しば</rt></ruby></p>
+<p><ruby>屢<rt>しばしば</rt></ruby></p>
+<p>参考 html 写法。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩👵💩👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎婆屎婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎女屎女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>纯为娱乐。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1302,61 +1331,36 @@ href="https://softmany.com/formatfactory-windows/">https://softmany.com/formatfa
 <p>安装完 Chrome
 之后记得重启电脑。用户环境变量会添加<code>CHROME_EXECUTABLE</code>值，但是需要重启电脑之后，Python
 才能获取到该值。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">chrome_path = os.environ.get(<span class="string">&#x27;CHROME_EXECUTABLE&#x27;</span>)</span><br><span class="line"></span><br><span class="line">chrome_options = Options()</span><br><span class="line">chrome_options.binary_location = chrome_path</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(options=chrome_options)</span><br><span class="line">driver.get(<span class="string">&#x27;https://www.baidu.com&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">chrome_path = os.environ.get(<span class="string">&#x27;CHROME_EXECUTABLE&#x27;</span>)</span><br><span class="line"></span><br><span class="line">chrome_options = Options()</span><br><span class="line">chrome_options.binary_location = chrome_path</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(options=chrome_options)</span><br><span class="line">driver.get(<span class="string">&#x27;https://www.baidu.com&#x27;</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(driver.title)</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line">driver.quit()</span><br></pre></td></tr></table></figure>
+<h2 id="microsoft-edge-webdriver">Microsoft Edge WebDriver</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install edgedriver</span><br></pre></td></tr></table></figure>
+<p>然后就能直接写了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">driver = webdriver.Edge()</span><br><span class="line">driver.get(<span class="string">&quot;https://www.baidu.com&quot;</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(driver.title)</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line">driver.quit()</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
-    <title>使用 Python tldextract 解析 url 并且用于排序</title>
-    <url>/python-tldextract/</url>
-    <content><![CDATA[<p><a
-href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
-<p>用 tldextract 能够精确地获取到 url
-的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
-suffix）<code>suffix</code>，也就是 eTLD（effective
-TLD，有效顶级域）。</p>
-<p>相比于我们一般认识的 TLD（顶级域），我认为更重要和更有用的是 eTLD
-的概念。关于 TLD，自己也写了篇，里面简单放了一些网址资料。</p>
-<p>有了
-tldextract，我就可以方便地对网址进行排序了。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了
-eTLD，找到了 phblic suffix
-的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
-<p>我认为网址排序是一个值得讨论的事情。对 url
-的排序，首先，显然不是纯粹根据 url
-字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住
-TLD 之类的。</p>
-<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
-<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
-<p>使用 tldextract，就可以对网址进行排序。由于 tldextract
-本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
-<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<p>说点杂七杂八的。我认为不应当在浏览器的收藏夹里放那么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢？那些常用的网址，你几乎天天访问，记也该记住了。那些不怎么用到的网址，收藏了又有什么用呢？以前我在
-Edge 浏览器收藏过几百个网址，虽说 Edge
-的同步功能做得很不错，但是现在看来，以前我收藏那么多网址确实没啥用。。。</p>
-<p>另外，我认为应当转变一下思路。一方面，现代的搜索引擎比如 Bing，Google
-等等，基本都能做到通过搜索网站的 domain
-或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
-url，我认为还不如收藏搜索关键词 keyword。</p>
-<figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>使用【屎婆屎婆/💩👵💩👵】作为しばしば的【当て字】（迫真）</title>
-    <url>/shibashiba/</url>
-    <content><![CDATA[<p>省流：戏言。屎女是 IDS
-老梗了，版权归“前屎女bot”所有，归叶典网、字统网及相关群所有，侵删。</p>
-<p>【屡】拆成【屎女】，し和ば又能对应【屎】和【婆】的音读。（笑）</p>
-<p>关于新字体的问题。【屡/屢】字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为容许字体【許容字体】。《大辞泉》相关词条则使用前者。</p>
-<p>下面是 ruby 示例。</p>
-<p><ruby>💩<rt>し</rt>👵<rt>ば</rt>💩<rt>し</rt>👵<rt>ば</rt></ruby></p>
-<p><ruby>屎<rt>し</rt>婆<rt>ば</rt>屎<rt>し</rt>婆<rt>ば</rt></ruby></p>
-<p><ruby>屎<rt>し</rt>女<rt>ば</rt>屎<rt>し</rt>女<rt>ば</rt></ruby></p>
-<p><ruby>屡<rt>しば</rt>屡<rt>しば</rt></ruby></p>
-<p><ruby>屡<rt>しばしば</rt></ruby></p>
-<p><ruby>屢<rt>しば</rt>屢<rt>しば</rt></ruby></p>
-<p><ruby>屢<rt>しばしば</rt></ruby></p>
-<p>参考 html 写法。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩👵💩👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎婆屎婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎女屎女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>纯为娱乐。</p>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1435,24 +1439,35 @@ href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/co
 ]]></content>
   </entry>
   <entry>
-    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
-    <url>/vscode-clang-format/</url>
-    <content><![CDATA[<p>众所周知，在 VS Code
-很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
-C/C++ 同样如此。</p>
+    <title>关于 TLD</title>
+    <url>/tld/</url>
+    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
+<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
+<p>ICANN wiki，可以查各个 TLD 的信息。</p>
 <p><a
-href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
+<p>ISO 3166 标准。</p>
+<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
 <p><a
-href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
-<p>常用的配置选项。</p>
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
 <p><a
-href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
-<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
-<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
-格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
-格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
-0，根据自己需要。</p>
+href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
+<p>可以查看 root zone，查看根域名。</p>
+<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
+<p><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
+<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
+<p><a
+href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
+<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
+<p><a
+href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
+<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
+<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
+<p>上面的是各 nTLD
+的数据信息。没事的话可以查查，有些很有意思的域名。</p>
+<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
+<p>看看 xyz 的官网（笑）。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1493,35 +1508,24 @@ Word
 ]]></content>
   </entry>
   <entry>
-    <title>关于 TLD</title>
-    <url>/tld/</url>
-    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
-<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
-<p>ICANN wiki，可以查各个 TLD 的信息。</p>
+    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
+    <url>/vscode-clang-format/</url>
+    <content><![CDATA[<p>众所周知，在 VS Code
+很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
+C/C++ 同样如此。</p>
 <p><a
-href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
-<p>ISO 3166 标准。</p>
-<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
 <p><a
-href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
 <p><a
-href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
-<p>可以查看 root zone，查看根域名。</p>
-<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
-<p><a
-href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
-<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
-<p><a
-href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
-<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
-<p><a
-href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
-<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
-<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
-<p>上面的是各 nTLD
-的数据信息。没事的话可以查查，有些很有意思的域名。</p>
-<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
-<p>看看 xyz 的官网（笑）。</p>
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
+格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
+格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
+0，根据自己需要。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1548,6 +1552,19 @@ UTF-8
 ]]></content>
   </entry>
   <entry>
+    <title>查看自己 Windows 电脑的产品密钥</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答。</p>
+<p><a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>关于微软 Windows 系统字体</title>
     <url>/windows-font/</url>
     <content><![CDATA[<p><a
@@ -1565,19 +1582,6 @@ href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://l
 href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
 <p><a
 href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>查看自己 Windows 电脑的产品密钥</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答。</p>
-<p><a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
