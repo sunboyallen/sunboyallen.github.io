@@ -41,20 +41,6 @@ p &amp;= \frac{h}{\lambda} \\
 ]]></content>
   </entry>
   <entry>
-    <title>「香取ヒロシ」的词源资料</title>
-    <url>/hiroshi/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/eigo-garage/theme-10100760487.html</a></p>
-<p>語源考</p>
-<p>Come on by！ 英語ガレージ！　☆☆☆</p>
-<p>香取ヒロシ（香取大志）</p>
-<p>老师在<a
-href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。在 ameblo
-的简介说，有剑桥 CPE 和 CELTA 证书。</p>
-<p>老师说是说博客的内容主要是自己的观点和推测，不过考证所用的资料很多，个人感觉还是很有参考价值。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>关于 InfluxDB</title>
     <url>/influxdb/</url>
     <content><![CDATA[<p>主要是关于在 Linux Ubuntu 使用 InfluxDB v2
@@ -227,50 +213,103 @@ href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://
 ]]></content>
   </entry>
   <entry>
-    <title>日语用于构成形容动词的词干的接尾词整理</title>
-    <url>/japanese-adjectival-noun-suffix/</url>
-    <content><![CDATA[<p>依然是在 weblio
-搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
-<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
-weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
-<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
-<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
-<p>げ【気】</p>
-<p>てき【的】</p>
-<p>ら【等】</p>
-<p>たげ</p>
-<p>か</p>
-<p>はか</p>
-<p>やか</p>
-<p>らか</p>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改。目前看来大概是不会了。</p>
+<h1 id="getting-started">Getting Started</h1>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
+<p><a
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<h1 id="theme-settings">Theme Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar 相关的内容。</p>
+<h2 id="posts">Posts</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容。对于
+NexT，也可以在 markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p><a
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式的建议书写习惯是，<code>$</code>包裹的公式要紧挨着公式内容，<code>$</code>与周围的其他内容留有空格隔开。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc。可以在<a
+href="https://pandoc.org/">官网</a>安装，或者可以用 scoop 安装。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install pandoc</span><br></pre></td></tr></table></figure>
+<h2 id="external-libraries">External Libraries</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。Utterances
+有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
+<p><a
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
+<p><a
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置 css。第一个是设置背景图。第二个是设置首页每篇 post block
+块的不透明度。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>日语形容词型活用的所有接尾词整理</title>
-    <url>/japanese-adjective-suffix/</url>
-    <content><![CDATA[<p>之前整理了关于动词型活用的所有接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了（笑）。</p>
-<p>依然是在 weblio
-全文检索，这次搜索的是<code>接尾］《形容詞型活用</code>，或者<code>接尾《形容詞型活用</code>之类的，差不多。</p>
-<p>还是那句话，由于精力所限，以下仅仅是列举，具体的含义，来源，用例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
-<p>不过这里列举的这些，不全都是用于【构成】形容词，有的就是用于表示某种意思，比如っこない用于动词连用形之后，表示【…はずがない】【…わけがない】这类意思。</p>
-<p>里面有的接尾词，本身就是由多个接尾词构成的，比如がたない【難ない】就是由接尾词がたい【難い】的词干，加另一个接尾词ない组成的。当然了，含义和用法与がたい【難い】相同，接尾词ない用于强调这种性质，状态。具体内容依然是查词典。</p>
-<p>がたい【難い】</p>
-<p>がたない【難ない】</p>
-<p>がましい</p>
-<p>がわしい〔がはしい〕</p>
-<p>くさい【臭い】</p>
-<p>こい</p>
-<p>しい</p>
-<p>たい</p>
-<p>たらしい</p>
-<p>っこない</p>
-<p>っぽい</p>
-<p>づらい【辛い】</p>
-<p>ない</p>
-<p>にくい【難い／悪い】</p>
-<p>ぼったい</p>
-<p>めかしい</p>
-<p>らしい</p>
+    <title>「香取ヒロシ」的词源资料</title>
+    <url>/hiroshi/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/eigo-garage/theme-10100760487.html">https://ameblo.jp/eigo-garage/theme-10100760487.html</a></p>
+<p>語源考</p>
+<p>Come on by！ 英語ガレージ！　☆☆☆</p>
+<p>香取ヒロシ（香取大志）</p>
+<p>老师在<a
+href="https://x.com/EG_Hiroshi">蓝鸟</a>的号有具体介绍自己。在 ameblo
+的简介说，有剑桥 CPE 和 CELTA 证书。</p>
+<p>老师说是说博客的内容主要是自己的观点和推测，不过考证所用的资料很多，个人感觉还是很有参考价值。</p>
 ]]></content>
   </entry>
   <entry>
@@ -361,6 +400,261 @@ href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.c
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
 <figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
 <p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语用于构成形容动词的词干的接尾词整理</title>
+    <url>/japanese-adjectival-noun-suffix/</url>
+    <content><![CDATA[<p>依然是在 weblio
+搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
+<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
+weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
+<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
+<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
+<p>げ【気】</p>
+<p>てき【的】</p>
+<p>ら【等】</p>
+<p>たげ</p>
+<p>か</p>
+<p>はか</p>
+<p>やか</p>
+<p>らか</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语形容词型活用的所有接尾词整理</title>
+    <url>/japanese-adjective-suffix/</url>
+    <content><![CDATA[<p>之前整理了关于动词型活用的所有接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了（笑）。</p>
+<p>依然是在 weblio
+全文检索，这次搜索的是<code>接尾］《形容詞型活用</code>，或者<code>接尾《形容詞型活用</code>之类的，差不多。</p>
+<p>还是那句话，由于精力所限，以下仅仅是列举，具体的含义，来源，用例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
+<p>不过这里列举的这些，不全都是用于【构成】形容词，有的就是用于表示某种意思，比如っこない用于动词连用形之后，表示【…はずがない】【…わけがない】这类意思。</p>
+<p>里面有的接尾词，本身就是由多个接尾词构成的，比如がたない【難ない】就是由接尾词がたい【難い】的词干，加另一个接尾词ない组成的。当然了，含义和用法与がたい【難い】相同，接尾词ない用于强调这种性质，状态。具体内容依然是查词典。</p>
+<p>がたい【難い】</p>
+<p>がたない【難ない】</p>
+<p>がましい</p>
+<p>がわしい〔がはしい〕</p>
+<p>くさい【臭い】</p>
+<p>こい</p>
+<p>しい</p>
+<p>たい</p>
+<p>たらしい</p>
+<p>っこない</p>
+<p>っぽい</p>
+<p>づらい【辛い】</p>
+<p>ない</p>
+<p>にくい【難い／悪い】</p>
+<p>ぼったい</p>
+<p>めかしい</p>
+<p>らしい</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语特殊的一段动词整理</title>
+    <url>/japanese-verb-special-ichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>写在最前面，是碳酸氢镭大佬的<a
+href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，给了我相当多的帮助和启发。再次再次感谢大佬！</p>
+<p>比较可惜的是，国内很多营销号不顾语法事实，犯着基本的逻辑错误，“倒反天罡”，硬生生地整理了所谓“特殊”的五段动词（或者叫“一类动词”也行，比如《标日》是这么写）。什么
+26 个，33 个，34
+个，各种牛鬼蛇神都蹦出来了。。。当然了，从观察来看，十几年来基本是这种情况，营销号自然是不会在意这些的。</p>
+<p>而对于一部分还在坚持使用或者坚信所谓“特殊”的五段动词的初学者，我也不会刻意纠正或者吐槽什么，主要还是营销号的锅。而且国内使用“学校文法”的教材就不多，《标日》也只是在前言里提及和对比。这些教材教动词，以“ます形”（连用形后接ます）为主。像《标日》对于所谓一类、二类、三类动词的分类和定义，相对来说就不算那么明确，感觉勉勉强强（初级，第
+14 课，语法解释
+1）。然而，《标日》都认为需要特别记忆的也是二类动词，而不是网上各种所谓特殊的一类动词。</p>
+<h1 id="前置知识">前置知识</h1>
+<p>那么首先就要求，需要明确地知道对于那几种动词的定义和分类。如果还不清楚关于五段动词，一段动词等等的定义，或者不清楚关于“活用”的概念的话，还是先去了解为好。本质上，学校文法对于动词的分类就是根据活用的不同来分类的。</p>
+<p>并且这里我也解释一下前面说的“不顾语法事实，犯着基本的逻辑错误”是指什么。我想表达的意思是，如果那些营销号接触的是正确的关于那几种动词的分类和定义的话（即使使用的是国内大多数教材用的三类动词的分法也行，只要定义明确），他们是怎么由：“一段动词的<strong>词尾</strong>是イ段假名或エ段假名加上「る」”，然后就推导出：“<strong>动词结尾</strong>是イ段假名或エ段假名加上「る」的动词都是一段动词”的？（当然了，营销号之所以是营销号本就是有原因的，笑笑就是。）</p>
+<p>并且注意我的用词。前面说的是<strong>词尾</strong>（日语叫「語尾」，「活用語尾」），顾名思义。</p>
+<p>说了要看活用啊，活用。并且，动词的汉字表记不是白给的，送假名不是白写的。另外，古典文法（文语文法）的内容，也可以简单看看。我之前那几篇文章，对于相关内容并无赘述，网上资料比较多了。当然，可以直接看之前大佬的那篇回答。</p>
+<h1 id="省流">省流</h1>
+<p>简单来说，标题说的“特殊”的一段动词，指的是一段动词中，整个动词的基本形仅由一个イ段假名或エ段假名加上「る」构成的那些动词。按词典对于“词尾”的定义，某种意义上认为，这些词整个就是词尾，没有词干。或者认为，这些词不分词尾和词干，也行。</p>
+<p><strong>即使没有关于古典文法（文语文法）的基础</strong>，如果手头有词典，熟练使用
+weblio
+等网站工具的话，想想也知道这些特殊的一段动词极其容易通过枚举就能自己整理出来。如果只是想知道有哪些，那么自己去查去整理就行，或者看之前说的那位大佬的回答（虽然人家少写了几个，但是常用的人家都列出来了，人家讲的很清楚）。</p>
+<p>将口语里特殊的一段动词分成上一段和下一段，各有其直接来源。由于之前我写了下面两篇文章作为铺垫，本篇的正文部分内容不会很多。</p>
+<p>特殊的上一段动词，直接来源，是文语文法中，上一段活用的动词。具体见<a
+href="/japanese-verb-kamiichidan">这篇</a>。</p>
+<p>特殊的下一段动词，直接来源，是文语文法中，下二段活用的特殊动词。具体见<a
+href="/japanese-verb-special-nidan">这篇</a>。</p>
+<p>如果还想省流，在上面两篇文章中，直接跳到各自的“其他表格”部分，各自的第一个表格就是，加起来一共十来个，不还是比营销号所谓二三十多个方便（笑）。</p>
+<h1 id="ける蹴る">ける【蹴る】</h1>
+<p>虽然和本篇无直接关系，但单独拿出来说，放在这里。显然是称不上所谓特殊的五段动词了，但有其他方面的特殊。</p>
+<p>这个词在口语中是五段。在文语文法中，是唯一一个下一段活用的动词。江户后期逐渐四段化。</p>
+<p>而再往古了说，这个词本来是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（中间那个字符如果没显示出来，那个是小的ゑ，U+1B151）。</p>
+<p>具体见《大辞泉》等资料。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语ラ行上一段活用（文语ラ行上二段活用）的动词整理</title>
+    <url>/japanese-verb-r-kamiichidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>主要是词不多，简单整理。同样是在 weblio
+全局搜索。搜<code>ラ上一</code>以及<code>ラ上二</code>。最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。</p>
+<h1 id="文语ラ行上二段活用">文语ラ行上二段活用</h1>
+<p>先给出文语文法中的ラ行上二段活用的动词列表。此处不包括复合动词（虽然算上复合动词之后的数量依然很少）。此处只是简单列举，具体内容还是自行查看词典。</p>
+<p>おる【下る／降る】</p>
+<p>こる【懲る】</p>
+<p>ふる【旧る】</p>
+<p>ゆる【許る／聴る】</p>
+<p>おそる【恐る／怖る／畏る／懼る】</p>
+<p>这里，比较“诡异”或者说有意思的是おそる，此处给出《学研全訳古語辞典》的注解。</p>
+<p>上代は上二段活用。中古も、活用の基本は上二段活用。下二段活用が生じるのは中古初期であるが、中世になるとほぼ下二段活用に統一された。四段活用と見られる例が中古から見えるが、昔の用法をまねた誤った使い方だったらしい。</p>
+<p>再给出《大辞泉》的注解。</p>
+<p>[補説]
+古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれかはっきりしない例が多いが、上二段活用のほうが多く現れる。</p>
+<p>下面是能查到的复合动词的列表。</p>
+<p>あもる【天降る】</p>
+<p>かけおる【駆（け）降る／駈け降る】</p>
+<p>とびおる【飛（び）降る／飛（び）下る】</p>
+<p>まひおる【舞（ひ）降る】</p>
+<p>みこる【見懲る】</p>
+<p>うちふる【打ち古る】</p>
+<p>ききふる【聞き旧る／聞き古る】</p>
+<p>ことふる【事旧る／言旧る】</p>
+<p>とこふる【床旧る】</p>
+<p>なきふる【鳴き旧る】</p>
+<p>みみふる【耳旧る】</p>
+<p>ものふる【物古る／物旧る】</p>
+<p>おぢおそる【怖ぢ恐る】</p>
+<p>可以看到，在复合动词中，ふる也会表记为【古る】。</p>
+<p>其中，おぢおそる【怖ぢ恐る】是在《学研全訳古語辞典》中查到的，在《大辞泉》没有该词条。weblio
+的《日本語活用形辞書》倒是收录了おじおそり【怖ぢ恐り】标注为了前者的连用形。</p>
+<p>这里，あもる【天降る】是あまおる的音变化。</p>
+<h1 id="口语ラ行上一段活用">口语ラ行上一段活用</h1>
+<p>下面再给出口语文法中的ラ行上一段活用的动词列表。</p>
+<p>おりる【下りる／降りる】</p>
+<p>かりる【借りる】</p>
+<p>こりる【懲りる】</p>
+<p>たりる【足りる】</p>
+<p>可以看到，多了かりる【借りる】和たりる【足りる】，这两个是四段活用的「借る」和「足る」的上一段化。同样给出《大辞泉》的内容。</p>
+<p>《動詞「か（借）る」（四段）の上一段化》</p>
+<p>[補説]
+上一段活用の「借りる」が用いられるのは近世後期の江戸語から。今日、共通語では「借りる」であるが、関西では五段活用の「借る」が用いられる。</p>
+<p>[補説]
+四段活用の「足る」から転じ、近世から江戸で用いられるようになったもの。</p>
+<p>也是给出复合动词的列表。</p>
+<p>かけおりる【駆（け）降りる／駈け降りる】</p>
+<p>とびおりる【飛（び）降りる／飛（び）下りる】</p>
+<p>まいおりる【舞（い）降りる】</p>
+<p>あきたりる【飽（き）足りる】</p>
+<p>みちたりる【満（ち）足りる】</p>
+<p>ことたりる【事足りる】</p>
+<p>ものたりる【物足りる】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语文语上二段活用，下二段活用的特殊动词整理</title>
+    <url>/japanese-verb-special-nidan/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>本篇可以认为是延续之前关于文语文法（古典文法）的上一段活用的动词整理的那篇内容。本篇整理之后，口语（现代日语）的所有所谓特殊的一段动词的所有来源就都整理清楚了。再次感谢碳酸氢镭大佬！</p>
+<p>标题中说的“特殊”，指的是整个动词的基本形（终止形）就是由一个ウ段假名构成，这样整个词既是词干又是词尾。和之前类似，同样主要在
+weblio 枚举查找。</p>
+<h1 id="省流">省流</h1>
+<p>上二段活用，一共查到只有 3 个特殊的动词，如下。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ハ行</td>
+<td>ふ【干／乾】ふ【嚔】</td>
+</tr>
+<tr>
+<td>ワ行</td>
+<td>う【居／坐】</td>
+</tr>
+</tbody>
+</table>
+<p>而且还都是上代语，这几个到了中古就上一段化了。所以可以在我之前那篇文章中再次看到这几个词。具体自查或者见后面的补充。</p>
+<p>下二段活用，一共查到共有 6 个特殊的动词，如下。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>う【得】</td>
+</tr>
+<tr>
+<td>カ行</td>
+<td>く【消】</td>
+</tr>
+<tr>
+<td>ダ行</td>
+<td>づ【出】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>ぬ【寝】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>ふ【経】ふ【綜】</td>
+</tr>
+</tbody>
+</table>
+<p>虽然《大辞泉》和《学研全訳古語辞典》没有明说，不过容易理解的是，ふ【経】和ふ【綜】应该是具有同源关系。如果看成一个词的话，那说是
+5 个特殊的动词也行。</p>
+<h1 id="其他表格">其他表格</h1>
+<p>上面这些词的口语形，具体如下。这些构成了口语中，所有特殊的下一段动词。</p>
+<table>
+<thead>
+<tr>
+<th>行</th>
+<th>動詞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ア行</td>
+<td>える【得る】</td>
+</tr>
+<tr>
+<td>ダ行</td>
+<td>でる【出る】</td>
+</tr>
+<tr>
+<td>ナ行</td>
+<td>ねる【寝る／寐る】</td>
+</tr>
+<tr>
+<td>ハ行</td>
+<td>へる【経る／歴る】へる【綜る】</td>
+</tr>
+</tbody>
+</table>
+<p>关于く【消】，口语きえる【消える】的文语形是きゆ【消ゆ】。具体情况见文后补充。</p>
+<p>5 个基本的动词，或者后面 2 个动词看成一个词，那就是 4
+个基本的动词。</p>
+<p>同样看了下「時雨の町」的<a
+href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里面把这
+4 个动词都列出来了，泪目。</p>
+<h1 id="补充">补充</h1>
+<p>《大辞泉》ふ【干／乾】：</p>
+<p>[補説]
+上代では、未然形・連用形に乙類の仮名が用いられているので、上二段活用であったと考えられる。平安時代以降は上一段化する。</p>
+<p>《大辞泉》ひる【嚔る】：</p>
+<p>《上代の上二段活用動詞「ふ」の上一段化》</p>
+<p>《大辞泉》う【居／坐】：</p>
+<p>《動詞「ゐ（居）る」（上一）の古形で終止形だけが残存するが、上二段活用と考えられる》</p>
+<p>《大辞泉》く【消】：</p>
+<p>[補説]
+「消ゆ」に先行する上代語とされるが、活用形は大半が連用形である。終止形の例とされる「四〇二四」を「来らし」とする説もあり、また、未然・連用形の「け」は「消ゆ」の未然・連用形「きえ」の音変化とする説もある。</p>
+<p>《学研全訳古語辞典》く【消】：</p>
+<p>上代に用いられたが、連体形・已然形・命令形の確かな用例は見当たらない。</p>
+<p>《大辞泉》でる【出る】：</p>
+<p>[補説]
+文語の下二段動詞「出(い)づ」の連体形「いづる」が終止形としても用いられるようになり、それがさらに「づる」に変化し、この「づる」が下一段化してできた形。</p>
+<p>《学研全訳古語辞典》づ【出】：</p>
+<p>「い（出）づ」の「い」が脱落したもの。上代語。</p>
 ]]></content>
   </entry>
   <entry>
@@ -602,239 +896,35 @@ href="https://miko.org/~uraki/kuon/furu/text/kojiki/01.htm#ko1_05">https://miko.
 ]]></content>
   </entry>
   <entry>
-    <title>日语特殊的一段动词整理</title>
-    <url>/japanese-verb-special-ichidan/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>写在最前面，是碳酸氢镭大佬的<a
-href="https://www.zhihu.com/question/20279652/answer/2005733533">这篇回答</a>，给了我相当多的帮助和启发。再次再次感谢大佬！</p>
-<p>比较可惜的是，国内很多营销号不顾语法事实，犯着基本的逻辑错误，“倒反天罡”，硬生生地整理了所谓“特殊”的五段动词（或者叫“一类动词”也行，比如《标日》是这么写）。什么
-26 个，33 个，34
-个，各种牛鬼蛇神都蹦出来了。。。当然了，从观察来看，十几年来基本是这种情况，营销号自然是不会在意这些的。</p>
-<p>而对于一部分还在坚持使用或者坚信所谓“特殊”的五段动词的初学者，我也不会刻意纠正或者吐槽什么，主要还是营销号的锅。而且国内使用“学校文法”的教材就不多，《标日》也只是在前言里提及和对比。这些教材教动词，以“ます形”（连用形后接ます）为主。像《标日》对于所谓一类、二类、三类动词的分类和定义，相对来说就不算那么明确，感觉勉勉强强（初级，第
-14 课，语法解释
-1）。然而，《标日》都认为需要特别记忆的也是二类动词，而不是网上各种所谓特殊的一类动词。</p>
-<h1 id="前置知识">前置知识</h1>
-<p>那么首先就要求，需要明确地知道对于那几种动词的定义和分类。如果还不清楚关于五段动词，一段动词等等的定义，或者不清楚关于“活用”的概念的话，还是先去了解为好。本质上，学校文法对于动词的分类就是根据活用的不同来分类的。</p>
-<p>并且这里我也解释一下前面说的“不顾语法事实，犯着基本的逻辑错误”是指什么。我想表达的意思是，如果那些营销号接触的是正确的关于那几种动词的分类和定义的话（即使使用的是国内大多数教材用的三类动词的分法也行，只要定义明确），他们是怎么由：“一段动词的<strong>词尾</strong>是イ段假名或エ段假名加上「る」”，然后就推导出：“<strong>动词结尾</strong>是イ段假名或エ段假名加上「る」的动词都是一段动词”的？（当然了，营销号之所以是营销号本就是有原因的，笑笑就是。）</p>
-<p>并且注意我的用词。前面说的是<strong>词尾</strong>（日语叫「語尾」，「活用語尾」），顾名思义。</p>
-<p>说了要看活用啊，活用。并且，动词的汉字表记不是白给的，送假名不是白写的。另外，古典文法（文语文法）的内容，也可以简单看看。我之前那几篇文章，对于相关内容并无赘述，网上资料比较多了。当然，可以直接看之前大佬的那篇回答。</p>
-<h1 id="省流">省流</h1>
-<p>简单来说，标题说的“特殊”的一段动词，指的是一段动词中，整个动词的基本形仅由一个イ段假名或エ段假名加上「る」构成的那些动词。按词典对于“词尾”的定义，某种意义上认为，这些词整个就是词尾，没有词干。或者认为，这些词不分词尾和词干，也行。</p>
-<p><strong>即使没有关于古典文法（文语文法）的基础</strong>，如果手头有词典，熟练使用
-weblio
-等网站工具的话，想想也知道这些特殊的一段动词极其容易通过枚举就能自己整理出来。如果只是想知道有哪些，那么自己去查去整理就行，或者看之前说的那位大佬的回答（虽然人家少写了几个，但是常用的人家都列出来了，人家讲的很清楚）。</p>
-<p>将口语里特殊的一段动词分成上一段和下一段，各有其直接来源。由于之前我写了下面两篇文章作为铺垫，本篇的正文部分内容不会很多。</p>
-<p>特殊的上一段动词，直接来源，是文语文法中，上一段活用的动词。具体见<a
-href="/japanese-verb-kamiichidan">这篇</a>。</p>
-<p>特殊的下一段动词，直接来源，是文语文法中，下二段活用的特殊动词。具体见<a
-href="/japanese-verb-special-nidan">这篇</a>。</p>
-<p>如果还想省流，在上面两篇文章中，直接跳到各自的“其他表格”部分，各自的第一个表格就是，加起来一共十来个，不还是比营销号所谓二三十多个方便（笑）。</p>
-<h1 id="ける蹴る">ける【蹴る】</h1>
-<p>虽然和本篇无直接关系，但单独拿出来说，放在这里。显然是称不上所谓特殊的五段动词了，但有其他方面的特殊。</p>
-<p>这个词在口语中是五段。在文语文法中，是唯一一个下一段活用的动词。江户后期逐渐四段化。</p>
-<p>而再往古了说，这个词本来是ワ行下二段，「くう」。或者认为是クヮ行下一段，「く𛅑る」（中间那个字符如果没显示出来，那个是小的ゑ，U+1B151）。</p>
-<p>具体见《大辞泉》等资料。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改。目前看来大概是不会了。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar 相关的内容。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容。对于
-NexT，也可以在 markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式的建议书写习惯是，<code>$</code>包裹的公式要紧挨着公式内容，<code>$</code>与周围的其他内容留有空格隔开。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc。可以在<a
-href="https://pandoc.org/">官网</a>安装，或者可以用 scoop 安装。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install pandoc</span><br></pre></td></tr></table></figure>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。Utterances
-有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置 css。第一个是设置背景图。第二个是设置首页每篇 post block
-块的不透明度。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>日语文语上二段活用，下二段活用的特殊动词整理</title>
-    <url>/japanese-verb-special-nidan/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>本篇可以认为是延续之前关于文语文法（古典文法）的上一段活用的动词整理的那篇内容。本篇整理之后，口语（现代日语）的所有所谓特殊的一段动词的所有来源就都整理清楚了。再次感谢碳酸氢镭大佬！</p>
-<p>标题中说的“特殊”，指的是整个动词的基本形（终止形）就是由一个ウ段假名构成，这样整个词既是词干又是词尾。和之前类似，同样主要在
-weblio 枚举查找。</p>
-<h1 id="省流">省流</h1>
-<p>上二段活用，一共查到只有 3 个特殊的动词，如下。</p>
-<table>
-<thead>
-<tr>
-<th>行</th>
-<th>動詞</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ハ行</td>
-<td>ふ【干／乾】ふ【嚔】</td>
-</tr>
-<tr>
-<td>ワ行</td>
-<td>う【居／坐】</td>
-</tr>
-</tbody>
-</table>
-<p>而且还都是上代语，这几个到了中古就上一段化了。所以可以在我之前那篇文章中再次看到这几个词。具体自查或者见后面的补充。</p>
-<p>下二段活用，一共查到共有 6 个特殊的动词，如下。</p>
-<table>
-<thead>
-<tr>
-<th>行</th>
-<th>動詞</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ア行</td>
-<td>う【得】</td>
-</tr>
-<tr>
-<td>カ行</td>
-<td>く【消】</td>
-</tr>
-<tr>
-<td>ダ行</td>
-<td>づ【出】</td>
-</tr>
-<tr>
-<td>ナ行</td>
-<td>ぬ【寝】</td>
-</tr>
-<tr>
-<td>ハ行</td>
-<td>ふ【経】ふ【綜】</td>
-</tr>
-</tbody>
-</table>
-<p>虽然《大辞泉》和《学研全訳古語辞典》没有明说，不过容易理解的是，ふ【経】和ふ【綜】应该是具有同源关系。如果看成一个词的话，那说是
-5 个特殊的动词也行。</p>
-<h1 id="其他表格">其他表格</h1>
-<p>上面这些词的口语形，具体如下。这些构成了口语中，所有特殊的下一段动词。</p>
-<table>
-<thead>
-<tr>
-<th>行</th>
-<th>動詞</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ア行</td>
-<td>える【得る】</td>
-</tr>
-<tr>
-<td>ダ行</td>
-<td>でる【出る】</td>
-</tr>
-<tr>
-<td>ナ行</td>
-<td>ねる【寝る／寐る】</td>
-</tr>
-<tr>
-<td>ハ行</td>
-<td>へる【経る／歴る】へる【綜る】</td>
-</tr>
-</tbody>
-</table>
-<p>关于く【消】，口语きえる【消える】的文语形是きゆ【消ゆ】。具体情况见文后补充。</p>
-<p>5 个基本的动词，或者后面 2 个动词看成一个词，那就是 4
-个基本的动词。</p>
-<p>同样看了下「時雨の町」的<a
-href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里面把这
-4 个动词都列出来了，泪目。</p>
-<h1 id="补充">补充</h1>
-<p>《大辞泉》ふ【干／乾】：</p>
-<p>[補説]
-上代では、未然形・連用形に乙類の仮名が用いられているので、上二段活用であったと考えられる。平安時代以降は上一段化する。</p>
-<p>《大辞泉》ひる【嚔る】：</p>
-<p>《上代の上二段活用動詞「ふ」の上一段化》</p>
-<p>《大辞泉》う【居／坐】：</p>
-<p>《動詞「ゐ（居）る」（上一）の古形で終止形だけが残存するが、上二段活用と考えられる》</p>
-<p>《大辞泉》く【消】：</p>
-<p>[補説]
-「消ゆ」に先行する上代語とされるが、活用形は大半が連用形である。終止形の例とされる「四〇二四」を「来らし」とする説もあり、また、未然・連用形の「け」は「消ゆ」の未然・連用形「きえ」の音変化とする説もある。</p>
-<p>《学研全訳古語辞典》く【消】：</p>
-<p>上代に用いられたが、連体形・已然形・命令形の確かな用例は見当たらない。</p>
-<p>《大辞泉》でる【出る】：</p>
-<p>[補説]
-文語の下二段動詞「出(い)づ」の連体形「いづる」が終止形としても用いられるようになり、それがさらに「づる」に変化し、この「づる」が下一段化してできた形。</p>
-<p>《学研全訳古語辞典》づ【出】：</p>
-<p>「い（出）づ」の「い」が脱落したもの。上代語。</p>
+    <title>日语文语ヤ行上二段活用的动词整理</title>
+    <url>/japanese-verb-y-kaminidan/</url>
+    <content><![CDATA[<p>之前是整理了关于文语ラ行上二段活用的动词。文语ヤ行上二段活用的动词也很少，也就顺便简单整理。同样是在
+weblio 全局搜索，搜<code>ヤ上二</code>。</p>
+<p>看了一下 wikipedia 的日语页面目前是列举了 4
+个。从编辑记录来看，以前应该是只写了 3
+个，こゆ【臥ゆ】是后来补的，像中文页面在我当时看的时候就依然只是那 3
+个，我后面把这个也补上了。至于こゆ【凍ゆ】情况比较特殊，我就不考虑写上去。</p>
+<p>先给出动词列表，具体内容还是自行查看词典。</p>
+<p>おゆ【老ゆ】</p>
+<p>くゆ【悔ゆ】</p>
+<p>こゆ【凍ゆ】</p>
+<p>こゆ【臥ゆ】</p>
+<p>むくゆ【報ゆ／酬ゆ】</p>
+<p>此外，还有几个是文语上一段活用的上二段化，单独列出。</p>
+<p>ひきゆ【率ゆ】</p>
+<p>もちゆ【用ゆ】</p>
+<p>这几个分别是「ひき（率）いる」和「もち（用）いる」的上二段化。关于文语上一段活用的动词，我之前也写过内容，这里的这几个实际上还是复合动词，不赘述。</p>
+<p>这里也把《大辞泉》的内容给出。</p>
+<p>《「もち（用）いる」が中世以降ヤ行に転じて用いられた語。終止形は「用ゆる」となる例が多い》</p>
+<p>上面这几个动词的口语形，具体如下。</p>
+<p>おいる【老いる】</p>
+<p>くいる【悔いる】</p>
+<p>むくいる【報いる／酬いる】</p>
+<p>关于こゆ【凍ゆ】的情况。口语こごえる【凍える】的文语形是こごゆ【凍ゆ】，是ヤ行下二段活用。《大辞泉》中，こゆ【凍ゆ】词条的解释就是こごえる。こゆ应该算是变体。</p>
+<p>下面给出复合动词的列表。</p>
+<p>としおゆ【年老ゆ】</p>
+<p>なまおゆ【生老ゆ】</p>
+<p>としおゆ【年老ゆ】有口语形，としおいる【年老いる】。</p>
 ]]></content>
   </entry>
   <entry>
@@ -873,125 +963,14 @@ href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里
 ]]></content>
   </entry>
   <entry>
-    <title>日语ラ行上一段活用（文语ラ行上二段活用）的动词整理</title>
-    <url>/japanese-verb-r-kamiichidan/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>主要是词不多，简单整理。同样是在 weblio
-全局搜索。搜<code>ラ上一</code>以及<code>ラ上二</code>。最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。</p>
-<h1 id="文语ラ行上二段活用">文语ラ行上二段活用</h1>
-<p>先给出文语文法中的ラ行上二段活用的动词列表。此处不包括复合动词（虽然算上复合动词之后的数量依然很少）。此处只是简单列举，具体内容还是自行查看词典。</p>
-<p>おる【下る／降る】</p>
-<p>こる【懲る】</p>
-<p>ふる【旧る】</p>
-<p>ゆる【許る／聴る】</p>
-<p>おそる【恐る／怖る／畏る／懼る】</p>
-<p>这里，比较“诡异”或者说有意思的是おそる，此处给出《学研全訳古語辞典》的注解。</p>
-<p>上代は上二段活用。中古も、活用の基本は上二段活用。下二段活用が生じるのは中古初期であるが、中世になるとほぼ下二段活用に統一された。四段活用と見られる例が中古から見えるが、昔の用法をまねた誤った使い方だったらしい。</p>
-<p>再给出《大辞泉》的注解。</p>
-<p>[補説]
-古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれかはっきりしない例が多いが、上二段活用のほうが多く現れる。</p>
-<p>下面是能查到的复合动词的列表。</p>
-<p>あもる【天降る】</p>
-<p>かけおる【駆（け）降る／駈け降る】</p>
-<p>とびおる【飛（び）降る／飛（び）下る】</p>
-<p>まひおる【舞（ひ）降る】</p>
-<p>みこる【見懲る】</p>
-<p>うちふる【打ち古る】</p>
-<p>ききふる【聞き旧る／聞き古る】</p>
-<p>ことふる【事旧る／言旧る】</p>
-<p>とこふる【床旧る】</p>
-<p>なきふる【鳴き旧る】</p>
-<p>みみふる【耳旧る】</p>
-<p>ものふる【物古る／物旧る】</p>
-<p>おぢおそる【怖ぢ恐る】</p>
-<p>可以看到，在复合动词中，ふる也会表记为【古る】。</p>
-<p>其中，おぢおそる【怖ぢ恐る】是在《学研全訳古語辞典》中查到的，在《大辞泉》没有该词条。weblio
-的《日本語活用形辞書》倒是收录了おじおそり【怖ぢ恐り】标注为了前者的连用形。</p>
-<p>这里，あもる【天降る】是あまおる的音变化。</p>
-<h1 id="口语ラ行上一段活用">口语ラ行上一段活用</h1>
-<p>下面再给出口语文法中的ラ行上一段活用的动词列表。</p>
-<p>おりる【下りる／降りる】</p>
-<p>かりる【借りる】</p>
-<p>こりる【懲りる】</p>
-<p>たりる【足りる】</p>
-<p>可以看到，多了かりる【借りる】和たりる【足りる】，这两个是四段活用的「借る」和「足る」的上一段化。同样给出《大辞泉》的内容。</p>
-<p>《動詞「か（借）る」（四段）の上一段化》</p>
-<p>[補説]
-上一段活用の「借りる」が用いられるのは近世後期の江戸語から。今日、共通語では「借りる」であるが、関西では五段活用の「借る」が用いられる。</p>
-<p>[補説]
-四段活用の「足る」から転じ、近世から江戸で用いられるようになったもの。</p>
-<p>也是给出复合动词的列表。</p>
-<p>かけおりる【駆（け）降りる／駈け降りる】</p>
-<p>とびおりる【飛（び）降りる／飛（び）下りる】</p>
-<p>まいおりる【舞（い）降りる】</p>
-<p>あきたりる【飽（き）足りる】</p>
-<p>みちたりる【満（ち）足りる】</p>
-<p>ことたりる【事足りる】</p>
-<p>ものたりる【物足りる】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>日语文语ヤ行上二段活用的动词整理</title>
-    <url>/japanese-verb-y-kaminidan/</url>
-    <content><![CDATA[<p>之前是整理了关于文语ラ行上二段活用的动词。文语ヤ行上二段活用的动词也很少，也就顺便简单整理。同样是在
-weblio 全局搜索，搜<code>ヤ上二</code>。</p>
-<p>看了一下 wikipedia 的日语页面目前是列举了 4
-个。从编辑记录来看，以前应该是只写了 3
-个，こゆ【臥ゆ】是后来补的，像中文页面在我当时看的时候就依然只是那 3
-个，我后面把这个也补上了。至于こゆ【凍ゆ】情况比较特殊，我就不考虑写上去。</p>
-<p>先给出动词列表，具体内容还是自行查看词典。</p>
-<p>おゆ【老ゆ】</p>
-<p>くゆ【悔ゆ】</p>
-<p>こゆ【凍ゆ】</p>
-<p>こゆ【臥ゆ】</p>
-<p>むくゆ【報ゆ／酬ゆ】</p>
-<p>此外，还有几个是文语上一段活用的上二段化，单独列出。</p>
-<p>ひきゆ【率ゆ】</p>
-<p>もちゆ【用ゆ】</p>
-<p>这几个分别是「ひき（率）いる」和「もち（用）いる」的上二段化。关于文语上一段活用的动词，我之前也写过内容，这里的这几个实际上还是复合动词，不赘述。</p>
-<p>这里也把《大辞泉》的内容给出。</p>
-<p>《「もち（用）いる」が中世以降ヤ行に転じて用いられた語。終止形は「用ゆる」となる例が多い》</p>
-<p>上面这几个动词的口语形，具体如下。</p>
-<p>おいる【老いる】</p>
-<p>くいる【悔いる】</p>
-<p>むくいる【報いる／酬いる】</p>
-<p>关于こゆ【凍ゆ】的情况。口语こごえる【凍える】的文语形是こごゆ【凍ゆ】，是ヤ行下二段活用。《大辞泉》中，こゆ【凍ゆ】词条的解释就是こごえる。こゆ应该算是变体。</p>
-<p>下面给出复合动词的列表。</p>
-<p>としおゆ【年老ゆ】</p>
-<p>なまおゆ【生老ゆ】</p>
-<p>としおゆ【年老ゆ】有口语形，としおいる【年老いる】。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「書いた人」的词源资料</title>
-    <url>/kaitahito/</url>
+    <title>「S blog えすぶろ」的语言学博客</title>
+    <url>/kedume/</url>
     <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
-<p><a
-href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
-<p>日本語の語源</p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
-<p>又看了你乎的这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于「嚏」和「嚔」</title>
-    <url>/kusame/</url>
-    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
-<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
-的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
-<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
-<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为许容字体【許容字体】。词典等资料也一般是选择后者。</p>
-<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
-<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
-<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
-<p>之前说了，日语词典一般是使用后者。在 weblio
-古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
-<p>在 weblio
-デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/theme-10017494509.html</a></p>
+<p>やまとことば・語源</p>
+<p>S blog 　－えすぶろ－</p>
+<p>试过了，在 amebla 搜索「S
+blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1069,14 +1048,18 @@ href="https://jsg.aks.ac.kr/dir/view?catePath=%EC%A3%BC%EC%A0%9C%EB%B6%84%EB%A5%
 ]]></content>
   </entry>
   <entry>
-    <title>「S blog えすぶろ」的语言学博客</title>
-    <url>/kedume/</url>
+    <title>「書いた人」的词源资料</title>
+    <url>/kaitahito/</url>
     <content><![CDATA[<p><a
-href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/theme-10017494509.html</a></p>
-<p>やまとことば・語源</p>
-<p>S blog 　－えすぶろ－</p>
-<p>试过了，在 amebla 搜索「S
-blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p><a
+href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
+<p>日本語の語源</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
+<p>又看了你乎的这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1098,37 +1081,28 @@ C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
 ]]></content>
   </entry>
   <entry>
-    <title>使用 Python tldextract 解析 url 并且用于排序</title>
-    <url>/python-tldextract/</url>
-    <content><![CDATA[<p><a
-href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
-<p>用 tldextract 能够精确地获取到 url
-的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
-suffix）<code>suffix</code>，也就是 eTLD（effective
-TLD，有效顶级域）。</p>
-<p>相比于我们一般认识的 TLD（顶级域），我认为更重要和更有用的是 eTLD
-的概念。关于 TLD，自己也写了篇，里面简单放了一些网址资料。</p>
-<p>有了
-tldextract，我就可以方便地对网址进行排序了。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了
-eTLD，找到了 phblic suffix
-的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
-<p>我认为网址排序是一个值得讨论的事情。对 url
-的排序，首先，显然不是纯粹根据 url
-字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住
-TLD 之类的。</p>
-<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
-<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
-<p>使用 tldextract，就可以对网址进行排序。由于 tldextract
-本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
-<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<p>说点杂七杂八的。我认为不应当在浏览器的收藏夹里放那么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢？那些常用的网址，你几乎天天访问，记也该记住了。那些不怎么用到的网址，收藏了又有什么用呢？以前我在
-Edge 浏览器收藏过几百个网址，虽说 Edge
-的同步功能做得很不错，但是现在看来，以前我收藏那么多网址确实没啥用。。。</p>
-<p>另外，我认为应当转变一下思路。一方面，现代的搜索引擎比如 Bing，Google
-等等，基本都能做到通过搜索网站的 domain
-或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
-url，我认为还不如收藏搜索关键词 keyword。</p>
-<figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+    <title>关于 PowerShell 7</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
+PowerShell 7，后者是指旧版。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装完成之后，原先的旧版 Windows PowerShell
+还在，而开始菜单栏会出现一个新的
+PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
+终端，就会默认为这个新版 PowerShell
+而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
+<h1 id="pipeline">Pipeline</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
+实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1300,6 +1274,10 @@ href="https://softmany.com/formatfactory-windows/">https://softmany.com/formatfa
 <h2 id="firefox">Firefox</h2>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install firefox</span><br></pre></td></tr></table></figure>
 <p>显然是有 GUI 的。</p>
+<h2 id="geckodriver">geckodriver</h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install geckodriver</span><br></pre></td></tr></table></figure>
+<p>然后就能直接写了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">driver = webdriver.Firefox()</span><br><span class="line">driver.get(<span class="string">&quot;https://www.baidu.com&quot;</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(driver.title)</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line">driver.quit()</span><br></pre></td></tr></table></figure>
 <h2 id="chrome">Chrome</h2>
 <p>以及 Chromium。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop search chrome</span><br><span class="line">scoop search chromium</span><br><span class="line">scoop install googlechrome</span><br></pre></td></tr></table></figure>
@@ -1319,28 +1297,86 @@ href="https://softmany.com/formatfactory-windows/">https://softmany.com/formatfa
 ]]></content>
   </entry>
   <entry>
-    <title>关于 PowerShell 7</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
+    <title>使用 Python tldextract 解析 url 并且用于排序</title>
+    <url>/python-tldextract/</url>
+    <content><![CDATA[<p><a
+href="https://pypi.org/project/tldextract/">https://pypi.org/project/tldextract/</a></p>
+<p>用 tldextract 能够精确地获取到 url
+的子域名<code>subdomain</code>，主域名<code>domain</code>和公共后缀（public
+suffix）<code>suffix</code>，也就是 eTLD（effective
+TLD，有效顶级域）。</p>
+<p>相比于我们一般认识的 TLD（顶级域），我认为更重要和更有用的是 eTLD
+的概念。关于 TLD，自己也写了篇，里面简单放了一些网址资料。</p>
+<p>有了
+tldextract，我就可以方便地对网址进行排序了。我应该早点发现这个库的，亏我还网上找各种资料，我其实是先了解了
+eTLD，找到了 phblic suffix
+的列表，甚至还想着自己通过读取这个列表来实现一个类似的功能，后来才发现原来有现成的库。。。</p>
+<p>我认为网址排序是一个值得讨论的事情。对 url
+的排序，首先，显然不是纯粹根据 url
+字符串的字典序来排序的。一个合理的方式是，比较主域名<code>domain</code>的字典序。这也是符合一般思路的，因为对于一个网址，你几乎不会去刻意记住他的<code>suffix</code>，而会以<code>domain</code>作为主要的记忆内容，作为区分（辨识）的主要依据。比如对于网址<code>https://github.com</code>，<code>https://www.tsinghua.edu.cn</code>，一般人基本肯定会去记住<code>github</code>和<code>tsinghua</code>，不会去专门地刻意地记住
+TLD 之类的。</p>
+<p>如果<code>domain</code>相同，就比较<code>suffix</code>。如果这两个都相同，那么就比较<code>subdomain</code>，这里需要处理的是，<code>subdomain</code>为空，或者<code>subdomain</code>为<code>www</code>的，应当排在前面。最后再比较<code>path</code>。</p>
+<p>当然，这里只是我对于网址排序的一个粗糙的理解，仅作为参考。应该有更合理的排序依据，不过我至少觉得我这个还算是比较合理可行的。</p>
+<p>使用 tldextract，就可以对网址进行排序。由于 tldextract
+本身不提供对网址的路径<code>path</code>的提取，所以我还用到<code>urllib.parse</code>库。</p>
+<figure class="highlight python"><figcaption><span>urls_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tldextract</span><br><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> urlparse</span><br><span class="line"></span><br><span class="line">tld_extract = tldextract.TLDExtract(cache_dir=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_sort_key</span>(<span class="params">url_info: <span class="built_in">dict</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Custom function to generate sorting keys for URLs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - url_info (dict): A dictionary containing the &#x27;url&#x27; key representing URL information.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    - tuple: A tuple containing sorting information for the list of URLs.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    url: <span class="built_in">str</span> = url_info[<span class="string">&#x27;url&#x27;</span>]</span><br><span class="line">    tld_info = tld_extract(url)</span><br><span class="line">    path = urlparse(url).path</span><br><span class="line">    subdomain_key = tld_info.subdomain</span><br><span class="line">    <span class="keyword">if</span> tld_info.subdomain == <span class="string">&#x27;&#x27;</span> <span class="keyword">or</span> tld_info.subdomain == <span class="string">&#x27;www&#x27;</span>:</span><br><span class="line">        subdomain_key = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (tld_info.domain, tld_info.suffix, subdomain_key, path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">urls_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Sorts URLs in a text file and writes the result back to the original file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">    - filepath (str): The path of the text file to be sorted.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    urls = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        lines = f.readlines()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(lines)):</span><br><span class="line">            line = lines[i].strip()</span><br><span class="line">            <span class="keyword">if</span> line.startswith(<span class="string">&#x27;http&#x27;</span>):</span><br><span class="line">                url = &#123;<span class="string">&#x27;url&#x27;</span>: line&#125;</span><br><span class="line">                <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines) - <span class="number">1</span> <span class="keyword">and</span> lines[i + <span class="number">1</span>].strip().startswith(<span class="string">&#x27;&lt;!&#x27;</span>):</span><br><span class="line">                    url[<span class="string">&#x27;comment&#x27;</span>] = lines[i + <span class="number">1</span>].strip()</span><br><span class="line">                urls.append(url)</span><br><span class="line"></span><br><span class="line">    urls.sort(key=custom_sort_key)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&#x27;# URLs\n&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(urls)):</span><br><span class="line">            current_tld_info = tld_extract(urls[i][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            current_first_letter = current_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            previous_tld_info = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span>:</span><br><span class="line">                previous_tld_info = tld_extract(urls[i - <span class="number">1</span>][<span class="string">&#x27;url&#x27;</span>])</span><br><span class="line">            previous_first_letter = <span class="literal">None</span></span><br><span class="line">            <span class="keyword">if</span> previous_tld_info:</span><br><span class="line">                previous_first_letter = previous_tld_info.domain[<span class="number">0</span>]</span><br><span class="line">            <span class="keyword">if</span> current_first_letter != previous_first_letter:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">                f.write(<span class="string">&#x27;## &#x27;</span> + current_first_letter + <span class="string">&#x27;\n\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> current_first_letter == previous_first_letter <span class="keyword">and</span> current_tld_info.domain != previous_tld_info.domain:</span><br><span class="line">                f.write(<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            f.write(urls[i][<span class="string">&#x27;url&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;comment&#x27;</span> <span class="keyword">in</span> urls[i]:</span><br><span class="line">                f.write(urls[i][<span class="string">&#x27;comment&#x27;</span>] + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>说点杂七杂八的。我认为不应当在浏览器的收藏夹里放那么多网址，收藏夹主要是存储真正常用的网址的，十个左右就够了。收藏那么多，真正会用到的又有多少呢？那些常用的网址，你几乎天天访问，记也该记住了。那些不怎么用到的网址，收藏了又有什么用呢？以前我在
+Edge 浏览器收藏过几百个网址，虽说 Edge
+的同步功能做得很不错，但是现在看来，以前我收藏那么多网址确实没啥用。。。</p>
+<p>另外，我认为应当转变一下思路。一方面，现代的搜索引擎比如 Bing，Google
+等等，基本都能做到通过搜索网站的 domain
+或者名字，就能精确找到相应的网页。另一方面，由于网址域名费用和使用期限，相当一部分网站平台，他的网址会不定期更换，这样旧的网址收藏就没什么必要了，而搜索引擎的数据基本是能做到最新的，相比于自己维护自己收藏的网址，信息更新更快，更全面。某种意义上，相比于收藏网址
+url，我认为还不如收藏搜索关键词 keyword。</p>
+<figure class="highlight python"><figcaption><span>keywords_sort.py</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">keywords_sort</span>(<span class="params">filepath: <span class="built_in">str</span></span>):</span><br><span class="line">    keywords = []</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">            line = line.strip()</span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">not</span> <span class="keyword">in</span> keywords:</span><br><span class="line">                keywords.append(line)</span><br><span class="line"></span><br><span class="line">    keywords.sort()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(filepath, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>, newline=<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> keyword <span class="keyword">in</span> keywords:</span><br><span class="line">            f.write(keyword + <span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于「嚏」和「嚔」</title>
+    <url>/kusame/</url>
+    <content><![CDATA[<p>省流：不同于陆标，日本是将后者作为标准字体，但日语网页中甚至出现两者混用的情况。本篇的主要内容是使用现状，不多涉及关于字理和语法的事情。</p>
+<p>前者是 U+568F，后者是 U+5694。具体不多说，Unicode
+的字源分离原则（原字集分离原则，Source Separation Rule）。</p>
+<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
+<p>对于日本，该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为许容字体【許容字体】。词典等资料也一般是选择后者。</p>
+<p>从使用情况来看，虽然可以认为，日语网页使用后者的是多数，但也有一部分是使用前者，甚至同一网站网页出现两者混用的情况。</p>
+<p>乃至使用微软自带的日语输入法，输入「くしゃみ」，候选词中，前者排在后者的前面。</p>
+<p>其实用哪个本身没有太大的问题，作为表外字，可能主要考虑使用习惯，都是可接受的，毕竟本身就很少写成汉字。只是，这两字没有做统合或者互认的处理，搜索引擎搜其中一个，一般不会搜到另一个的结果。</p>
+<p>之前说了，日语词典一般是使用后者。在 weblio
+古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
+<p>在 weblio
+デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 TLD</title>
+    <url>/tld/</url>
+    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
+<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
+<p>ICANN wiki，可以查各个 TLD 的信息。</p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<p>这里区分一下 PowerShell 和 Windows PowerShell，前者一般指新版，即
-PowerShell 7，后者是指旧版。</p>
-<h1 id="安装">安装</h1>
+href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
+<p>ISO 3166 标准。</p>
+<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装完成之后，原先的旧版 Windows PowerShell
-还在，而开始菜单栏会出现一个新的
-PowerShell，相当于两者可以并行使用。之后，在 VS Code 打开的 PowerShell
-终端，就会默认为这个新版 PowerShell
-而非旧版了，可以看到显示的终端名是<code>pwsh</code>而非原来的<code>powershell</code>。</p>
-<h1 id="pipeline">Pipeline</h1>
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
+<p>可以查看 root zone，查看根域名。</p>
+<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
 <p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>关于管道链操作符的内容。可以用于运行多个命令。Powershell 7
-实现了<code>&amp;&amp;</code>和<code>||</code>运算符，这就非常方便。</p>
+href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
+<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
+<p><a
+href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
+<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
+<p><a
+href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
+<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
+<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
+<p>上面的是各 nTLD
+的数据信息。没事的话可以查查，有些很有意思的域名。</p>
+<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
+<p>看看 xyz 的官网（笑）。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1361,6 +1397,19 @@ href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.c
 <p>参考 html 写法。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩👵💩👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎婆屎婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎女屎女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>纯为娱乐。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
+<p>気まぐれな梟</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
+<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
+有的。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1439,56 +1488,36 @@ href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/co
 ]]></content>
   </entry>
   <entry>
-    <title>关于 TLD</title>
-    <url>/tld/</url>
-    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
-<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
-<p>ICANN wiki，可以查各个 TLD 的信息。</p>
+    <title>关于微软 Windows 系统字体</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
 <p><a
-href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
-<p>ISO 3166 标准。</p>
-<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
 <p><a
-href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
 <p><a
-href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
-<p>可以查看 root zone，查看根域名。</p>
-<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
 <p><a
-href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
-<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>在知乎上的相关问题。</p>
 <p><a
-href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
-<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
 <p><a
-href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
-<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
-<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
-<p>上面的是各 nTLD
-的数据信息。没事的话可以查查，有些很有意思的域名。</p>
-<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
-<p>看看 xyz 的官网（笑）。</p>
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
   <entry>
-    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
-    <url>/vscode-clang-format/</url>
-    <content><![CDATA[<p>众所周知，在 VS Code
-很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
-C/C++ 同样如此。</p>
+    <title>查看自己 Windows 电脑的产品密钥</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答。</p>
 <p><a
-href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
-<p>常用的配置选项。</p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
-<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
-<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
-格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
-格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
-0，根据自己需要。</p>
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1516,52 +1545,6 @@ Word
 ]]></content>
   </entry>
   <entry>
-    <title>查看自己 Windows 电脑的产品密钥</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答。</p>
-<p><a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
-<p>気まぐれな梟</p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
-<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
-有的。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于微软 Windows 系统字体</title>
-    <url>/windows-font/</url>
-    <content><![CDATA[<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
-<p>在知乎上的相关问题。</p>
-<p><a
-href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
-<p><a
-href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>VS Code 设置打开文件时自动猜测字符集编码</title>
     <url>/vscode-guess-encoding/</url>
     <content><![CDATA[<p>省流，VS Code
@@ -1582,6 +1565,27 @@ UTF-8
 打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
 UTF-8
 打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，而且还不方便撤回。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
+    <url>/vscode-clang-format/</url>
+    <content><![CDATA[<p>众所周知，在 VS Code
+很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
+C/C++ 同样如此。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
+格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
+格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
+0，根据自己需要。</p>
 ]]></content>
   </entry>
 </search>
