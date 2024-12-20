@@ -27,92 +27,6 @@ href="https://www.bilibili.com/video/av45636526/">https://www.bilibili.com/video
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo 主题 NexT 配置</title>
-    <url>/hexo-next/</url>
-    <content><![CDATA[<p><a
-href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
-<p>NexT
-主题的官网地址改过有几次，以后并不确定还会不会接着改。目前看来大概是不会了。</p>
-<h1 id="getting-started">Getting Started</h1>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
-<p><a
-href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
-<p>主要是关于安装，部署，配置文件的内容。</p>
-<h1 id="theme-settings">Theme Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
-<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
-Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
-<h2 id="sidebar">Sidebar</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
-<p>侧边栏，其中可以设置头像 avatar 相关的内容。</p>
-<h2 id="posts">Posts</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
-<p>NexT
-主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容。对于
-NexT，也可以在 markdown
-文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p><a
-href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
-<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
-copy_button，等等。</p>
-<h1 id="third-party-plugins">Third Party Plugins</h1>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
-<h2 id="math-equations">Math Equations</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
-<p>关于 <span class="math inline">\(\LaTeX\)</span>
-公式渲染。注意，markdown
-的行内公式的建议书写习惯是，<code>$</code>包裹的公式要紧挨着公式内容，<code>$</code>与周围的其他内容留有空格隔开。</p>
-<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-<p>另外，电脑本地也要安装 pandoc。可以在<a
-href="https://pandoc.org/">官网</a>安装，或者可以用 scoop 安装。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install pandoc</span><br></pre></td></tr></table></figure>
-<h2 id="external-libraries">External Libraries</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
-<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
-<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
-Utterances。Utterances
-有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
-issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
-<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
-<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
-<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
-Busuanzi 即可。</p>
-<h2 id="search-services">Search Services</h2>
-<p><a
-href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
-<p>这里只需要添加本地搜索功能即可。</p>
-<h1 id="advanced-settings">Advanced Settings</h1>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
-<h2 id="custom-files">Custom Files</h2>
-<p><a
-href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
-<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
-<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
-<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>相当于设置 css。第一个是设置背景图。第二个是设置首页每篇 post block
-块的不透明度。</p>
-<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>测试</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p>希望自己一切顺利。</p>
@@ -124,6 +38,96 @@ p &amp;= \frac{h}{\lambda} \\
 \varepsilon &amp;= h \nu \\
 \end{aligned}
 \]</span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 GitHub Pages 搭建 Hexo 博客</title>
+    <url>/hexo/</url>
+    <content><![CDATA[<h1 id="概述">概述</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<p>另外，建议在后续关于 GitHub 仓库操作时，使用 ssh
+地址，以免连接超时。</p>
+<p>在自己 GitHub 中要有一个 public
+仓库，名字为<code>你的 GitHub 用户名.github.io</code>，用于部署。可以先看这部分内容：<a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a>，但是先看最开头的部分就好。</p>
+<p>建议使用 VS Code，方便操作。</p>
+<h1 id="建站">建站</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
+<h1 id="配置">配置</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<h1 id="命令">命令</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
+<p>好习惯是每次<code>generate</code>之前都先<code>clean</code>一下。</p>
+<h1 id="部署">部署</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p>
+<p><a
+href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></p>
+<p>还是那句话，这里 GitHub 仓库地址建议使用 ssh 地址。</p>
+<h1 id="仓库备份">仓库备份</h1>
+<p>直接将当前博客目录作为 Git
+本地备份仓库地址。<code>.gitignore</code>都帮你写好了。在 GitHub
+新建相应的博客仓库。</p>
+<h1 id="写作">写作</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></p>
+<p>这里，如果指定<code>layout</code>参数为<code>page</code>，就可以在导航栏添加自己的页面，比如
+about 之类的。具体到不同的主题，可能还需要进行其他的设置。</p>
+<h1 id="front-matter">Front-matter</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/front-matter">https://hexo.io/zh-cn/docs/front-matter</a></p>
+<h1 id="资源管理">资源管理</h1>
+<p><a
+href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
+<p>按照里面的设置，就可以有更方便的在 markdown 嵌入图片的方式。</p>
+<h1 id="自定义">自定义</h1>
+<h2 id="永久链接">永久链接</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/permalinks">https://hexo.io/zh-cn/docs/permalinks</a></p>
+<p>如果不修改，默认的每篇文章的链接是带日期的。我自己一般使用<code>/:title/</code>，这样链接简洁。</p>
+<h2 id="主题">主题</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/themes">https://hexo.io/zh-cn/docs/themes</a></p>
+<p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>有许多不错的主题可用，这里只是官方推荐的主题。但实际上很多大佬自己开发设计了不错的主题，可以自行搜索。如果是初次使用
+Hexo，非常建议使用 NexT
+主题。到了后面可以自己使用更适合自己品味的主题。</p>
+<p>设置主题的方式是，修改根目录<code>_config.yml</code>的<code>theme</code>的值，为相应主题的名字。</p>
+<p>大多数主题的传统安装方法是：将主题相应的 GitHub 仓库 clone
+到<code>themes</code>文件夹中。每个主题都有自己的配置文件<code>_config.yml</code>，位于自己主题的文件夹中。</p>
+<p>但是，注意到，自 Hexo 5.0.0
+起，增加了个特性，可以设置独立的<code>_config.[theme].yml</code>文件，放于站点根目录下，也就是与<code>_config.yml</code>同级的位置。这里的<code>[theme]</code>就是相应的主题的名字，比如
+NexT
+主题的配置文件就是<code>_config.next.yml</code>。换句话说，每个主题的配置现在可以在网站根目录下独立设置了。主要看“代替主题配置文件”的部分。</p>
+<p><a
+href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
+<p>这样的好处在于，你可以在本地安装多个主题，能够很方便地保存各个主题的配置，并且很方便地切换，只要修改<code>_config.yml</code>的<code>theme</code>的值即可。</p>
+<p>另一个好处就是，可以方便如今很多主题支持的另一种安装方式：通过 npm
+安装。这样，主题就会安装在<code>node_modules</code>目录下。如果不使用上述特性，那么你要在<code>node_modules</code>目录下的相应主题插件文件夹的<code>_config.yml</code>修改，翻找很麻烦，并且如果
+npm
+更新主题的话，配置内容会被覆盖。而使用了<code>_config.[theme].yml</code>特性，可以很方便地进行主题的配置。只要将相应主题的配置文件复制到网站根目录下，文件名修改为上述格式即可。</p>
+<h2 id="代码高亮">代码高亮</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/syntax-highlight">https://hexo.io/zh-cn/docs/syntax-highlight</a></p>
+<h2 id="插件">插件</h2>
+<p><a
+href="https://hexo.io/zh-cn/docs/plugins">https://hexo.io/zh-cn/docs/plugins</a></p>
+<p><a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
+<p>官方提供的插件列表是这个，然而同样是没啥用，显示的并不完全，并且另外一种更常用的搜索方式是在
+npm 官网搜索。</p>
+<p><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
+<p>我这里就简单介绍一些常用的插件。</p>
+<h3 id="hexo-generator-searchdb">hexo-generator-searchdb</h3>
+<p><a
+href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.com/package/hexo-generator-searchdb</a></p>
+<p>用于给网页添加搜索功能。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+<p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
 ]]></content>
   </entry>
   <entry>
@@ -341,93 +345,108 @@ href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://
 ]]></content>
   </entry>
   <entry>
-    <title>在 GitHub Pages 搭建 Hexo 博客</title>
-    <url>/hexo/</url>
-    <content><![CDATA[<h1 id="概述">概述</h1>
+    <title>Hexo 主题 NexT 配置</title>
+    <url>/hexo-next/</url>
+    <content><![CDATA[<p><a
+href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>NexT
+主题的官网地址改过有几次，以后并不确定还会不会接着改。目前看来大概是不会了。</p>
+<h1 id="getting-started">Getting Started</h1>
 <p><a
-href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<p>另外，建议在后续关于 GitHub 仓库操作时，使用 ssh
-地址，以免连接超时。</p>
-<p>在自己 GitHub 中要有一个 public
-仓库，名字为<code>你的 GitHub 用户名.github.io</code>，用于部署。可以先看这部分内容：<a
-href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a>，但是先看最开头的部分就好。</p>
-<p>建议使用 VS Code，方便操作。</p>
-<h1 id="建站">建站</h1>
+href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></p>
 <p><a
-href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
-<h1 id="配置">配置</h1>
+href="https://theme-next.js.org/docs/getting-started/installation">https://theme-next.js.org/docs/getting-started/installation</a></p>
 <p><a
-href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
-<h1 id="命令">命令</h1>
+href="https://theme-next.js.org/docs/getting-started/configuration">https://theme-next.js.org/docs/getting-started/configuration</a></p>
+<p>主要是关于安装，部署，配置文件的内容。</p>
+<h1 id="theme-settings">Theme Settings</h1>
 <p><a
-href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
-<p>好习惯是每次<code>generate</code>之前都先<code>clean</code>一下。</p>
-<h1 id="部署">部署</h1>
+href="https://theme-next.js.org/docs/theme-settings/">https://theme-next.js.org/docs/theme-settings/</a></p>
+<p>修改主题 Scheme，一共有四种主题可选。主题可以设置为深色模式 Dark
+Mode，将<code>darkmode</code>的值设置为<code>true</code>即可。</p>
+<h2 id="sidebar">Sidebar</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/github-pages">https://hexo.io/zh-cn/docs/github-pages</a></p>
+href="https://theme-next.js.org/docs/theme-settings/sidebar">https://theme-next.js.org/docs/theme-settings/sidebar</a></p>
+<p>侧边栏，其中可以设置头像 avatar 相关的内容。</p>
+<h2 id="posts">Posts</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/one-command-deployment">https://hexo.io/zh-cn/docs/one-command-deployment</a></p>
-<p>还是那句话，这里 GitHub 仓库地址建议使用 ssh 地址。</p>
-<h1 id="仓库备份">仓库备份</h1>
-<p>直接将当前博客目录作为 Git
-本地备份仓库地址。<code>.gitignore</code>都帮你写好了。在 GitHub
-新建相应的博客仓库。</p>
-<h1 id="写作">写作</h1>
+href="https://theme-next.js.org/docs/theme-settings/posts">https://theme-next.js.org/docs/theme-settings/posts</a></p>
+<p>NexT
+主题下，主页的文章默认是内容全部显示的。与大部分主题类似，可以通过在文章中插入<code>&lt;!-- more --&gt;</code>使得只预览其前面的内容。对于
+NexT，也可以在 markdown
+文件上方<code>Front-matter</code>中，设置<code>description</code>的值，即为预览的内容。</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/writing">https://hexo.io/zh-cn/docs/writing</a></p>
-<p>这里，如果指定<code>layout</code>参数为<code>page</code>，就可以在导航栏添加自己的页面，比如
-about 之类的。具体到不同的主题，可能还需要进行其他的设置。</p>
-<h1 id="front-matter">Front-matter</h1>
+href="https://theme-next.js.org/docs/theme-settings/miscellaneous">https://theme-next.js.org/docs/theme-settings/miscellaneous</a></p>
+<p>有关于代码块 CodeBlock 的设置，比如是否有复制按钮
+copy_button，等等。</p>
+<h1 id="third-party-plugins">Third Party Plugins</h1>
 <p><a
-href="https://hexo.io/zh-cn/docs/front-matter">https://hexo.io/zh-cn/docs/front-matter</a></p>
-<h1 id="资源管理">资源管理</h1>
+href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h2 id="math-equations">Math Equations</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
-<p>按照里面的设置，就可以有更方便的在 markdown 嵌入图片的方式。</p>
-<h1 id="自定义">自定义</h1>
-<h2 id="永久链接">永久链接</h2>
+href="https://theme-next.js.org/docs/third-party-services/math-equations">https://theme-next.js.org/docs/third-party-services/math-equations</a></p>
+<p>关于 <span class="math inline">\(\LaTeX\)</span>
+公式渲染。注意，markdown
+的行内公式的建议书写习惯是，<code>$</code>包裹的公式要紧挨着公式内容，<code>$</code>与周围的其他内容留有空格隔开。</p>
+<p>这里说到了公式渲染可能出现的问题，需要我们手动卸载<code>hexo-renderer-marked</code>，安装<code>hexo-renderer-pandoc</code>。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>另外，电脑本地也要安装 pandoc。可以在<a
+href="https://pandoc.org/">官网</a>安装，或者可以用 scoop 安装。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scoop install pandoc</span><br></pre></td></tr></table></figure>
+<h2 id="external-libraries">External Libraries</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/permalinks">https://hexo.io/zh-cn/docs/permalinks</a></p>
-<p>如果不修改，默认的每篇文章的链接是带日期的。我自己一般使用<code>/:title/</code>，这样链接简洁。</p>
-<h2 id="主题">主题</h2>
+href="https://theme-next.js.org/docs/third-party-services/external-libraries">https://theme-next.js.org/docs/third-party-services/external-libraries</a></p>
+<p>可以设置页面加载的动画效果。建议把<code>motion</code>里的<code>async</code>设置为<code>true</code>，这样，侧边栏，文章等内容能够一同加载，否则如果文章较多，需要文章一篇一篇加载完后再显示侧边栏。</p>
+<h2 id="comment-systems">Comment Systems</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/themes">https://hexo.io/zh-cn/docs/themes</a></p>
-<p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
-<p>有许多不错的主题可用，这里只是官方推荐的主题。但实际上很多大佬自己开发设计了不错的主题，可以自行搜索。如果是初次使用
-Hexo，非常建议使用 NexT
-主题。到了后面可以自己使用更适合自己品味的主题。</p>
-<p>设置主题的方式是，修改根目录<code>_config.yml</code>的<code>theme</code>的值，为相应主题的名字。</p>
-<p>大多数主题的传统安装方法是：将主题相应的 GitHub 仓库 clone
-到<code>themes</code>文件夹中。每个主题都有自己的配置文件<code>_config.yml</code>，位于自己主题的文件夹中。</p>
-<p>但是，注意到，自 Hexo 5.0.0
-起，增加了个特性，可以设置独立的<code>_config.[theme].yml</code>文件，放于站点根目录下，也就是与<code>_config.yml</code>同级的位置。这里的<code>[theme]</code>就是相应的主题的名字，比如
-NexT
-主题的配置文件就是<code>_config.next.yml</code>。换句话说，每个主题的配置现在可以在网站根目录下独立设置了。主要看“代替主题配置文件”的部分。</p>
+href="https://theme-next.js.org/docs/third-party-services/comments">https://theme-next.js.org/docs/third-party-services/comments</a></p>
+<p>这些评论系统大部分是基于 GitHub 的 issues，我试了其中的一些，比较推荐
+Utterances。Utterances
+有邮件通知的功能。我看了一下原理，大概是你评论的时候，你就会订阅相应的
+issues，如果 issues 有别人评论，机器人就会给你发邮件进行通知。</p>
+<p><a href="https://utteranc.es/">https://utteranc.es/</a></p>
+<h2 id="statistics-and-analytics">Statistics and Analytics</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
-<p>这样的好处在于，你可以在本地安装多个主题，能够很方便地保存各个主题的配置，并且很方便地切换，只要修改<code>_config.yml</code>的<code>theme</code>的值即可。</p>
-<p>另一个好处就是，可以方便如今很多主题支持的另一种安装方式：通过 npm
-安装。这样，主题就会安装在<code>node_modules</code>目录下。如果不使用上述特性，那么你要在<code>node_modules</code>目录下的相应主题插件文件夹的<code>_config.yml</code>修改，翻找很麻烦，并且如果
-npm
-更新主题的话，配置内容会被覆盖。而使用了<code>_config.[theme].yml</code>特性，可以很方便地进行主题的配置。只要将相应主题的配置文件复制到网站根目录下，文件名修改为上述格式即可。</p>
-<h2 id="代码高亮">代码高亮</h2>
+href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics</a></p>
+<p>关于数据分析，比如可以显示网站的访问人数和次数，等等。一般是使用不蒜子
+Busuanzi 即可。</p>
+<h2 id="search-services">Search Services</h2>
 <p><a
-href="https://hexo.io/zh-cn/docs/syntax-highlight">https://hexo.io/zh-cn/docs/syntax-highlight</a></p>
-<h2 id="插件">插件</h2>
+href="https://theme-next.js.org/docs/third-party-services/search-services">https://theme-next.js.org/docs/third-party-services/search-services</a></p>
+<p>这里只需要添加本地搜索功能即可。</p>
+<h1 id="advanced-settings">Advanced Settings</h1>
 <p><a
-href="https://hexo.io/zh-cn/docs/plugins">https://hexo.io/zh-cn/docs/plugins</a></p>
-<p><a href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
-<p>官方提供的插件列表是这个，然而同样是没啥用，显示的并不完全，并且另外一种更常用的搜索方式是在
-npm 官网搜索。</p>
-<p><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></p>
-<p>我这里就简单介绍一些常用的插件。</p>
-<h3 id="hexo-generator-searchdb">hexo-generator-searchdb</h3>
+href="https://theme-next.js.org/docs/advanced-settings/">https://theme-next.js.org/docs/advanced-settings/</a></p>
+<h2 id="custom-files">Custom Files</h2>
 <p><a
-href="https://www.npmjs.com/package/hexo-generator-searchdb">https://www.npmjs.com/package/hexo-generator-searchdb</a></p>
-<p>用于给网页添加搜索功能。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-<figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
-<p>之后的步骤，对于不同的主题，配置方法可能不同。参见各自的官方文档。</p>
+href="https://theme-next.js.org/docs/advanced-settings/custom-files">https://theme-next.js.org/docs/advanced-settings/custom-files</a></p>
+<p>这里可以通过设置<code>custom_file_path</code>，添加一些自定义的内容，比如样式<code>style</code>，用这个方式可以设置比如背景图片等内容。以下是示例操作。</p>
+<figure class="highlight yml"><figcaption><span>_config.next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.njk</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.njk</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.njk</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.njk</span></span><br><span class="line">  <span class="comment">#postBodyStart: source/_data/post-body-start.njk</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.njk</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.njk</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.njk</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>然后在网站根目录的<code>source/_data/styles.styl</code>写内容，比如这样子。</p>
+<figure class="highlight css"><figcaption><span>source/_data/style.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">/images/61269686_p0.jpg</span>);</span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.8</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当于设置 css。第一个是设置背景图。第二个是设置首页每篇 post block
+块的不透明度。</p>
+<p>图片放在<code>source</code>文件夹里的<code>images</code>文件夹。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日语用于构成形容动词的词干的接尾词整理</title>
+    <url>/japanese-adjectival-noun-suffix/</url>
+    <content><![CDATA[<p>依然是在 weblio
+搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
+<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
+weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
+<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
+<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
+<p>げ【気】</p>
+<p>てき【的】</p>
+<p>ら【等】</p>
+<p>たげ</p>
+<p>か</p>
+<p>はか</p>
+<p>やか</p>
+<p>らか</p>
 ]]></content>
   </entry>
   <entry>
@@ -762,124 +781,6 @@ href="/japanese-verb-special-nidan">这篇</a>。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>「書いた人」的词源资料</title>
-    <url>/kaitahito/</url>
-    <content><![CDATA[<p><a
-href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
-<p><a
-href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
-<p>日本語の語源</p>
-<p>不过我感觉内容不是很靠谱。你乎有<a
-href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
-<p>又看了你乎的这篇<a
-href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
-<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>日语用于构成形容动词的词干的接尾词整理</title>
-    <url>/japanese-adjectival-noun-suffix/</url>
-    <content><![CDATA[<p>依然是在 weblio
-搜。这次搜的是<code>接尾 形容動詞の語幹をつくり</code>。</p>
-<p>然而这次没敢说“所有”了，像上面那个搜索关键词就没搜到か这个词。但如果只搜<code>接尾 形容動詞</code>，又会搜到一堆在《日本語活用形辞書》的词条，那些是将形容动词活用后的词。但如果直接在
-weblio 的《大辞泉》里搜<code>接尾 形容動詞</code>又搜不到内容。</p>
-<p>无论如何，总数不是很多。同样只是列出词条，具体内容还是自行查阅。</p>
-<p>这里没放进去け【気】，け【気】也可以作为接尾词，不过一般是构成名词。げ【気】算是け【気】的浊音化，げ【気】是用于构成形容动词的。</p>
-<p>げ【気】</p>
-<p>てき【的】</p>
-<p>ら【等】</p>
-<p>たげ</p>
-<p>か</p>
-<p>はか</p>
-<p>やか</p>
-<p>らか</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于「嚏」和「嚔」</title>
-    <url>/kusame/</url>
-    <content><![CDATA[<p>本篇主要是简单谈论使用现状，不多涉及关于字理还有语法的内容。</p>
-<p>前者是 U+568F，后者是 U+5694。</p>
-<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
-<p>对于日本，JIS X 0213
-两者都有收。该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。</p>
-<p><a
-href="https://www.kanjipedia.jp/kanji/0004991400">https://www.kanjipedia.jp/kanji/0004991400</a></p>
-<p>在 weblio
-古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
-<p>在 weblio
-デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
-<p>使用微软日语输入法，输入「くしゃみ」的候选词中，前者排在后者的前面。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「S blog えすぶろ」的语言学博客</title>
-    <url>/kedume/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/theme-10017494509.html</a></p>
-<p>やまとことば・語源</p>
-<p>S blog 　－えすぶろ－</p>
-<p>试过了，在 amebla 搜索「S
-blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>NAVER 词典中，词源出现的部分历史文献名缩写整理</title>
-    <url>/naver-literature-abbr/</url>
-    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
-<p>主要是自己在查词过程中的整理，看到一个就查一个。可能没什么精力更新。可能目前最方便的查询方法，还得是使用
-wiktionary，直接搜索原词条，或者全文检索该缩写。</p>
-<p>这东西理论上应该是有相关的标准和清单的，指不定 NAVER
-的帮助文档里就有给出，不过目前还没在网上查到完整的列表。如有相关资料，欢迎告知。</p>
-<p>在 NAVER
-查词的时候，一些词会给出词源。比如나무这个词条，下面的词源写的是这样的。</p>
-<p>＜나모＜용가＞</p>
-<p>后面的<code>＜용가＞</code>表示前面的<code>나모</code>最早出现的古籍文献名的缩写。</p>
-<p>如果有韩国国立国语院的《표준국어대사전》，即《标准国语大辞典》，他的编纂指南里应该是可以查到“国语历史文献资料的缩略语列表”的。</p>
-<p>《표준국어대사전》 편찬 지침</p>
-<p>《標準國語大辭典》 編纂 指針</p>
-<p><a
-href="https://www.hanmalgeul.org/328">https://www.hanmalgeul.org/328</a></p>
-<p>국어사 문헌 자료 출전 약호 목록</p>
-<p>國語史 文獻 資料 出典 略號 目錄</p>
-<p>在 wiktionary 同样搜索该词。</p>
-<p>＜ 나모 《龍飛御天歌(용비어천가)》(1447)。</p>
-<p>自己在查询过程中，看到了有人在韩国国立国语院的在线 Q&amp;A
-上的提问。</p>
-<p>온라인가나다</p>
-<p>online 가나다</p>
-<p><a
-href="https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216">https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216</a></p>
-<p>下面这个提问是关于유합，동신효，동신열，这三个文献名缩写的，已经作了解答。不过现在好像没了，网站的
-Q&amp;A 好像只保存最近的 40000 条提问，这条看起来已经过期了。</p>
-<p><a
-href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088">https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088</a></p>
-<h1 id="列表">列表</h1>
-<p>目前的整理如下。</p>
-<p>용가：龍飛御天歌(용비어천가)</p>
-<p>석상：釋譜詳節(석보상절)</p>
-<p>월석：月印釋譜(월인석상)</p>
-<p>훈해：훈민정음(訓民正音) (해례본/解例本)</p>
-<p>훈몽：訓蒙字會(훈몽자회)</p>
-<p>번노：飜譯老乞大(번역노걸대)</p>
-<p>유합：新增類合(신증유합)</p>
-<p>월곡：月印千江之曲(월인천강지곡)</p>
-<p>능엄：楞嚴經諺解(능엄경언해)</p>
-<p>원각：圓覺經諺解(원각경언해)</p>
-<p>두시-초：分類杜工部詩經諺解(분류두공부시경언해) (初刊本/초간본)</p>
-<p>구방：救急方諺解(구급방언해)</p>
-<p>소언：小學諺解(소학언해)</p>
-<p>동신：東國新續三綱行實圖(동국신속삼강행실도)</p>
-<p>동신충：동국신속삼강행실도 충신 편(東國新續三綱行實圖 忠臣編)</p>
-<p>동신효：동국신속삼강행실도 효자 편(東國新續三綱行實圖 孝子編)</p>
-<p>동신열：동국신속삼강행실도 열녀 편(東國新續三綱行實圖 烈女編)</p>
-<p>언두：諺解痘瘡集要(언해두창집요)</p>
-<p>법화：妙法蓮華經諺解(묘법연화경언해) / 法華經諺解(법화경언해)</p>
-<p>번박：飜譯朴通事(번역박통사)</p>
-<p>마경：馬經抄集諺解(마경초집언해)</p>
-]]></content>
-  </entry>
-  <entry>
     <title>日语文语上二段活用，下二段活用的特殊动词整理</title>
     <url>/japanese-verb-special-nidan/</url>
     <content><![CDATA[<h1 id="写在开头">写在开头</h1>
@@ -995,6 +896,56 @@ href="https://www.sigure.tw/learn-japanese/grammar/n5/19">这篇文章</a>，里
 ]]></content>
   </entry>
   <entry>
+    <title>日语动词型活用的所有接尾词整理</title>
+    <url>/japanese-verb-suffix/</url>
+    <content><![CDATA[<p>关于接尾词【接尾語】【接尾辞】的定义，此处不赘述，请自行查阅资料。</p>
+<p>注意，本篇说的内容，不是广义的复合动词【複合動詞】的后面那部分。</p>
+<p>我还是简单举个例子。比如动词あきめく【秋めく】中的めく，就是个动词五段型活用的结尾词，表示变成那种状态或者表现出类似的样子。具体内容还是查词典。</p>
+<p>通过在 weblio
+全文检索，在《大辞泉》共查到二十多个。具体来说，搜索<code>接尾《動詞 型活用</code>得到的内容比较精确。如果搜索<code>接尾］《動詞 型活用</code>，反而会多搜到一些形容词型活用的接尾词。</p>
+<p>由于精力所限，以下仅仅是列举，并没有具体给出含义、来源、词例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
+<p>かす</p>
+<p>がる</p>
+<p>ぐむ</p>
+<p>こかす【転かす／倒かす】</p>
+<p>こける</p>
+<p>ごつ</p>
+<p>さす【止す】</p>
+<p>じみる【染みる】</p>
+<p>だつ</p>
+<p>ちぎる【千切る】</p>
+<p>つく</p>
+<p>づく【付く】</p>
+<p>づける【付ける／附ける】</p>
+<p>なう〔なふ〕</p>
+<p>ばむ</p>
+<p>ばる【張る】</p>
+<p>びる</p>
+<p>ふ</p>
+<p>ぶる【振る】</p>
+<p>めかす</p>
+<p>めく</p>
+<p>やく</p>
+<p>やぐ</p>
+<p>わう〔はふ〕</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「書いた人」的词源资料</title>
+    <url>/kaitahito/</url>
+    <content><![CDATA[<p><a
+href="http://kaitahito.world.coocan.jp/ongogen.html">http://kaitahito.world.coocan.jp/ongogen.html</a></p>
+<p><a
+href="https://ameblo.jp/gogen3000/">https://ameblo.jp/gogen3000/</a></p>
+<p>日本語の語源</p>
+<p>不过我感觉内容不是很靠谱。你乎有<a
+href="https://www.zhihu.com/question/543656149/answer/2590654057">回答</a>提到这个，说是“地狱难度，他这套理论比较特别，和最常见的说法往往不同，我也不知道靠不靠谱”。</p>
+<p>又看了你乎的这篇<a
+href="https://zhuanlan.zhihu.com/p/607477773">专栏文章</a>，感觉他那里面的解释基本就是这里说的“反切”，将词语进行反切的处理后，通过语音上的相似将两个词联系在一起。虽说有合理的成分，但是他太滥用了。光是从逻辑上看，他里面的内容中就有很多是那种循环定义、无限递归的切法。。。他光顾着拆词，很少考虑到词的同源关系，几乎找不到与之相关的术语，这就有些不好评价了。</p>
+<p>无论如何，还是把资料给出了，也只是看在他里面词很多很全的份上。总之仅供参考。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>日语文语ヤ行上二段活用的动词整理</title>
     <url>/japanese-verb-y-kaminidan/</url>
     <content><![CDATA[<p>之前是整理了关于文语ラ行上二段活用的动词。文语ヤ行上二段活用的动词也很少，也就顺便简单整理。同样是在
@@ -1024,6 +975,208 @@ weblio 全局搜索，搜<code>ヤ上二</code>。</p>
 <p>としおゆ【年老ゆ】</p>
 <p>なまおゆ【生老ゆ】</p>
 <p>としおゆ【年老ゆ】有口语形，としおいる【年老いる】。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于「嚏」和「嚔」</title>
+    <url>/kusame/</url>
+    <content><![CDATA[<p>本篇主要是简单谈论使用现状，不多涉及关于字理还有语法的内容。</p>
+<p>前者是 U+568F，后者是 U+5694。</p>
+<p>陆标港标台标是将前者作为正体，台标将后者作为异体字。</p>
+<p>对于日本，JIS X 0213
+两者都有收。该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。</p>
+<p><a
+href="https://www.kanjipedia.jp/kanji/0004991400">https://www.kanjipedia.jp/kanji/0004991400</a></p>
+<p>在 weblio
+古語辞典，学研全訳古語辞典，はな－・ひる【嚔る】是使用后者，然而，ひる【嚏る】是使用前者，导致了搜索词条后的结果差异。</p>
+<p>在 weblio
+デジタル大辞泉，词条是用的后者，然而在ひる【嚔る】的文段部分，出现「嚏(はな)ふ」，这里又写成前者。可能是将词典电子录入时候的问题。</p>
+<p>使用微软日语输入法，输入「くしゃみ」的候选词中，前者排在后者的前面。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>用于 Visual Studio 2022 的 OpenCV C++ 静态库</title>
+    <url>/opencv-static/</url>
+    <content><![CDATA[<p>编译生成了 OpenCV 的多种类型的静态库，放在了 GitHub 仓库 releases
+页。</p>
+<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
+C++。</p>
+<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
+的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
+Studio 2022，VC17，而官方提供的只有
+VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
+<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
+C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
+提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
+编译生成了静态库。只要也使用 Win10，VS 2022，那么应该是通用的。</p>
+<p>不推荐使用最新版本，可以使用更早一些的版本。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>NAVER 词典中，词源出现的部分历史文献名缩写整理</title>
+    <url>/naver-literature-abbr/</url>
+    <content><![CDATA[<h1 id="写在开头">写在开头</h1>
+<p>主要是自己在查词过程中的整理，看到一个就查一个。可能没什么精力更新。可能目前最方便的查询方法，还得是使用
+wiktionary，直接搜索原词条，或者全文检索该缩写。</p>
+<p>这东西理论上应该是有相关的标准和清单的，指不定 NAVER
+的帮助文档里就有给出，不过目前还没在网上查到完整的列表。如有相关资料，欢迎告知。</p>
+<p>在 NAVER
+查词的时候，一些词会给出词源。比如나무这个词条，下面的词源写的是这样的。</p>
+<p>＜나모＜용가＞</p>
+<p>后面的<code>＜용가＞</code>表示前面的<code>나모</code>最早出现的古籍文献名的缩写。</p>
+<p>如果有韩国国立国语院的《표준국어대사전》，即《标准国语大辞典》，他的编纂指南里应该是可以查到“国语历史文献资料的缩略语列表”的。</p>
+<p>《표준국어대사전》 편찬 지침</p>
+<p>《標準國語大辭典》 編纂 指針</p>
+<p><a
+href="https://www.hanmalgeul.org/328">https://www.hanmalgeul.org/328</a></p>
+<p>국어사 문헌 자료 출전 약호 목록</p>
+<p>國語史 文獻 資料 出典 略號 目錄</p>
+<p>在 wiktionary 同样搜索该词。</p>
+<p>＜ 나모 《龍飛御天歌(용비어천가)》(1447)。</p>
+<p>自己在查询过程中，看到了有人在韩国国立国语院的在线 Q&amp;A
+上的提问。</p>
+<p>온라인가나다</p>
+<p>online 가나다</p>
+<p><a
+href="https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216">https://www.korean.go.kr/front/onlineQna/onlineQnaList.do?mn_id=216</a></p>
+<p>下面这个提问是关于유합，동신효，동신열，这三个文献名缩写的，已经作了解答。不过现在好像没了，网站的
+Q&amp;A 好像只保存最近的 40000 条提问，这条看起来已经过期了。</p>
+<p><a
+href="https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088">https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&amp;qna_seq=259088</a></p>
+<h1 id="列表">列表</h1>
+<p>目前的整理如下。</p>
+<p>용가：龍飛御天歌(용비어천가)</p>
+<p>석상：釋譜詳節(석보상절)</p>
+<p>월석：月印釋譜(월인석상)</p>
+<p>훈해：훈민정음(訓民正音) (해례본/解例本)</p>
+<p>훈몽：訓蒙字會(훈몽자회)</p>
+<p>번노：飜譯老乞大(번역노걸대)</p>
+<p>유합：新增類合(신증유합)</p>
+<p>월곡：月印千江之曲(월인천강지곡)</p>
+<p>능엄：楞嚴經諺解(능엄경언해)</p>
+<p>원각：圓覺經諺解(원각경언해)</p>
+<p>두시-초：分類杜工部詩經諺解(분류두공부시경언해) (初刊本/초간본)</p>
+<p>구방：救急方諺解(구급방언해)</p>
+<p>소언：小學諺解(소학언해)</p>
+<p>동신：東國新續三綱行實圖(동국신속삼강행실도)</p>
+<p>동신충：동국신속삼강행실도 충신 편(東國新續三綱行實圖 忠臣編)</p>
+<p>동신효：동국신속삼강행실도 효자 편(東國新續三綱行實圖 孝子編)</p>
+<p>동신열：동국신속삼강행실도 열녀 편(東國新續三綱行實圖 烈女編)</p>
+<p>언두：諺解痘瘡集要(언해두창집요)</p>
+<p>법화：妙法蓮華經諺解(묘법연화경언해) / 法華經諺解(법화경언해)</p>
+<p>번박：飜譯朴通事(번역박통사)</p>
+<p>마경：馬經抄集諺解(마경초집언해)</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>「S blog えすぶろ」的语言学博客</title>
+    <url>/kedume/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/kedume/theme-10017494509.html">https://ameblo.jp/kedume/theme-10017494509.html</a></p>
+<p>やまとことば・語源</p>
+<p>S blog 　－えすぶろ－</p>
+<p>试过了，在 amebla 搜索「S
+blog」几乎很难搜到这位（大概是名字过于泛化了），而搜索「えすぶろ」的话还行。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于「抛」和「拋」</title>
+    <url>/po/</url>
+    <content><![CDATA[<p>同样地，这里不多谈关于字理的内容，主要是简单谈论使用现状。</p>
+<p>前者是 U+629B，【九】形，后者是 U+62CB，【尢】形。</p>
+<p>陆标是将前者作为正体，港标台标将后者作为正体。</p>
+<p>对于日本，JIS X 0213
+收前者而无后者。那边的字体也基本没做后者。该字在《常用汉字表》外，实际使用时，相关汉语词中，常使用汉字音相同的【放】字作为代用字。汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。估计是考虑到设备和字体等因素，在汉检的网站中是使用图片来显示后者以及相关词。</p>
+<p><a
+href="https://www.kanjipedia.jp/kanji/0006353600">https://www.kanjipedia.jp/kanji/0006353600</a></p>
+<p>weblio
+中，相关的字和词条基本是使用前者。日本那边的网页主要也是使用前者为多。</p>
+<p>然而这次主要是想说的是韩国，确切地说是 Naver
+的一些字体的操作。韩国的字符集标准 KS X 1001
+也是收前者而无后者。后者收在了人名用追加汉字表。韩国那边字体也基本是没做后者，对于【抛】字形也是正常做成【九】形。</p>
+<p>而 Naver
+中的一些字体，也是做了【抛】没做【拋】，但是将前者【抛】的字形做成了【尢】形，也就是做成后者的字形。</p>
+<p>比如，使用国立国语院韩国语-汉语学习词典，查询포기(抛棄)，포기하다，相关词，就可以看到他【抛】显示的字形是【尢】形。一看，他汉字使用的字体是<code>NanumBarunGothic</code>，나눔바른고딕。Nanum
+나눔是 Naver
+的一个字体系列。나누다是“分，分享”的意思。바르다是“正，正确”的意思。粗糙理解为这是
+Nanum 的一款正体字体。</p>
+<p><a
+href="https://hangeul.naver.com/fonts/search?f=nanum">https://hangeul.naver.com/fonts/search?f=nanum</a></p>
+<p>韩国那边的汉字辞典，认为后者是正体，前者是俗字。虽然韩国没有明面上的汉字使用标准规范。我姑且认为
+Naver 也是认为后者更正一些吧。</p>
+<p>Nanum
+系列中，其他有些字体也是把【抛】做成了【尢】形，这里不多列举。感觉多少有点骚操作，没有选择做后者，而是把前者的字形做成后者的样子。虽说这种情况应该算比较少见。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 PowerShell</title>
+    <url>/powershell/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<h1 id="概述">概述</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/overview">https://learn.microsoft.com/zh-cn/powershell/scripting/overview</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell">https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell</a></p>
+<p>这里区分 PowerShell 和 Windows PowerShell。</p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands">https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands</a></p>
+<p>cmdlet，即 PowerShell 命令，使用“动词-名词”名称对来命名。</p>
+<h1 id="安装">安装</h1>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装之后，和旧版 Windows PowerShell 两者并存。之后比如在 VS Code
+打开的终端，就会默认为这个新的 PowerShell 了。</p>
+<h1 id="参考">参考</h1>
+<h2 id="microsoft.powershell.core">Microsoft.PowerShell.Core</h2>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/</a></p>
+<h3 id="关于">关于</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about</a></p>
+<h4 id="about_aliases">about_Aliases</h4>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases</a></p>
+<p>命令的别名。</p>
+<h4 id="about_pipelines">about_Pipelines</h4>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<h4
+id="about_pipeline_chain_operators">about_Pipeline_Chain_Operators</h4>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>可以使用<code>&amp;&amp;</code>和<code>||</code>运算符了，这就非常方便。</p>
+<h3 id="get-command">Get-Command</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command</a></p>
+<p>用于获取命令。</p>
+<p>一个用途是查看命令的位置。</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-Command</span> python</span><br></pre></td></tr></table></figure>
+<h3 id="clear-host">Clear-Host</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host</a></p>
+<p>清除显示内容，清空终端屏幕。</p>
+<p>别名：<code>clear</code>。</p>
+<h3 id="copy-item">Copy-Item</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item</a></p>
+<p>复制文件。</p>
+<p>别名：<code>cp</code>。</p>
+<h3 id="get-content">Get-Content</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content</a></p>
+<p>获取文件内容。主要是文本文件。</p>
+<p><code>-TotalCount</code>参数，从文件的开头获取指定行数的内容。</p>
+<p>别名：<code>cat</code>。</p>
+<h3 id="get-childitem">Get-ChildItem</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem</a></p>
+<p>获取指定文件路径位置中的子项。</p>
+<p>别名：<code>ls</code>。</p>
+<h3 id="get-item">Get-Item</h3>
+<p><a
+href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item</a></p>
+<p>获取文件和文件夹的属性。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1212,70 +1365,6 @@ Scoop 能安装。目前版本的 Selenium 除了检测电脑是否有相应的 
 ]]></content>
   </entry>
   <entry>
-    <title>日语动词型活用的所有接尾词整理</title>
-    <url>/japanese-verb-suffix/</url>
-    <content><![CDATA[<p>关于接尾词【接尾語】【接尾辞】的定义，此处不赘述，请自行查阅资料。</p>
-<p>注意，本篇说的内容，不是广义的复合动词【複合動詞】的后面那部分。</p>
-<p>我还是简单举个例子。比如动词あきめく【秋めく】中的めく，就是个动词五段型活用的结尾词，表示变成那种状态或者表现出类似的样子。具体内容还是查词典。</p>
-<p>通过在 weblio
-全文检索，在《大辞泉》共查到二十多个。具体来说，搜索<code>接尾《動詞 型活用</code>得到的内容比较精确。如果搜索<code>接尾］《動詞 型活用</code>，反而会多搜到一些形容词型活用的接尾词。</p>
-<p>由于精力所限，以下仅仅是列举，并没有具体给出含义、来源、词例等内容，请自行查阅《大辞泉》或其他词典进行查看。</p>
-<p>かす</p>
-<p>がる</p>
-<p>ぐむ</p>
-<p>こかす【転かす／倒かす】</p>
-<p>こける</p>
-<p>ごつ</p>
-<p>さす【止す】</p>
-<p>じみる【染みる】</p>
-<p>だつ</p>
-<p>ちぎる【千切る】</p>
-<p>つく</p>
-<p>づく【付く】</p>
-<p>づける【付ける／附ける】</p>
-<p>なう〔なふ〕</p>
-<p>ばむ</p>
-<p>ばる【張る】</p>
-<p>びる</p>
-<p>ふ</p>
-<p>ぶる【振る】</p>
-<p>めかす</p>
-<p>めく</p>
-<p>やく</p>
-<p>やぐ</p>
-<p>わう〔はふ〕</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于「抛」和「拋」</title>
-    <url>/po/</url>
-    <content><![CDATA[<p>同样地，这里不多谈关于字理的内容，主要是简单谈论使用现状。</p>
-<p>前者是 U+629B，【九】形，后者是 U+62CB，【尢】形。</p>
-<p>陆标是将前者作为正体，港标台标将后者作为正体。</p>
-<p>对于日本，JIS X 0213
-收前者而无后者。那边的字体也基本没做后者。该字在《常用汉字表》外，实际使用时，相关汉语词中，常使用汉字音相同的【放】字作为代用字。汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。估计是考虑到设备和字体等因素，在汉检的网站中是使用图片来显示后者以及相关词。</p>
-<p><a
-href="https://www.kanjipedia.jp/kanji/0006353600">https://www.kanjipedia.jp/kanji/0006353600</a></p>
-<p>weblio
-中，相关的字和词条基本是使用前者。日本那边的网页主要也是使用前者为多。</p>
-<p>然而这次主要是想说的是韩国，确切地说是 Naver
-的一些字体的操作。韩国的字符集标准 KS X 1001
-也是收前者而无后者。后者收在了人名用追加汉字表。韩国那边字体也基本是没做后者，对于【抛】字形也是正常做成【九】形。</p>
-<p>而 Naver
-中的一些字体，也是做了【抛】没做【拋】，但是将前者【抛】的字形做成了【尢】形，也就是做成后者的字形。</p>
-<p>比如，使用国立国语院韩国语-汉语学习词典，查询포기(抛棄)，포기하다，相关词，就可以看到他【抛】显示的字形是【尢】形。一看，他汉字使用的字体是<code>NanumBarunGothic</code>，나눔바른고딕。Nanum
-나눔是 Naver
-的一个字体系列。나누다是“分，分享”的意思。바르다是“正，正确”的意思。粗糙理解为这是
-Nanum 的一款正体字体。</p>
-<p><a
-href="https://hangeul.naver.com/fonts/search?f=nanum">https://hangeul.naver.com/fonts/search?f=nanum</a></p>
-<p>韩国那边的汉字辞典，认为后者是正体，前者是俗字。虽然韩国没有明面上的汉字使用标准规范。我姑且认为
-Naver 也是认为后者更正一些吧。</p>
-<p>Nanum
-系列中，其他有些字体也是把【抛】做成了【尢】形，这里不多列举。感觉多少有点骚操作，没有选择做后者，而是把前者的字形做成后者的样子。虽说这种情况应该算比较少见。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>关于「叱」和「𠮟」</title>
     <url>/shikaru/</url>
     <content><![CDATA[<p>相比于之前写的关于「嚏」和「嚔」的那篇，关于「叱」和「𠮟」已有的的资料文章已经很多。本篇同样是简单谈论使用现状，不多涉及关于字理还有语法的内容。</p>
@@ -1310,12 +1399,15 @@ href="https://kangxizidian.com/v2/index2.php?page=803">https://kangxizidian.com/
 ]]></content>
   </entry>
   <entry>
-    <title>使用【屎婆屎婆/💩👵💩👵】作为しばしば的【当て字】（迫真）</title>
+    <title>使用【屎婆屎婆/💩👵💩👵】作为しばしば的【当て字】（迫真），兼论「屡」和「屢」</title>
     <url>/shibashiba/</url>
     <content><![CDATA[<p>省流：戏言。屎女是 IDS
 老梗了，版权归“前屎女bot”所有，归叶典网、字统网及相关群所有，侵删。</p>
 <p>【屡】拆成【屎女】，し和ば又能对应【屎】和【婆】的音读。（笑）</p>
-<p>关于新字体的问题。【屡/屢】字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为容许字体【許容字体】。《大辞泉》相关词条则使用前者。</p>
+<p>关于「屡」和「屢」，该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。</p>
+<p><a
+href="https://www.kanjipedia.jp/kanji/0007223600">https://www.kanjipedia.jp/kanji/0007223600</a></p>
+<p>在 weblio デジタル大辞泉，相关词条和内容是使用前者。</p>
 <p>下面是 ruby 示例。</p>
 <p><ruby>💩<rt>し</rt>👵<rt>ば</rt>💩<rt>し</rt>👵<rt>ば</rt></ruby></p>
 <p><ruby>屎<rt>し</rt>婆<rt>ば</rt>屎<rt>し</rt>婆<rt>ば</rt></ruby></p>
@@ -1327,241 +1419,6 @@ href="https://kangxizidian.com/v2/index2.php?page=803">https://kangxizidian.com/
 <p>参考 html 写法。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>💩<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屎<span class="tag">&lt;<span class="name">rt</span>&gt;</span>し<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>ば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>💩👵💩👵<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎婆屎婆<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屎女屎女<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屡屡<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ruby</span>&gt;</span>屢屢<span class="tag">&lt;<span class="name">rt</span>&gt;</span>しばしば<span class="tag">&lt;/<span class="name">rt</span>&gt;</span><span class="tag">&lt;/<span class="name">ruby</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>纯为娱乐。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于 TLD</title>
-    <url>/tld/</url>
-    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
-<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
-<p>ICANN wiki，可以查各个 TLD 的信息。</p>
-<p><a
-href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
-<p>ISO 3166 标准。</p>
-<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
-<p><a
-href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
-<p><a
-href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
-<p>可以查看 root zone，查看根域名。</p>
-<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
-<p><a
-href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
-<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
-<p><a
-href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
-<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
-<p><a
-href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
-<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
-<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
-<p>上面的是各 nTLD
-的数据信息。没事的话可以查查，有些很有意思的域名。</p>
-<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
-<p>看看 xyz 的官网（笑）。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>「気まぐれな梟」的语言学资料</title>
-    <url>/ufjtmb26/</url>
-    <content><![CDATA[<p><a
-href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
-<p>気まぐれな梟</p>
-<p>然而通过 bing 搜索找了半天，除了在 ameblo
-的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
-<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
-有的。</p>
-<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>用于 Visual Studio 2022 的 OpenCV C++ 静态库</title>
-    <url>/opencv-static/</url>
-    <content><![CDATA[<p>编译生成了 OpenCV 的多种类型的静态库，放在了 GitHub 仓库 releases
-页。</p>
-<p>当然了，还是那句话，使用 Python 显然是更方便的选择，或者使用 Linux 写
-C++。</p>
-<p>虽说现在 OpenCV 官方是有提供用于 Visual Studio 的 C++
-的库可以直接下载的，不过，一方面版本对不上，我写这篇文章的时候是 Visual
-Studio 2022，VC17，而官方提供的只有
-VC16。另一方面他提供的是静态库和动态库都包含，调用编译的时候还只能动态编译。那我要他有何用？</p>
-<p>所以应该还是会有人存在这样的需求，在 Windows 上使用 Visual Studio 写
-C++ 调用 OpenCV 库实现静态编译。正好尽量充分利用 GitHub
-提供的发布项目的功能，所以在自己电脑的 Visual Studio 2022 和 CMake
-编译生成了静态库。只要也使用 Win10，VS 2022，那么应该是通用的。</p>
-<p>不推荐使用最新版本，可以使用更早一些的版本。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
-    <url>/vscode-clang-format/</url>
-    <content><![CDATA[<p>众所周知，在 VS Code
-很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
-C/C++ 同样如此。</p>
-<p><a
-href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
-<p>常用的配置选项。</p>
-<p><a
-href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
-<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
-<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
-格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
-格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
-0，根据自己需要。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>VS Code 设置打开文件时自动猜测字符集编码</title>
-    <url>/vscode-guess-encoding/</url>
-    <content><![CDATA[<p>省流，VS Code
-是默认设置打开文件时不自动猜测字符集编码的，他一般默认按 UTF-8
-编码来打开文本文件。如需勾选，将设置中<code>Files: Auto Guess Encoding</code>，该项勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>字符集</code>，<code>编码</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"files.autoGuessEncoding": true</code>。</p>
-<p>主要想发发牢骚，个人认为他 VS Code
-没默认打开该选项是一个错误。众所周知，现在的文本文件的编码一般是设置为
-UTF-8，或者说一般要设置为 UTF-8，这样才合适而且通用。VS Code
-当然也是如此，对于文本文件的默认打开和保存方式都是
-UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
-<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
-来编码中文字符。当然了这个可以在设置里修改，或者是安装相关插件后，同样方便在编辑器的右下角修改。然而对于
-masm32 编程，涉及中文字符串的时候，好像还真得只能用 GB2312 编码，没法用
-UTF-8 编码。</p>
-<p>很多时候我需要用 VS Code 打开 Visual Studio
-项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
-UTF-8
-打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
-UTF-8
-打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，而且还不方便撤回。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于微软 Windows 系统字体</title>
-    <url>/windows-font/</url>
-    <content><![CDATA[<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
-<p>在知乎上的相关问题。</p>
-<p><a
-href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
-<p><a
-href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于 PowerShell</title>
-    <url>/powershell/</url>
-    <content><![CDATA[<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<h1 id="概述">概述</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/overview">https://learn.microsoft.com/zh-cn/powershell/scripting/overview</a></p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell">https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell</a></p>
-<p>这里区分 PowerShell 和 Windows PowerShell。</p>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands">https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands</a></p>
-<p>cmdlet，即 PowerShell 命令，使用“动词-名词”名称对来命名。</p>
-<h1 id="安装">安装</h1>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装之后，和旧版 Windows PowerShell 两者并存。之后比如在 VS Code
-打开的终端，就会默认为这个新的 PowerShell 了。</p>
-<h1 id="参考">参考</h1>
-<h2 id="microsoft.powershell.core">Microsoft.PowerShell.Core</h2>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/</a></p>
-<h3 id="关于">关于</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about</a></p>
-<h4 id="about_aliases">about_Aliases</h4>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases</a></p>
-<p>命令的别名。</p>
-<h4 id="about_pipelines">about_Pipelines</h4>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<h4
-id="about_pipeline_chain_operators">about_Pipeline_Chain_Operators</h4>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>可以使用<code>&amp;&amp;</code>和<code>||</code>运算符了，这就非常方便。</p>
-<h3 id="get-command">Get-Command</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command</a></p>
-<p>用于获取命令。</p>
-<p>一个用途是查看命令的位置。</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-Command</span> python</span><br></pre></td></tr></table></figure>
-<h3 id="clear-host">Clear-Host</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host</a></p>
-<p>清除显示内容，清空终端屏幕。</p>
-<p>别名：<code>clear</code>。</p>
-<h3 id="copy-item">Copy-Item</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item</a></p>
-<p>复制文件。</p>
-<p>别名：<code>cp</code>。</p>
-<h3 id="get-content">Get-Content</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content</a></p>
-<p>获取文件内容。主要是文本文件。</p>
-<p><code>-TotalCount</code>参数，从文件的开头获取指定行数的内容。</p>
-<p>别名：<code>cat</code>。</p>
-<h3 id="get-childitem">Get-ChildItem</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem</a></p>
-<p>获取指定文件路径位置中的子项。</p>
-<p>别名：<code>ls</code>。</p>
-<h3 id="get-item">Get-Item</h3>
-<p><a
-href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item</a></p>
-<p>获取文件和文件夹的属性。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>VS Code 设置复制文本时不带格式样式不带语法高亮</title>
-    <url>/vscode-copy-formatting/</url>
-    <content><![CDATA[<p>省流，VS Code
-是默认设置复制文本时带上格式，样式，语法高亮的。如需取消勾选，将设置中<code>Editor: Copy With Syntax Highlighting</code>，该项取消勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>复制</code>，<code>语法高亮</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"editor.copyWithSyntaxHighlighting": false</code>。</p>
-<p>个人感觉，他这个设置项的命名不是那么完美，但大概已经是尽量好的一种写法了。实际上，即使对于<code>txt</code>这种不带语法高亮的文件格式，他默认复制文本然后粘贴到其他地方，如果保留源格式粘贴，依然是会保留背景色，字体等内容的。而取消勾选之后，包括这些在内的所有的样式都相应去掉了。个人认为他这个设置项的命名应该带有<code>样式</code>或者<code>格式</code>，<code>format</code>之类的字眼。可惜加了这些词的话，配置项的名字又太长。而如果只写格式样式不写语法高亮的话，这个项又没那么有辨识度。感觉还是有些为难，没法做到那么完美，VS
-Code 大概已经尽力了。</p>
-<p>要我自己选的话，我是比较希望 VS Code
-能够默认复制不带格式的。以我个人的观点，对于常编程，善于使用、喜欢和管理各种纯文本文件的用户来说，大概是不太喜欢或者很少需要使用这种复制带格式的情况吧，特别是平时如果非特殊要求，大概很少会做那种，要求把代码带格式带语法高亮复制到微软
-Word 等富文本文件的事情，之类的。一般如果要在文档中插入代码，基本是在
-markdown 加代码块，或者是 latex
-加代码，写伪代码。渲染啊排版啊什么的没特殊要求，基本交给默认的渲染引擎去处理。如果
-VS Code
-真要为编程用户着想，是否考虑应该默认【关闭】这个选项，即，默认复制不带格式样式，比较合适一些。</p>
-<p>不过我猜测，VS Code
-这么设置的考量可能是，一方面初学者或者轻度使用者带格式复制粘贴的需求不见得很少，另一方面除了在【复制端】控制不带格式复制，实际上也可以在【粘贴端】控制将文本不带格式粘贴。</p>
-<p>不带格式粘贴的通用的快捷键是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>，适用于各种文本编辑器。较新版本的微软
-Office 比如 Word 也可以使用该快捷方式，从而在粘贴时，不带格式粘贴。</p>
-<p>另据资料，早期在微软
-Office，上述快捷键好像是用于格式刷，与<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>配合使用，用于格式的复制粘贴。大概是因为这一点与常规的文本编辑器的功能不一致而常被吐槽，后来微软
-Word
-才把格式刷的快捷键改为<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>和<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>V</kbd>，这样把<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>留给（或者说是还给）了不带格式粘贴。从效果上看，这个改动还是很好的，不过还能看到一些不明真相和原因的用户在微软社区有提问和抱怨。嘛，这个倒也无可厚非。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>查看自己 Windows 电脑的产品密钥</title>
-    <url>/windows-product-key/</url>
-    <content><![CDATA[<p>是看了这个知乎回答。</p>
-<p><a
-href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
-<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
-PowerShell 运行命令就行。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1637,6 +1494,152 @@ href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/co
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>而如果想要<code>ssh -T github.com</code>这种写法也能测试通过的话，那就加上下面的这种简略的配置。虽然个人认为没有太大的必要。道理相当于指定了默认用户为<code>git</code>。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>「気まぐれな梟」的语言学资料</title>
+    <url>/ufjtmb26/</url>
+    <content><![CDATA[<p><a
+href="https://ameblo.jp/ufjtmb26/">https://ameblo.jp/ufjtmb26/</a></p>
+<p>気まぐれな梟</p>
+<p>然而通过 bing 搜索找了半天，除了在 ameblo
+的博客文章之外，没找到关于这位的其他相关信息，资料，个人主页之类的了。。</p>
+<p>倒是有其他网页的文章引用了这位大佬的内容，然而引用的也是在 ameblo
+有的。</p>
+<p>很多挺有意思的内容，主要是关于日本方言，琉球诸语的考察研究之类。最近依然有更新博客，若干天更新一篇，挺不错。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于 TLD</title>
+    <url>/tld/</url>
+    <content><![CDATA[<p><a href="https://www.icann.org/">https://www.icann.org/</a></p>
+<p><a href="https://icannwiki.org/">https://icannwiki.org/</a></p>
+<p>ICANN wiki，可以查各个 TLD 的信息。</p>
+<p><a
+href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a></p>
+<p>ISO 3166 标准。</p>
+<p><a href="https://www.iana.org/">https://www.iana.org/</a></p>
+<p><a
+href="https://www.iana.org/domains/root/db">https://www.iana.org/domains/root/db</a></p>
+<p><a
+href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt">https://data.iana.org/TLD/tlds-alpha-by-domain.txt</a></p>
+<p>可以查看 root zone，查看根域名。</p>
+<p>eTLD（effective TLD），也就是 public suffix，由 Mozilla 提倡。</p>
+<p><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/eTLD">https://developer.mozilla.org/en-US/docs/Glossary/eTLD</a></p>
+<p><a href="https://publicsuffix.org/">https://publicsuffix.org/</a></p>
+<p><a
+href="https://publicsuffix.org/list/public_suffix_list.dat">https://publicsuffix.org/list/public_suffix_list.dat</a></p>
+<p>这也是 Python 的 tldextract 库用到的 public suffix 列表。</p>
+<p><a
+href="https://newgtlds.icann.org/en">https://newgtlds.icann.org/en</a></p>
+<p><a href="https://ntldstats.com/">https://ntldstats.com/</a></p>
+<p><a href="https://ntldstats.com/tld">https://ntldstats.com/tld</a></p>
+<p>上面的是各 nTLD
+的数据信息。没事的话可以查查，有些很有意思的域名。</p>
+<p><a href="https://xyz.xyz/">https://xyz.xyz/</a></p>
+<p>看看 xyz 的官网（笑）。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件</title>
+    <url>/vscode-clang-format/</url>
+    <content><![CDATA[<p>众所周知，在 VS Code
+很方便地对代码文件进行格式化，可以是右键后选择“格式化文档”，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于
+C/C++ 同样如此。</p>
+<p><a
+href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
+<p><a
+href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2
+格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4
+格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者
+0，根据自己需要。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 设置打开文件时自动猜测字符集编码</title>
+    <url>/vscode-guess-encoding/</url>
+    <content><![CDATA[<p>省流，VS Code
+是默认设置打开文件时不自动猜测字符集编码的，他一般默认按 UTF-8
+编码来打开文本文件。如需勾选，将设置中<code>Files: Auto Guess Encoding</code>，该项勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>字符集</code>，<code>编码</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"files.autoGuessEncoding": true</code>。</p>
+<p>主要想发发牢骚，个人认为他 VS Code
+没默认打开该选项是一个错误。众所周知，现在的文本文件的编码一般是设置为
+UTF-8，或者说一般要设置为 UTF-8，这样才合适而且通用。VS Code
+当然也是如此，对于文本文件的默认打开和保存方式都是
+UTF-8，并且在右下角可以灵活修改设置，这个没什么问题。</p>
+<p>然而在 Visual Studio 编写的代码文件，默认是 GBK 或者说 GB2312
+来编码中文字符。当然了这个可以在设置里修改，或者是安装相关插件后，同样方便在编辑器的右下角修改。然而对于
+masm32 编程，涉及中文字符串的时候，好像还真得只能用 GB2312 编码，没法用
+UTF-8 编码。</p>
+<p>很多时候我需要用 VS Code 打开 Visual Studio
+项目里的代码内容。有个问题在于，每次点开那个代码文件，VS Code 都是默认以
+UTF-8
+打开，还得我手动点击右下角修改打开方式。我关掉这个文件之后，下次点开的话，他又给我用
+UTF-8
+打开了，每次都得重新搞。但有时候我会忘了，代码改着改着就点击保存了，一看发现已经乱码了，这个时候我再点右下角，反复捣腾“通过编码重新打开”，“通过编码保存”，有时候就把自己绕进去了，而且还不方便撤回。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VS Code 设置复制文本时不带格式样式不带语法高亮</title>
+    <url>/vscode-copy-formatting/</url>
+    <content><![CDATA[<p>省流，VS Code
+是默认设置复制文本时带上格式，样式，语法高亮的。如需取消勾选，将设置中<code>Editor: Copy With Syntax Highlighting</code>，该项取消勾选即可。如要搜索该项，其他可搜索的中文关键词包括：<code>复制</code>，<code>语法高亮</code>。或者搜索或设置<code>settings.json</code>相应的配置项<code>"editor.copyWithSyntaxHighlighting": false</code>。</p>
+<p>个人感觉，他这个设置项的命名不是那么完美，但大概已经是尽量好的一种写法了。实际上，即使对于<code>txt</code>这种不带语法高亮的文件格式，他默认复制文本然后粘贴到其他地方，如果保留源格式粘贴，依然是会保留背景色，字体等内容的。而取消勾选之后，包括这些在内的所有的样式都相应去掉了。个人认为他这个设置项的命名应该带有<code>样式</code>或者<code>格式</code>，<code>format</code>之类的字眼。可惜加了这些词的话，配置项的名字又太长。而如果只写格式样式不写语法高亮的话，这个项又没那么有辨识度。感觉还是有些为难，没法做到那么完美，VS
+Code 大概已经尽力了。</p>
+<p>要我自己选的话，我是比较希望 VS Code
+能够默认复制不带格式的。以我个人的观点，对于常编程，善于使用、喜欢和管理各种纯文本文件的用户来说，大概是不太喜欢或者很少需要使用这种复制带格式的情况吧，特别是平时如果非特殊要求，大概很少会做那种，要求把代码带格式带语法高亮复制到微软
+Word 等富文本文件的事情，之类的。一般如果要在文档中插入代码，基本是在
+markdown 加代码块，或者是 latex
+加代码，写伪代码。渲染啊排版啊什么的没特殊要求，基本交给默认的渲染引擎去处理。如果
+VS Code
+真要为编程用户着想，是否考虑应该默认【关闭】这个选项，即，默认复制不带格式样式，比较合适一些。</p>
+<p>不过我猜测，VS Code
+这么设置的考量可能是，一方面初学者或者轻度使用者带格式复制粘贴的需求不见得很少，另一方面除了在【复制端】控制不带格式复制，实际上也可以在【粘贴端】控制将文本不带格式粘贴。</p>
+<p>不带格式粘贴的通用的快捷键是<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>，适用于各种文本编辑器。较新版本的微软
+Office 比如 Word 也可以使用该快捷方式，从而在粘贴时，不带格式粘贴。</p>
+<p>另据资料，早期在微软
+Office，上述快捷键好像是用于格式刷，与<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>配合使用，用于格式的复制粘贴。大概是因为这一点与常规的文本编辑器的功能不一致而常被吐槽，后来微软
+Word
+才把格式刷的快捷键改为<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>和<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>V</kbd>，这样把<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>留给（或者说是还给）了不带格式粘贴。从效果上看，这个改动还是很好的，不过还能看到一些不明真相和原因的用户在微软社区有提问和抱怨。嘛，这个倒也无可厚非。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>查看自己 Windows 电脑的产品密钥</title>
+    <url>/windows-product-key/</url>
+    <content><![CDATA[<p>是看了这个知乎回答。</p>
+<p><a
+href="https://www.zhihu.com/question/382395980/answer/1103795774">https://www.zhihu.com/question/382395980/answer/1103795774</a></p>
+<p>一个是原始产品密钥。回答说是用管理员身份运行 cmd。不过好像正常使用
+PowerShell 运行命令就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wmic path softwarelicensingservice get OA3xOriginalProductKey</span><br></pre></td></tr></table></figure>
+<p>另一个是备份产品密钥，在注册表查看。<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>文件内容就是。可以敲下面的命令，也可手动翻注册表。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Get-ItemProperty -Path &quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot; -Name BackupProductKeyDefault</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于微软 Windows 系统字体</title>
+    <url>/windows-font/</url>
+    <content><![CDATA[<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/">https://learn.microsoft.com/zh-cn/typography/font-list/</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simsun">https://learn.microsoft.com/zh-cn/typography/font-list/simsun</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/simhei">https://learn.microsoft.com/zh-cn/typography/font-list/simhei</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/kaiti">https://learn.microsoft.com/zh-cn/typography/font-list/kaiti</a></p>
+<p><a
+href="https://learn.microsoft.com/zh-cn/typography/font-list/fangsong">https://learn.microsoft.com/zh-cn/typography/font-list/fangsong</a></p>
+<p>在知乎上的相关问题。</p>
+<p><a
+href="https://www.zhihu.com/question/19570775">https://www.zhihu.com/question/19570775</a></p>
+<p><a
+href="https://www.zhihu.com/question/19860572">https://www.zhihu.com/question/19860572</a></p>
 ]]></content>
   </entry>
 </search>
