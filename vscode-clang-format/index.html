@@ -180,6 +180,9 @@
 </div>
 <header id="header">
   
+    <picture>
+      
+    </picture>
     
       <img fetchpriority="high" src="/images/banner.webp" alt="在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件">
     
@@ -204,101 +207,8 @@
   </div>
 </header>
 
-        <div id="content">
-          
-          <section id="main"><article id="post-vscode-clang-format" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner" data-aos="fade-up">
-    <div class="article-meta">
-      <div class="article-date">
-  <a href="/vscode-clang-format/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2024-09-01T03:58:57.000Z" itemprop="datePublished">2024-09-01</time>
-    <time style="display: none;" id="post-update-time">2025-01-03</time>
-  </a>
-</div>
-
-      
-
-    </div>
-    <div class="hr-line"></div>
-    
-
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-        <p>众所周知，在 VS Code 很方便地对代码文件进行格式化，可以是右键后选择格式化文档，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于 C/C++ 同样如此。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
-<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
-<p>常用的配置选项。</p>
-<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
-<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
-<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
-<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2 格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4 格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者 0，根据自己需要。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-  <nav id="article-nav" data-aos="fade-up">
-    
-      <div class="article-nav-link-wrap article-nav-link-left">
-        
-          
-          
-            <img data-src="https://pic1.imgdb.cn/item/6778a3d9d0e0a243d4eecf21.png" data-sizes="auto" alt="查看自己 Windows 电脑的产品密钥" class="lazyload">
-          
-        
-        <a href="/windows-product-key/"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-          
-            查看自己 Windows 电脑的产品密钥
-          
-        </h3>
-      </div>
-    
-    
-    <div class="article-nav-link-wrap article-nav-link-right">
-      
-        
-        
-          <img data-src="https://pic1.imgdb.cn/item/6778a3efd0e0a243d4eecf28.png" data-sizes="auto" alt="用于 Visual Studio 2022 的 OpenCV 静态库" class="lazyload">
-        
-      
-      <a href="/vs2022-opencv/"></a>
-      <div class="article-nav-caption">后一篇</div>
-      <h3 class="article-nav-title">
-        
-          用于 Visual Studio 2022 的 OpenCV 静态库
-        
-      </h3>
-    </div>
-    
-  </nav>
-
-
-</article>
-
-
-
-
-  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
-
-
-
-</section>
-          
-            <aside id="sidebar">
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
   
   
     <meting-js
@@ -416,8 +326,101 @@
   </div>
 </aside>
 
+          <section id="main"><article id="post-vscode-clang-format" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/vscode-clang-format/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-09-01T03:58:57.000Z" itemprop="datePublished">2024-09-01</time>
+    <time style="display: none;" id="post-update-time">2025-01-03</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>众所周知，在 VS Code 很方便地对代码文件进行格式化，可以是右键后选择格式化文档，相应的快捷键是<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于 C/C++ 同样如此。</p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/cpp-ide">https://code.visualstudio.com/docs/cpp/cpp-ide</a></p>
+<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html</a></p>
+<p>常用的配置选项。</p>
+<p><a target="_blank" rel="noopener" href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<p>个人的习惯是，使用以 LLVM 的风格为基础。</p>
+<figure class="highlight yaml"><figcaption><span>.clang-format</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">BasedOnStyle:</span> <span class="string">LLVM</span></span><br><span class="line"><span class="attr">IndentWidth:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">AccessModifierOffset:</span> <span class="number">-4</span></span><br></pre></td></tr></table></figure>
+<p>第 2 行是把缩进改为 4 格（LLVM 默认是 2 格），如果不需要，那么只要写第 1 行就可以。如果把缩进改为 4 格，那么类的访问修饰符偏移也得改，就是第 3 行的内容，改为 -4 或者 0，根据自己需要。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
           
+          
+            <img data-src="https://pic1.imgdb.cn/item/6778a3d9d0e0a243d4eecf21.png" data-sizes="auto" alt="查看自己 Windows 电脑的产品密钥" class="lazyload">
+          
+        
+        <a href="/windows-product-key/"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            查看自己 Windows 电脑的产品密钥
+          
+        </h3>
+      </div>
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3f5d0e0a243d4eecf29.jpg" data-sizes="auto" alt="用于 Visual Studio 2022 的 OpenCV 静态库" class="lazyload">
+        
+      
+      <a href="/vs2022-opencv/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          用于 Visual Studio 2022 的 OpenCV 静态库
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
+
+
+
+</section>
         </div>
+        
+        
         <footer id="footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -673,21 +676,27 @@
     }
     window.Pjax && new window.Pjax({
       selectors: [
-        "#header img",
-        "#header picture",
+        "#header>img",
+        "#header>picture",
         "head title",
         "#header-title",
         "#subtitle-wrap",
         "#main",
+        "#content",
         ".sidebar-widget",
         ".sidebar-wrapper",
         '#mobile-nav',
         '#lazy-script'
       ],
       switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
         "#header-title": Pjax.switches.outerHTML,
         "#subtitle-wrap": Pjax.switches.outerHTML,
-        "#content": function(oldEl, newEl) {
+        "#main": function(oldEl, newEl) {
           const scripts = [...newEl.querySelectorAll('script')];
           loadScripts(scripts, 0);
           oldEl.outerHTML = newEl.outerHTML
@@ -718,11 +727,29 @@
 <div id="lazy-script">
   <div>
     
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "sunboyallen",
+          title: "在 VS Code 方便地使用 ClangFormat 格式化 C/C++ 代码文件",
+          url: "https://sunboyallen.github.io/vscode-clang-format/",
+          excerpt: "",
+          description: "",
+          stripContent: "众所周知，在 VS Code 很方便地对代码文件进行格式化，可以是右键后选择格式化文档，相应的快捷键是Shift+Alt+F。甚至可以手动设置代码保存后就格式化（虽然我自己不习惯并且不太建议这么设置就是了）。在插件的加持下，基本什么编程语言都能支持，对于 C/C++ 同样如此。 https://code.visualstudio.com/docs/cpp/cpp-ide https://clang.llvm.org/docs/ClangFormat.html 常用的配置选项。 https://c",
+          date: "Sun Sep 01 2024 11:58:57 GMT+0800",
+          updated: "Fri Jan 03 2025 22:08:31 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
     
       
         
 <script src="/js/insert_highlight.js" data-pjax></script>
 
+        
       
     
     
@@ -796,7 +823,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 

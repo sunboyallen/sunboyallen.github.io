@@ -126,6 +126,9 @@
 </div>
 <header id="header">
   
+    <picture>
+      
+    </picture>
     
       <img fetchpriority="high" src="/images/banner.webp" alt="">
     
@@ -259,21 +262,27 @@
     }
     window.Pjax && new window.Pjax({
       selectors: [
-        "#header img",
-        "#header picture",
+        "#header>img",
+        "#header>picture",
         "head title",
         "#header-title",
         "#subtitle-wrap",
         "#main",
+        "#content",
         ".sidebar-widget",
         ".sidebar-wrapper",
         '#mobile-nav',
         '#lazy-script'
       ],
       switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
         "#header-title": Pjax.switches.outerHTML,
         "#subtitle-wrap": Pjax.switches.outerHTML,
-        "#content": function(oldEl, newEl) {
+        "#main": function(oldEl, newEl) {
           const scripts = [...newEl.querySelectorAll('script')];
           loadScripts(scripts, 0);
           oldEl.outerHTML = newEl.outerHTML
@@ -303,6 +312,7 @@
 
 <div id="lazy-script">
   <div>
+       
     
     
       
@@ -321,7 +331,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 

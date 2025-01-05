@@ -180,6 +180,9 @@
 </div>
 <header id="header">
   
+    <picture>
+      
+    </picture>
     
       <img fetchpriority="high" src="/images/banner.webp" alt="关于 PowerShell">
     
@@ -204,141 +207,8 @@
   </div>
 </header>
 
-        <div id="content">
-          
-          <section id="main"><article id="post-powershell" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner" data-aos="fade-up">
-    <div class="article-meta">
-      <div class="article-date">
-  <a href="/powershell/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2023-08-09T08:01:08.000Z" itemprop="datePublished">2023-08-09</time>
-    <time style="display: none;" id="post-update-time">2025-01-03</time>
-  </a>
-</div>
-
-      
-
-    </div>
-    <div class="hr-line"></div>
-    
-
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-        <p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
-<h1 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h1>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/overview">https://learn.microsoft.com/zh-cn/powershell/scripting/overview</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell">https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell</a></p>
-<p>这里区分 PowerShell 和 Windows PowerShell。</p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands">https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands</a></p>
-<p>cmdlet，即 PowerShell 命令，使用动词-名词对来命名。</p>
-<h1 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h1>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
-<p>安装之后，和旧版 Windows PowerShell 两者并存。之后比如在 VS Code 打开的终端，就会默认为这个新的 PowerShell 了。</p>
-<h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1>
-<h2 id="microsoftpowershellcore"><a class="markdownIt-Anchor" href="#microsoftpowershellcore"></a> Microsoft.PowerShell.Core</h2>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/</a></p>
-<h3 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about</a></p>
-<h4 id="about_aliases"><a class="markdownIt-Anchor" href="#about_aliases"></a> about_Aliases</h4>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases</a></p>
-<p>命令的别名。</p>
-<h4 id="about_pipelines"><a class="markdownIt-Anchor" href="#about_pipelines"></a> about_Pipelines</h4>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
-<h4 id="about_pipeline_chain_operators"><a class="markdownIt-Anchor" href="#about_pipeline_chain_operators"></a> about_Pipeline_Chain_Operators</h4>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
-<p>可以使用<code>&amp;&amp;</code>和<code>||</code>运算符了，这就非常方便。</p>
-<h3 id="get-command"><a class="markdownIt-Anchor" href="#get-command"></a> Get-Command</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command</a></p>
-<p>用于获取命令。</p>
-<p>一个用途是查看命令的位置。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Get-Command</span> python</span><br></pre></td></tr></table></figure>
-<h3 id="clear-host"><a class="markdownIt-Anchor" href="#clear-host"></a> Clear-Host</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host</a></p>
-<p>清除显示内容，清空终端屏幕。</p>
-<p>别名：<code>clear</code>。</p>
-<h3 id="copy-item"><a class="markdownIt-Anchor" href="#copy-item"></a> Copy-Item</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item</a></p>
-<p>复制文件。</p>
-<p>别名：<code>cp</code>。</p>
-<h3 id="get-content"><a class="markdownIt-Anchor" href="#get-content"></a> Get-Content</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content</a></p>
-<p>获取文件内容。主要是文本文件。</p>
-<p><code>-TotalCount</code>参数，从文件的开头获取指定行数的内容。</p>
-<p>别名：<code>cat</code>。</p>
-<h3 id="get-childitem"><a class="markdownIt-Anchor" href="#get-childitem"></a> Get-ChildItem</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem</a></p>
-<p>获取指定文件路径位置中的子项。</p>
-<p>别名：<code>ls</code>。</p>
-<h3 id="get-item"><a class="markdownIt-Anchor" href="#get-item"></a> Get-Item</h3>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item</a></p>
-<p>获取文件和文件夹的属性。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-  <nav id="article-nav" data-aos="fade-up">
-    
-      <div class="article-nav-link-wrap article-nav-link-left">
-        
-          
-          
-            <img data-src="https://pic1.imgdb.cn/item/6778a3efd0e0a243d4eecf28.png" data-sizes="auto" alt="Hexo 主题 NexT 配置" class="lazyload">
-          
-        
-        <a href="/hexo-next/"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-          
-            Hexo 主题 NexT 配置
-          
-        </h3>
-      </div>
-    
-    
-    <div class="article-nav-link-wrap article-nav-link-right">
-      
-        
-        
-          <img data-src="https://pic1.imgdb.cn/item/6778a3efd0e0a243d4eecf28.png" data-sizes="auto" alt="关于 SSH" class="lazyload">
-        
-      
-      <a href="/ssh/"></a>
-      <div class="article-nav-caption">后一篇</div>
-      <h3 class="article-nav-title">
-        
-          关于 SSH
-        
-      </h3>
-    </div>
-    
-  </nav>
-
-
-</article>
-
-
-
-
-  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
-
-
-
-</section>
-          
-            <aside id="sidebar">
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
   
   
     <meting-js
@@ -456,8 +326,141 @@
   </div>
 </aside>
 
+          <section id="main"><article id="post-powershell" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/powershell/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2023-08-09T08:01:08.000Z" itemprop="datePublished">2023-08-09</time>
+    <time style="display: none;" id="post-update-time">2025-01-03</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/">https://learn.microsoft.com/zh-cn/powershell/</a></p>
+<h1 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h1>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/overview">https://learn.microsoft.com/zh-cn/powershell/scripting/overview</a></p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell">https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell</a></p>
+<p>这里区分 PowerShell 和 Windows PowerShell。</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands">https://learn.microsoft.com/zh-cn/powershell/scripting/powershell-commands</a></p>
+<p>cmdlet，即 PowerShell 命令，使用动词-名词对来命名。</p>
+<h1 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h1>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows">https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows</a></p>
+<p>安装之后，和旧版 Windows PowerShell 两者并存。之后比如在 VS Code 打开的终端，就会默认为这个新的 PowerShell 了。</p>
+<h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1>
+<h2 id="microsoftpowershellcore"><a class="markdownIt-Anchor" href="#microsoftpowershellcore"></a> Microsoft.PowerShell.Core</h2>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/</a></p>
+<h3 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about</a></p>
+<h4 id="about_aliases"><a class="markdownIt-Anchor" href="#about_aliases"></a> about_Aliases</h4>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_aliases</a></p>
+<p>命令的别名。</p>
+<h4 id="about_pipelines"><a class="markdownIt-Anchor" href="#about_pipelines"></a> about_Pipelines</h4>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipelines</a></p>
+<h4 id="about_pipeline_chain_operators"><a class="markdownIt-Anchor" href="#about_pipeline_chain_operators"></a> about_Pipeline_Chain_Operators</h4>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators">https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipeline_chain_operators</a></p>
+<p>可以使用<code>&amp;&amp;</code>和<code>||</code>运算符了，这就非常方便。</p>
+<h3 id="get-command"><a class="markdownIt-Anchor" href="#get-command"></a> Get-Command</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command</a></p>
+<p>用于获取命令。</p>
+<p>一个用途是查看命令的位置。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Get-Command</span> python</span><br></pre></td></tr></table></figure>
+<h3 id="clear-host"><a class="markdownIt-Anchor" href="#clear-host"></a> Clear-Host</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/clear-host</a></p>
+<p>清除显示内容，清空终端屏幕。</p>
+<p>别名：<code>clear</code>。</p>
+<h3 id="copy-item"><a class="markdownIt-Anchor" href="#copy-item"></a> Copy-Item</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/copy-item</a></p>
+<p>复制文件。</p>
+<p>别名：<code>cp</code>。</p>
+<h3 id="get-content"><a class="markdownIt-Anchor" href="#get-content"></a> Get-Content</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-content</a></p>
+<p>获取文件内容。主要是文本文件。</p>
+<p><code>-TotalCount</code>参数，从文件的开头获取指定行数的内容。</p>
+<p>别名：<code>cat</code>。</p>
+<h3 id="get-childitem"><a class="markdownIt-Anchor" href="#get-childitem"></a> Get-ChildItem</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-childitem</a></p>
+<p>获取指定文件路径位置中的子项。</p>
+<p>别名：<code>ls</code>。</p>
+<h3 id="get-item"><a class="markdownIt-Anchor" href="#get-item"></a> Get-Item</h3>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item">https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.management/get-item</a></p>
+<p>获取文件和文件夹的属性。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
           
+          
+            <img data-src="https://pic1.imgdb.cn/item/6778a406d0e0a243d4eecf2c.jpg" data-sizes="auto" alt="Hexo 主题 NexT 配置" class="lazyload">
+          
+        
+        <a href="/hexo-next/"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            Hexo 主题 NexT 配置
+          
+        </h3>
+      </div>
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3f5d0e0a243d4eecf29.jpg" data-sizes="auto" alt="关于 SSH" class="lazyload">
+        
+      
+      <a href="/ssh/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          关于 SSH
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
+
+
+
+</section>
         </div>
+        
+        
         <footer id="footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -713,21 +716,27 @@
     }
     window.Pjax && new window.Pjax({
       selectors: [
-        "#header img",
-        "#header picture",
+        "#header>img",
+        "#header>picture",
         "head title",
         "#header-title",
         "#subtitle-wrap",
         "#main",
+        "#content",
         ".sidebar-widget",
         ".sidebar-wrapper",
         '#mobile-nav',
         '#lazy-script'
       ],
       switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
         "#header-title": Pjax.switches.outerHTML,
         "#subtitle-wrap": Pjax.switches.outerHTML,
-        "#content": function(oldEl, newEl) {
+        "#main": function(oldEl, newEl) {
           const scripts = [...newEl.querySelectorAll('script')];
           loadScripts(scripts, 0);
           oldEl.outerHTML = newEl.outerHTML
@@ -758,11 +767,29 @@
 <div id="lazy-script">
   <div>
     
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "sunboyallen",
+          title: "关于 PowerShell",
+          url: "https://sunboyallen.github.io/powershell/",
+          excerpt: "",
+          description: "",
+          stripContent: "https://learn.microsoft.com/zh-cn/powershell/  概述 https://learn.microsoft.com/zh-cn/powershell/scripting/overview https://learn.microsoft.com/zh-cn/powershell/scripting/what-is-windows-powershell 这里区分 PowerShell 和 Windows PowerShell。 https://learn.mi",
+          date: "Wed Aug 09 2023 16:01:08 GMT+0800",
+          updated: "Fri Jan 03 2025 22:08:11 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
     
       
         
 <script src="/js/insert_highlight.js" data-pjax></script>
 
+        
       
     
     
@@ -836,7 +863,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 

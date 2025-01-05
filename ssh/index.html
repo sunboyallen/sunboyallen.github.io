@@ -180,6 +180,9 @@
 </div>
 <header id="header">
   
+    <picture>
+      
+    </picture>
     
       <img fetchpriority="high" src="/images/banner.webp" alt="关于 SSH">
     
@@ -204,142 +207,8 @@
   </div>
 </header>
 
-        <div id="content">
-          
-          <section id="main"><article id="post-ssh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner" data-aos="fade-up">
-    <div class="article-meta">
-      <div class="article-date">
-  <a href="/ssh/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2023-06-03T01:35:39.000Z" itemprop="datePublished">2023-06-03</time>
-    <time style="display: none;" id="post-update-time">2025-01-03</time>
-  </a>
-</div>
-
-      
-
-    </div>
-    <div class="hr-line"></div>
-    
-
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-        <p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy">https://www.ssh.com/academy</a></p>
-<h1 id="what-is-ssh-secure-shell"><a class="markdownIt-Anchor" href="#what-is-ssh-secure-shell"></a> What is SSH (Secure Shell)?</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh">https://www.ssh.com/academy/ssh</a></p>
-<h1 id="what-is-openssh"><a class="markdownIt-Anchor" href="#what-is-openssh"></a> What is OpenSSH?</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/openssh">https://www.ssh.com/academy/ssh/openssh</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview</a></p>
-<p>在 VS Code 上，安装 Remote - SSH 插件。当然，这里建议直接安装 Remote Development 插件包。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/remote/remote-overview">https://code.visualstudio.com/docs/remote/remote-overview</a></p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh user@example.com</span><br></pre></td></tr></table></figure>
-<p>虽然这里的<code>user@</code>不是必须的，但一般第一次访问服务器时，还是得写的，访问后，一般会在 SSH 配置文件中记录下来，之后访问服务器时，就不用写了。他会使用配置文件中记的用户名。</p>
-<h1 id="basic-overview-of-ssh-keys"><a class="markdownIt-Anchor" href="#basic-overview-of-ssh-keys"></a> Basic overview of SSH Keys</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh-keys">https://www.ssh.com/academy/ssh-keys</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a></p>
-<p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement</a></p>
-<h1 id="how-to-use-ssh-keygen-to-generate-a-new-ssh-key"><a class="markdownIt-Anchor" href="#how-to-use-ssh-keygen-to-generate-a-new-ssh-key"></a> How to Use ssh-keygen to Generate a New SSH Key?</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/keygen">https://www.ssh.com/academy/ssh/keygen</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<p><code>-t</code>用于指定密钥的类型。默认为 rsa。不过 ed25519 具有更安全等特点，也是目前 GitHub 更推荐的类型。</p>
-<p><code>-C</code>是可选项，用于添加注释。一般写自己的邮箱。通常还是建议写的，特别是多人使用同一服务器的场景。如果是在 GitHub 添加 SSH 密钥，那么就得写自己的账号邮箱。</p>
-<p>密钥的密码不是必需的。</p>
-<p>可以生成多个密钥，具体配置方法在下面。默认情况下，使用的是默认名字的密钥文件，文件名和密钥类型有关。</p>
-<p><code>~/.ssh/id_ed25519</code></p>
-<p><code>~/.ssh/id_rsa</code></p>
-<h1 id="authorized-key-in-ssh"><a class="markdownIt-Anchor" href="#authorized-key-in-ssh"></a> Authorized Key in SSH</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/authorized-key">https://www.ssh.com/academy/ssh/authorized-key</a></p>
-<p>用于公钥认证。</p>
-<p><code>~/.ssh/authorized_keys</code></p>
-<p>比如在远程服务器，在上述文件中，添加一行自己的公钥。可以有多行，常见于多人使用该服务器的场景。</p>
-<h1 id="ssh-config-file-for-openssh-client"><a class="markdownIt-Anchor" href="#ssh-config-file-for-openssh-client"></a> SSH config file for OpenSSH client</h1>
-<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/config</a></p>
-<p>SSH 配置文件。</p>
-<p><code>~/.ssh/config</code></p>
-<p>SSH 配置文件可以在 VS Code 的远程资源管理器，直接打开。</p>
-<p>一种场景是，自己有多个 GitHub 账号，需要用到多个 SSH 密钥。</p>
-<p>以下是操作示例。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;sunboyallen@163.com&quot;</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;jihaitangguo@163.com&quot;</span><br></pre></td></tr></table></figure>
-<p>如果不去修改密钥文件名，那么新生成的 SSH 密钥会覆盖掉旧的。可以在生成密钥的过程进行配置，也可直接修改文件名。公钥和私钥的名字都得修改，保持一致。建议将常用的保持默认，将另一个进行修改即可。</p>
-<p>然后，将这两个密钥分别添加到所在的 GitHub 账户。</p>
-<p>以下是配置文件的写法示例。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github-jihaitangguo.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_ed25519_jihaitangguo</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github-jihaitangguo.com</span><br></pre></td></tr></table></figure>
-<p>上面的<code>User</code>项不是必需的，有些教程还会让你写成相应的用户名，虽然能用，但是是不太合适的。</p>
-<p>网上的一些教程中，会要求另一个用户，也就是默认用户，也要写入类似上面的配置，即使是使用默认配置，不过实际上不是必须的。默认用户会使用默认公钥等配置。也就是说，下面这个验证测试也是能过的。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>而如果想要<code>ssh -T github.com</code>这种写法也能测试通过的话，那就加上下面的这种简略的配置。虽然个人认为没有太大的必要。道理相当于指定了默认用户为<code>git</code>。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-  <nav id="article-nav" data-aos="fade-up">
-    
-      <div class="article-nav-link-wrap article-nav-link-left">
-        
-          
-          
-            <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="关于 PowerShell" class="lazyload">
-          
-        
-        <a href="/powershell/"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-          
-            关于 PowerShell
-          
-        </h3>
-      </div>
-    
-    
-    <div class="article-nav-link-wrap article-nav-link-right">
-      
-        
-        
-          <img data-src="https://pic1.imgdb.cn/item/6778a3d9d0e0a243d4eecf21.png" data-sizes="auto" alt="在 GitHub Pages 搭建 Hexo 博客" class="lazyload">
-        
-      
-      <a href="/hexo/"></a>
-      <div class="article-nav-caption">后一篇</div>
-      <h3 class="article-nav-title">
-        
-          在 GitHub Pages 搭建 Hexo 博客
-        
-      </h3>
-    </div>
-    
-  </nav>
-
-
-</article>
-
-
-
-
-  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
-
-
-
-</section>
-          
-            <aside id="sidebar">
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
   
   
     <meting-js
@@ -457,8 +326,142 @@
   </div>
 </aside>
 
+          <section id="main"><article id="post-ssh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/ssh/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2023-06-03T01:35:39.000Z" itemprop="datePublished">2023-06-03</time>
+    <time style="display: none;" id="post-update-time">2025-01-03</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy">https://www.ssh.com/academy</a></p>
+<h1 id="what-is-ssh-secure-shell"><a class="markdownIt-Anchor" href="#what-is-ssh-secure-shell"></a> What is SSH (Secure Shell)?</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh">https://www.ssh.com/academy/ssh</a></p>
+<h1 id="what-is-openssh"><a class="markdownIt-Anchor" href="#what-is-openssh"></a> What is OpenSSH?</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/openssh">https://www.ssh.com/academy/ssh/openssh</a></p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview</a></p>
+<p>在 VS Code 上，安装 Remote - SSH 插件。当然，这里建议直接安装 Remote Development 插件包。</p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/remote/remote-overview">https://code.visualstudio.com/docs/remote/remote-overview</a></p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh user@example.com</span><br></pre></td></tr></table></figure>
+<p>虽然这里的<code>user@</code>不是必须的，但一般第一次访问服务器时，还是得写的，访问后，一般会在 SSH 配置文件中记录下来，之后访问服务器时，就不用写了。他会使用配置文件中记的用户名。</p>
+<h1 id="basic-overview-of-ssh-keys"><a class="markdownIt-Anchor" href="#basic-overview-of-ssh-keys"></a> Basic overview of SSH Keys</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh-keys">https://www.ssh.com/academy/ssh-keys</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh</a></p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement">https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_keymanagement</a></p>
+<h1 id="how-to-use-ssh-keygen-to-generate-a-new-ssh-key"><a class="markdownIt-Anchor" href="#how-to-use-ssh-keygen-to-generate-a-new-ssh-key"></a> How to Use ssh-keygen to Generate a New SSH Key?</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/keygen">https://www.ssh.com/academy/ssh/keygen</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p><code>-t</code>用于指定密钥的类型。默认为 rsa。不过 ed25519 具有更安全等特点，也是目前 GitHub 更推荐的类型。</p>
+<p><code>-C</code>是可选项，用于添加注释。一般写自己的邮箱。通常还是建议写的，特别是多人使用同一服务器的场景。如果是在 GitHub 添加 SSH 密钥，那么就得写自己的账号邮箱。</p>
+<p>密钥的密码不是必需的。</p>
+<p>可以生成多个密钥，具体配置方法在下面。默认情况下，使用的是默认名字的密钥文件，文件名和密钥类型有关。</p>
+<p><code>~/.ssh/id_ed25519</code></p>
+<p><code>~/.ssh/id_rsa</code></p>
+<h1 id="authorized-key-in-ssh"><a class="markdownIt-Anchor" href="#authorized-key-in-ssh"></a> Authorized Key in SSH</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/authorized-key">https://www.ssh.com/academy/ssh/authorized-key</a></p>
+<p>用于公钥认证。</p>
+<p><code>~/.ssh/authorized_keys</code></p>
+<p>比如在远程服务器，在上述文件中，添加一行自己的公钥。可以有多行，常见于多人使用该服务器的场景。</p>
+<h1 id="ssh-config-file-for-openssh-client"><a class="markdownIt-Anchor" href="#ssh-config-file-for-openssh-client"></a> SSH config file for OpenSSH client</h1>
+<p><a target="_blank" rel="noopener" href="https://www.ssh.com/academy/ssh/config">https://www.ssh.com/academy/ssh/config</a></p>
+<p>SSH 配置文件。</p>
+<p><code>~/.ssh/config</code></p>
+<p>SSH 配置文件可以在 VS Code 的远程资源管理器，直接打开。</p>
+<p>一种场景是，自己有多个 GitHub 账号，需要用到多个 SSH 密钥。</p>
+<p>以下是操作示例。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;sunboyallen@163.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;jihaitangguo@163.com&quot;</span><br></pre></td></tr></table></figure>
+<p>如果不去修改密钥文件名，那么新生成的 SSH 密钥会覆盖掉旧的。可以在生成密钥的过程进行配置，也可直接修改文件名。公钥和私钥的名字都得修改，保持一致。建议将常用的保持默认，将另一个进行修改即可。</p>
+<p>然后，将这两个密钥分别添加到所在的 GitHub 账户。</p>
+<p>以下是配置文件的写法示例。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github-jihaitangguo.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_ed25519_jihaitangguo</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github-jihaitangguo.com</span><br></pre></td></tr></table></figure>
+<p>上面的<code>User</code>项不是必需的，有些教程还会让你写成相应的用户名，虽然能用，但是是不太合适的。</p>
+<p>网上的一些教程中，会要求另一个用户，也就是默认用户，也要写入类似上面的配置，即使是使用默认配置，不过实际上不是必须的。默认用户会使用默认公钥等配置。也就是说，下面这个验证测试也是能过的。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>而如果想要<code>ssh -T github.com</code>这种写法也能测试通过的话，那就加上下面的这种简略的配置。虽然个人认为没有太大的必要。道理相当于指定了默认用户为<code>git</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
           
+          
+            <img data-src="https://pic1.imgdb.cn/item/6778a3efd0e0a243d4eecf28.png" data-sizes="auto" alt="关于 PowerShell" class="lazyload">
+          
+        
+        <a href="/powershell/"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            关于 PowerShell
+          
+        </h3>
+      </div>
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a406d0e0a243d4eecf2c.jpg" data-sizes="auto" alt="在 GitHub Pages 搭建 Hexo 博客" class="lazyload">
+        
+      
+      <a href="/hexo/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          在 GitHub Pages 搭建 Hexo 博客
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+  <div id="comments" class="gtcomment" data-aos="fade-up"></div>
+
+
+
+</section>
         </div>
+        
+        
         <footer id="footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -714,21 +717,27 @@
     }
     window.Pjax && new window.Pjax({
       selectors: [
-        "#header img",
-        "#header picture",
+        "#header>img",
+        "#header>picture",
         "head title",
         "#header-title",
         "#subtitle-wrap",
         "#main",
+        "#content",
         ".sidebar-widget",
         ".sidebar-wrapper",
         '#mobile-nav',
         '#lazy-script'
       ],
       switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
         "#header-title": Pjax.switches.outerHTML,
         "#subtitle-wrap": Pjax.switches.outerHTML,
-        "#content": function(oldEl, newEl) {
+        "#main": function(oldEl, newEl) {
           const scripts = [...newEl.querySelectorAll('script')];
           loadScripts(scripts, 0);
           oldEl.outerHTML = newEl.outerHTML
@@ -759,11 +768,29 @@
 <div id="lazy-script">
   <div>
     
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "sunboyallen",
+          title: "关于 SSH",
+          url: "https://sunboyallen.github.io/ssh/",
+          excerpt: "",
+          description: "",
+          stripContent: "https://www.ssh.com/academy  What is SSH (Secure Shell)? https://www.ssh.com/academy/ssh  What is OpenSSH? https://www.ssh.com/academy/ssh/openssh https://learn.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_overview 在 VS Code 上，安装",
+          date: "Sat Jun 03 2023 09:35:39 GMT+0800",
+          updated: "Fri Jan 03 2025 18:20:47 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
     
       
         
 <script src="/js/insert_highlight.js" data-pjax></script>
 
+        
       
     
     
@@ -837,7 +864,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 

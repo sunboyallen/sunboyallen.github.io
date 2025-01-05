@@ -174,6 +174,9 @@
 </div>
 <header id="header">
   
+    <picture>
+      
+    </picture>
     
       <img fetchpriority="high" src="/images/banner.webp" alt="">
     
@@ -200,79 +203,8 @@
   </div>
 </header>
 
-        <div id="content">
-          
-          <section id="main">
-<div class="archives-outer-wrap" data-aos="fade-up">
-  <div class="tag-wrap">
-    
-  </div>
-  <div class="category-wrap">
-    
-  </div>
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap" data-aos="fade-up">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <ul>
-          
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/tld/">
-      <time class="dt-published" datetime="2023-11-08T14:27:34.000Z" itemprop="datePublished">11-08</time>
-    </a>
-  </div>
-  
-    <a class="archive-article-title" href="/tld/">关于 TLD</a>
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/vscode-guess-encoding/">
-      <time class="dt-published" datetime="2023-11-06T12:50:45.000Z" itemprop="datePublished">11-06</time>
-    </a>
-  </div>
-  
-    <a class="archive-article-title" href="/vscode-guess-encoding/">VS Code 设置打开文件时自动猜测字符集编码</a>
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/hexo-next/">
-      <time class="dt-published" datetime="2023-11-06T03:20:36.000Z" itemprop="datePublished">11-06</time>
-    </a>
-  </div>
-  
-    <a class="archive-article-title" href="/hexo-next/">Hexo 主题 NexT 配置</a>
-  
-</li>
-
-          
-          
-        </ul>
-      </section>
-  
-  </div>
-
-
-
-</section>
-          
-            <aside id="sidebar">
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
   
   
     <meting-js
@@ -376,8 +308,78 @@
   </div>
 </aside>
 
-          
+          <section id="main">
+<div class="archives-outer-wrap" data-aos="fade-up">
+  <div class="tag-wrap">
+    
+  </div>
+  <div class="category-wrap">
+    
+  </div>
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap" data-aos="fade-up">
+        <div class="archive-year-wrap">
+          <a href="/archives/2023" class="archive-year">2023</a>
         </div>
+        <ul>
+          
+          <li class="archive-article">
+  <div class="archive-article-date-wrap">
+    <a href="/tld/">
+      <time class="dt-published" datetime="2023-11-08T14:27:34.000Z" itemprop="datePublished">11-08</time>
+    </a>
+  </div>
+  
+    <a class="archive-article-title" href="/tld/">关于 TLD</a>
+  
+</li>
+
+          
+    
+    
+          <li class="archive-article">
+  <div class="archive-article-date-wrap">
+    <a href="/vscode-guess-encoding/">
+      <time class="dt-published" datetime="2023-11-06T12:50:45.000Z" itemprop="datePublished">11-06</time>
+    </a>
+  </div>
+  
+    <a class="archive-article-title" href="/vscode-guess-encoding/">VS Code 设置打开文件时自动猜测字符集编码</a>
+  
+</li>
+
+          
+    
+    
+          <li class="archive-article">
+  <div class="archive-article-date-wrap">
+    <a href="/hexo-next/">
+      <time class="dt-published" datetime="2023-11-06T03:20:36.000Z" itemprop="datePublished">11-06</time>
+    </a>
+  </div>
+  
+    <a class="archive-article-title" href="/hexo-next/">Hexo 主题 NexT 配置</a>
+  
+</li>
+
+          
+          
+        </ul>
+      </section>
+  
+  </div>
+
+
+
+</section>
+        </div>
+        
+        
         <footer id="footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -619,21 +621,27 @@
     }
     window.Pjax && new window.Pjax({
       selectors: [
-        "#header img",
-        "#header picture",
+        "#header>img",
+        "#header>picture",
         "head title",
         "#header-title",
         "#subtitle-wrap",
         "#main",
+        "#content",
         ".sidebar-widget",
         ".sidebar-wrapper",
         '#mobile-nav',
         '#lazy-script'
       ],
       switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
         "#header-title": Pjax.switches.outerHTML,
         "#subtitle-wrap": Pjax.switches.outerHTML,
-        "#content": function(oldEl, newEl) {
+        "#main": function(oldEl, newEl) {
           const scripts = [...newEl.querySelectorAll('script')];
           loadScripts(scripts, 0);
           oldEl.outerHTML = newEl.outerHTML
@@ -663,6 +671,7 @@
 
 <div id="lazy-script">
   <div>
+       
     
     
       
@@ -681,7 +690,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.2.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 
