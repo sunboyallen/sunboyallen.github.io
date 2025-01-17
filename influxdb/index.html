@@ -27,15 +27,15 @@
 
   
   
-    <meta name="description" content="https:&#x2F;&#x2F;www.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;  Install InfluxDB https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;install&#x2F; Install InfluxDB as a service with">
+    <meta name="description" content="https:&#x2F;&#x2F;www.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;  Install InfluxDB https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;install&#x2F;  Linux https:&#x2F;&#x2F;docs.influxdata.com&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于 InfluxDB">
 <meta property="og:url" content="https://sunboyallen.github.io/influxdb/index.html">
 <meta property="og:site_name" content="sunboyallen">
-<meta property="og:description" content="https:&#x2F;&#x2F;www.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;  Install InfluxDB https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;install&#x2F; Install InfluxDB as a service with">
+<meta property="og:description" content="https:&#x2F;&#x2F;www.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F; https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;  Install InfluxDB https:&#x2F;&#x2F;docs.influxdata.com&#x2F;influxdb&#x2F;v2&#x2F;install&#x2F;  Linux https:&#x2F;&#x2F;docs.influxdata.com&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-16T11:56:44.000Z">
-<meta property="article:modified_time" content="2025-01-13T22:27:22.124Z">
+<meta property="article:modified_time" content="2025-01-31T04:13:09.146Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary">
   
@@ -234,7 +234,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#install-influxdb"><span class="toc-number">1.</span> <span class="toc-text"> Install InfluxDB</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#get-started-with-influxdb"><span class="toc-number">2.</span> <span class="toc-text"> Get started with InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-up-influxdb"><span class="toc-number">2.1.</span> <span class="toc-text"> Set up InfluxDB</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#develop-with-the-influxdb-api"><span class="toc-number">3.</span> <span class="toc-text"> Develop with the InfluxDB API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-client-library"><span class="toc-number">3.1.</span> <span class="toc-text"> Python client library</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#administer-influxdb"><span class="toc-number">4.</span> <span class="toc-text"> Administer InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-api-tokens"><span class="toc-number">4.1.</span> <span class="toc-text"> Manage API tokens</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#influxdb-reference"><span class="toc-number">5.</span> <span class="toc-text"> InfluxDB reference</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#influxdb-internals"><span class="toc-number">5.1.</span> <span class="toc-text"> InfluxDB internals</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-storage-engine"><span class="toc-number">5.1.1.</span> <span class="toc-text"> InfluxDB storage engine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-file-system-layout"><span class="toc-number">5.1.2.</span> <span class="toc-text"> InfluxDB file system layout</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command-line-tools"><span class="toc-number">5.2.</span> <span class="toc-text"> Command line tools</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influx-influxdb-command-line-interface"><span class="toc-number">5.2.1.</span> <span class="toc-text"> influx - InfluxDB command line interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-setup"><span class="toc-number">5.2.1.1.</span> <span class="toc-text"> influx setup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-auth"><span class="toc-number">5.2.1.2.</span> <span class="toc-text"> influx auth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-config"><span class="toc-number">5.2.1.3.</span> <span class="toc-text"> influx config</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-user"><span class="toc-number">5.2.1.4.</span> <span class="toc-text"> influx user</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-org"><span class="toc-number">5.2.1.5.</span> <span class="toc-text"> influx org</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-bucket"><span class="toc-number">5.2.1.6.</span> <span class="toc-text"> influx bucket</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-delete"><span class="toc-number">5.2.1.7.</span> <span class="toc-text"> influx delete</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-v1"><span class="toc-number">5.2.1.8.</span> <span class="toc-text"> influx v1</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#install-influxdb"><span class="toc-number">1.</span> <span class="toc-text"> Install InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">1.1.</span> <span class="toc-text"> Linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows"><span class="toc-number">1.2.</span> <span class="toc-text"> Windows</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#get-started-with-influxdb"><span class="toc-number">2.</span> <span class="toc-text"> Get started with InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-up-influxdb"><span class="toc-number">2.1.</span> <span class="toc-text"> Set up InfluxDB</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#develop-with-the-influxdb-api"><span class="toc-number">3.</span> <span class="toc-text"> Develop with the InfluxDB API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-client-library"><span class="toc-number">3.1.</span> <span class="toc-text"> Python client library</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#write-data-to-influxdb"><span class="toc-number">4.</span> <span class="toc-text"> Write data to InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#delete-data"><span class="toc-number">4.1.</span> <span class="toc-text"> Delete data</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#administer-influxdb"><span class="toc-number">5.</span> <span class="toc-text"> Administer InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-organizations"><span class="toc-number">5.1.</span> <span class="toc-text"> Manage organizations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#update-an-organization"><span class="toc-number">5.1.1.</span> <span class="toc-text"> Update an organization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-buckets"><span class="toc-number">5.2.</span> <span class="toc-text"> Manage buckets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-api-tokens"><span class="toc-number">5.3.</span> <span class="toc-text"> Manage API tokens</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#view-tokens"><span class="toc-number">5.3.1.</span> <span class="toc-text"> View tokens</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#update-a-token"><span class="toc-number">5.3.2.</span> <span class="toc-text"> Update a token</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-users"><span class="toc-number">5.4.</span> <span class="toc-text"> Manage users</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#view-users"><span class="toc-number">5.4.1.</span> <span class="toc-text"> View users</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#change-your-password"><span class="toc-number">5.4.2.</span> <span class="toc-text"> Change your password</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#influxdb-reference"><span class="toc-number">6.</span> <span class="toc-text"> InfluxDB reference</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#influxdb-internals"><span class="toc-number">6.1.</span> <span class="toc-text"> InfluxDB internals</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-storage-engine"><span class="toc-number">6.1.1.</span> <span class="toc-text"> InfluxDB storage engine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-file-system-layout"><span class="toc-number">6.1.2.</span> <span class="toc-text"> InfluxDB file system layout</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command-line-tools"><span class="toc-number">6.2.</span> <span class="toc-text"> Command line tools</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influx-influxdb-command-line-interface"><span class="toc-number">6.2.1.</span> <span class="toc-text"> influx - InfluxDB command line interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-setup"><span class="toc-number">6.2.1.1.</span> <span class="toc-text"> influx setup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-auth"><span class="toc-number">6.2.1.2.</span> <span class="toc-text"> influx auth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-config"><span class="toc-number">6.2.1.3.</span> <span class="toc-text"> influx config</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-user"><span class="toc-number">6.2.1.4.</span> <span class="toc-text"> influx user</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-org"><span class="toc-number">6.2.1.5.</span> <span class="toc-text"> influx org</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-bucket"><span class="toc-number">6.2.1.6.</span> <span class="toc-text"> influx bucket</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-delete"><span class="toc-number">6.2.1.7.</span> <span class="toc-text"> influx delete</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-v1"><span class="toc-number">6.2.1.8.</span> <span class="toc-text"> influx v1</span></a></li></ol></li></ol></li></ol></li></ol>
       
   </div>
 </div>
@@ -247,7 +247,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">50</div>
+    <div class="sidebar-state-number">59</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -332,7 +332,7 @@
       <div class="article-date">
   <a href="/influxdb/" class="article-date-link" data-aos="zoom-in">
     <time datetime="2024-05-16T11:56:44.000Z" itemprop="datePublished">2024-05-16</time>
-    <time style="display: none;" id="post-update-time">2025-01-14</time>
+    <time style="display: none;" id="post-update-time">2025-01-31</time>
   </a>
 </div>
 
@@ -350,6 +350,8 @@
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/">https://docs.influxdata.com/influxdb/v2/</a></p>
 <h1 id="install-influxdb"><a class="markdownIt-Anchor" href="#install-influxdb"></a> Install InfluxDB</h1>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/install/">https://docs.influxdata.com/influxdb/v2/install/</a></p>
+<h2 id="linux"><a class="markdownIt-Anchor" href="#linux"></a> Linux</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/install/?t=Linux">https://docs.influxdata.com/influxdb/v2/install/?t=Linux</a></p>
 <p>Install InfluxDB as a service with systemd</p>
 <p>具体命令见上面的官方文档。</p>
 <p>相关的命令，根据需要，自行加上<code>sudo</code>。</p>
@@ -368,6 +370,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br></pre></td></tr></table></figure>
 <p>influx 安装后，默认是开机自启的，即使之前使用了<code>stop</code>，重启服务器或者 WSL 之类的之后会自己启动。如果想关闭自启动，可以使用这个。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">disable</span> influxdb</span><br></pre></td></tr></table></figure>
+<h2 id="windows"><a class="markdownIt-Anchor" href="#windows"></a> Windows</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/install/?t=Windows">https://docs.influxdata.com/influxdb/v2/install/?t=Windows</a></p>
+<p>更建议使用 Scoop 安装。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scoop install influxdb</span><br><span class="line">scoop install influx</span><br></pre></td></tr></table></figure>
 <h1 id="get-started-with-influxdb"><a class="markdownIt-Anchor" href="#get-started-with-influxdb"></a> Get started with InfluxDB</h1>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/get-started/">https://docs.influxdata.com/influxdb/v2/get-started/</a></p>
 <p>UI 和 CLI 都是很方便的，建议都使用。</p>
@@ -377,23 +383,51 @@
 <h2 id="set-up-influxdb"><a class="markdownIt-Anchor" href="#set-up-influxdb"></a> Set up InfluxDB</h2>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/get-started/setup/">https://docs.influxdata.com/influxdb/v2/get-started/setup/</a></p>
 <p>这里个人建议通过 CLI 命令行来设置。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
 <p>按照提示，设置自己的 username，password，organization，bucket，等等内容。</p>
 <p>名字不要紧，后续都可以再修改的。</p>
 <h1 id="develop-with-the-influxdb-api"><a class="markdownIt-Anchor" href="#develop-with-the-influxdb-api"></a> Develop with the InfluxDB API</h1>
 <h2 id="python-client-library"><a class="markdownIt-Anchor" href="#python-client-library"></a> Python client library</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install influxdb-client</span><br></pre></td></tr></table></figure>
 <p>还是很方便的。另外 java 也有相关库可以用。并且这些默认是使用 v2 版本。</p>
+<h1 id="write-data-to-influxdb"><a class="markdownIt-Anchor" href="#write-data-to-influxdb"></a> Write data to InfluxDB</h1>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/write-data/">https://docs.influxdata.com/influxdb/v2/write-data/</a></p>
+<h2 id="delete-data"><a class="markdownIt-Anchor" href="#delete-data"></a> Delete data</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/write-data/delete-data/">https://docs.influxdata.com/influxdb/v2/write-data/delete-data/</a></p>
+<p>可以删除指定时间段的数据。</p>
 <h1 id="administer-influxdb"><a class="markdownIt-Anchor" href="#administer-influxdb"></a> Administer InfluxDB</h1>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/">https://docs.influxdata.com/influxdb/v2/admin/</a></p>
-<p>具体对于 organization，bucket，user，token 等的管理。包括创建，查看，更新，删除，等内容。官方文档的这一节是按照具体需求场景来分的章节的，另外也可以参考后文 reference 部分。</p>
+<p>具体对于 organization，bucket，user，token 等的管理。包括添加，删除，查看，更新，等操作。</p>
+<p>另外也可以参考后文 reference 部分。</p>
+<h2 id="manage-organizations"><a class="markdownIt-Anchor" href="#manage-organizations"></a> Manage organizations</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/organizations/">https://docs.influxdata.com/influxdb/v2/admin/organizations/</a></p>
+<h3 id="update-an-organization"><a class="markdownIt-Anchor" href="#update-an-organization"></a> Update an organization</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/organizations/update-org/">https://docs.influxdata.com/influxdb/v2/admin/organizations/update-org/</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">influx org update \</span><br><span class="line">  --org-id ORG_ID \</span><br><span class="line">  --name NEW_ORG_NAME \</span><br></pre></td></tr></table></figure>
+<p>这样更新之后，配置文件的 org 并不会跟着更新，还是需要自己手动修改配置。</p>
+<h2 id="manage-buckets"><a class="markdownIt-Anchor" href="#manage-buckets"></a> Manage buckets</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/buckets/">https://docs.influxdata.com/influxdb/v2/admin/buckets/</a></p>
 <p>个人建议是使用 CLI 来管理，UI 当然也行，主要看自己的使用习惯和方便程度。另外，对于这些，能直接修改就修改，能更新就更新，尽量少用删除相关的命令。</p>
 <h2 id="manage-api-tokens"><a class="markdownIt-Anchor" href="#manage-api-tokens"></a> Manage API tokens</h2>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/tokens/">https://docs.influxdata.com/influxdb/v2/admin/tokens/</a></p>
+<h3 id="view-tokens"><a class="markdownIt-Anchor" href="#view-tokens"></a> View tokens</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/tokens/view-tokens/">https://docs.influxdata.com/influxdb/v2/admin/tokens/view-tokens/</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx auth list</span><br></pre></td></tr></table></figure>
 <p>请善待自己的 token，好好利用，在配置文件里好好保管。这样就不用专门去记住自己的用户名，组织，等内容，即使忘记密码也可以重新设置。</p>
-<p>这里只需要指出对于 token 的更新的操作，这里指的是对于 token 的 description 的更新，在 UI 上更新。不是说更新 token 的内容。</p>
-<p>另外，假如自己真的不小心在 UI 或者 CLI 将自己唯一的 token 给删除 delete 了，那么就需要重新 setup 走一遍。先停止运行 influxdb 服务，删除数据文件，删除配置信息，然后重新运行 influxdb 服务。</p>
+<h3 id="update-a-token"><a class="markdownIt-Anchor" href="#update-a-token"></a> Update a token</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/tokens/update-tokens/">https://docs.influxdata.com/influxdb/v2/admin/tokens/update-tokens/</a></p>
+<p>这里说的更新 token 指的是更新 token 的描述和状态等内容。</p>
+<p>假如自己真的不小心在 UI 或者 CLI 将自己唯一的 token 给删除 delete 了，那么就需要重新 setup 走一遍。先停止运行 influxdb 服务，删除数据文件，删除配置信息，然后重新运行 influxdb 服务。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> service influxdb stop</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">rm</span> -rf /var/lib/influxdb</span><br><span class="line"><span class="built_in">rm</span> -r ~/.influxdbv2/*</span><br><span class="line"><span class="built_in">sudo</span> service influxdb start</span><br><span class="line">influx setup</span><br></pre></td></tr></table></figure>
+<h2 id="manage-users"><a class="markdownIt-Anchor" href="#manage-users"></a> Manage users</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/users/">https://docs.influxdata.com/influxdb/v2/admin/users/</a></p>
+<h3 id="view-users"><a class="markdownIt-Anchor" href="#view-users"></a> View users</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/users/view-users/">https://docs.influxdata.com/influxdb/v2/admin/users/view-users/</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx user list</span><br></pre></td></tr></table></figure>
+<h3 id="change-your-password"><a class="markdownIt-Anchor" href="#change-your-password"></a> Change your password</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/admin/users/change-password/">https://docs.influxdata.com/influxdb/v2/admin/users/change-password/</a></p>
+<p>用于修改用户的密码，或者说更新密码，重置密码。只要配置文件有 token 或者手动带上 token 参数。无需记住原先的密码。也常用于忘记密码的场景。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">influx user password \</span><br><span class="line">  --name USERNAME \</span><br><span class="line">  --password PASSWORD</span><br></pre></td></tr></table></figure>
 <h1 id="influxdb-reference"><a class="markdownIt-Anchor" href="#influxdb-reference"></a> InfluxDB reference</h1>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/">https://docs.influxdata.com/influxdb/v2/reference/</a></p>
 <h2 id="influxdb-internals"><a class="markdownIt-Anchor" href="#influxdb-internals"></a> InfluxDB internals</h2>
@@ -428,11 +462,8 @@
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/</a></p>
 <h4 id="influx-setup"><a class="markdownIt-Anchor" href="#influx-setup"></a> influx setup</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/setup/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx setup</span><br></pre></td></tr></table></figure>
 <h4 id="influx-auth"><a class="markdownIt-Anchor" href="#influx-auth"></a> influx auth</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/auth/</a></p>
-<p>用于对授权，token 的管理。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx auth list [flags]</span><br></pre></td></tr></table></figure>
 <h4 id="influx-config"><a class="markdownIt-Anchor" href="#influx-config"></a> influx config</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/config/</a></p>
 <p>这里也说了，默认是将配置写在<code>~/.influxdbv2/configs</code>。</p>
@@ -443,21 +474,15 @@
 <p>用户的 token 也是放在此处，放这之后就不需要单独保存记忆，平时使用命令行也不需要每次都带上<code>--token</code>参数。</p>
 <h4 id="influx-user"><a class="markdownIt-Anchor" href="#influx-user"></a> influx user</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/user/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx user list</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx user password</span><br></pre></td></tr></table></figure>
-<p>用于修改用户的密码，或者说更新密码，重置密码。只要配置文件有 token 或者手动带上 token 参数。无需记住原先的密码。也常用于忘记密码的场景。</p>
 <h4 id="influx-org"><a class="markdownIt-Anchor" href="#influx-org"></a> influx org</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/org/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx org list</span><br></pre></td></tr></table></figure>
 <h4 id="influx-bucket"><a class="markdownIt-Anchor" href="#influx-bucket"></a> influx bucket</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/bucket/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx bucket list</span><br></pre></td></tr></table></figure>
 <h4 id="influx-delete"><a class="markdownIt-Anchor" href="#influx-delete"></a> influx delete</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/delete/</a></p>
-<p>主要用于删除指定 bucket 的指定时间段的数据。</p>
 <h4 id="influx-v1"><a class="markdownIt-Anchor" href="#influx-v1"></a> influx v1</h4>
 <p><a target="_blank" rel="noopener" href="https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/">https://docs.influxdata.com/influxdb/v2/reference/cli/influx/v1/</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx v1 shell</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">influx v1 shell</span><br></pre></td></tr></table></figure>
 <p>可以用于使用 shell 模式。</p>
 
       
@@ -482,7 +507,7 @@
         
           
           
-            <img data-src="https://pic1.imgdb.cn/item/6778a3d9d0e0a243d4eecf21.png" data-sizes="auto" alt="用于 Visual Studio 2022 的 OpenCV 静态库" class="lazyload">
+            <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="用于 Visual Studio 2022 的 OpenCV 静态库" class="lazyload">
           
         
         <a href="/vs2022-opencv/"></a>
@@ -499,7 +524,7 @@
       
         
         
-          <img data-src="https://pic1.imgdb.cn/item/6778a3f5d0e0a243d4eecf29.jpg" data-sizes="auto" alt="关于 aqtinstall" class="lazyload">
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="关于 aqtinstall" class="lazyload">
         
       
       <a href="/aqtinstall/"></a>
@@ -548,10 +573,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        20.3k
+        25.2k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        01:22
+        01:38
       </div>
     
     
@@ -583,7 +608,7 @@
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#install-influxdb"><span class="toc-number">1.</span> <span class="toc-text"> Install InfluxDB</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#get-started-with-influxdb"><span class="toc-number">2.</span> <span class="toc-text"> Get started with InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-up-influxdb"><span class="toc-number">2.1.</span> <span class="toc-text"> Set up InfluxDB</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#develop-with-the-influxdb-api"><span class="toc-number">3.</span> <span class="toc-text"> Develop with the InfluxDB API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-client-library"><span class="toc-number">3.1.</span> <span class="toc-text"> Python client library</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#administer-influxdb"><span class="toc-number">4.</span> <span class="toc-text"> Administer InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-api-tokens"><span class="toc-number">4.1.</span> <span class="toc-text"> Manage API tokens</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#influxdb-reference"><span class="toc-number">5.</span> <span class="toc-text"> InfluxDB reference</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#influxdb-internals"><span class="toc-number">5.1.</span> <span class="toc-text"> InfluxDB internals</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-storage-engine"><span class="toc-number">5.1.1.</span> <span class="toc-text"> InfluxDB storage engine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-file-system-layout"><span class="toc-number">5.1.2.</span> <span class="toc-text"> InfluxDB file system layout</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command-line-tools"><span class="toc-number">5.2.</span> <span class="toc-text"> Command line tools</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influx-influxdb-command-line-interface"><span class="toc-number">5.2.1.</span> <span class="toc-text"> influx - InfluxDB command line interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-setup"><span class="toc-number">5.2.1.1.</span> <span class="toc-text"> influx setup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-auth"><span class="toc-number">5.2.1.2.</span> <span class="toc-text"> influx auth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-config"><span class="toc-number">5.2.1.3.</span> <span class="toc-text"> influx config</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-user"><span class="toc-number">5.2.1.4.</span> <span class="toc-text"> influx user</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-org"><span class="toc-number">5.2.1.5.</span> <span class="toc-text"> influx org</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-bucket"><span class="toc-number">5.2.1.6.</span> <span class="toc-text"> influx bucket</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-delete"><span class="toc-number">5.2.1.7.</span> <span class="toc-text"> influx delete</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-v1"><span class="toc-number">5.2.1.8.</span> <span class="toc-text"> influx v1</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#install-influxdb"><span class="toc-number">1.</span> <span class="toc-text"> Install InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux"><span class="toc-number">1.1.</span> <span class="toc-text"> Linux</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows"><span class="toc-number">1.2.</span> <span class="toc-text"> Windows</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#get-started-with-influxdb"><span class="toc-number">2.</span> <span class="toc-text"> Get started with InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-up-influxdb"><span class="toc-number">2.1.</span> <span class="toc-text"> Set up InfluxDB</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#develop-with-the-influxdb-api"><span class="toc-number">3.</span> <span class="toc-text"> Develop with the InfluxDB API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-client-library"><span class="toc-number">3.1.</span> <span class="toc-text"> Python client library</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#write-data-to-influxdb"><span class="toc-number">4.</span> <span class="toc-text"> Write data to InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#delete-data"><span class="toc-number">4.1.</span> <span class="toc-text"> Delete data</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#administer-influxdb"><span class="toc-number">5.</span> <span class="toc-text"> Administer InfluxDB</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-organizations"><span class="toc-number">5.1.</span> <span class="toc-text"> Manage organizations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#update-an-organization"><span class="toc-number">5.1.1.</span> <span class="toc-text"> Update an organization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-buckets"><span class="toc-number">5.2.</span> <span class="toc-text"> Manage buckets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-api-tokens"><span class="toc-number">5.3.</span> <span class="toc-text"> Manage API tokens</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#view-tokens"><span class="toc-number">5.3.1.</span> <span class="toc-text"> View tokens</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#update-a-token"><span class="toc-number">5.3.2.</span> <span class="toc-text"> Update a token</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#manage-users"><span class="toc-number">5.4.</span> <span class="toc-text"> Manage users</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#view-users"><span class="toc-number">5.4.1.</span> <span class="toc-text"> View users</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#change-your-password"><span class="toc-number">5.4.2.</span> <span class="toc-text"> Change your password</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#influxdb-reference"><span class="toc-number">6.</span> <span class="toc-text"> InfluxDB reference</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#influxdb-internals"><span class="toc-number">6.1.</span> <span class="toc-text"> InfluxDB internals</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-storage-engine"><span class="toc-number">6.1.1.</span> <span class="toc-text"> InfluxDB storage engine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#influxdb-file-system-layout"><span class="toc-number">6.1.2.</span> <span class="toc-text"> InfluxDB file system layout</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command-line-tools"><span class="toc-number">6.2.</span> <span class="toc-text"> Command line tools</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#influx-influxdb-command-line-interface"><span class="toc-number">6.2.1.</span> <span class="toc-text"> influx - InfluxDB command line interface</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-setup"><span class="toc-number">6.2.1.1.</span> <span class="toc-text"> influx setup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-auth"><span class="toc-number">6.2.1.2.</span> <span class="toc-text"> influx auth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-config"><span class="toc-number">6.2.1.3.</span> <span class="toc-text"> influx config</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-user"><span class="toc-number">6.2.1.4.</span> <span class="toc-text"> influx user</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-org"><span class="toc-number">6.2.1.5.</span> <span class="toc-text"> influx org</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-bucket"><span class="toc-number">6.2.1.6.</span> <span class="toc-text"> influx bucket</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-delete"><span class="toc-number">6.2.1.7.</span> <span class="toc-text"> influx delete</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#influx-v1"><span class="toc-number">6.2.1.8.</span> <span class="toc-text"> influx v1</span></a></li></ol></li></ol></li></ol></li></ol>
       
   </div>
 </div>
@@ -596,7 +621,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">50</div>
+    <div class="sidebar-state-number">59</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -842,9 +867,9 @@
           url: "https://sunboyallen.github.io/influxdb/",
           excerpt: "",
           description: "",
-          stripContent: "https://www.influxdata.com/ https://docs.influxdata.com/ https://docs.influxdata.com/influxdb/v2/  Install InfluxDB https://docs.influxdata.com/influxdb/v2/install/ Install InfluxDB as a service with systemd 具体命令见上面的官方文档。 相关的命令，根据需要，自行加上sudo。 APT 是全局",
+          stripContent: "https://www.influxdata.com/ https://docs.influxdata.com/ https://docs.influxdata.com/influxdb/v2/  Install InfluxDB https://docs.influxdata.com/influxdb/v2/install/  Linux https://docs.influxdata.com/influxdb/v2/install/?t=Linux Install InfluxDB as a",
           date: "Thu May 16 2024 19:56:44 GMT+0800",
-          updated: "Tue Jan 14 2025 06:27:22 GMT+0800",
+          updated: "Fri Jan 31 2025 12:13:09 GMT+0800",
           cover: "/images/banner.webp",
         };
       </script>
