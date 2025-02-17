@@ -1,0 +1,1095 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  
+  <title>
+    
+    sunboyallen
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="sunboyallen">
+<meta property="og:url" content="https://sunboyallen.github.io/page/2/index.html">
+<meta property="og:site_name" content="sunboyallen">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://sunboyallen.github.io/images/banner.webp">
+<meta property="article:author" content="sunboyallen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sunboyallen.github.io/images/banner.webp">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="sunboyallen" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+    
+      
+        <link rel="preload" href="https://npm.webcache.cn/katex@0.16.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      
+    
+  
+  
+  
+    
+      <link rel="preload" href="https://npm.webcache.cn/gitalk/dist/gitalk.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.css">
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+  
+</div>
+<header id="header">
+  
+    <picture>
+      
+    </picture>
+    
+      <img fetchpriority="high" src="/images/banner.webp" alt="">
+    
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">sunboyallen</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
+  
+  
+    <meting-js
+      theme="var(--color-link)"
+      id="35934801"
+      server="netease"
+      type="album"
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    ></meting-js>
+  
+  <div class="sidebar-wrapper ">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-author">
+  <img data-src="/avatar/avatar.png" data-sizes="auto" alt="sunboyallen" class="lazyload">
+  <div class="sidebar-author-name">sunboyallen</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">60</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-email sidebar-social-icon">
+      <a href=mailto:sunboyallen@163.com itemprop="url" target="_blank" aria-label="email" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/sunboyallen itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/24507963 itemprop="url" target="_blank" aria-label="bilibili" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+
+      
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+</aside>
+
+          <section id="main">
+  
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-adjective-suffix/" aria-label="日语形容词型活用的接尾词整理"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3efd0e0a243d4eecf28.png" data-sizes="auto" alt="日语形容词型活用的接尾词整理" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-28</span>
+        <span><span class="icon-pencil"></span>318 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语形容词型活用的接尾词整理</h2>
+      <article class="post-article">
+        
+          之前整理了关于动词型活用的接尾词。查了下好像形容词型活用的接尾词也不多，十来个，那就把这个也整理了。
+依然是在 weblio 全文检索，这次搜索的是接尾］《形容詞型活用，或者接尾《形容詞型活用之类的，差不多。
+网上资料找了一圈，目前也就这篇的整理比较合适。不过里面把构成形容动词的接尾词也算了进去。
+https://zhuanlan.zhihu.com/p/99577257
+还是那句话，由于精力所限，以下仅仅是列举，没给出具体的含义，来源，用例等内容。
+此处所列举的，不全都是用于构成形容词。
+
+［接尾］《形容詞型活用》動詞の連用形に付いて、…はずがない、…わけがない、の意を表す。
+
+里面有的接尾
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/bhjang3/" aria-label="德田的文化日记博客"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="德田的文化日记博客" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-26</span>
+        <span><span class="icon-pencil"></span>52 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">德田的文化日记博客</h2>
+      <article class="post-article">
+        
+          https://blog.naver.com/bhjang3
+德 田 의 문 화 일 기.
+德田의 문화 일기
+德田의 文化 日記
+德田的文化日记
+内容很多，里面也有关于词源的资料。
+https://blog.naver.com/bhjang3/221387962887
+
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/shinseiki-shokyuu-loanword/" aria-label="《新世纪日本语教程 初级》外来词整理"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="《新世纪日本语教程 初级》外来词整理" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-25</span>
+        <span><span class="icon-pencil"></span>1k 字</span>
+        <span><span class="icon-clock"></span>4 分钟</span>
+      </div>
+      <h2 class="post-title">《新世纪日本语教程 初级》外来词整理</h2>
+      <article class="post-article">
+        
+          简单整理教材中的外来词【外来語】，方便考试复习。一些二外日语课的考试，会有专门的一题考察外来词的拼写。
+词条和原词以 weblio 大辞泉为准。外来词本身的写法和翻译以教材为准。
+有些外来词词组在 weblio 大辞泉没有，则只给出翻译，另起一行给出其中的单个外来词的词条，不另给翻译。
+对于外来词和非外来词组合而成的复合词【複合語】，另起一行给出其中的外来词的词条，不另给翻译。
+对于缩略词【略語】，如果词典释义给出的是原外来词，则另起一行给出该外来词的词条，不另给翻译。
+有些外来词有汉字表记，考虑到对于考试做题的帮助不大，甚至容易干扰，所以这里不给出，有兴趣可自查。
+ 3
+テニス【tennis
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-suffix/" aria-label="日语动词型活用的接尾词整理"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a406d0e0a243d4eecf2c.jpg" data-sizes="auto" alt="日语动词型活用的接尾词整理" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-24</span>
+        <span><span class="icon-pencil"></span>324 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语动词型活用的接尾词整理</h2>
+      <article class="post-article">
+        
+          关于接尾词【接尾語】【接尾辞】的定义，此处不赘述，请自行查阅资料。
+就网上查资料的过程来看，很多文章经常把动词型活用的接尾词，粗糙地认为是复合动词【複合動詞】的后面那部分，或者是认为是补助动词，辅助动词【補助動詞】，之类的。这是不合适的。
+看了一圈下来，基本也就下面这篇文章列举的词符合定义。
+https://zhuanlan.zhihu.com/p/99366985
+我还是简单举个例子。比如动词あきめく【秋めく】中的めく，就是个动词五段型活用的接尾词，表示变成那种状态或者表现出类似的样子。具体内容还是查词典。
+通过在 weblio 全文检索，在《大辞泉》共查到二十多个。具体来说，搜索接尾《動詞
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-colloquialism-kamiichidan-sa/" aria-label="日语口语由サ变动词上一段化的动词"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3f5d0e0a243d4eecf29.jpg" data-sizes="auto" alt="日语口语由サ变动词上一段化的动词" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-03</span>
+        <span><span class="icon-pencil"></span>755 字</span>
+        <span><span class="icon-clock"></span>3 分钟</span>
+      </div>
+      <h2 class="post-title">日语口语由サ变动词上一段化的动词</h2>
+      <article class="post-article">
+        
+          口语上一段活用
+这也是サ行上一段活用的动词的来源，和ザ行上一段活用的动词的主要来源。
+weblio 全文搜索動サ上一和動ザ上一。
+给出 weblio サ行上一段活用的动词一览。
+https://www.weblio.jp/parts-of-speech/%E3%82%B5%E8%A1%8C%E4%B8%8A%E4%B8%80%E6%AE%B5%E6%B4%BB%E7%94%A8_1
+另给出 weblio ザ行上一段活用的动词一览。可能有些缺漏。而且里面有一些是来自文语的ダ行上二段活用。
+https://www.weblio.jp/parts-of-speech/%E3%82%B6%E8%A1%
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-colloquialism-kamiichidan/" aria-label="日语口语上一段活用的动词"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3f5d0e0a243d4eecf29.jpg" data-sizes="auto" alt="日语口语上一段活用的动词" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-03</span>
+        <span><span class="icon-pencil"></span>448 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语口语上一段活用的动词</h2>
+      <article class="post-article">
+        
+          类似于上二段活用的情况，口语上一段活用的动词，实际上比下一段活用的动词要少很多。
+口语上一段活用的动词，分布在ア行，カ行，ガ行，ザ行，タ行，ナ行，バ行，マ行，ラ行。另外还有サ行。
+网上很多资料好像没提到サ行，虽然实际上也就几个。サ行上一段活用，主要来源是サ变动词的上一段化。《大辞泉》里有的就 2 个：けっしる【結しる】，さっしる【察しる】。而在 weblio 一览中，另给了 2 个：せっしる【接しる】，たっしる【達しる】。可以看到这几个都是 t 韵尾的汉字，而且变成了促音。
+ア行上一段活用，主要来源是文语的ワ行上一段活用，ハ行上二段活用，ヤ行上二段活用。
+カ行上一段活用，主要来源是文语的カ行上
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/shibashiba/" aria-label="使用「屎婆屎婆/💩👵💩👵」作为しばしば的借字，兼论「屡」和「屢」"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="使用「屎婆屎婆/💩👵💩👵」作为しばしば的借字，兼论「屡」和「屢」" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-01</span>
+        <span><span class="icon-pencil"></span>427 字</span>
+        <span><span class="icon-clock"></span>2 分钟</span>
+      </div>
+      <h2 class="post-title">使用「屎婆屎婆/💩👵💩👵」作为しばしば的借字，兼论「屡」和「屢」</h2>
+      <article class="post-article">
+        
+          致谢：屎女 bot 是由 Ishisashi 老师写的 bot，主要功能是组字。非常感谢！
+「屡」拆成「屎女」，し和ば又能对应「屎」和「婆」的音读，「屎婆屎婆」作为借字【当て字】非常合适。迫真。
+关于「屡」和「屢」，该字在《常用汉字表》外，汉字检定是将后者作为标准字体【標準字体】，前者作为异体字，容许字体【許容字体】。
+https://www.kanjipedia.jp/kanji/0007223600
+在 weblio デジタル大辞泉，相关词条和内容是使用前者。
+下面是 ruby 示例。
+💩し👵ば💩し👵ば
+屎し婆ば屎し婆ば
+屎し女ば屎し女ば
+屡しば屡しば
+屡しばしば
+屢しば屢しば
+屢
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-kaminidan/" aria-label="日语文语上二段活用的动词"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="日语文语上二段活用的动词" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-01</span>
+        <span><span class="icon-pencil"></span>386 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语文语上二段活用的动词</h2>
+      <article class="post-article">
+        
+          相比于下二段活用，上二段活用的动词少很多。可以参看这篇的解释。
+https://www.zhihu.com/question/654184648
+上二段活用的动词，分布在カ行，ガ行，タ行，ダ行，ハ行，バ行，マ行，ヤ行，ラ行，还有ワ行。另外还有ザ行。
+网上很多资料好像没提到ワ行，虽然实际上就一个：う【居／坐】，并且在中古就上一段化了。
+ザ行也是，一般的资料基本不会提到。好像只有一个：こず【抉ず】，另一个是ねこず【根掘ず】，但是《大辞泉》对于他的活用是四段还是上二段不太确定。
+这里面除了バ行有数十个，其他行在不考虑复合动词的情况下，数量基本是十个以内。即使算上了复合动词，最多就是十几个或者几十个的
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-shimonidan-wa/" aria-label="日语文语ワ行下二段活用的动词整理"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="日语文语ワ行下二段活用的动词整理" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-03-01</span>
+        <span><span class="icon-pencil"></span>234 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语文语ワ行下二段活用的动词整理</h2>
+      <article class="post-article">
+        
+          weblio 全文搜索ワ下二。
+うう【植う】
+うう【飢う】
+かつう【餓う／飢う】
+くう【蹴う】
+すう【据う】
+其中，关于くう【蹴う】，之前在说ける【蹴る】的时候有简单提过。
+[補説] 「馬の子や牛の子にくゑさせてん」〈梁塵秘抄・二〉、「蹴 化ル」〈類聚名義抄〉などの例から、平安末期には下二段活用が下一段化していたかと思われる。また、同じ下一段活用でもクヮ行下一段「く𛅑る」で、のちに直音化して「ける」になり、カ行下一段となったとする説もある。
+中间那个字符如果没显示出来，那个是小的ゑ，U+1B151。
+以下的复合动词，基本上仅用于文语。
+ほりうう【掘り植う】
+かきすう【舁き据う】
+しすう【為据
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/japanese-verb-kaminidan-ka/" aria-label="日语文语カ行上二段活用的动词整理"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        
+        
+          <img data-src="https://pic1.imgdb.cn/item/6778a3fed0e0a243d4eecf2b.jpg" data-sizes="auto" alt="日语文语カ行上二段活用的动词整理" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-02-28</span>
+        <span><span class="icon-pencil"></span>185 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">日语文语カ行上二段活用的动词整理</h2>
+      <article class="post-article">
+        
+          上二段活用
+weblio 全文搜索カ上二。
+给出 weblio カ行上二段活用的动词一览。可能有些缺漏。
+https://www.weblio.jp/parts-of-speech/%E3%82%AB%E8%A1%8C%E4%B8%8A%E4%BA%8C%E6%AE%B5%E6%B4%BB%E7%94%A8_1
+いく【生く】
+
+いく【生く】还可以是四段活用，カ行下二段活用。
+
+おく【起く】
+おく【熾く】
+つく【尽く】
+よく【避く】
+
+よく【避く】还可以是四段活用，カ行下二段活用。さく【避く】是カ行下二段活用。
+
+以下的复合动词，基本上仅用于文语。
+ねおく【寝起く】
+口语形。
+いきる【生きる】「
+        
+      </article>
+    </div>
+  </div>
+</div>
+    
+  
+
+
+  <nav id="page-nav" data-aos="fade-up">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">下一页 &raquo;</a>
+  </nav>
+
+
+</section>
+        </div>
+        
+        
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2020-2025
+      <span class="footer-info-sep rotate"></span>
+      sunboyallen
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        24.5k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:38
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-author">
+  <img data-src="/avatar/avatar.png" data-sizes="auto" alt="sunboyallen" class="lazyload">
+  <div class="sidebar-author-name">sunboyallen</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">60</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-email sidebar-social-icon">
+      <a href=mailto:sunboyallen@163.com itemprop="url" target="_blank" aria-label="email" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/sunboyallen itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/24507963 itemprop="url" target="_blank" aria-label="bilibili" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+
+    
+  </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.0/dist/index.umd.js" integrity="sha384-KM6i7tu43nYd6e0beIljxHMC5tZc58XBDu7pPA58w50h18Jsx7gLdimfS09RXlKv" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#ff5252","#ff7c7c","#ffafaf","#ffd0d0"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#ff0000"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+  
+<script src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js" integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE&#x2F;jMSCxD+jAPU55x&#x2F;jj3wlf" crossorigin="anonymous"></script>
+
+  <script>
+    function loadScripts(scripts, index) {
+      if (index < scripts.length) {
+        const script = scripts[index];
+        const src = script.getAttribute('src');
+
+        const loadScript = (scriptContent) => {
+          return new Promise((resolve, reject) => {
+            const scriptElement = document.createElement('script');
+            if (script.type) {
+              scriptElement.type = script.type;
+            }
+            if (script.src) {
+              scriptElement.src = script.src;
+              scriptElement.onload = resolve;
+              scriptElement.onerror = reject;
+            }
+            if (scriptContent) {
+              scriptElement.text = scriptContent;
+            }
+            document.head.appendChild(scriptElement);
+            if (!script.src) {
+              resolve();
+            }
+          })
+          
+        }
+
+        ;(src ? loadScript() : loadScript(script.text))
+          .then(() => loadScripts(scripts, index + 1))
+          .catch(error => {
+            console.error(`Failed to load script: ${src || 'inline script'}`, error);
+            loadScripts(scripts, index + 1);
+          });
+      }
+    }
+    window.Pjax && new window.Pjax({
+      selectors: [
+        "#header>img",
+        "#header>picture",
+        "head title",
+        "#header-title",
+        "#subtitle-wrap",
+        "#main",
+        "#content",
+        ".sidebar-widget",
+        ".sidebar-wrapper",
+        '#mobile-nav',
+        '#lazy-script',
+        '#i18n-nav'
+      ],
+      switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
+        "#header-title": Pjax.switches.outerHTML,
+        "#subtitle-wrap": Pjax.switches.outerHTML,
+        "#main": function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.outerHTML = newEl.outerHTML
+          this.onSwitch()
+        },
+        "#mobile-nav": Pjax.switches.outerHTML,
+        '#lazy-script': function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.innerHTML = newEl.innerHTML
+          this.onSwitch()
+        },
+      },
+      cacheBust: false
+    })
+  </script>
+  
+<script src="/js/pjax.js"></script>
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+       
+    
+    
+      
+    
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.4.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+    
+<script src="https://npm.webcache.cn/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm&#x2F;Yr2r3Dy4lfFg" crossorigin="anonymous" defer data-pjax></script>
+
+    
+<script src="https://npm.webcache.cn/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb&#x2F;GhzOouOXtZMP&#x2F;7XUzwPTstBeZFe&#x2F;+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" defer onload="renderMathInElement(_$(&#39;article&#39;), {delimiters: [{left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},{left: &#39;$&#39;, right: &#39;$&#39;, display: false}]});" data-pjax></script>
+
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
+
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/meting@2.0.1/dist/Meting.min.js" integrity="sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S&#x2F;IyB+Y4JG+ZDU7GpKE8" crossorigin="anonymous"></script>
+
+  
+
+  </body>
+  </html>
+
