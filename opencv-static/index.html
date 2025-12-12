@@ -27,7 +27,7 @@
 <meta property="og:description" content="在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-20T08:44:15.000Z">
-<meta property="article:modified_time" content="2025-09-12T06:32:10.299Z">
+<meta property="article:modified_time" content="2025-12-11T18:49:51.323Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -247,7 +247,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          534 字
+          532 字
         
       </span>
     
@@ -309,7 +309,7 @@
             
               <div class="markdown-body">
                 
-                <h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+                <h2 id=""><a class="markdownIt-Anchor" href="#"></a> </h2>
 <p><code>OpenCV_STATIC</code>是 OpenCV 在 Windows 独有的选项，用于控制是否静态链接 OpenCV 库。</p>
 <figure class="highlight cmake"><figcaption><span>CMakeLists.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">ON</span>)<br></code></pre></td></tr></table></figure>
 <p>在 Windows 本地手动用 CMake 构建安装的 OpenCV 库，无论使用的是 MSVC 还是 MinGW，得到的库的<code>OpenCVConfig.cmake</code>文件中都是有<code>OpenCV_STATIC</code>这个选项。而如果是用 vcpkg 安装的 OpenCV，那里面的<code>OpenCVConfig.cmake</code>文件中是没有<code>OpenCV_STATIC</code>选项的。</p>

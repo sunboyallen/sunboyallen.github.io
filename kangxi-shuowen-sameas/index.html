@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Windows 查看产品密钥">
+    <meta name="description" content="引言 首先《说文解字》原文出现「同」字的情况，除了释义和「同」相关之外，大致有以下几种。一个是「讀與某同」或「讀若某同」，效果上可以归为「讀若某」。一个是「與某同」或「與某同意」，表示含义相同，但不意味着和该字全同。当然也有「同」单独作为一分句的情况，一般出现在重文里面，比如「莕」的重文「荇」：「莕或从行，同。」。具体内容关于训诂学，此处不赘述。这里主要考虑大徐本，而且不多考虑徐铉本人说的内容。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows 查看产品密钥">
-<meta property="og:url" content="https://sunboyallen.github.io/windows-product-key/index.html">
+<meta property="og:title" content="《康熙字典》释义写为《说文》同某的情况整理">
+<meta property="og:url" content="https://sunboyallen.github.io/kangxi-shuowen-sameas/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="Windows 查看产品密钥">
+<meta property="og:description" content="引言 首先《说文解字》原文出现「同」字的情况，除了释义和「同」相关之外，大致有以下几种。一个是「讀與某同」或「讀若某同」，效果上可以归为「讀若某」。一个是「與某同」或「與某同意」，表示含义相同，但不意味着和该字全同。当然也有「同」单独作为一分句的情况，一般出现在重文里面，比如「莕」的重文「荇」：「莕或从行，同。」。具体内容关于训诂学，此处不赘述。这里主要考虑大徐本，而且不多考虑徐铉本人说的内容。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-02-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-12T06:32:10.301Z">
+<meta property="article:published_time" content="2024-03-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-11T18:49:50.001Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Windows 查看产品密钥 - sunboyallen 的个人博客</title>
+  <title>《康熙字典》释义写为《说文》同某的情况整理 - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -224,7 +224,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Windows 查看产品密钥"></span>
+            <span id="subtitle" data-typed-text="《康熙字典》释义写为《说文》同某的情况整理"></span>
           
         </div>
 
@@ -235,8 +235,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-21 00:00" pubdate>
-          2024年2月21日 凌晨
+        <time datetime="2024-03-02 00:00" pubdate>
+          2024年3月2日 凌晨
         </time>
       </span>
     
@@ -247,7 +247,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          62 字
+          2.3k 字
         
       </span>
     
@@ -258,7 +258,7 @@
         
         
         
-          1 分钟
+          19 分钟
         
       </span>
     
@@ -304,17 +304,416 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Windows 查看产品密钥</h1>
+            <h1 id="seo-header">《康熙字典》释义写为《说文》同某的情况整理</h1>
             
             
               <div class="markdown-body">
                 
-                <p>网上资料很多，本文主要是作为备忘。</p>
-<p>一个是原始产品密钥。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">wmic path softwarelicensingservice get OA3xOriginalProductKey<br></code></pre></td></tr></table></figure>
-<p>另一个是备份产品密钥。在注册表查看。</p>
-<p><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform</code>，<code>BackupProductKeyDefault</code>的值。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Get-ItemProperty</span> <span class="hljs-literal">-Path</span> <span class="hljs-string">&quot;HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform&quot;</span> <span class="hljs-literal">-Name</span> BackupProductKeyDefault<br></code></pre></td></tr></table></figure>
+                <h2 id="引言"><a class="markdownIt-Anchor" href="#引言"></a> 引言</h2>
+<p>首先《说文解字》原文出现「同」字的情况，除了释义和「同」相关之外，大致有以下几种。一个是「讀與某同」或「讀若某同」，效果上可以归为「讀若某」。一个是「與某同」或「與某同意」，表示含义相同，但不意味着和该字全同。当然也有「同」单独作为一分句的情况，一般出现在重文里面，比如「莕」的重文「荇」：「莕或从行，同。」。具体内容关于训诂学，此处不赘述。这里主要考虑大徐本，而且不多考虑徐铉本人说的内容。虽然那里面的情况类似，多出来的包括今文、俗字等的描述，也可能出现「同」字。</p>
+<p>然而《康熙字典》引《说文》的时候，有时候他为了表明两字的异体关系，直接使用《说文》「同某」的表述形式，不按原文来。然而相应的《说文》原文的情况实际有几种，《康熙》直接给这样笼统地表述了。通过在 ctext 搜索<code>《說文》同</code>，粗糙查到了五十多处这种情况。虽说这样查找得到的结果大概不够完整，但还是简单列出，并且附上相应的《说文》原文的情况。</p>
+<p>《康熙》文本主要参考 ctext，《说文解字》文本主要用的是数字化说文解字平台，可在平台上查看相应底本。段注的部分，由于全段内容较多，本文只引相关的部分内容。</p>
+<p>总的来说，《康熙》的「A」字头的释义使用《说文》同「B」的情况，大致有下面几类。</p>
+<p>一类主要的是说文「B」字头有重文「A」，然而也有些是反过来，即说文「A」字头有重文「B」。这种就不再细分了，《说文》出现的那几种在《康熙》基本都有。虽然见得较多的是「或从某」这种大类，但也有些古文，籀文，奇字，等等，也让《康熙》这样表述了。</p>
+<p>一类是说文「B」字头，徐铉或者徐锴的注里面有「A」字，而且和前面类似，同样也有反过来的。见得多的主要是俗字，别字，等等。</p>
+<p>再有的就是说文小篆的隶定字形和原文里面指代的时候使用的字形的不同，《康熙》同样给这么记了。</p>
+<p>然而还有相当一些是《说文》原文并无「A」或「B」字形，而实际见于其他的典籍。</p>
+<h2 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h2>
+<p>啼</p>
+<blockquote>
+<p>《說文》同嗁。</p>
+</blockquote>
+<p>说文解字系传：</p>
+<blockquote>
+<p>嗁：號也。從口，虒聲。臣鍇曰：“今俗人作啼。”</p>
+</blockquote>
+<p>嘒</p>
+<blockquote>
+<p>《說文》同嚖。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>嘒：小聲也。从口彗聲。《詩》曰：“嘒彼小星。”（嚖）或从慧。</p>
+</blockquote>
+<p>嚖</p>
+<blockquote>
+<p>《說文》同嘒。詳前嘒字註。</p>
+</blockquote>
+<p>怎么还循环了。</p>
+<p>壐</p>
+<blockquote>
+<p>《說文》同璽。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>壐：王者印也。所以主土。从土爾聲。（璽）籀文从玉。</p>
+</blockquote>
+<p>夝</p>
+<blockquote>
+<p>《說文》同晴。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>夝：雨而夜除星見也。从夕生聲。臣鉉等曰：今俗別晴。非是。</p>
+</blockquote>
+<p><code>㚌</code></p>
+<blockquote>
+<p>《說文》同夥。</p>
+</blockquote>
+<p>说文解字注：</p>
+<blockquote>
+<p><code>㚌</code>：齊謂多也。方言曰。大物盛多。齊宋之郊、楚魏之際曰夥。</p>
+</blockquote>
+<p><code>𡧯</code></p>
+<blockquote>
+<p>《說文》同寂。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p><code>𡧯</code>：無人聲。从宀尗聲。（<code>𧧌</code>）寂或从言。</p>
+</blockquote>
+<p><code>𡨂</code></p>
+<blockquote>
+<p>《說文》同寤。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p><code>𡨂</code>：寤也。从宀吾聲。</p>
+</blockquote>
+<p><code>𡽁</code></p>
+<blockquote>
+<p>《說文》同㠑。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p><code>𡽕</code>：山皃。从山辠聲。</p>
+</blockquote>
+<p>《说文》并非作此字形。见于扬雄《甘泉赋》。</p>
+<p>幒</p>
+<blockquote>
+<p>《說文》同<code>𢃓</code>。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>幒：<code>㡓</code>也。从巾怱聲。一曰帙。（<code>𢃓</code>）<code>𢃭</code>或从松。</p>
+</blockquote>
+<p><code>𢆊</code></p>
+<blockquote>
+<p>《說文》同汀。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>汀：平也。从水丁聲。（<code>𠀩</code>）汀或从平。</p>
+</blockquote>
+<p>严式和宽式隶定。</p>
+<p><code>𢓊</code></p>
+<blockquote>
+<p>《說文》同徙。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p><code>𨑭</code>：迻也。从辵止聲。（<code>𢓊</code>）徙或从彳。</p>
+</blockquote>
+<p><code>𢘕</code></p>
+<blockquote>
+<p>《說文》同<code>𢘅</code>。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>懋：勉也。从心楙聲。《虞書》曰：“時惟懋哉。”（<code>𢘅</code>）或省。</p>
+</blockquote>
+<p>《说文》原文并非作此字形。实际该字形出自《说文长笺》。</p>
+<p><code>𢞩</code></p>
+<blockquote>
+<p>《說文》同憲。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>憲：敏也。从心从目，害省聲。</p>
+</blockquote>
+<p>《说文》并非作此字形。见于《玉篇》。</p>
+<p><code>𣄻</code></p>
+<blockquote>
+<p>《說文》同涿。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>涿：流下滴也。从水豖聲。上谷有涿縣。（<code>𣄻</code>）奇字涿从日、乙。</p>
+</blockquote>
+<p><code>𣏘</code></p>
+<blockquote>
+<p>《說文》同柎。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>柎：闌足也。从木付聲。</p>
+</blockquote>
+<p>《说文》并非作此字形。见于《字汇》。</p>
+<p><code>𣐊</code></p>
+<blockquote>
+<p>《說文》同栲。</p>
+</blockquote>
+<p>说文解字系传：</p>
+<blockquote>
+<p><code>𣐊</code>：山樗也。從木，尻聲。臣鍇按：《爾雅》“栲，山樗”注：“栲似樗，色小白，生山中，因名云<code>𣐊</code>，即栲也。”</p>
+</blockquote>
+<p>樐</p>
+<blockquote>
+<p>《說文》同櫓。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>櫓：大盾也。从木魯聲。（樐）或从鹵。</p>
+</blockquote>
+<p>㯯</p>
+<blockquote>
+<p>《說文》同㔶。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>㔶：小桮也。从匚<code>𥫔</code>聲。（㯯）㔶或从木。</p>
+</blockquote>
+<p>灾</p>
+<blockquote>
+<p>《說文》同災。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>烖：天火曰烖。从火𢦏聲。（灾）或从宀、火。（<code>𤆎</code>）古文从才。（災）籀文从<code>𡿧</code>。</p>
+</blockquote>
+<p>盫</p>
+<blockquote>
+<p>《說文》同盦。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>盦：覆蓋也。从皿酓聲。臣鉉等曰：今俗别作罯，非是。</p>
+</blockquote>
+<p>《说文》并非作此字形。见于《正字通》。</p>
+<p><code>𥅝</code></p>
+<blockquote>
+<p>《說文》同䀘。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>䀘：蔽人視也。从目幵聲。讀若攜手。一曰直視也。（<code>𥅝</code>）䀘目或在下。</p>
+</blockquote>
+<p>睆</p>
+<blockquote>
+<p>《說文》同睅。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>睅：大目也。从目旱聲。（睆）睅或从完。</p>
+</blockquote>
+<p><code>𥏻</code></p>
+<blockquote>
+<p>《說文》同<code>𥏫</code>。</p>
+</blockquote>
+<p>说文解字注：</p>
+<blockquote>
+<p><code>𥏻</code>：傷也。謂矢之所傷也。引伸為凡傷之偁。从矢。傷省聲。各本篆作<code>𥏫</code>。</p>
+</blockquote>
+<p>䒱</p>
+<blockquote>
+<p>《說文》同蒸。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>蒸：折麻中榦也。从艸烝聲。（䒱）蒸或省火。</p>
+</blockquote>
+<p>荔</p>
+<blockquote>
+<p>《說文》同茘。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>荔：艸也。似蒲而小，根可作㕞。从艸劦聲。</p>
+</blockquote>
+<p>《说文》并非作此字形。见于《干禄字书》。</p>
+<p>文字蒙求：</p>
+<blockquote>
+<p>荔：艸也。俗誤从刕。</p>
+</blockquote>
+<p>莕</p>
+<blockquote>
+<p>《說文》同荇。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>莕：菨餘也。从艸杏聲。（荇）莕或从行，同。</p>
+</blockquote>
+<p><code>𦼰</code></p>
+<blockquote>
+<p>《說文》同藒。</p>
+</blockquote>
+<p>《说文》藒有的刻本写为了<code>𦼰</code>。比如陈昌治刻本和祁嶲藻刻本小篆作<code>𦼰</code>，记为「楬聲」。藤花榭本小篆作藒，记为「䅥聲」。小徐本「䅥」字「臣鍇曰：“藒字從此。”」。其他资料具体可以在数字化说文解字平台查看，此处不赘述。</p>
+<p><code>𧀪</code></p>
+<blockquote>
+<p>《說文》同䕩。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>䕩：乾梅之屬。从艸橑聲。《周禮》曰：“饋食之籩，其實乾䕩。”後漢長沙王始煑艸爲䕩。〔<code>𧃉</code>（<code>𧀪</code>）〕䕩或从潦。</p>
+</blockquote>
+<p>蘞</p>
+<blockquote>
+<p>《說文》同薟。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>薟：白薟也。从艸僉聲。（蘞）薟或从斂。</p>
+</blockquote>
+<p>訡</p>
+<blockquote>
+<p>《說文》同吟。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>吟：呻也。从口今聲。（䪩）吟或从音。（訡）或从言。</p>
+</blockquote>
+<p>訩</p>
+<blockquote>
+<p>《說文》同詾省。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>詾：說也。从言匈聲。（訩）或省。（<code>𧧗</code>）詾或从兇。</p>
+</blockquote>
+<p>訽</p>
+<blockquote>
+<p>《說文》同詬。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>詬：謑詬，恥也。从言后聲。（訽）詬或从句。</p>
+</blockquote>
+<p>䛌</p>
+<blockquote>
+<p>《說文》同䛬。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>䛬：往來言也。一曰小兒未能正言也。一曰祝也。从言匋聲。（䛌）䛬或从包。</p>
+</blockquote>
+<p><code>𧧗</code></p>
+<blockquote>
+<p>《說文》同詾。</p>
+</blockquote>
+<p>见前訩字。</p>
+<p>諂</p>
+<blockquote>
+<p>《說文》同讇，省。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>讇：諛也。从言閻聲。（諂）讇或省。</p>
+</blockquote>
+<p><code>𧪜</code></p>
+<blockquote>
+<p>《說文》同訴。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>訴：告也。从言，厈省聲。《論語》曰：“訴子路於季孫。”臣鉉等曰：厈非聲。蓋古之字音多與今異。如皀亦音香、釁亦音門、乃亦音仍，他皆放此。古今失傳，不可詳究。（<code>𧪜</code>）訴或从言、朔。（愬）訴或从朔、心。</p>
+</blockquote>
+<p><code>𧪮</code></p>
+<blockquote>
+<p>《說文》同謣。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>謣：妄言也。从言雩聲。（<code>𧪮</code>）謣或从荂。</p>
+</blockquote>
+<p><code>𧮢</code></p>
+<blockquote>
+<p>《說文》同讄。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>讄：禱也。累功德以求福。《論語》云：“讄曰：‘禱尔于上下神祇。’”从言，纍省聲。（<code>𧮢</code>）或不省。</p>
+</blockquote>
+<p>遡</p>
+<blockquote>
+<p>《說文》同泝。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>泝：逆流而上曰㴑洄。㴑，向也。水欲下違之而上也。从水㡿聲。（遡）㴑或从朔。</p>
+</blockquote>
+<p>銿</p>
+<blockquote>
+<p>《說文》同鐘。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>鐘：樂鐘也。秋分之音，物穜成。从金童聲。古者垂作鐘。（銿）鐘或从甬。</p>
+</blockquote>
+<p><code>𩕏</code></p>
+<blockquote>
+<p>《說文》同皤。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>皤：老人白也。从白番聲。《易》曰：“賁如皤如。”（<code>𩕏</code>）皤或从頁。</p>
+</blockquote>
+<p>顨</p>
+<blockquote>
+<p>《說文》同㢲。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>巺：具也。从丌<code>𠨎</code>聲。臣鉉等曰：庶物皆具丌以薦之。（<code>𢁅</code>）古文巽。（巽）篆文巽。</p>
+<p>顨：巽也。从丌从<code>𩔊</code>。此《易》顨卦“爲長女，爲風”者。臣鉉等曰：<code>𩔊</code>之義亦選具也。</p>
+</blockquote>
+<p>认为二字同。段注有相关内容，此处不赘述。</p>
+<p>驑</p>
+<blockquote>
+<p>《說文》同騮。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>驑：赤馬黑毛尾也。从馬畱聲。</p>
+</blockquote>
+<p>騮字形见于《玉篇》。</p>
+<p><code>𩱰</code></p>
+<blockquote>
+<p>《說文》同䰞。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>䰞：孚也。从<code>𩰲</code>者聲。〔煮（煑）〕䰞或从火。（<code>𩱰</code>）䰞或从水在其中。</p>
+</blockquote>
+<p>鯿</p>
+<blockquote>
+<p>《說文》同鯾。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>鯾：魚名。从魚便聲。（鯿）鯾又从扁。</p>
+</blockquote>
+<p>麱</p>
+<blockquote>
+<p>《說文》同麩。</p>
+</blockquote>
+<p>说文解字（大徐本）：</p>
+<blockquote>
+<p>麩：小麥㞕皮也。从麥夫聲。（麱）麩或从甫。</p>
+</blockquote>
+<h2 id="补充"><a class="markdownIt-Anchor" href="#补充"></a> 补充</h2>
+<p>这里也附上《康熙》引「《说文》同也」的情况。当然了，原文如此，但按照上面的说法，完全可以把这个理解为该字就是同「也」字，确信。</p>
+<p>共</p>
+<blockquote>
+<p>《說文》同也。</p>
+</blockquote>
+<p>掍</p>
+<blockquote>
+<p>《說文》同也。</p>
+</blockquote>
+<p>昆</p>
+<blockquote>
+<p>《說文》同也。</p>
+</blockquote>
 
                 
               </div>
@@ -332,8 +731,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Windows 查看产品密钥</div>
-      <div>https://sunboyallen.github.io/windows-product-key/</div>
+      <div>《康熙字典》释义写为《说文》同某的情况整理</div>
+      <div>https://sunboyallen.github.io/kangxi-shuowen-sameas/</div>
     </div>
     <div class="license-meta">
       
@@ -345,7 +744,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年2月21日</div>
+          <div>2024年3月2日</div>
         </div>
       
       
@@ -389,9 +788,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/windows-control-panel-network-connections/" title="Windows 控制面板，更改适配器设置，查看网络连接">
+                      <a href="/zerover/" title="ZeroVer：主版本号为 0 的软件包">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Windows 控制面板，更改适配器设置，查看网络连接</span>
+                        <span class="hidden-mobile">ZeroVer：主版本号为 0 的软件包</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -399,8 +798,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/windows-fast-startup/" title="Windows 建议关闭快速启动的功能">
-                        <span class="hidden-mobile">Windows 建议关闭快速启动的功能</span>
+                      <a href="/windows-python-versions-management/" title="Windows 管理多个 Python 版本的推荐方式">
+                        <span class="hidden-mobile">Windows 管理多个 Python 版本的推荐方式</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -423,7 +822,7 @@
         var options = Object.assign(
           {"clientID":"Ov23li6Uhbf8Uk7okGpq","clientSecret":"6ff2df395d997c302525216724e6fcfa40de83e9","repo":"blog-comment","owner":"sunboyallen","admin":["sunboyallen"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'd7b1648751d24e7da1ef2865fb9ca63e'
+            id: '442117ce1d034eefccceeba0e6af8d55'
           }
         )
         var gitalk = new Gitalk(options);
