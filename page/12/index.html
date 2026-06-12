@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,10 +86,15 @@
 
   
 
+  
+    
+  
+
+
 
 
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body>
@@ -111,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -207,6 +212,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -232,6 +354,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -247,6 +371,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">sunboyallen 的个人博客</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,15 +379,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ma/" target="_self">
-          日语文语マ行上二段活用的动词整理
+        <a href="/daijisen-adjective-suffix/" target="_self">
+          《大辞泉》形容词型活用的接尾词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ma/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-adjective-suffix/" target="_self">
         <div>
-          日语文语マ行上二段活用的动词整理
+          《大辞泉》形容词型活用的接尾词整理
         </div>
       </a>
 
@@ -287,15 +412,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ga/" target="_self">
-          日语文语ガ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-ba/" target="_self">
+          《大辞泉》バ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ga/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ba/" target="_self">
         <div>
-          日语文语ガ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索バ上二。 バ行应该是上二段活用的动词中，数量最多的，甚至比バ行下二段活用的都要多一些。 一个原因大概是，一些词是使用了接尾词びる，文语ぶ上二段型活用，接尾词さびる，文语さぶ上二段型活用。  总览 あぶ【浴ぶ】 おぶ【帯ぶ】 かぶ【黴ぶ】 からぶ【乾ぶ／涸ぶ／嗄ぶ／枯らぶ】 くしぶ【霊ぶ／奇ぶ】 こぶ こぶ【媚ぶ】 さぶ【寂ぶ】 さぶ【荒ぶ】  《上代
         </div>
       </a>
 
@@ -320,15 +445,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ka/" target="_self">
-          日语文语カ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-ga/" target="_self">
+          《大辞泉》ガ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ka/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ga/" target="_self">
         <div>
-          日语文语カ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索ガ上二。 最早接触的ガ行上一段活用的动词，应该就是すぎる【過ぎる】了吧，结果在口语里也就只有他了，其他复合动词也是由他构成的。 すぐ【過ぐ】 なぐ【凪ぐ／和ぐ】 ねぐ【労ぐ／犒ぐ】 以下的复合动词，基本上仅用于文语。 おもひすぐ【思ひ過ぐ】 さしすぐ【差し過ぐ】 さだすぐ【時過ぐ】 ちりすぐ【散り過ぐ】 ひきすぐ【引き過ぐ】 みなぐ【見和ぐ】 口语形
         </div>
       </a>
 
@@ -353,15 +478,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ha/" target="_self">
-          日语文语ハ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-da/" target="_self">
+          《大辞泉》ダ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ha/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-da/" target="_self">
         <div>
-          日语文语ハ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索ダ上二。 おづ【怖づ】 しこづ【讒づ／譖づ】 とづ【綴づ】 とづ【閉づ】 ねづ【捩づ／捻づ／拗づ】 はづ【恥づ】 もみづ【紅葉づ／黄葉づ】  《四段動詞「もみつ」の変化した語》  よづ【攀づ】 以下的复合动词，基本上仅用于文语。 したがひおづ【従ひ怖づ】 ひきよづ【引き攀づ】 口语形。 おじる【怖じる】 とじる【綴じる】 とじる【閉じる】 ねじる【捩
         </div>
       </a>
 
@@ -386,15 +511,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ra/" target="_self">
-          日语文语ラ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-ka/" target="_self">
+          《大辞泉》カ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ra/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ka/" target="_self">
         <div>
-          日语文语ラ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索カ上二。 いく【生く】 おく【起く】 おく【熾く】 つく【尽く】 よく【避く】 以下的复合动词，基本上仅用于文语。 ねおく【寝起く】 口语形。 いきる【生きる】「活きる」 おきる【起きる】 おきる【熾きる】 つきる【尽きる／竭きる】 以下的复合动词有相应的文语形。 とびおきる【飛（び）起きる】 はねおきる【跳ね起きる】 もえつきる【燃（え）尽きる】
         </div>
       </a>
 
@@ -419,15 +544,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ya/" target="_self">
-          日语文语ヤ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-ma/" target="_self">
+          《大辞泉》マ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ya/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ma/" target="_self">
         <div>
-          日语文语ヤ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索マ上二。 あむ【浴む】 うらむ【恨む／怨む／憾む】 かみしむ【神しむ】  「かむさぶ」に同じ。  かむしむ【神しむ】  「かむさぶ」に同じ。  かんがむ【鑑む／鑒む】  「かんがみる」（上一）の上二段化。  こころむ【試む】  《「こころみる」の上二段化。平安末期から現れる》  しむ【凍む】 しむ【染む／沁む／浸む／滲む】 たむ【回む／廻む／迂む】
         </div>
       </a>
 
@@ -452,15 +577,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-wa/" target="_self">
-          日语文语ワ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-ra/" target="_self">
+          《大辞泉》ラ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-wa/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ra/" target="_self">
         <div>
-          日语文语ワ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索ラ上二。 最早接触的ラ行上一段活用的动词，应该主要就是おりる【下りる／降りる】还有かりる【借りる】之类的吧，实际上也确实没几个。 おる【下る／降る】 こる【懲る】 ふる【旧る】 ゆる【許る／聴る】 おそる【恐る／怖る／畏る／懼る】  [補説] 古語では、「かつは人の耳におそり、かつは歌の心に恥ぢ思へど」〈古今・仮名序〉のように、上二段・四段のいずれか
         </div>
       </a>
 
@@ -485,15 +610,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-ta/" target="_self">
-          日语文语タ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-wa/" target="_self">
+          《大辞泉》ワ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ta/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-wa/" target="_self">
         <div>
-          日语文语タ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索ワ上二。 う【居／坐】  《動詞「ゐ（居）る」（上一）の古形で終止形だけが残存するが、上二段活用と考えられる》
         </div>
       </a>
 
@@ -518,15 +643,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-kaminidan-za/" target="_self">
-          日语文语ザ行上二段活用的动词整理
+        <a href="/daijisen-verb-kaminidan-za/" target="_self">
+          《大辞泉》ザ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-za/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-za/" target="_self">
         <div>
-          日语文语ザ行上二段活用的动词整理
+          日语文语上二段活用的动词 weblio 全文搜索ザ上二。 こず【抉ず】 复合词。 ねこず【根掘ず】  ［動］《活用は四段か上二段か未詳》
         </div>
       </a>
 
@@ -551,15 +676,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-verb-special-shimonidan/" target="_self">
-          日语文语下二段活用的特殊动词整理
+        <a href="/daijisen-verb-kaminidan-ta/" target="_self">
+          《大辞泉》タ行上二段活用的动词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-special-shimonidan/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-verb-kaminidan-ta/" target="_self">
         <div>
-          日语文语下二段活用的特殊动词整理
+          日语文语上二段活用的动词 weblio 全文搜索タ上二。 最早接触的タ行上一段活用的动词，应该主要就是おちる【落ちる】和みちる【満ちる】之类的吧，实际上确实没几个。 おつ【落つ／堕つ／墜つ】 くつ【朽つ】 そぼつ【濡つ】  [補説] 現代では「濡れそぼつ」などの形で文章語としてのみ用いられる。また、【一】2は、連用形の用例しかないので、活用は上二か四段か判定しがたい。  ひつ【漬つ／沾つ】  [補
         </div>
       </a>
 
@@ -711,6 +836,8 @@
 
 
 
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

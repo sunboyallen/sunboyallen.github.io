@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,10 +86,15 @@
 
   
 
+  
+    
+  
+
+
 
 
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body>
@@ -111,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -207,6 +212,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -232,6 +354,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -247,6 +371,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">sunboyallen 的个人博客</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,15 +379,180 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/scoop-qt/" target="_self">
-          通过 Scoop 使用 aqtinstall 安装 Qt
+        <a href="/u2c287/" target="_self">
+          「𬊇」字资料整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/scoop-qt/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/u2c287/" target="_self">
         <div>
-          通过 Scoop 使用 aqtinstall 安装 Qt
+          「𬊇」字在本文发布时的 Unicode 版本中的 G 源为 GZJW，《殷周金文集成引得》，具体的索引信息等内容可以在字统网查看。 在该书中作为金文隶定字同「榮」。在字统网中用于部件，作为「熒」的初文。 作为部件时，多写为「𤇾」，并且大部分情况是表音。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-16 00:00" pubdate>
+              2024-03-16
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/u629b-u62cb/" target="_self">
+          「抛」和「拋」资料简单整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/u629b-u62cb/" target="_self">
+        <div>
+          分别使用「九」和「尢」指示这两个字的差异。 通用规范汉字表是前者。常用字字形表，常用国字标准字体表是后者。 J0 收前者。K0 也收前者。 《同音の漢字による書きかえ》使用「放」作为前者的代用汉字。但是文件本身的用字情况并不规定被替代的字的正体异体。 《角川新字源》记前者为俗字，汉检 1 级，记前者为异体字。 《人名用追加汉字表》使用后者，《人名用汉字容许字体表》使用前者，记后者为正体。 具体内容
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-16 00:00" pubdate>
+              2024-03-16
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/u2a9c7/" target="_self">
+          「𪧇」字资料整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/u2a9c7/" target="_self">
+        <div>
+          「𪧇」字在本文发布时的 Unicode 版本中的 G 源为 GZJW，《殷周金文集成引得》，具体的索引信息等内容可以在字统网查看。在该书中作为金文隶定字同「牀」。作为甲骨文隶定字，同「寢」，具体可查看《文字学概要》，页码等信息在字统网有给出，不赘述。 该字作为部件时主要是表意，比如「寐」「寢」等等，具体内容同样可以查看字统网。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-16 00:00" pubdate>
+              2024-03-16
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/u568f-u5694/" target="_self">
+          「嚏」和「嚔」资料简单整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/u568f-u5694/" target="_self">
+        <div>
+          分别使用「乛」和「厶」指示这两个字的差异。 通用规范汉字表，常用字字形表，常用国字标准字体表，使用的是前者。 主要是 J0 同时收了这两个，在不同码位。 《角川新字源》记前者为俗字。汉检 1 级，记前者为异体字。 《汉语大字典》分收这两个字头，释义分别都写是「打喷嚏」，各自给了书证，没有直接将其中一个的释义写为同另一个。 具体内容可以在字统网查看。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-16 00:00" pubdate>
+              2024-03-16
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/everything-context/" target="_self">
+          Everything 卸载之后会残留右键菜单，建议卸载前手动取消勾选
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/everything-context/" target="_self">
+        <div>
+          就是注册表相关的事情。卸载的时候没有清除注册表项。 在他问题修复之前，目前最合适的处理方式就是，在工具-选项中，取消勾选「集成到资源管理器右键菜单」。如果是已经卸载，就重新安装一遍，取消勾选，再进行卸载。 当然，比如火绒是可以清除无效的注册表项的，不过效果不见得好，可能会导致治标不治本。 相关问题可以在知乎搜到。 Everything 卸载后还鼠标右键还是存在快捷方式
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-03-13 00:00" pubdate>
+              2024-03-13
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/goldendict-ng/" target="_self">
+          推荐使用 GoldenDict-ng，不建议使用 GoldenDict
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/goldendict-ng/" target="_self">
+        <div>
+          推荐使用 GoldenDict-ng，不建议使用 GoldenDict
         </div>
       </a>
 
@@ -320,15 +610,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/scoop/" target="_self">
-          对于 Windows 上的软件包管理工具 Scoop 的评价与定位
+        <a href="/scoop-latex/" target="_self">
+          使用 Scoop 安装 LaTeX 的注意事项
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/scoop/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/scoop-latex/" target="_self">
         <div>
-          对于 Windows 上的软件包管理工具 Scoop 的评价与定位
+          使用 Scoop 安装 LaTeX 的注意事项
         </div>
       </a>
 
@@ -353,15 +643,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/selenium-webdriver/" target="_self">
-          使用 Selenium 时，不需要额外安装 WebDriver 和浏览器
+        <a href="/scoop-qt/" target="_self">
+          通过 Scoop 使用 aqtinstall 安装 Qt
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/selenium-webdriver/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/scoop-qt/" target="_self">
         <div>
-          使用 Selenium 时，不需要额外安装 WebDriver 和浏览器
+          通过 Scoop 使用 aqtinstall 安装 Qt
         </div>
       </a>
 
@@ -386,15 +676,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/zerover/" target="_self">
-          ZeroVer：主版本号为 0 的软件包
+        <a href="/scoop-rust/" target="_self">
+          使用 Scoop 安装 Rust 的注意事项
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/zerover/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/scoop-rust/" target="_self">
         <div>
-          ZeroVer：主版本号为 0 的软件包
+          使用 Scoop 安装 Rust 的注意事项
         </div>
       </a>
 
@@ -404,171 +694,6 @@
             <i class="iconfont icon-date"></i>
             <time datetime="2024-03-06 00:00" pubdate>
               2024-03-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/gkx-shuowen-sameas/" target="_self">
-          《康熙字典》释义写为《说文》同某的情况整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/gkx-shuowen-sameas/" target="_self">
-        <div>
-          引言 首先《说文解字》原文出现「同」字的情况，除了释义和「同」相关之外，大致有以下几种。一个是「讀與某同」或「讀若某同」，效果上可以归为「讀若某」。一个是「與某同」或「與某同意」，表示含义相同，但不意味着和该字全同。当然也有「同」单独作为一分句的情况，一般出现在重文里面，比如「莕」的重文「荇」：「莕或从行，同。」。具体内容关于训诂学，此处不赘述。这里主要考虑大徐本，而且不多考虑徐铉本人说的内容。
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-03-02 00:00" pubdate>
-              2024-03-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/windows-python-versions-management/" target="_self">
-          Windows 管理多个 Python 版本的推荐方式
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/windows-python-versions-management/" target="_self">
-        <div>
-          Windows 管理多个 Python 版本的推荐方式
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-25 00:00" pubdate>
-              2024-02-25
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/hexo-heading/" target="_self">
-          Hexo 文章建议不要使用 Markdown 一级标题，而是从二级标题开始
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/hexo-heading/" target="_self">
-        <div>
-          Hexo 文章建议不要使用 Markdown 一级标题，而是从二级标题开始
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-23 00:00" pubdate>
-              2024-02-23
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/hexo-package-lock/" target="_self">
-          Hexo 场景下，对于 package-lock 的管理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/hexo-package-lock/" target="_self">
-        <div>
-          Hexo 场景下，对于 package-lock 的管理
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-23 00:00" pubdate>
-              2024-02-23
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/windows-fast-startup/" target="_self">
-          Windows 建议关闭快速启动的功能
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/windows-fast-startup/" target="_self">
-        <div>
-          Windows 建议关闭快速启动的功能
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-21 00:00" pubdate>
-              2024-02-21
             </time>
           </div>
         
@@ -711,6 +836,8 @@
 
 
 
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

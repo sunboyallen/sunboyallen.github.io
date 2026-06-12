@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,10 +86,15 @@
 
   
 
+  
+    
+  
+
+
 
 
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body>
@@ -111,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -207,6 +212,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -232,6 +354,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -247,6 +371,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">sunboyallen 的个人博客</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,15 +379,279 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-korean-origin-words/" target="_self">
-          日语来自朝鲜语的部分词汇整理
+        <a href="/h2021-radical-zero-stroke-unicode/" target="_self">
+          《西夏文词典》部首余笔为 0 的字与 Unicode 的对比
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-korean-origin-words/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/h2021-radical-zero-stroke-unicode/" target="_self">
         <div>
-          日语来自朝鲜语的部分词汇整理
+          西夏文的 Unicode 部首或者说构件，部件，与《夏汉字典》《西夏文词典》等的部首有所不同，一些字的部首认定也有些差别。此处不赘述，具体可以查看相关字典内容，可以在古今文字集成进行查阅。 获取西夏文 Unicode 部首余笔为 0 的字，还是比较好操作的，利用 UCD 提供的数据。TangutSources.txt中有每个西夏文字符的部首和总笔画的数据。UnicodeData.txt中有西夏文部
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-06 00:00" pubdate>
+              2024-01-06
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/microsoft-unicode-sip-extb/" target="_self">
+          吐槽微软将 Unicode 第二平面 SIP 统称为 CJK 扩充 B 的操作
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/microsoft-unicode-sip-extb/" target="_self">
+        <div>
+          吐槽微软将 Unicode 第二平面 SIP 统称为 CJK 扩充 B 的操作
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-06 00:00" pubdate>
+              2024-01-06
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/microsoft-font/" target="_self">
+          微软字体
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/microsoft-font/" target="_self">
+        <div>
+          微软字体
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-06 00:00" pubdate>
+              2024-01-06
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/pyenv-mirror/" target="_self">
+          pyenv 设置镜像加速
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/pyenv-mirror/" target="_self">
+        <div>
+          网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在 Windows 上，可以在 PowerShell 像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL =
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-06 00:00" pubdate>
+              2024-01-06
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/terms-translation/" target="_self">
+          术语对译整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/terms-translation/" target="_self">
+        <div>
+          术语对译整理
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-02 00:00" pubdate>
+              2024-01-02
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/ndl-2533385-miss-page/" target="_self">
+          国立国会图书馆藏一版《易林本节用集》缺页情况
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/ndl-2533385-miss-page/" target="_self">
+        <div>
+          国立国会图书馆藏有若干版《易林本节用集》。不过其中有一藏本，pid 为 2533385，相比完整的藏本而言，正文存在不少缺页。但是书志信息中，并没有给出标注说该书有缺页。而且原书的封面还写了「全」。 本文会简单给出本书的具体缺页信息。 原书的正文每一面边缘都有写页码，同一张的正反两面的数字相同。并非每一面都能完整显示，有的页面就直接基本没有。不管是阅读正文内容，还是观察页码的情况，都能发现该书缺页
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-12-19 00:00" pubdate>
+              2023-12-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/ndl-2540645-misbound/" target="_self">
+          国立国会图书馆藏《伊京集》错页情况
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/ndl-2540645-misbound/" target="_self">
+        <div>
+          该书的 pid 为 2540645，「電子化時の注記」一栏写了「乱丁あり」，也就是错页。简单来说，以正文所在页为第一张，那么从第四张开始往后，都是连续每两张纸的顺序两两颠倒，一直到最后一张。 如果使用在国立国会图书馆自带的「コマ番号」，记右边页面为 a，左边页面为 b，那么就是从 7b 开始错页。正确的阅读顺序具体如下。 12345678910111213141516171819202122232
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-12-19 00:00" pubdate>
+              2023-12-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/ndl-2605546-2605380-catalog/" target="_self">
+          国立国会图书馆藏《和名类聚抄》京本和天文本的目录对比
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/ndl-2605546-2605380-catalog/" target="_self">
+        <div>
+          这两个都是十卷本，写本。 京本的 pid 为 2605546，狩谷望之写，分为上中下三册，每册有各自的 pid，此处不赘述，可自行查看。天文本的 pid 为 2605380，榊原家藏。五册合三册，三册有各自的 pid，同样不赘述。 本文主要是对比两者的目录的一些不同。以京本为主，wiki 上的目录也是主要按的京本。字形上一般不多谈论异构的情况。以下内容使用的字形是按照通用规范汉字表，如需查看原字，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-12-19 00:00" pubdate>
+              2023-12-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/daijisen-korean-origin-words/" target="_self">
+          《大辞泉》来自朝鲜语的词汇整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-korean-origin-words/" target="_self">
+        <div>
+          《大辞泉》来自朝鲜语的词汇整理
         </div>
       </a>
 
@@ -287,279 +676,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/japanese-adjectival-noun-suffix/" target="_self">
-          日语用于构成形容动词的词干的接尾词整理
+        <a href="/daijisen-adjectival-noun-suffix/" target="_self">
+          《大辞泉》用于构成形容动词的词干的接尾词整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-adjectival-noun-suffix/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/daijisen-adjectival-noun-suffix/" target="_self">
         <div>
-          日语用于构成形容动词的词干的接尾词整理
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-korean-auxiliary-verb/" target="_self">
-          日语和韩语的助动词和补助动词/辅助动词
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-korean-auxiliary-verb/" target="_self">
-        <div>
-          日语和韩语的助动词和补助动词/辅助动词
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-adjective-suffix/" target="_self">
-          日语形容词型活用的接尾词整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-adjective-suffix/" target="_self">
-        <div>
-          日语形容词型活用的接尾词整理
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-pre-noun-adjectival/" target="_self">
-          日语连体词
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-pre-noun-adjectival/" target="_self">
-        <div>
-          日语连体词
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-prefix-suffix/" target="_self">
-          日语接头词和接尾词
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-prefix-suffix/" target="_self">
-        <div>
-          日语接头词和接尾词
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-verb-colloquialism-kamiichidan-sa/" target="_self">
-          日语口语由サ变动词上一段化的动词
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-colloquialism-kamiichidan-sa/" target="_self">
-        <div>
-          日语口语由サ变动词上一段化的动词
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-verb-colloquialism-kamiichidan/" target="_self">
-          日语口语上一段活用的动词
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-colloquialism-kamiichidan/" target="_self">
-        <div>
-          日语口语上一段活用的动词
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-verb-kaminidan-ba/" target="_self">
-          日语文语バ行上二段活用的动词整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-ba/" target="_self">
-        <div>
-          日语文语バ行上二段活用的动词整理
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-12-17 00:00" pubdate>
-              2023-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/japanese-verb-kaminidan-da/" target="_self">
-          日语文语ダ行上二段活用的动词整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/japanese-verb-kaminidan-da/" target="_self">
-        <div>
-          日语文语ダ行上二段活用的动词整理
+          《大辞泉》用于构成形容动词的词干的接尾词整理
         </div>
       </a>
 
@@ -711,6 +836,8 @@
 
 
 
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

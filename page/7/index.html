@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,10 +86,15 @@
 
   
 
+  
+    
+  
+
+
 
 
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body>
@@ -111,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -207,6 +212,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -232,6 +354,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -247,6 +371,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">sunboyallen 的个人博客</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,15 +379,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/korean-onomatopoeia-nvrvm/" target="_self">
-          韩语拟声拟态词族 nVrVm 整理
+        <a href="/korean-onomatopoeia-kvngtsvng/" target="_self">
+          韩语拟声拟态词族 kVngtsVng 整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-nvrvm/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvngtsvng/" target="_self">
         <div>
-          날름, 널름, 늘름 表示快速伸出又缩回的样子。可以指手或舌头，拿东西迅速，火焰。 第 1 个还表示动作迅速。 날름날름, 널름널름, 늘름늘름 同上，强调动作不断。 还表示贪图别人的东西，探头探脑，不断偷看。
+          강중, 깡쭝, 깡충, 겅중, 껑쭝, 껑충 双腿并拢，用力挑起。阳性元音指短腿，阴性元音指长腿。강종 是 강중 的非规范写法。 강중강중, 깡쭝깡쭝, 깡충깡충, 겅중겅중, 껑쭝껑쭝, 껑충껑충 同上，强调动作不停。강종강종 是 강중강중 的非规范写法。
         </div>
       </a>
 
@@ -287,15 +412,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/korean-onomatopoeia-pvk/" target="_self">
-          韩语拟声拟态词族 pVk 整理
+        <a href="/korean-irregular-conjugation/" target="_self">
+          韩语不规则活用的相关术语整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-pvk/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-irregular-conjugation/" target="_self">
         <div>
-          팍, 퍽 突然用力发出声音，突然倒下，踩到泥巴陷进去的声音。 팍팍, 퍽퍽 同上，强调连续。 还表示连续舀取东西，物品连续大量出现或消失，粉末或烟雾连续冒出。 第 2 个还表示木柴容易被劈开，雨雪下得很大。 폭, 푹 熟睡，用力戳或扎，严严实实遮盖，煮得熟透，腐烂变质，凹陷地明显，深陷于或沉浸，小东西一下子倒下去，舀取东西，低下头，烟或粉末从孔洞里喷出。 第 2 个还表示突然减少很多，灰尘覆盖很多
+          韩语不规则活用的相关术语整理
         </div>
       </a>
 
@@ -320,15 +445,147 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/korean-onomatopoeia-pvtvr/" target="_self">
-          韩语拟声拟态词族 pVtVr 整理
+        <a href="/korean-onomatopoeia-kvmkvm/" target="_self">
+          韩语拟声拟态词族 kVmkVm 整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-pvtvr/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvmkvm/" target="_self">
         <div>
-          바들, 파들, 버들, 퍼들, 부들, 푸들 词根，见下。 바들거리다, 파들거리다, 버들거리다, 퍼들거리다, 부들거리다, 푸들거리다 身体颤抖。 바들바들, 파들파들, 버들버들, 퍼들퍼들, 부들부들, 푸들푸들 同上，强调连续不停。 후들 词根，见下。 후들거리다 身体或四肢不停颤抖。 후들후들 同上，强调连续不停。 보들보들, 부들부들 叠词，被重复的词不单独作为词条。 柔软光滑。
+          这几个词在《标准国语大辞典》中的关联做的比较差。 깜깜, 감감, 캄캄, 껌껌 对事情不知道或忘记。 第 1 个和第 3 个还表示黑暗。 第 2 个还表示遥远模糊，没有消息或联系。 第 4 个见下。 껌껌, 컴컴 词根，见下。 껌껌하다, 컴컴하다, 깜깜하다 黑暗。 第 1 个和第 2 个还表示阴险狡诈。 第 3 个还表示茫然没有希望。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-02-02 00:00" pubdate>
+              2024-02-02
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/korean-onomatopoeia-kvng/" target="_self">
+          韩语拟声拟态词族 kVng 整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvng/" target="_self">
+        <div>
+          꽁, 콩, 꿍, 쿵 物体掉在地上或撞到其他物体时发出的声音。 第 3 个和第 4 个还表示炸弹的爆炸声，鼓声。 第 4 个还表示心理受到冲击或者心跳加速。 꽁꽁, 콩콩, 꿍꿍, 쿵쿵 同上，强调连续不断。 第 2 个和第 4 个还表示受到心理冲击，心脏不停跳动。 第 3 个和第 4 个还表示炸弹的爆炸声，鼓声。 꽝, 쾅, 꿩, 퀑 物体掉在地上或撞到其他物体时发出的声音，枪炮射击或爆炸时的响
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-02-02 00:00" pubdate>
+              2024-02-02
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/korean-onomatopoeia-kvk/" target="_self">
+          韩语拟声拟态词族 kVk 整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvk/" target="_self">
+        <div>
+          꼭, 꾹 用力按压或紧紧勒住，努力忍受或坚持，紧紧躲藏或隐藏。 꼭꼭, 꾹꾹 同上，强调持续不断。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-02-02 00:00" pubdate>
+              2024-02-02
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/korean-onomatopoeia-kvsvr/" target="_self">
+          韩语拟声拟态词族 kVsVr 整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvsvr/" target="_self">
+        <div>
+          가칠, 까칠, 거칠, 꺼칠 词根，见下。 가칠하다, 까칠하다, 거칠하다, 꺼칠하다 身体或皮肤毛发干枯粗糙。 가칠가칠, 까칠까칠, 거칠거칠, 꺼칠꺼칠 同上，强调多处。 가슬가슬, 까슬까슬, 거슬거슬, 꺼슬꺼슬 皮肤或物体表面粗糙坚硬，性格不温和。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-02-02 00:00" pubdate>
+              2024-02-02
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/korean-onomatopoeia-mvkvc/" target="_self">
+          韩语拟声拟态词族 mVkVC 整理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-mvkvc/" target="_self">
+        <div>
+          매끈, 미끈 词根，见下。 매끈하다, 미끈하다 光滑，打扮装饰漂亮干净，长相俊俏。 第 2 个还表示因为光滑而滑倒或滑出去。 매끈매끈, 미끈미끈 光滑一直往外滑，光滑地几乎要滑出去。 매끄당, 미끄덩 词根，见下。 매끄당하다, 미끄덩하다 光滑，因为光滑而滑倒。 매끄당매끄당, 미끄덩미끄덩 光滑不停往外滑。
         </div>
       </a>
 
@@ -419,147 +676,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/korean-onomatopoeia-pvrpvr/" target="_self">
-          韩语拟声拟态词族 pVrpVr 整理
+        <a href="/korean-onomatopoeia-kvrkvr/" target="_self">
+          韩语拟声拟态词族 kVrkVr 整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-pvrpvr/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-kvrkvr/" target="_self">
         <div>
-          발발, 벌벌 因寒冷或恐惧而颤抖，珍惜或重视某物。 발발, 벌벌 贴近地面爬行。 第 1 个还表示低声下气地行动。 발발, 빨빨, 벌벌, 뻘뻘 忙碌到处奔波跑来跑去。 빨빨, 뻘뻘 流很多汗。 팔팔, 펄펄 水沸腾或油燃烧，发热发烫，飞或跳，雪或灰尘飞扬，火苗升起。 활활, 훨훨 鸟扇动翅膀飞翔，火燃烧，扇扇子，脱下衣服。 第 1 个还表示热气上升。 第 2 个还表示轻快地在路上走，把轻的物品撒
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-02 00:00" pubdate>
-              2024-02-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/korean-onomatopoeia-svk/" target="_self">
-          韩语拟声拟态词族 sVk 整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-svk/" target="_self">
-        <div>
-          삭, 싹, 석, 썩 用刀裁掉纸或布的声音，扫过或推开，全部不剩。 第 4 个还表示咬东西时的声音。 삭삭, 싹싹, 석석, 썩썩 同上，强调连续不停。 작, 짝, 직, 찍 划线，撕纸。 작작, 짝짝, 직직, 찍찍 同上，强调随意。 第 1 个还表示拖着鞋子等走路。 작, 짝, 직, 찍 液体喷射的声音，摩擦滑动的声音。 착, 척 稳定镇定，松弛弯曲下垂。 第 1 个还表示身体无力下垂，气氛冷
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-02 00:00" pubdate>
-              2024-02-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/korean-onomatopoeia-svktvk/" target="_self">
-          韩语拟声拟态词族 sVktVk 整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-svktvk/" target="_self">
-        <div>
-          表示小声说话。 소곤닥, 쏘곤닥, 수군덕, 쑤군덕 词根，见下。 소곤닥거리다, 쏘곤닥거리다, 수군덕거리다, 쑤군덕거리다 소곤닥소곤닥, 쏘곤닥쏘곤닥, 수군덕수군덕, 쑤군덕쑤군덕 속닥, 쏙닥, 숙덕, 쑥덕 词根，见下。 속닥거리다, 쏙닥거리다, 숙덕거리다, 쑥덕거리다 속닥속닥, 쏙닥쏙닥, 숙덕숙덕, 쑥덕쑥덕
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-02 00:00" pubdate>
-              2024-02-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/korean-onomatopoeia-pvsvc/" target="_self">
-          韩语拟声拟态词族 pVsVC 整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-pvsvc/" target="_self">
-        <div>
-          바싹, 버썩, 부썩 液体干透或烧焦，非常贴近或靠紧，突然增多或减少，非常坚持或强求，非常紧张或使劲。 第 1 个还表示身体瘦弱，做事干净利落。 第 2 个还表示思绪等突然涌现。 第 3 个只表示第 3，第 4 个含义。 바싹바싹, 버썩버썩, 부썩부썩 同上，强调连续不断。 바삭, 바싹, 빠삭, 파삭, 버석, 버썩, 뻐석, 퍼석 踩在落叶等上面的沙沙声，蓬松的东西破碎的声音。 第 1 个，
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-02-02 00:00" pubdate>
-              2024-02-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/korean-onomatopoeia-svksvc/" target="_self">
-          韩语拟声拟态词族 sVksVC 整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/korean-onomatopoeia-svksvc/" target="_self">
-        <div>
-          低声说话。 속삭 词根，见下。 속삭거리다 还表示物体轻轻拂过时发出的声响。 속삭속삭 속살, 쏙살, 숙설, 쑥설 词根，见下。 속살거리다, 쏙살거리다, 숙설거리다, 쑥설거리다 속살속살, 쏙살쏙살, 숙설숙설, 쑥설쑥설
+          꼴꼴, 콜콜, 꿀꿀, 쿨쿨 液体流动的声音。 꼴꼴, 꿀꿀 猪发出的声音。 콜콜, 쿨쿨 睡觉时的呼吸声，打呼噜声。 콜콜, 쿨쿨 腐败或者酸臭的味道。
         </div>
       </a>
 
@@ -711,6 +836,8 @@
 
 
 
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sunboyallen.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,10 +86,15 @@
 
   
 
+  
+    
+  
+
+
 
 
   
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 
 <body>
@@ -111,7 +116,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -207,6 +212,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -232,6 +354,8 @@
   </div>
 </div>
 
+
+
 </div>
 
   </header>
@@ -247,6 +371,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">sunboyallen 的个人博客</h1>
 
   <div class="row mx-auto index-card">
     
@@ -254,15 +379,147 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/powershell-pipeline/" target="_self">
-          PowerShell pipeline 管道
+        <a href="/krdict-vernacular/" target="_self">
+          《韩国语基础词典》汉字音为俗音的词语整理
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/powershell-pipeline/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/krdict-vernacular/" target="_self">
         <div>
-          PowerShell pipeline 管道
+          俗音，指的是在读汉字音时，与本音不同，在一些词语中固定下来的音。这里强调的是，在写法上就已经变成这样。 目前一共有 60 个。在韩国语基础词典页面可以直接搜索▽这个用于标注俗音的符号即可。如果是在其他语言，可以使用高级检索，检索对象选择源词，输入▽搜索。 先给出里面标了星的词语，表示常用程度。 3 颗星 사탕(沙糖▽/砂糖▽) 설탕(雪糖▽/屑糖▽) 시월(十▽月) 유월(六▽月) 탕수육(糖▽水
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-28 00:00" pubdate>
+              2024-01-28
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/windows-pyenv-uninstall/" target="_self">
+          Windows 卸载 pyenv 的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/windows-pyenv-uninstall/" target="_self">
+        <div>
+          网上资料看到的方法一般就是直接删除相应目录，手动删除相应的环境变量，之类的。实际上，是有正式的卸载方法。可以搜到相应的 Github issue。 remove pyenv-win 找到 pyenv 的安装目录，一般是在用户目录下的.pyenv文件夹，在里面找到install-pyenv-win.ps1脚本所在目录，运行该脚本，带上-Uninstall参数。 1./install-pyenv-wi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-23 00:00" pubdate>
+              2024-01-23
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/u8089-component/" target="_self">
+          带「肉」字形的汉字情况
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/u8089-component/" target="_self">
+        <div>
+          带「肉」字形的汉字情况
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-10 00:00" pubdate>
+              2024-01-10
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/language-standard-platform/" target="_self">
+          语言文字规范的相关官方平台
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/language-standard-platform/" target="_self">
+        <div>
+          简单整理。 wiki 的「汉字标准列表」词条，有给出具体的文件列表。 然后是各地的官方网站平台的列表，可以查看在线内容或者下载文件。 教育部政府门户网站 香港中文学习字词表 对岸的教育部门语文成果网 台湾教育研究资讯网 日本文化厅，国语施策 한국어 어문 규범  韩国语语文规范
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-09 00:00" pubdate>
+              2024-01-09
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/powershell-env/" target="_self">
+          PowerShell 环境变量
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/powershell-env/" target="_self">
+        <div>
+          PowerShell 环境变量
         </div>
       </a>
 
@@ -320,15 +577,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/powershell-alias/" target="_self">
-          PowerShell alias 别名
+        <a href="/powershell-pipeline/" target="_self">
+          PowerShell pipeline 管道
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/powershell-alias/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/powershell-pipeline/" target="_self">
         <div>
-          PowerShell alias 别名
+          PowerShell pipeline 管道
         </div>
       </a>
 
@@ -386,15 +643,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/powershell/" target="_self">
-          PowerShell 基本概念和常用命令
+        <a href="/powershell-alias/" target="_self">
+          PowerShell alias 别名
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/powershell/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/powershell-alias/" target="_self">
         <div>
-          PowerShell 基本概念和常用命令
+          PowerShell alias 别名
         </div>
       </a>
 
@@ -419,15 +676,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/microsoft-unicode-sip-extb/" target="_self">
-          吐槽微软将 Unicode 第二平面 SIP 统称为 CJK 扩充 B 的操作
+        <a href="/powershell/" target="_self">
+          PowerShell 基本概念和常用命令
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/microsoft-unicode-sip-extb/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/powershell/" target="_self">
         <div>
-          吐槽微软将 Unicode 第二平面 SIP 统称为 CJK 扩充 B 的操作
+          PowerShell 基本概念和常用命令
         </div>
       </a>
 
@@ -435,140 +692,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2024-01-06 00:00" pubdate>
-              2024-01-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/microsoft-font/" target="_self">
-          微软字体
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/microsoft-font/" target="_self">
-        <div>
-          微软字体
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-01-06 00:00" pubdate>
-              2024-01-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/pyenv-mirror/" target="_self">
-          pyenv 设置镜像加速
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/pyenv-mirror/" target="_self">
-        <div>
-          网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在 Windows 上，可以在 PowerShell 像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL =
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-01-06 00:00" pubdate>
-              2024-01-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/xixiawencidian-radicals/" target="_self">
-          《西夏文词典》部首中可独立成字的字
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/xixiawencidian-radicals/" target="_self">
-        <div>
-          有一些是单纯字，主要是笔画少的那些。一些是合体字，主要是合成字。 字音和字义参考《西夏文词典》。如果字义解释不够充分的，会补充《夏汉字典》中的字义。字义为「类名」的不标注。作为汉语借词的字会标注。 可以在古今文字集成进行查阅。 《西夏文词典》的部首和《夏汉字典》以及 Unicode 的不完全一致。例如𘖆如果按 Unicode 部首的话，也是属于独立成字的字，但在《西夏文词典》中的部首不是这个。
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-01-06 00:00" pubdate>
-              2024-01-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/terms-translation/" target="_self">
-          术语对译整理
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/terms-translation/" target="_self">
-        <div>
-          术语对译整理
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-01-02 00:00" pubdate>
-              2024-01-02
+            <time datetime="2024-01-09 00:00" pubdate>
+              2024-01-09
             </time>
           </div>
         
@@ -711,6 +836,8 @@
 
 
 
+
+  <script defer src="/js/openkounter.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
