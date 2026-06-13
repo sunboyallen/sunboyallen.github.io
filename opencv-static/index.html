@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库">
+    <meta name="description" content="在CMake设置OpenCV_STATIC选项静态链接OpenCV库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库">
+<meta property="og:title" content="在CMake设置OpenCV_STATIC选项静态链接OpenCV库">
 <meta property="og:url" content="https://sunboyallen.github.io/opencv-static/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库">
+<meta property="og:description" content="在CMake设置OpenCV_STATIC选项静态链接OpenCV库">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-20T08:44:15.000Z">
-<meta property="article:modified_time" content="2026-03-02T15:13:28.142Z">
+<meta property="article:modified_time" content="2026-06-13T14:03:29.157Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库 - sunboyallen 的个人博客</title>
+  <title>在CMake设置OpenCV_STATIC选项静态链接OpenCV库 - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -346,7 +346,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库"></span>
+            <span id="subtitle" data-typed-text="在CMake设置OpenCV_STATIC选项静态链接OpenCV库"></span>
           
         </div>
 
@@ -428,25 +428,25 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库</h1>
+            <h1 id="seo-header">在CMake设置OpenCV_STATIC选项静态链接OpenCV库</h1>
             
             
               <div class="markdown-body">
                 
-                <p><code>OpenCV_STATIC</code>是 OpenCV 在 Windows 独有的选项，用于控制是否静态链接 OpenCV 库。</p>
+                <p><code>OpenCV_STATIC</code>是OpenCV在Windows独有的选项，用于控制是否静态链接OpenCV库。</p>
 <figure class="highlight cmake"><figcaption><span>CMakeLists.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">ON</span>)<br></code></pre></td></tr></table></figure>
-<p>在 Windows 本地手动用 CMake 构建安装的 OpenCV 库，无论使用的是 MSVC 还是 MinGW，得到的库的<code>OpenCVConfig.cmake</code>文件中都是有<code>OpenCV_STATIC</code>这个选项。而如果是用 vcpkg 安装的 OpenCV，那里面的<code>OpenCVConfig.cmake</code>文件中是没有<code>OpenCV_STATIC</code>选项的。</p>
-<p>对于使用 MSVC 编译器工具链的项目，无论 OpenCV 是通过 vcpkg 安装的还是自己用 CMake 手动构建安装的，都是可以通过设置<code>CMAKE_MSVC_RUNTIME_LIBRARY</code>的值，来设置自己的项目整体是静态链接还是动态链接，不需要单独设置<code>OpenCV_STATIC</code>选项。</p>
-<p>vcpkg 默认安装的是动态库版本。vcpkg 中的绝大多数库是有提供静态库版本的。像下面这样子，通过 Triplet 三元组，指定安装的库的目标平台和链接方式。</p>
+<p>在Windows本地手动用CMake构建安装的OpenCV库，无论使用的是MSVC还是MinGW，得到的库的<code>OpenCVConfig.cmake</code>文件中都是有<code>OpenCV_STATIC</code>这个选项。而如果是用vcpkg安装的OpenCV，那里面的<code>OpenCVConfig.cmake</code>文件中是没有<code>OpenCV_STATIC</code>选项的。</p>
+<p>对于使用MSVC编译器工具链的项目，无论OpenCV是通过vcpkg安装的还是自己用CMake手动构建安装的，都是可以通过设置<code>CMAKE_MSVC_RUNTIME_LIBRARY</code>的值，来设置自己的项目整体是静态链接还是动态链接，不需要单独设置<code>OpenCV_STATIC</code>选项。</p>
+<p>vcpkg默认安装的是动态库版本。vcpkg中的绝大多数库是有提供静态库版本的。像下面这样子，通过Triplet三元组，指定安装的库的目标平台和链接方式。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">vcpkg install opencv4<br>vcpkg install opencv4:x64-windows-static<br></code></pre></td></tr></table></figure>
-<p>而如果项目使用的编译器是 MinGW，那么就需要用到<code>OpenCV_STATIC</code>选项了。而且，像那样写是没有问题的，同样是跨平台的。在其他系统没有这个选项，也就不会有实际影响。</p>
+<p>而如果项目使用的编译器是MinGW，那么就需要用到<code>OpenCV_STATIC</code>选项了。而且，像那样写是没有问题的，同样是跨平台的。在其他系统没有这个选项，也就不会有实际影响。</p>
 <p>以下是在安装目录下，<code>OpenCVConfig.cmake</code>中的内容。</p>
 <figure class="highlight cmake"><figcaption><span>OpenCVConfig.cmake</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-comment">#    Windows pack specific options:</span><br><span class="hljs-comment">#      - OpenCV_STATIC</span><br><span class="hljs-comment">#      - OpenCV_CUDA</span><br></code></pre></td></tr></table></figure>
 <figure class="highlight cmake"><figcaption><span>OpenCVConfig.cmake</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">if</span>(<span class="hljs-keyword">NOT</span> <span class="hljs-keyword">DEFINED</span> OpenCV_STATIC)<br>  <span class="hljs-comment"># look for global setting</span><br>  <span class="hljs-keyword">if</span>(<span class="hljs-keyword">NOT</span> <span class="hljs-keyword">DEFINED</span> BUILD_SHARED_LIBS <span class="hljs-keyword">OR</span> BUILD_SHARED_LIBS)<br>    <span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">OFF</span>)<br>  <span class="hljs-keyword">else</span>()<br>    <span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">ON</span>)<br>  <span class="hljs-keyword">endif</span>()<br><span class="hljs-keyword">endif</span>()<br></code></pre></td></tr></table></figure>
-<p>在 OpenCV 的 GitHub 仓库，<code>cmake/templates</code>目录，是 CMake 的模板文件。<code>OpenCV_STATIC</code>相关的内容就是在<code>OpenCVConfig.root-WIN32.cmake.in</code>文件中。</p>
+<p>在OpenCV的GitHub仓库，<code>cmake/templates</code>目录，是CMake的模板文件。<code>OpenCV_STATIC</code>相关的内容就是在<code>OpenCVConfig.root-WIN32.cmake.in</code>文件中。</p>
 <p>个人感觉这个选项还是比较重要的。然而，网上很少有文章提到这个内容。</p>
-<p>有个在 2010 年的提问，里面的回答是说到了<code>OpenCV_STATIC</code>，但那位题主是在 Linux 下运行的，没有也不需要用到这个选项，而是直接添加<code>-static</code>选项就行。</p>
-<p>有的文章使用的是<code>set(BUILD_SHARED_LIBS OFF)</code>的方式。从之前给的内容来说，这样做的效果也确实是<code>OpenCV_STATIC</code>被设置为了<code>ON</code>。但是<code>BUILD_SHARED_LIBS</code>是一个全局选项，在现代 CMake 中不推荐这样直接写进去。而且这个选项一般是用于创建库的项目，一般不用于创建可执行文件的项目。</p>
+<p>有个在2010年的提问，里面的回答是说到了<code>OpenCV_STATIC</code>，但那位题主是在Linux下运行的，没有也不需要用到这个选项，而是直接添加<code>-static</code>选项就行。</p>
+<p>有的文章使用的是<code>set(BUILD_SHARED_LIBS OFF)</code>的方式。从之前给的内容来说，这样做的效果也确实是<code>OpenCV_STATIC</code>被设置为了<code>ON</code>。但是<code>BUILD_SHARED_LIBS</code>是一个全局选项，在现代CMake中不推荐这样直接写进去。而且这个选项一般是用于创建库的项目，一般不用于创建可执行文件的项目。</p>
 
                 
               </div>
@@ -464,7 +464,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在 CMake 设置 OpenCV_STATIC 选项静态链接 OpenCV 库</div>
+      <div>在CMake设置OpenCV_STATIC选项静态链接OpenCV库</div>
       <div>https://sunboyallen.github.io/opencv-static/</div>
     </div>
     <div class="license-meta">
@@ -531,8 +531,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/cmake-mingw-opencv-static/" title="通过 CMake 用 MinGW 优雅规范地静态链接 OpenCV 库">
-                        <span class="hidden-mobile">通过 CMake 用 MinGW 优雅规范地静态链接 OpenCV 库</span>
+                      <a href="/cmake-mingw-opencv-static/" title="通过CMake用MinGW优雅规范地静态链接OpenCV库">
+                        <span class="hidden-mobile">通过CMake用MinGW优雅规范地静态链接OpenCV库</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

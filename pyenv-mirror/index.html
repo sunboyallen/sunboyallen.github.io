@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在 Windows 上，可以在 PowerShell 像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL &#x3D;">
+    <meta name="description" content="网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在Windows上，可以在PowerShell像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL &#x3D; &amp;quo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pyenv 设置镜像加速">
+<meta property="og:title" content="pyenv设置镜像加速">
 <meta property="og:url" content="https://sunboyallen.github.io/pyenv-mirror/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在 Windows 上，可以在 PowerShell 像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL &#x3D;">
+<meta property="og:description" content="网上有相关资料介绍，此处主要是备忘。 如果不设置镜像，即便开着梯子进行pyenv install，下载速度也会很慢，或者根本就没在下载。 需要设置的环境变量叫PYTHON_BUILD_MIRROR_URL。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。 在Windows上，可以在PowerShell像这样子设置。 1$Env:PYTHON_BUILD_MIRROR_URL &#x3D; &amp;quo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-12T06:32:10.299Z">
+<meta property="article:modified_time" content="2026-06-13T14:01:40.237Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>pyenv 设置镜像加速 - sunboyallen 的个人博客</title>
+  <title>pyenv设置镜像加速 - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -346,7 +346,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="pyenv 设置镜像加速"></span>
+            <span id="subtitle" data-typed-text="pyenv设置镜像加速"></span>
           
         </div>
 
@@ -428,7 +428,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">pyenv 设置镜像加速</h1>
+            <h1 id="seo-header">pyenv设置镜像加速</h1>
             
             
               <div class="markdown-body">
@@ -436,12 +436,12 @@
                 <p>网上有相关资料介绍，此处主要是备忘。</p>
 <p>如果不设置镜像，即便开着梯子进行<code>pyenv install</code>，下载速度也会很慢，或者根本就没在下载。</p>
 <p>需要设置的环境变量叫<code>PYTHON_BUILD_MIRROR_URL</code>。然后根据操作系统，使用设置环境变量的常规方法进行操作即可。</p>
-<p>在 Windows 上，可以在 PowerShell 像这样子设置。</p>
+<p>在Windows上，可以在PowerShell像这样子设置。</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$Env:PYTHON_BUILD_MIRROR_URL</span> = <span class="hljs-string">&quot;https://registry.npmmirror.com/-/binary/python&quot;</span><br></code></pre></td></tr></table></figure>
 <p>如需持久化，那就是在系统环境变量中添加。</p>
-<p>在 Linux 上，在<code>~/.bashrc</code>添加以下内容。</p>
+<p>在Linux上，在<code>~/.bashrc</code>添加以下内容。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> PYTHON_BUILD_MIRROR_URL=<span class="hljs-string">&quot;https://registry.npmmirror.com/-/binary/python&quot;</span><br><span class="hljs-built_in">export</span> PYTHON_BUILD_MIRROR_URL_SKIP_CHECKSUM=1<br></code></pre></td></tr></table></figure>
-<p>在 Mac 操作类似。</p>
+<p>在Mac操作类似。</p>
 
                 
               </div>
@@ -459,7 +459,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>pyenv 设置镜像加速</div>
+      <div>pyenv设置镜像加速</div>
       <div>https://sunboyallen.github.io/pyenv-mirror/</div>
     </div>
     <div class="license-meta">
@@ -516,9 +516,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/microsoft-font/" title="微软字体">
+                      <a href="/microsoft-unicode-sip-extb/" title="吐槽微软将Unicode第二平面SIP统称为CJK扩充B的操作">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微软字体</span>
+                        <span class="hidden-mobile">吐槽微软将Unicode第二平面SIP统称为CJK扩充B的操作</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

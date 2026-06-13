@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="通过 Scoop 使用 aqtinstall 安装 Qt">
+    <meta name="description" content="通过Scoop使用aqtinstall安装Qt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过 Scoop 使用 aqtinstall 安装 Qt">
+<meta property="og:title" content="通过Scoop使用aqtinstall安装Qt">
 <meta property="og:url" content="https://sunboyallen.github.io/scoop-qt/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="通过 Scoop 使用 aqtinstall 安装 Qt">
+<meta property="og:description" content="通过Scoop使用aqtinstall安装Qt">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-12T06:32:10.299Z">
+<meta property="article:modified_time" content="2026-06-13T14:01:40.238Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>通过 Scoop 使用 aqtinstall 安装 Qt - sunboyallen 的个人博客</title>
+  <title>通过Scoop使用aqtinstall安装Qt - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -346,7 +346,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="通过 Scoop 使用 aqtinstall 安装 Qt"></span>
+            <span id="subtitle" data-typed-text="通过Scoop使用aqtinstall安装Qt"></span>
           
         </div>
 
@@ -428,28 +428,28 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">通过 Scoop 使用 aqtinstall 安装 Qt</h1>
+            <h1 id="seo-header">通过Scoop使用aqtinstall安装Qt</h1>
             
             
               <div class="markdown-body">
                 
-                <p>主要是安装 Qt Creator 和 aqtinstall 即可。</p>
+                <p>主要是安装Qt Creator和aqtinstall即可。</p>
 <p>Qt Creator</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">scoop install qt<span class="hljs-literal">-creator</span><br></code></pre></td></tr></table></figure>
 <p>aqtinstall</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">scoop install aqtinstall<br></code></pre></td></tr></table></figure>
-<p>aqtinstall 用于安装所需的 Qt 版本。可以安装多个来进行管理。</p>
-<p>在 Qt Creator 的菜单栏，编辑-首选项-构建套件，添加所安装的 Qt 版本，然后添加构建套件。构建套件一般需要自己命名，比如<code>Desktop Qt 6.8.0 MinGW 64bit</code>。</p>
-<p>aqtinstall 官方文档的标题如下。</p>
+<p>aqtinstall用于安装所需的Qt版本。可以安装多个来进行管理。</p>
+<p>在Qt Creator的菜单栏，编辑-首选项-构建套件，添加所安装的Qt版本，然后添加构建套件。构建套件一般需要自己命名，比如<code>Desktop Qt 6.8.0 MinGW 64bit</code>。</p>
+<p>aqtinstall官方文档的标题如下。</p>
 <p>aqtinstall manual</p>
-<p>直接搜索的话，似乎没法直接查到网址。在搜索结果中，只会看到 PDF 形式的文档。可以在 aqtinstall 的 GitHub 仓库看到文档链接。</p>
-<p>先用<code>list-qt</code>命令，查看可用的 Qt 版本。</p>
+<p>直接搜索的话，似乎没法直接查到网址。在搜索结果中，只会看到PDF形式的文档。可以在aqtinstall的GitHub仓库看到文档链接。</p>
+<p>先用<code>list-qt</code>命令，查看可用的Qt版本。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">aqt list-qt windows desktop<br></code></pre></td></tr></table></figure>
 <p>需要的参数包括主机，目标，等等。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">aqt list-qt windows desktop --arch 6.8.0<br></code></pre></td></tr></table></figure>
 <p>用于查看该版本所有可用的架构。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">aqt install-qt &lt;host&gt; &lt;target&gt; (&lt;Qt version&gt; | &lt;spec&gt;) [&lt;arch&gt;]<br></code></pre></td></tr></table></figure>
-<p>aqt 安装 Qt 的位置，默认在命令行终端当前所在的目录。建议通过<code>--outputdir</code>参数指定安装位置，通常的做法是安装在 C 盘的<code>Qt</code>目录。</p>
+<p>aqt安装Qt的位置，默认在命令行终端当前所在的目录。建议通过<code>--outputdir</code>参数指定安装位置，通常的做法是安装在C盘的<code>Qt</code>目录。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">aqt install-qt --outputdir c:\Qt windows desktop 6.8.0 win64_mingw<br></code></pre></td></tr></table></figure>
 <p>要删除也很简单，直接删除相应文件夹就行。</p>
 
@@ -469,7 +469,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>通过 Scoop 使用 aqtinstall 安装 Qt</div>
+      <div>通过Scoop使用aqtinstall安装Qt</div>
       <div>https://sunboyallen.github.io/scoop-qt/</div>
     </div>
     <div class="license-meta">
@@ -526,9 +526,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/scoop-latex/" title="使用 Scoop 安装 LaTeX 的注意事项">
+                      <a href="/scoop-rust/" title="使用Scoop安装Rust的注意事项">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用 Scoop 安装 LaTeX 的注意事项</span>
+                        <span class="hidden-mobile">使用Scoop安装Rust的注意事项</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -536,8 +536,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/scoop-rust/" title="使用 Scoop 安装 Rust 的注意事项">
-                        <span class="hidden-mobile">使用 Scoop 安装 Rust 的注意事项</span>
+                      <a href="/selenium-webdriver/" title="使用Selenium时，不需要额外安装WebDriver和浏览器">
+                        <span class="hidden-mobile">使用Selenium时，不需要额外安装WebDriver和浏览器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

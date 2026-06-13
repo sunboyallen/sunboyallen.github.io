@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包">
+    <meta name="description" content="vcpkg通过移除boost-uninstall完全移除Boost所有包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包">
+<meta property="og:title" content="vcpkg通过移除boost-uninstall完全移除Boost所有包">
 <meta property="og:url" content="https://sunboyallen.github.io/vcpkg-boost-uninstall/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包">
+<meta property="og:description" content="vcpkg通过移除boost-uninstall完全移除Boost所有包">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-01T12:37:14.288Z">
+<meta property="article:modified_time" content="2026-06-13T14:01:40.246Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包 - sunboyallen 的个人博客</title>
+  <title>vcpkg通过移除boost-uninstall完全移除Boost所有包 - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -346,7 +346,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包"></span>
+            <span id="subtitle" data-typed-text="vcpkg通过移除boost-uninstall完全移除Boost所有包"></span>
           
         </div>
 
@@ -428,18 +428,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包</h1>
+            <h1 id="seo-header">vcpkg通过移除boost-uninstall完全移除Boost所有包</h1>
             
             
               <div class="markdown-body">
                 
-                <p>在用 vcpkg 安装 Boost 的时候，可能会注意到，会安装一个叫<code>boost-uninstall</code>的包。从名字也能看出来，这个包是用于卸载 Boost 的。通过下面的命令，可以完全卸载 Boost 的所有组件。</p>
+                <p>在用vcpkg安装Boost的时候，可能会注意到，会安装一个叫<code>boost-uninstall</code>的包。从名字也能看出来，这个包是用于卸载Boost的。通过下面的命令，可以完全卸载Boost的所有组件。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">vcpkg remove boost-uninstall --recurse<br></code></pre></td></tr></table></figure>
-<p>下面这段是 vcpkg 中，<code>boost-uninstall</code>这个包的描述信息。</p>
+<p>下面这段是vcpkg中，<code>boost-uninstall</code>这个包的描述信息。</p>
 <figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pf">Internal vcpkg <span class="hljs-keyword">port</span> used <span class="hljs-keyword">to</span> uninstall Boost<br></code></pre></td></tr></table></figure>
-<p>设计的思路也很简单。让所有的 Boost 组件都依赖这个<code>boost-uninstall</code>包。如果只是<code>vcpkg remove boost-uninstall</code>，他会提示说，其他的 Boost 组件依赖这个包。所以使用<code>--recurse</code>参数，来递归删除所有依赖这个包的 Boost 组件，从而达到删除所有 Boost 包的效果。</p>
-<p>在 vcpkg 的 GitHub 上，是有 issue 问到这个内容的，具体可以搜索。</p>
-<p>网上相关的文章比较少。其中一些的做法比较简单粗暴，直接删除 Boost 的安装目录。</p>
+<p>设计的思路也很简单。让所有的Boost组件都依赖这个<code>boost-uninstall</code>包。如果只是<code>vcpkg remove boost-uninstall</code>，他会提示说，其他的Boost组件依赖这个包。所以使用<code>--recurse</code>参数，来递归删除所有依赖这个包的Boost组件，从而达到删除所有Boost包的效果。</p>
+<p>在vcpkg的GitHub上，是有issue问到这个内容的，具体可以搜索。</p>
+<p>网上相关的文章比较少。其中一些的做法比较简单粗暴，直接删除Boost的安装目录。</p>
 
                 
               </div>
@@ -457,7 +457,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>vcpkg 通过移除 boost-uninstall 完全移除 Boost 所有包</div>
+      <div>vcpkg通过移除boost-uninstall完全移除Boost所有包</div>
       <div>https://sunboyallen.github.io/vcpkg-boost-uninstall/</div>
     </div>
     <div class="license-meta">
@@ -524,8 +524,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/vscode-clang-format/" title="VS Code 使用 ClangFormat 格式化 C/C++ 代码">
-                        <span class="hidden-mobile">VS Code 使用 ClangFormat 格式化 C/C++ 代码</span>
+                      <a href="/vscode-editor-copywithsyntax/" title="VS Code设置文本编辑器复制时不要复制语法高亮等样式">
+                        <span class="hidden-mobile">VS Code设置文本编辑器复制时不要复制语法高亮等样式</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
