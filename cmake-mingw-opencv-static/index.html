@@ -27,7 +27,7 @@
 <meta property="og:description" content="通过CMake用MinGW优雅规范地静态链接OpenCV库">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-13T14:01:40.207Z">
+<meta property="article:modified_time" content="2026-06-27T16:45:43.960Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -369,7 +369,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.6k 字
         
       </span>
     
@@ -380,7 +380,7 @@
         
         
         
-          15 分钟
+          14 分钟
         
       </span>
     
@@ -441,7 +441,6 @@
 <p>有的文章在内容组织上，强绑定IDE。明明几乎只是使用命令行的操作，却非要和具体的C++ IDE挂钩。</p>
 <h2 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h2>
 <p>首先还是通过cmake-gui，生成OpenCV的构建文件。使用cmake-gui主要是为了方便修改那些编译选项。在构建OpenCV库之前，可以考虑把<code>CMAKE_INSTALL_PREFIX</code>的值修改为<code>C:/Program Files (x86)/OpenCV</code>，或者是安装之后再手动把<code>install</code>文件夹放到<code>C:/Program Files (x86)</code>下，并改名为<code>OpenCV</code>。关于这点，我单独写了一篇内容具体介绍。</p>
-<a href="/opencv-cmake-install-prefix/" title="吐槽OpenCV对CMAKE_INSTALL_PREFIX安装路径的设置">吐槽OpenCV对CMAKE_INSTALL_PREFIX安装路径的设置</a>
 <p>简单来说，实际上是OpenCV的这种设置，不符合现代CMake的规范，需要自行修改。</p>
 <p>然后是构建和安装的操作。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cmake --build .<br></code></pre></td></tr></table></figure>
@@ -450,8 +449,7 @@
 <figure class="highlight cmake"><figcaption><span>CMakeLists.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">cmake_minimum_required</span>(VERSION <span class="hljs-number">3.15</span>)<br><br><span class="hljs-keyword">project</span>(myproject)<br><br><span class="hljs-keyword">set</span>(CMAKE_MSVC_RUNTIME_LIBRARY <span class="hljs-string">&quot;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&quot;</span>)<br><br><span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">ON</span>)<br><br><span class="hljs-keyword">find_package</span>(OpenCV CONFIG REQUIRED)<br><br><span class="hljs-keyword">add_executable</span>(opencv_example main.cpp)<br><br><span class="hljs-keyword">target_link_options</span>(opencv_example PRIVATE -static)<br><br><span class="hljs-keyword">target_link_libraries</span>(opencv_example PRIVATE <span class="hljs-variable">$&#123;OpenCV_LIBS&#125;</span>)<br></code></pre></td></tr></table></figure>
 <p>可以看到，其中写了这么一句。</p>
 <figure class="highlight cmake"><figcaption><span>CMakeLists.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">set</span>(OpenCV_STATIC <span class="hljs-keyword">ON</span>)<br></code></pre></td></tr></table></figure>
-<p>我同样是单独写为一篇内容来具体介绍。</p>
-<a href="/opencv-static/" title="在CMake设置OpenCV_STATIC选项静态链接OpenCV库">在CMake设置OpenCV_STATIC选项静态链接OpenCV库</a>
+<p>同样是单独写了一篇内容来具体介绍。</p>
 <p>简单来说，这个是OpenCV在Windows独有的选项。</p>
 <p>以及写了这句。</p>
 <figure class="highlight cmake"><figcaption><span>CMakeLists.txt</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-keyword">set</span>(CMAKE_MSVC_RUNTIME_LIBRARY <span class="hljs-string">&quot;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&quot;</span>)<br></code></pre></td></tr></table></figure>

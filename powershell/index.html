@@ -19,15 +19,15 @@
   <meta name="author" content="sunboyallen">
   <meta name="keywords" content="">
   
-    <meta name="description" content="PowerShell基本概念和常用命令">
+    <meta name="description" content="微软文档有具体介绍，本文主要是简单整理和备忘。 区分好PowerShell和Windows PowerShell。 cmdlet，即PowerShell命令，使用动词-名词对来命名。 安装PowerShell之后，和旧版的Windows PowerShell并存。之后比如在VS Code打开的终端，就会默认为这个新的PowerShell了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PowerShell基本概念和常用命令">
+<meta property="og:title" content="PowerShell">
 <meta property="og:url" content="https://sunboyallen.github.io/powershell/index.html">
 <meta property="og:site_name" content="sunboyallen 的个人博客">
-<meta property="og:description" content="PowerShell基本概念和常用命令">
+<meta property="og:description" content="微软文档有具体介绍，本文主要是简单整理和备忘。 区分好PowerShell和Windows PowerShell。 cmdlet，即PowerShell命令，使用动词-名词对来命名。 安装PowerShell之后，和旧版的Windows PowerShell并存。之后比如在VS Code打开的终端，就会默认为这个新的PowerShell了。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-13T14:01:40.237Z">
+<meta property="article:modified_time" content="2026-06-27T16:52:41.526Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>PowerShell基本概念和常用命令 - sunboyallen 的个人博客</title>
+  <title>PowerShell - sunboyallen 的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -346,7 +346,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PowerShell基本概念和常用命令"></span>
+            <span id="subtitle" data-typed-text="PowerShell"></span>
           
         </div>
 
@@ -369,7 +369,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          638 字
+          165 字
         
       </span>
     
@@ -380,7 +380,7 @@
         
         
         
-          6 分钟
+          2 分钟
         
       </span>
     
@@ -428,50 +428,15 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">PowerShell基本概念和常用命令</h1>
+            <h1 id="seo-header">PowerShell</h1>
             
             
               <div class="markdown-body">
                 
                 <p>微软文档有具体介绍，本文主要是简单整理和备忘。</p>
-<p>首先是区分PowerShell和Windows PowerShell。</p>
+<p>区分好PowerShell和Windows PowerShell。</p>
 <p>cmdlet，即PowerShell命令，使用动词-名词对来命名。</p>
 <p>安装PowerShell之后，和旧版的Windows PowerShell并存。之后比如在VS Code打开的终端，就会默认为这个新的PowerShell了。</p>
-<p>Clear-Host</p>
-<p>清除显示内容，清空终端屏幕。</p>
-<p>常用的别名是<code>clear</code>。</p>
-<p>Get-Command</p>
-<p>用于获取命令。</p>
-<p>一个用途是查看命令的位置。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Get-Command</span> python<br></code></pre></td></tr></table></figure>
-<p>Import-Module</p>
-<p>用于将模块添加到当前会话。</p>
-<p>Copy-Item</p>
-<p>复制文件。</p>
-<p>常用的别名是<code>cp</code>。</p>
-<p>Get-ChildItem</p>
-<p>获取指定文件路径位置中的子项。</p>
-<p>常用的别名是<code>ls</code>。</p>
-<p>Get-Content</p>
-<p>获取文件内容。主要是文本文件。</p>
-<p><code>-TotalCount</code>参数，从文件的开头获取指定行数的内容。</p>
-<p>常用的别名是<code>cat</code>。</p>
-<p>Get-Item</p>
-<p>获取文件和文件夹的属性。</p>
-<p>New-Item</p>
-<p>用于新建文件。</p>
-<p><code>-ItemType</code>参数，指定新建的项的类型，比如<code>File</code>和<code>Directory</code>。</p>
-<p>Remove-Item</p>
-<p>用于删除文件和文件夹。</p>
-<p>常用的别名有<code>rm</code>和<code>rmdir</code>。</p>
-<p>Stop-Process</p>
-<p>停止进程。</p>
-<p><code>-Id</code>参数用于指定进程的ID。<code>-Name</code>参数用于指定进程的名称。</p>
-<p>Test-Path</p>
-<p>用于确定路径是否存在。</p>
-<p>Get-Culture</p>
-<p>Get-Date</p>
-<p>相比<code>Write-Host</code>，<code>Write-Output</code>会将对象发送到管道。</p>
 
                 
               </div>
@@ -489,7 +454,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PowerShell基本概念和常用命令</div>
+      <div>PowerShell</div>
       <div>https://sunboyallen.github.io/powershell/</div>
     </div>
     <div class="license-meta">
@@ -546,9 +511,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/powershell-alias/" title="PowerShell alias别名">
+                      <a href="/powershell-psreadline-listview/" title="将PowerShell PSReadLine的预测建议内容设置为列表视图ListView">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">PowerShell alias别名</span>
+                        <span class="hidden-mobile">将PowerShell PSReadLine的预测建议内容设置为列表视图ListView</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -556,8 +521,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/powershell-psreadline-listview/" title="将PowerShell PSReadLine的预测建议内容设置为列表视图ListView">
-                        <span class="hidden-mobile">将PowerShell PSReadLine的预测建议内容设置为列表视图ListView</span>
+                      <a href="/h2021-radical-zero-stroke-unicode/" title="《西夏文词典》部首余笔为0的字与Unicode的对比">
+                        <span class="hidden-mobile">《西夏文词典》部首余笔为0的字与Unicode的对比</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

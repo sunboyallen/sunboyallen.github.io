@@ -27,7 +27,7 @@
 <meta property="og:description" content="对于Windows上的软件包管理工具Scoop的评价与定位">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-13T14:03:29.160Z">
+<meta property="article:modified_time" content="2026-06-27T16:53:49.296Z">
 <meta property="article:author" content="sunboyallen">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -369,7 +369,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          2.6k 字
         
       </span>
     
@@ -380,7 +380,7 @@
         
         
         
-          24 分钟
+          22 分钟
         
       </span>
     
@@ -437,7 +437,7 @@
 <p>然而，使用到后面越感觉，并不是有了Scoop之后就不用管其他的了。相当一些软件就不适合通过Scoop进行安装和管理，即便他们位于Scoop的main仓库。不适合的原因有很多。有一些是性能上比起通常方式安装的要差很多。有一些是安装后不便于实际使用，需要加很多更加繁琐的操作配置。有些是软件本身就有更加方便的更新渠道，使用Scoop反而导致不方便和冲突。</p>
 <h2 id="比较适合用scoop安装和管理的情况"><a class="markdownIt-Anchor" href="#比较适合用scoop安装和管理的情况"></a> 比较适合用Scoop安装和管理的情况</h2>
 <p>目前来说，Scoop比较合适的使用场景相对有限，主要是下面几种。</p>
-<p>一些需要用到或者说需要管理和切换多版本的计算机语言，比如Python，Java，这种使用Scoop管理就很方便。实际上，使用Scoop管理Java多版本，是我目前见过的在Windows上的最方便的方式。</p>
+<p>一些需要用到或者说需要管理和切换多版本的计算机语言，比如Python，Java，这种使用Scoop管理就很方便。实际上，使用Scoop管理Java多版本，是我自己目前见过的在Windows上的最方便的方式。</p>
 <p>一般的计算机语言，包括编程语言，主要特点就是不方便自行更新，或者说官方提供的更新手段不直接，不像那些有GUI的软件会自带自己更新的方式。这种使用Scoop就比较方便进行管理，包括更新的操作。比如在Windows使用C++ 除了使用MSVC，另一种常用的就是MinGW-w64了，而使用Scoop安装MinGW-w64就非常方便。</p>
 <p>一些开发工具，特别是主要命令行使用的工具，比如Maven，使用的时候就是解压到某个目录，然后将相应的可执行文件所在的目录添加到环境变量中，他们所在的目录只要是常规的目录，一般不影响性能。而且，这些也一般没有专门的更新渠道。需要使用更新的版本的时候，通常就是从官方下载更新的版本，把原先的删掉，然后把新的放上去。对于这种，Scoop管理就更方便了，可以随时获取相关的工具是否可以更新。</p>
 <h2 id="不适合使用scoop安装管理的场景"><a class="markdownIt-Anchor" href="#不适合使用scoop安装管理的场景"></a> 不适合使用Scoop安装管理的场景</h2>
@@ -477,32 +477,6 @@
 <p>清理缓存。</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">scoop cleanup &lt;app&gt; [<span class="hljs-type">options</span>]<br></code></pre></td></tr></table></figure>
 <p>通过移除旧版本来清理软件包。</p>
-<h2 id="适合在scoop安装的软件包的简易列表"><a class="markdownIt-Anchor" href="#适合在scoop安装的软件包的简易列表"></a> 适合在Scoop安装的软件包的简易列表</h2>
-<p>如之前所说，实际上适合在Scoop安装的软件包就不是很多了，真正常用的更是有限。这里简单地用几行列出。先给出软件包的通用名称，再给出相应的在Scoop的名称。</p>
-<p>7-Zip</p>
-<p><code>7zip</code></p>
-<p>MinGW-w64，C++</p>
-<p><code>mingw</code></p>
-<p>CMake</p>
-<p><code>cmake</code></p>
-<p>Node.js，nvm</p>
-<p><code>nodejs</code>，<code>nvm</code></p>
-<p>GitHub Cli</p>
-<p><code>gh</code></p>
-<p>Microsoft .NET SDK</p>
-<p><code>dotnet</code></p>
-<p>Pandoc</p>
-<p><code>pandoc</code></p>
-<p>InfluxDB</p>
-<p><code>influxdb</code>，<code>influx</code></p>
-<p>Vcpkg</p>
-<p><code>vcpkg</code></p>
-<p>Inkscape</p>
-<p><code>inkscape</code></p>
-<p>Ghostscript</p>
-<p><code>ghostscript</code></p>
-<p>Maven</p>
-<p><code>maven</code></p>
 
                 
               </div>
@@ -577,9 +551,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/scoop-latex/" title="使用Scoop安装LaTeX的注意事项">
+                      <a href="/scoop-qt/" title="通过Scoop使用aqtinstall安装Qt">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用Scoop安装LaTeX的注意事项</span>
+                        <span class="hidden-mobile">通过Scoop使用aqtinstall安装Qt</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -587,8 +561,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/zerover/" title="ZeroVer：主版本号为0的软件包">
-                        <span class="hidden-mobile">ZeroVer：主版本号为0的软件包</span>
+                      <a href="/scoop-rust/" title="使用Scoop安装Rust的注意事项">
+                        <span class="hidden-mobile">使用Scoop安装Rust的注意事项</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
